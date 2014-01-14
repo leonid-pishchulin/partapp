@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai
+END
+bipgraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/bipgraph.h
+END
+properties.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/properties.h
+END
+lc.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/lc.h
+END
+factorgraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/factorgraph.h
+END
+exactinf.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/exactinf.h
+END
+bp.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/bp.h
+END
+mf.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/mf.h
+END
+prob.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/prob.h
+END
+hak.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/hak.h
+END
+clustergraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/clustergraph.h
+END
+enum.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/enum.h
+END
+varset.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/varset.h
+END
+regiongraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/regiongraph.h
+END
+index.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/index.h
+END
+jtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/jtree.h
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/util.h
+END
+mr.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/mr.h
+END
+factor.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/factor.h
+END
+exceptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/exceptions.h
+END
+daialg.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/daialg.h
+END
+weightedgraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/weightedgraph.h
+END
+smallset.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/smallset.h
+END
+treeep.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/treeep.h
+END
+alldai.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/alldai.h
+END
+var.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/D2/MPIHumanPose/!svn/ver/95/partapp/branches/partapp_stable/external_lib/libDAI64/include/dai/var.h
+END

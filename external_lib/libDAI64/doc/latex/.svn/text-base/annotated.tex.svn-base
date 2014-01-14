@@ -1,0 +1,44 @@
+\section{Class List}
+Here are the classes, structs, unions and interfaces with brief descriptions:\begin{CompactList}
+\item\contentsline{section}{\hyperlink{classdai_1_1BipartiteGraph}{dai::BipartiteGraph} (Represents the neighborhood structure of nodes in a bipartite graph )}{\pageref{classdai_1_1BipartiteGraph}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{dai::BipartiteGraph::Neighbor} (Describes a neighboring node of some other node in a \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} )}{\pageref{structdai_1_1BipartiteGraph_1_1Neighbor}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1BP}{dai::BP} (Approximate inference algorithm \char`\"{}(Loopy) Belief Propagation\char`\"{} )}{\pageref{classdai_1_1BP}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1BP_1_1Properties}{dai::BP::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1BP_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1ClusterGraph}{dai::ClusterGraph} (A \hyperlink{classdai_1_1ClusterGraph}{ClusterGraph} is a hypergraph with VarSets as nodes )}{\pageref{classdai_1_1ClusterGraph}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1DAIAlg}{dai::DAIAlg$<$ GRM $>$} (Combines an \hyperlink{classdai_1_1InfAlg}{InfAlg} and a graphical model, e.g., a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} or \hyperlink{classdai_1_1RegionGraph}{RegionGraph} )}{\pageref{classdai_1_1DAIAlg}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1DEdge}{dai::DEdge} (Represents a directed edge pointing from n1 to n2 )}{\pageref{classdai_1_1DEdge}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1Diffs}{dai::Diffs} (Used to keep track of the progress made by iterative algorithms )}{\pageref{classdai_1_1Diffs}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1ExactInf}{dai::ExactInf} (Exact inference algorithm using brute force enumeration (mainly useful for testing purposes) )}{\pageref{classdai_1_1ExactInf}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1ExactInf_1_1Properties}{dai::ExactInf::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1ExactInf_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1Exception}{dai::Exception} (Represents an exception (based on std::runtime\_\-error) )}{\pageref{classdai_1_1Exception}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1FactorGraph}{dai::FactorGraph} (Represents a factor graph )}{\pageref{classdai_1_1FactorGraph}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1FRegion}{dai::FRegion} (A \hyperlink{classdai_1_1FRegion}{FRegion} is a factor with a counting number )}{\pageref{classdai_1_1FRegion}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1HAK}{dai::HAK} (Approximate inference algorithm: implementation of single-loop (\char`\"{}Generalized Belief Propagation\char`\"{}) and double-loop algorithms by Heskes, Albers and Kappen )}{\pageref{classdai_1_1HAK}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1HAK_1_1Properties}{dai::HAK::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1HAK_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1hash__map}{dai::hash\_\-map$<$ T, U $>$} (Hash\_\-map is an alias for std::tr1::unordered\_\-map )}{\pageref{classdai_1_1hash__map}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1IndexFor}{dai::IndexFor} (Tool for looping over the states of several variables )}{\pageref{classdai_1_1IndexFor}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1InfAlg}{dai::InfAlg} (\hyperlink{classdai_1_1InfAlg}{InfAlg} is an abstract base class, defining the common interface of all inference algorithms in libDAI )}{\pageref{classdai_1_1InfAlg}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1JTree}{dai::JTree} (Exact inference algorithm using junction tree )}{\pageref{classdai_1_1JTree}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1JTree_1_1Properties}{dai::JTree::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1JTree_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1LC}{dai::LC} (Approximate inference algorithm \char`\"{}Loop Corrected Belief Propagation\char`\"{} by Mooij and Kappen )}{\pageref{classdai_1_1LC}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1LC_1_1Properties}{dai::LC::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1LC_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1MF}{dai::MF} (Approximate inference algorithm \char`\"{}Mean Field\char`\"{} )}{\pageref{classdai_1_1MF}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1MF_1_1Properties}{dai::MF::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1MF_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1MR}{dai::MR} (Approximate inference algorithm by Montanari and Rizzo )}{\pageref{classdai_1_1MR}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1MR_1_1Properties}{dai::MR::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1MR_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1MultiFor}{dai::MultiFor} (\hyperlink{classdai_1_1MultiFor}{MultiFor} makes it easy to perform a dynamic number of nested for loops )}{\pageref{classdai_1_1MultiFor}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1Permute}{dai::Permute} (Tool for calculating permutations of multiple indices )}{\pageref{classdai_1_1Permute}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1PropertySet}{dai::PropertySet} (Represents a set of properties, mapping keys (of type PropertyKey) to values (of type PropertyValue) )}{\pageref{classdai_1_1PropertySet}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1Region}{dai::Region} (A \hyperlink{classdai_1_1Region}{Region} is a set of variables with a counting number )}{\pageref{classdai_1_1Region}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1RegionGraph}{dai::RegionGraph} (A \hyperlink{classdai_1_1RegionGraph}{RegionGraph} is a bipartite graph consisting of outer regions (type \hyperlink{classdai_1_1FRegion}{FRegion}) and inner regions (type \hyperlink{classdai_1_1Region}{Region}) )}{\pageref{classdai_1_1RegionGraph}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1smallSet}{dai::smallSet$<$ T $>$} (Represents a set (optimized for a small number of elements) )}{\pageref{classdai_1_1smallSet}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1State}{dai::State} (Contains the joint state of variables within a \hyperlink{classdai_1_1VarSet}{VarSet} and useful things to do with this information )}{\pageref{classdai_1_1State}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1TFactor}{dai::TFactor$<$ T $>$} (Represents a probability factor )}{\pageref{classdai_1_1TFactor}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1TProb}{dai::TProb$<$ T $>$} (Represents a probability measure on a finite outcome space (i.e., corresponding to a discrete random variable) )}{\pageref{classdai_1_1TProb}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1TreeEP}{dai::TreeEP} (Approximate inference algorithm \char`\"{}TreeEP\char`\"{} by Minka and Qi )}{\pageref{classdai_1_1TreeEP}}{}
+\item\contentsline{section}{\hyperlink{structdai_1_1TreeEP_1_1Properties}{dai::TreeEP::Properties} (Parameters of this inference algorithm )}{\pageref{structdai_1_1TreeEP_1_1Properties}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1UEdge}{dai::UEdge} (Undirected edge between nodes n1 and n2 )}{\pageref{classdai_1_1UEdge}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1Var}{dai::Var} (Represents a discrete random variable )}{\pageref{classdai_1_1Var}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1VarSet}{dai::VarSet} (Represents a set of variables )}{\pageref{classdai_1_1VarSet}}{}
+\item\contentsline{section}{\hyperlink{classdai_1_1WeightedGraph}{dai::WeightedGraph$<$ T $>$} (Represents an undirected weighted graph, with weights of type T )}{\pageref{classdai_1_1WeightedGraph}}{}
+\end{CompactList}

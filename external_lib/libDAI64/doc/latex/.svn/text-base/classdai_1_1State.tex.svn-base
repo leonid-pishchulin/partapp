@@ -1,0 +1,75 @@
+\hypertarget{classdai_1_1State}{
+\section{dai::State Class Reference}
+\label{classdai_1_1State}\index{dai::State@{dai::State}}
+}
+{\tt \#include $<$dai/index.h$>$}
+
+
+
+\subsection{Detailed Description}
+Contains the joint state of variables within a \hyperlink{classdai_1_1VarSet}{VarSet} and useful things to do with this information. 
+
+This is very similar to a \hyperlink{classdai_1_1MultiFor}{MultiFor}, but tailored for Vars and Varsets. \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1State_ab03f6a5dc8d23f79e0966698f783178}{
+\hyperlink{classdai_1_1State_ab03f6a5dc8d23f79e0966698f783178}{State} ()}
+\label{classdai_1_1State_ab03f6a5dc8d23f79e0966698f783178}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1State_7c0fe7267ffd7c530283f2444112a162}{
+\hyperlink{classdai_1_1State_7c0fe7267ffd7c530283f2444112a162}{State} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&vs)}
+\label{classdai_1_1State_7c0fe7267ffd7c530283f2444112a162}
+
+\begin{CompactList}\small\item\em Initialize from \hyperlink{classdai_1_1VarSet}{VarSet}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1State_4ab3583f63942a65c969f4195b508b5b}{
+\hyperlink{classdai_1_1State_4ab3583f63942a65c969f4195b508b5b}{State} (const \hyperlink{classdai_1_1State}{State} \&x)}
+\label{classdai_1_1State_4ab3583f63942a65c969f4195b508b5b}
+
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1State_433ced7a70001f4905404c31f09ca9da}{
+\hyperlink{classdai_1_1State}{State} \& \hyperlink{classdai_1_1State_433ced7a70001f4905404c31f09ca9da}{operator=} (const \hyperlink{classdai_1_1State}{State} \&x)}
+\label{classdai_1_1State_433ced7a70001f4905404c31f09ca9da}
+
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1State_24d846f8b341073a44191e71b14df219}{
+\hyperlink{classdai_1_1State_24d846f8b341073a44191e71b14df219}{operator size\_\-t} () const }
+\label{classdai_1_1State_24d846f8b341073a44191e71b14df219}
+
+\begin{CompactList}\small\item\em Return linear state. \item\end{CompactList}\item 
+size\_\-t \hyperlink{classdai_1_1State_9d4d70438065731f337963da7bff7e61}{operator()} (const \hyperlink{classdai_1_1Var}{Var} \&n) const 
+\item 
+size\_\-t \hyperlink{classdai_1_1State_475a14df77520317788c13a3386c3e16}{operator()} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&vs) const 
+\item 
+\hypertarget{classdai_1_1State_e85f3b76bd05070b75b49fd020f4bff6}{
+void \hyperlink{classdai_1_1State_e85f3b76bd05070b75b49fd020f4bff6}{operator++} (int)}
+\label{classdai_1_1State_e85f3b76bd05070b75b49fd020f4bff6}
+
+\begin{CompactList}\small\item\em Postfix increment operator. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1State_08f7e2c1906e32e95dbad09ad26369d2}{
+bool \hyperlink{classdai_1_1State_08f7e2c1906e32e95dbad09ad26369d2}{valid} () const }
+\label{classdai_1_1State_08f7e2c1906e32e95dbad09ad26369d2}
+
+\begin{CompactList}\small\item\em Returns true if the current state is valid. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdai_1_1State_9d4d70438065731f337963da7bff7e61}{
+\index{dai::State@{dai::State}!operator()@{operator()}}
+\index{operator()@{operator()}!dai::State@{dai::State}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t dai::State::operator() (const {\bf Var} \& {\em n}) const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1State_9d4d70438065731f337963da7bff7e61}
+
+
+Return state of variable n, or zero if n is not in this \hyperlink{classdai_1_1State}{State} \hypertarget{classdai_1_1State_475a14df77520317788c13a3386c3e16}{
+\index{dai::State@{dai::State}!operator()@{operator()}}
+\index{operator()@{operator()}!dai::State@{dai::State}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t dai::State::operator() (const {\bf VarSet} \& {\em vs}) const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1State_475a14df77520317788c13a3386c3e16}
+
+
+Return linear state of variables in varset, setting them to zero if they are not in this \hyperlink{classdai_1_1State}{State} 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{index_8h}{index.h}\end{CompactItemize}

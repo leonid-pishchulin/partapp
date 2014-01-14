@@ -1,0 +1,32 @@
+\hypertarget{index_8h}{
+\section{include/dai/index.h File Reference}
+\label{index_8h}\index{include/dai/index.h@{include/dai/index.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines the IndexFor, MultiFor, Permute and State classes. 
+
+
+
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$algorithm$>$}\par
+{\tt \#include $<$map$>$}\par
+{\tt \#include $<$cassert$>$}\par
+{\tt \#include $<$dai/varset.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1IndexFor}{dai::IndexFor}
+\begin{CompactList}\small\item\em Tool for looping over the states of several variables. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1MultiFor}{dai::MultiFor}
+\begin{CompactList}\small\item\em \hyperlink{classdai_1_1MultiFor}{MultiFor} makes it easy to perform a dynamic number of nested for loops. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Permute}{dai::Permute}
+\begin{CompactList}\small\item\em Tool for calculating permutations of multiple indices. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1State}{dai::State}
+\begin{CompactList}\small\item\em Contains the joint state of variables within a \hyperlink{classdai_1_1VarSet}{VarSet} and useful things to do with this information. \item\end{CompactList}\end{CompactItemize}

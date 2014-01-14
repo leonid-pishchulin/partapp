@@ -1,0 +1,276 @@
+\hypertarget{classdai_1_1BipartiteGraph}{
+\section{dai::BipartiteGraph Class Reference}
+\label{classdai_1_1BipartiteGraph}\index{dai::BipartiteGraph@{dai::BipartiteGraph}}
+}
+{\tt \#include $<$dai/bipgraph.h$>$}
+
+
+
+\subsection{Detailed Description}
+Represents the neighborhood structure of nodes in a bipartite graph. 
+
+A bipartite graph has two types of nodes: type 1 and type 2. Edges can occur only between nodes of different type. Nodes are indexed by an unsigned integer, edges are indexed as a pair of unsigned integers, where the pair (a,b) means the b'th neighbor of the a'th node.
+
+The \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} stores for each node of type 1 a vector of \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} structures, where each \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} corresponds to a neighboring node of type 2. In addition, each node of type 2 stores a vector of \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} structures describing its neighboring nodes of type 1. \subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{
+typedef std::vector$<$ \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} $>$ \hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{Neighbors}}
+\label{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}
+
+\begin{CompactList}\small\item\em Describes the neighbors of some node. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_ff511d0eba0fd2956c08b602029ba95f}{
+typedef std::pair$<$ size\_\-t, size\_\-t $>$ \hyperlink{classdai_1_1BipartiteGraph_ff511d0eba0fd2956c08b602029ba95f}{Edge}}
+\label{classdai_1_1BipartiteGraph_ff511d0eba0fd2956c08b602029ba95f}
+
+\begin{CompactList}\small\item\em Used as index of an edge: an Edge(a,b) corresponds to the edge between the a'th node and its b'th neighbor (it depends on the context whether the first node (with index a) is of type 1 or of type 2). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1BipartiteGraph_24760961ac18ba4de4946d234690d1e0}{
+\hyperlink{classdai_1_1BipartiteGraph_24760961ac18ba4de4946d234690d1e0}{BipartiteGraph} ()}
+\label{classdai_1_1BipartiteGraph_24760961ac18ba4de4946d234690d1e0}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_eb6c18311ee1deb3919cdfad5b96665b}{
+\hyperlink{classdai_1_1BipartiteGraph_eb6c18311ee1deb3919cdfad5b96665b}{BipartiteGraph} (const \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} \&x)}
+\label{classdai_1_1BipartiteGraph_eb6c18311ee1deb3919cdfad5b96665b}
+
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_f20232826cc9b4270c067d93c52f9ec7}{
+\hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} \& \hyperlink{classdai_1_1BipartiteGraph_f20232826cc9b4270c067d93c52f9ec7}{operator=} (const \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} \&x)}
+\label{classdai_1_1BipartiteGraph_f20232826cc9b4270c067d93c52f9ec7}
+
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+{\footnotesize template$<$typename EdgeInputIterator$>$ }\\\hyperlink{classdai_1_1BipartiteGraph_b48a67ea51b1f64ec9859cc8b4676392}{BipartiteGraph} (size\_\-t nr1, size\_\-t nr2, EdgeInputIterator begin, EdgeInputIterator end)
+\begin{CompactList}\small\item\em Constructs \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} from a range of edges. \item\end{CompactList}\item 
+{\footnotesize template$<$typename EdgeInputIterator$>$ }\\void \hyperlink{classdai_1_1BipartiteGraph_a7d341de3d8d9d42f1af17759ae6c9f2}{construct} (size\_\-t nr1, size\_\-t nr2, EdgeInputIterator begin, EdgeInputIterator end)
+\begin{CompactList}\small\item\em (Re)constructs \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} from a range of edges. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_8d211a9092a4730b814351f7506bfc53}{
+const \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1BipartiteGraph_8d211a9092a4730b814351f7506bfc53}{nb1} (size\_\-t i1, size\_\-t \_\-i2) const }
+\label{classdai_1_1BipartiteGraph_8d211a9092a4730b814351f7506bfc53}
+
+\begin{CompactList}\small\item\em Returns constant reference to the \_\-i2'th neighbor of node i1 of type 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_31521b0d18789c5657f754eb01ba34f7}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1BipartiteGraph_31521b0d18789c5657f754eb01ba34f7}{nb1} (size\_\-t i1, size\_\-t \_\-i2)}
+\label{classdai_1_1BipartiteGraph_31521b0d18789c5657f754eb01ba34f7}
+
+\begin{CompactList}\small\item\em Returns reference to the \_\-i2'th neighbor of node i1 of type 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_427276f5d42f52d8d15130e2aa8a66f2}{
+const \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1BipartiteGraph_427276f5d42f52d8d15130e2aa8a66f2}{nb2} (size\_\-t i2, size\_\-t \_\-i1) const }
+\label{classdai_1_1BipartiteGraph_427276f5d42f52d8d15130e2aa8a66f2}
+
+\begin{CompactList}\small\item\em Returns constant reference to the \_\-i1'th neighbor of node i2 of type 2. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_8eb5a48306adbbef1b42b498af33005b}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1BipartiteGraph_8eb5a48306adbbef1b42b498af33005b}{nb2} (size\_\-t i2, size\_\-t \_\-i1)}
+\label{classdai_1_1BipartiteGraph_8eb5a48306adbbef1b42b498af33005b}
+
+\begin{CompactList}\small\item\em Returns reference to the \_\-i1'th neighbor of node i2 of type 2. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_a8906ee3564e0ffc3d518d817fe36ac2}{
+const \hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{Neighbors} \& \hyperlink{classdai_1_1BipartiteGraph_a8906ee3564e0ffc3d518d817fe36ac2}{nb1} (size\_\-t i1) const }
+\label{classdai_1_1BipartiteGraph_a8906ee3564e0ffc3d518d817fe36ac2}
+
+\begin{CompactList}\small\item\em Returns constant reference to all neighbors of node i1 of type 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_1511fb897bd450c8b4e8f099d8916b0e}{
+\hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{Neighbors} \& \hyperlink{classdai_1_1BipartiteGraph_1511fb897bd450c8b4e8f099d8916b0e}{nb1} (size\_\-t i1)}
+\label{classdai_1_1BipartiteGraph_1511fb897bd450c8b4e8f099d8916b0e}
+
+\begin{CompactList}\small\item\em Returns reference to all neighbors of node of i1 type 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_893a3b6a3b8f2df064335c2a10ebce45}{
+const \hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{Neighbors} \& \hyperlink{classdai_1_1BipartiteGraph_893a3b6a3b8f2df064335c2a10ebce45}{nb2} (size\_\-t i2) const }
+\label{classdai_1_1BipartiteGraph_893a3b6a3b8f2df064335c2a10ebce45}
+
+\begin{CompactList}\small\item\em Returns constant reference to all neighbors of node i2 of type 2. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_993a5ebee09b03f48e138fa3fcfe7c59}{
+\hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{Neighbors} \& \hyperlink{classdai_1_1BipartiteGraph_993a5ebee09b03f48e138fa3fcfe7c59}{nb2} (size\_\-t i2)}
+\label{classdai_1_1BipartiteGraph_993a5ebee09b03f48e138fa3fcfe7c59}
+
+\begin{CompactList}\small\item\em Returns reference to all neighbors of node i2 of type 2. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_02f1edca0601f7b9b3cadd19159cbfd2}{
+size\_\-t \hyperlink{classdai_1_1BipartiteGraph_02f1edca0601f7b9b3cadd19159cbfd2}{nr1} () const }
+\label{classdai_1_1BipartiteGraph_02f1edca0601f7b9b3cadd19159cbfd2}
+
+\begin{CompactList}\small\item\em Returns number of nodes of type 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_476ff8dc5b1306ecd70cf6517c323e13}{
+size\_\-t \hyperlink{classdai_1_1BipartiteGraph_476ff8dc5b1306ecd70cf6517c323e13}{nr2} () const }
+\label{classdai_1_1BipartiteGraph_476ff8dc5b1306ecd70cf6517c323e13}
+
+\begin{CompactList}\small\item\em Returns number of nodes of type 2. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_b19b34aa36e52897d4d3e554902ec02c}{
+size\_\-t \hyperlink{classdai_1_1BipartiteGraph_b19b34aa36e52897d4d3e554902ec02c}{nrEdges} () const }
+\label{classdai_1_1BipartiteGraph_b19b34aa36e52897d4d3e554902ec02c}
+
+\begin{CompactList}\small\item\em Calculates the number of edges, using O(\hyperlink{classdai_1_1BipartiteGraph_02f1edca0601f7b9b3cadd19159cbfd2}{nr1()}) time. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_3ae6385791a1a89ad14512c2ada59ece}{
+void \hyperlink{classdai_1_1BipartiteGraph_3ae6385791a1a89ad14512c2ada59ece}{add1} ()}
+\label{classdai_1_1BipartiteGraph_3ae6385791a1a89ad14512c2ada59ece}
+
+\begin{CompactList}\small\item\em Adds a node of type 1 without neighbors. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_10188a609f7356eb6ded1e125e736a20}{
+void \hyperlink{classdai_1_1BipartiteGraph_10188a609f7356eb6ded1e125e736a20}{add2} ()}
+\label{classdai_1_1BipartiteGraph_10188a609f7356eb6ded1e125e736a20}
+
+\begin{CompactList}\small\item\em Adds a node of type 2 without neighbors. \item\end{CompactList}\item 
+{\footnotesize template$<$typename NodeInputIterator$>$ }\\void \hyperlink{classdai_1_1BipartiteGraph_a22c2923eed74e85fbed6ccbe884649a}{add1} (NodeInputIterator begin, NodeInputIterator end, size\_\-t sizeHint=0)
+\begin{CompactList}\small\item\em Adds a node of type 1, with neighbors specified by a range of indices of nodes of type 2. \item\end{CompactList}\item 
+{\footnotesize template$<$typename NodeInputIterator$>$ }\\void \hyperlink{classdai_1_1BipartiteGraph_3c52eb7a2147cec8494e2bcfc9f0d68f}{add2} (NodeInputIterator begin, NodeInputIterator end, size\_\-t sizeHint=0)
+\begin{CompactList}\small\item\em Adds a node of type 2, with neighbors specified by a range of indices of nodes of type 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_8e7b3b2053f3e1e33c57e3373a78e2fa}{
+void \hyperlink{classdai_1_1BipartiteGraph_8e7b3b2053f3e1e33c57e3373a78e2fa}{erase1} (size\_\-t n1)}
+\label{classdai_1_1BipartiteGraph_8e7b3b2053f3e1e33c57e3373a78e2fa}
+
+\begin{CompactList}\small\item\em Removes node n1 of type 1 and all incident edges. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_0c00ea323841f04187f9f7ac82a413fa}{
+void \hyperlink{classdai_1_1BipartiteGraph_0c00ea323841f04187f9f7ac82a413fa}{erase2} (size\_\-t n2)}
+\label{classdai_1_1BipartiteGraph_0c00ea323841f04187f9f7ac82a413fa}
+
+\begin{CompactList}\small\item\em Removes node n2 of type 2 and all incident edges. \item\end{CompactList}\item 
+void \hyperlink{classdai_1_1BipartiteGraph_22b2e8fbbb2625f15542f6882c7675c4}{addEdge} (size\_\-t n1, size\_\-t n2, bool check=true)
+\begin{CompactList}\small\item\em Adds an edge between node n1 of type 1 and node n2 of type 2. \item\end{CompactList}\item 
+std::vector$<$ size\_\-t $>$ \hyperlink{classdai_1_1BipartiteGraph_841e97d3aaa891145de79eff8f2dbf72}{delta1} (size\_\-t n1, bool include=false) const 
+\begin{CompactList}\small\item\em Calculates second-order neighbors (i.e., neighbors of neighbors) of node n1 of type 1. \item\end{CompactList}\item 
+std::vector$<$ size\_\-t $>$ \hyperlink{classdai_1_1BipartiteGraph_9adf127b6ebe932a9e6ef6fba7c119eb}{delta2} (size\_\-t n2, bool include=false) const 
+\begin{CompactList}\small\item\em Calculates second-order neighbors (i.e., neighbors of neighbors) of node n2 of type 2. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_5b9603894129712076d6d8e59708f422}{
+bool \hyperlink{classdai_1_1BipartiteGraph_5b9603894129712076d6d8e59708f422}{isConnected} () const }
+\label{classdai_1_1BipartiteGraph_5b9603894129712076d6d8e59708f422}
+
+\begin{CompactList}\small\item\em Returns true if the graph is connected. \item\end{CompactList}\item 
+bool \hyperlink{classdai_1_1BipartiteGraph_568780302fd36f073e8d29a5118e6f71}{isTree} () const 
+\begin{CompactList}\small\item\em Returns true if the graph is a tree, i.e., if it is singly connected and connected. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1BipartiteGraph_0137a4a7aa59c7c250ec9c053b323103}{
+void \hyperlink{classdai_1_1BipartiteGraph_0137a4a7aa59c7c250ec9c053b323103}{printDot} (std::ostream \&os) const }
+\label{classdai_1_1BipartiteGraph_0137a4a7aa59c7c250ec9c053b323103}
+
+\begin{CompactList}\small\item\em Writes this \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} to an output stream in GraphViz .dot syntax. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \textbf{levelType}
+\begin{CompactList}\small\item\em Used internally by \hyperlink{classdai_1_1BipartiteGraph_568780302fd36f073e8d29a5118e6f71}{isTree()}. \item\end{CompactList}\item 
+struct \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor}
+\begin{CompactList}\small\item\em Describes a neighboring node of some other node in a \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph}. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdai_1_1BipartiteGraph_b48a67ea51b1f64ec9859cc8b4676392}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!BipartiteGraph@{BipartiteGraph}}
+\index{BipartiteGraph@{BipartiteGraph}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[BipartiteGraph]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename EdgeInputIterator$>$ dai::BipartiteGraph::BipartiteGraph (size\_\-t {\em nr1}, \/  size\_\-t {\em nr2}, \/  EdgeInputIterator {\em begin}, \/  EdgeInputIterator {\em end})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1BipartiteGraph_b48a67ea51b1f64ec9859cc8b4676392}
+
+
+Constructs \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} from a range of edges. 
+
+\begin{Desc}
+\item[Template Parameters:]
+\begin{description}
+\item[{\em EdgeInputIterator}]Iterator with value\_\-type Edge. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nr1}]The number of nodes of type 1. \item[{\em nr2}]The number of nodes of type 2. \item[{\em begin}]Points to the first Edge. \item[{\em end}]Points just beyond the last Edge. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdai_1_1BipartiteGraph_a7d341de3d8d9d42f1af17759ae6c9f2}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!construct@{construct}}
+\index{construct@{construct}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[construct]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename EdgeInputIterator$>$ void dai::BipartiteGraph::construct (size\_\-t {\em nr1}, \/  size\_\-t {\em nr2}, \/  EdgeInputIterator {\em begin}, \/  EdgeInputIterator {\em end})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1BipartiteGraph_a7d341de3d8d9d42f1af17759ae6c9f2}
+
+
+(Re)constructs \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} from a range of edges. 
+
+\begin{Desc}
+\item[Template Parameters:]
+\begin{description}
+\item[{\em EdgeInputIterator}]Iterator with value\_\-type Edge. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nr1}]The number of nodes of type 1. \item[{\em nr2}]The number of nodes of type 2. \item[{\em begin}]Points to the first Edge. \item[{\em end}]Points just beyond the last Edge. \end{description}
+\end{Desc}
+\hypertarget{classdai_1_1BipartiteGraph_a22c2923eed74e85fbed6ccbe884649a}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!add1@{add1}}
+\index{add1@{add1}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[add1]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename NodeInputIterator$>$ void dai::BipartiteGraph::add1 (NodeInputIterator {\em begin}, \/  NodeInputIterator {\em end}, \/  size\_\-t {\em sizeHint} = {\tt 0})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1BipartiteGraph_a22c2923eed74e85fbed6ccbe884649a}
+
+
+Adds a node of type 1, with neighbors specified by a range of indices of nodes of type 2. 
+
+\begin{Desc}
+\item[Template Parameters:]
+\begin{description}
+\item[{\em NodeInputIterator}]Iterator with value\_\-type size\_\-t, corresponding to the indices of nodes of type 2 that should become neighbors of the added node. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em begin}]Points to the index of the first neighbor. \item[{\em end}]Points just beyond the index of the last neighbor. \item[{\em sizeHint}]For improved efficiency, the size of the range may be specified by sizeHint. \end{description}
+\end{Desc}
+\hypertarget{classdai_1_1BipartiteGraph_3c52eb7a2147cec8494e2bcfc9f0d68f}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!add2@{add2}}
+\index{add2@{add2}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[add2]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename NodeInputIterator$>$ void dai::BipartiteGraph::add2 (NodeInputIterator {\em begin}, \/  NodeInputIterator {\em end}, \/  size\_\-t {\em sizeHint} = {\tt 0})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1BipartiteGraph_3c52eb7a2147cec8494e2bcfc9f0d68f}
+
+
+Adds a node of type 2, with neighbors specified by a range of indices of nodes of type 1. 
+
+\begin{Desc}
+\item[Template Parameters:]
+\begin{description}
+\item[{\em NodeInputIterator}]Iterator with value\_\-type size\_\-t, corresponding to the indices of nodes of type 1 that should become neighbors of the added node. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em begin}]Points to the index of the first neighbor. \item[{\em end}]Points just beyond the index of the last neighbor. \item[{\em sizeHint}]For improved efficiency, the size of the range may be specified by sizeHint. \end{description}
+\end{Desc}
+\hypertarget{classdai_1_1BipartiteGraph_22b2e8fbbb2625f15542f6882c7675c4}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[addEdge]{\setlength{\rightskip}{0pt plus 5cm}void dai::BipartiteGraph::addEdge (size\_\-t {\em n1}, \/  size\_\-t {\em n2}, \/  bool {\em check} = {\tt true})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1BipartiteGraph_22b2e8fbbb2625f15542f6882c7675c4}
+
+
+Adds an edge between node n1 of type 1 and node n2 of type 2. 
+
+If check == true, only adds the edge if it does not exist already. \hypertarget{classdai_1_1BipartiteGraph_841e97d3aaa891145de79eff8f2dbf72}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!delta1@{delta1}}
+\index{delta1@{delta1}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[delta1]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ size\_\-t $>$ dai::BipartiteGraph::delta1 (size\_\-t {\em n1}, \/  bool {\em include} = {\tt false}) const}}
+\label{classdai_1_1BipartiteGraph_841e97d3aaa891145de79eff8f2dbf72}
+
+
+Calculates second-order neighbors (i.e., neighbors of neighbors) of node n1 of type 1. 
+
+If include == true, includes n1 itself, otherwise excludes n1. \hypertarget{classdai_1_1BipartiteGraph_9adf127b6ebe932a9e6ef6fba7c119eb}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!delta2@{delta2}}
+\index{delta2@{delta2}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[delta2]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ size\_\-t $>$ dai::BipartiteGraph::delta2 (size\_\-t {\em n2}, \/  bool {\em include} = {\tt false}) const}}
+\label{classdai_1_1BipartiteGraph_9adf127b6ebe932a9e6ef6fba7c119eb}
+
+
+Calculates second-order neighbors (i.e., neighbors of neighbors) of node n2 of type 2. 
+
+If include == true, includes n2 itself, otherwise excludes n2. \hypertarget{classdai_1_1BipartiteGraph_568780302fd36f073e8d29a5118e6f71}{
+\index{dai::BipartiteGraph@{dai::BipartiteGraph}!isTree@{isTree}}
+\index{isTree@{isTree}!dai::BipartiteGraph@{dai::BipartiteGraph}}
+\subsubsection[isTree]{\setlength{\rightskip}{0pt plus 5cm}bool dai::BipartiteGraph::isTree () const}}
+\label{classdai_1_1BipartiteGraph_568780302fd36f073e8d29a5118e6f71}
+
+
+Returns true if the graph is a tree, i.e., if it is singly connected and connected. 
+
+This is equivalent to whether for each pair of nodes in the graph, there exists a unique path in the graph that starts at the first and ends at the second node. 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{bipgraph_8h}{bipgraph.h}\item 
+src/bipgraph.cpp\end{CompactItemize}

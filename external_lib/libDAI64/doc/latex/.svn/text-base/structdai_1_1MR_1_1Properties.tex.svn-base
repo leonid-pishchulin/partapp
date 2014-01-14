@@ -1,0 +1,46 @@
+\hypertarget{structdai_1_1MR_1_1Properties}{
+\section{dai::MR::Properties Struct Reference}
+\label{structdai_1_1MR_1_1Properties}\index{dai::MR::Properties@{dai::MR::Properties}}
+}
+{\tt \#include $<$dai/mr.h$>$}
+
+
+
+\subsection{Detailed Description}
+Parameters of this inference algorithm. \subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+size\_\-t \hyperlink{structdai_1_1MR_1_1Properties_e0281396e1ee677e1b6ae15f9ae67f99}{verbose}
+\begin{CompactList}\small\item\em Enumeration of different types of update equations. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1MR_1_1Properties_94665674b559c260c67d45688b829bfe}{
+double \hyperlink{structdai_1_1MR_1_1Properties_94665674b559c260c67d45688b829bfe}{tol}}
+\label{structdai_1_1MR_1_1Properties_94665674b559c260c67d45688b829bfe}
+
+\begin{CompactList}\small\item\em Tolerance. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1MR_1_1Properties_f1e2899da2779d1b0d7640f87d899f17}{
+UpdateType \hyperlink{structdai_1_1MR_1_1Properties_f1e2899da2779d1b0d7640f87d899f17}{updates}}
+\label{structdai_1_1MR_1_1Properties_f1e2899da2779d1b0d7640f87d899f17}
+
+\begin{CompactList}\small\item\em Update equations. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1MR_1_1Properties_5c400e8635d85478270d653a8a7f351b}{
+InitType \hyperlink{structdai_1_1MR_1_1Properties_5c400e8635d85478270d653a8a7f351b}{inits}}
+\label{structdai_1_1MR_1_1Properties_5c400e8635d85478270d653a8a7f351b}
+
+\begin{CompactList}\small\item\em How to initialize the cavity correlations. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdai_1_1MR_1_1Properties_e0281396e1ee677e1b6ae15f9ae67f99}{
+\index{dai::MR::Properties@{dai::MR::Properties}!verbose@{verbose}}
+\index{verbose@{verbose}!dai::MR::Properties@{dai::MR::Properties}}
+\subsubsection[verbose]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf dai::MR::Properties::verbose}}}
+\label{structdai_1_1MR_1_1Properties_e0281396e1ee677e1b6ae15f9ae67f99}
+
+
+Enumeration of different types of update equations. 
+
+Enumeration of different ways of initializing the cavity correlations Verbosity 
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{mr_8h}{mr.h}\end{CompactItemize}

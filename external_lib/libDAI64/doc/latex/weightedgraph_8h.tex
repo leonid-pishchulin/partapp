@@ -1,0 +1,69 @@
+\hypertarget{weightedgraph_8h}{
+\section{include/dai/weightedgraph.h File Reference}
+\label{weightedgraph_8h}\index{include/dai/weightedgraph.h@{include/dai/weightedgraph.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines some utility functions for weighted graphs. 
+
+
+
+{\tt \#include $<$climits$>$}\par
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$map$>$}\par
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$set$>$}\par
+{\tt \#include $<$cassert$>$}\par
+{\tt \#include $<$limits$>$}\par
+{\tt \#include $<$boost/graph/adjacency\_\-list.hpp$>$}\par
+{\tt \#include $<$boost/graph/prim\_\-minimum\_\-spanning\_\-tree.hpp$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1DEdge}{dai::DEdge}
+\begin{CompactList}\small\item\em Represents a directed edge pointing from n1 to n2. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1UEdge}{dai::UEdge}
+\begin{CompactList}\small\item\em Undirected edge between nodes n1 and n2. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1WeightedGraph}{dai::WeightedGraph$<$ T $>$}
+\begin{CompactList}\small\item\em Represents an undirected weighted graph, with weights of type T. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_ee930c2594ad57112ff5e230c4ca3391}{
+typedef std::vector$<$ UEdge $>$ \hyperlink{namespacedai_ee930c2594ad57112ff5e230c4ca3391}{dai::UEdgeVec}}
+\label{namespacedai_ee930c2594ad57112ff5e230c4ca3391}
+
+\begin{CompactList}\small\item\em Vector of \hyperlink{classdai_1_1UEdge}{UEdge}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{
+typedef std::vector$<$ DEdge $>$ \hyperlink{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{dai::DEdgeVec}}
+\label{namespacedai_e7764251ab4d4b2d4fbec214eac83079}
+
+\begin{CompactList}\small\item\em Vector of \hyperlink{classdai_1_1DEdge}{DEdge}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_dfcfd53771d59db79ddd826928e76400}{
+typedef std::set$<$ UEdge $>$ \hyperlink{namespacedai_dfcfd53771d59db79ddd826928e76400}{dai::Graph}}
+\label{namespacedai_dfcfd53771d59db79ddd826928e76400}
+
+\begin{CompactList}\small\item\em Represents an undirected graph. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\DEdgeVec \hyperlink{namespacedai_7ede01daa445869cce29730d0cc29d74}{dai::MinSpanningTreePrims} (const WeightedGraph$<$ T $>$ \&G)
+\begin{CompactList}\small\item\em Uses Prim's algorithm to construct a minimal spanning tree from the (positively) weighted graph G. \item\end{CompactList}\item 
+{\footnotesize template$<$typename T$>$ }\\DEdgeVec \hyperlink{namespacedai_461d882462bc6625c3874e1481fd9d68}{dai::MaxSpanningTreePrims} (const WeightedGraph$<$ T $>$ \&Graph)
+\begin{CompactList}\small\item\em Use Prim's algorithm to construct a minimal spanning tree from the (positively) weighted graph G. \item\end{CompactList}\item 
+\hypertarget{namespacedai_602bda76af8301b981bc9147793d72e0}{
+DEdgeVec \hyperlink{namespacedai_602bda76af8301b981bc9147793d72e0}{dai::GrowRootedTree} (const Graph \&T, size\_\-t Root)}
+\label{namespacedai_602bda76af8301b981bc9147793d72e0}
+
+\begin{CompactList}\small\item\em Constructs a rooted tree from a tree and a root. \item\end{CompactList}\item 
+\hypertarget{namespacedai_7e19e088006a5e91e0d34d26cf6f3a8d}{
+UEdgeVec \hyperlink{namespacedai_7e19e088006a5e91e0d34d26cf6f3a8d}{dai::RandomDRegularGraph} (size\_\-t N, size\_\-t d)}
+\label{namespacedai_7e19e088006a5e91e0d34d26cf6f3a8d}
+
+\begin{CompactList}\small\item\em Constructs a random undirected graph of N nodes, where each node has connectivity d. \item\end{CompactList}\end{CompactItemize}

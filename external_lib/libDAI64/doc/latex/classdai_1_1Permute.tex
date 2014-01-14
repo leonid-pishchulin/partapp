@@ -1,0 +1,49 @@
+\hypertarget{classdai_1_1Permute}{
+\section{dai::Permute Class Reference}
+\label{classdai_1_1Permute}\index{dai::Permute@{dai::Permute}}
+}
+{\tt \#include $<$dai/index.h$>$}
+
+
+
+\subsection{Detailed Description}
+Tool for calculating permutations of multiple indices. \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1Permute_138f021554272c9601e4cf6a25e6f62b}{
+\hyperlink{classdai_1_1Permute_138f021554272c9601e4cf6a25e6f62b}{Permute} ()}
+\label{classdai_1_1Permute_138f021554272c9601e4cf6a25e6f62b}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Permute_d1af25b04480a33721e2f56e88cb0e25}{
+\hyperlink{classdai_1_1Permute_d1af25b04480a33721e2f56e88cb0e25}{Permute} (const std::vector$<$ size\_\-t $>$ \&d, const std::vector$<$ size\_\-t $>$ \&sigma)}
+\label{classdai_1_1Permute_d1af25b04480a33721e2f56e88cb0e25}
+
+\begin{CompactList}\small\item\em Initialize from vector of index dimensions and permutation sigma. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Permute_39b079d34fee292434e15faf136fd506}{
+\hyperlink{classdai_1_1Permute_39b079d34fee292434e15faf136fd506}{Permute} (const \hyperlink{classdai_1_1Permute}{Permute} \&x)}
+\label{classdai_1_1Permute_39b079d34fee292434e15faf136fd506}
+
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Permute_99e896b039f3b9f6b737ccecba7dfdb5}{
+\hyperlink{classdai_1_1Permute}{Permute} \& \hyperlink{classdai_1_1Permute_99e896b039f3b9f6b737ccecba7dfdb5}{operator=} (const \hyperlink{classdai_1_1Permute}{Permute} \&x)}
+\label{classdai_1_1Permute_99e896b039f3b9f6b737ccecba7dfdb5}
+
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+size\_\-t \hyperlink{classdai_1_1Permute_19b7ca5bdbac54ba1a812ab52e6f11aa}{convert\_\-linear\_\-index} (size\_\-t li)
+\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdai_1_1Permute_19b7ca5bdbac54ba1a812ab52e6f11aa}{
+\index{dai::Permute@{dai::Permute}!convert\_\-linear\_\-index@{convert\_\-linear\_\-index}}
+\index{convert\_\-linear\_\-index@{convert\_\-linear\_\-index}!dai::Permute@{dai::Permute}}
+\subsubsection[convert\_\-linear\_\-index]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t dai::Permute::convert\_\-linear\_\-index (size\_\-t {\em li})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1Permute_19b7ca5bdbac54ba1a812ab52e6f11aa}
+
+
+Converts the linear index li to a vector index corresponding with the dimensions in \_\-dims, permutes it according to sigma, and converts it back to a linear index according to the permuted dimensions. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{index_8h}{index.h}\end{CompactItemize}

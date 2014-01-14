@@ -1,0 +1,71 @@
+\hypertarget{structdai_1_1LC_1_1Properties}{
+\section{dai::LC::Properties Struct Reference}
+\label{structdai_1_1LC_1_1Properties}\index{dai::LC::Properties@{dai::LC::Properties}}
+}
+{\tt \#include $<$dai/lc.h$>$}
+
+
+
+\subsection{Detailed Description}
+Parameters of this inference algorithm. \subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+size\_\-t \hyperlink{structdai_1_1LC_1_1Properties_f36169e6a7ba3a27df32007bea3a42d9}{verbose}
+\begin{CompactList}\small\item\em Enumeration of possible ways to initialize the cavities. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_62730c262e688ac59512cf3018b5f4e8}{
+size\_\-t \hyperlink{structdai_1_1LC_1_1Properties_62730c262e688ac59512cf3018b5f4e8}{maxiter}}
+\label{structdai_1_1LC_1_1Properties_62730c262e688ac59512cf3018b5f4e8}
+
+\begin{CompactList}\small\item\em Maximum number of iterations. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_31e75ccf9a1fcb72af41fe3c7d336d98}{
+double \hyperlink{structdai_1_1LC_1_1Properties_31e75ccf9a1fcb72af41fe3c7d336d98}{tol}}
+\label{structdai_1_1LC_1_1Properties_31e75ccf9a1fcb72af41fe3c7d336d98}
+
+\begin{CompactList}\small\item\em Tolerance. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_f03789fceacde90d75ebe5f1b19eaafb}{
+bool \hyperlink{structdai_1_1LC_1_1Properties_f03789fceacde90d75ebe5f1b19eaafb}{reinit}}
+\label{structdai_1_1LC_1_1Properties_f03789fceacde90d75ebe5f1b19eaafb}
+
+\begin{CompactList}\small\item\em Complete or partial reinit of cavity graphs? \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_5a6aea1ff16d15198aad0392ed9b9110}{
+double \hyperlink{structdai_1_1LC_1_1Properties_5a6aea1ff16d15198aad0392ed9b9110}{damping}}
+\label{structdai_1_1LC_1_1Properties_5a6aea1ff16d15198aad0392ed9b9110}
+
+\begin{CompactList}\small\item\em Damping constant. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_76cb44f7bdd84b4d8fa0eb5b37d4d14d}{
+CavityType \hyperlink{structdai_1_1LC_1_1Properties_76cb44f7bdd84b4d8fa0eb5b37d4d14d}{cavity}}
+\label{structdai_1_1LC_1_1Properties_76cb44f7bdd84b4d8fa0eb5b37d4d14d}
+
+\begin{CompactList}\small\item\em How to initialize the cavities. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_771b51ab1d382bae136f76e6fcc9b481}{
+UpdateType \hyperlink{structdai_1_1LC_1_1Properties_771b51ab1d382bae136f76e6fcc9b481}{updates}}
+\label{structdai_1_1LC_1_1Properties_771b51ab1d382bae136f76e6fcc9b481}
+
+\begin{CompactList}\small\item\em What update schedule to use. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_8e4cbe17245261c2e6996edf3926365c}{
+std::string \hyperlink{structdai_1_1LC_1_1Properties_8e4cbe17245261c2e6996edf3926365c}{cavainame}}
+\label{structdai_1_1LC_1_1Properties_8e4cbe17245261c2e6996edf3926365c}
+
+\begin{CompactList}\small\item\em Name of the algorithm used to initialize the cavity distributions. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1LC_1_1Properties_276fd4fc9a94cf5dace3de93ceefc027}{
+\hyperlink{classdai_1_1PropertySet}{PropertySet} \hyperlink{structdai_1_1LC_1_1Properties_276fd4fc9a94cf5dace3de93ceefc027}{cavaiopts}}
+\label{structdai_1_1LC_1_1Properties_276fd4fc9a94cf5dace3de93ceefc027}
+
+\begin{CompactList}\small\item\em Parameters for the algorithm used to initialize the cavity distributions. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdai_1_1LC_1_1Properties_f36169e6a7ba3a27df32007bea3a42d9}{
+\index{dai::LC::Properties@{dai::LC::Properties}!verbose@{verbose}}
+\index{verbose@{verbose}!dai::LC::Properties@{dai::LC::Properties}}
+\subsubsection[verbose]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf dai::LC::Properties::verbose}}}
+\label{structdai_1_1LC_1_1Properties_f36169e6a7ba3a27df32007bea3a42d9}
+
+
+Enumeration of possible ways to initialize the cavities. 
+
+Enumeration of different update schedules Verbosity 
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{lc_8h}{lc.h}\end{CompactItemize}

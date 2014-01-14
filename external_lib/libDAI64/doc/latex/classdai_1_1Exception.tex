@@ -1,0 +1,48 @@
+\hypertarget{classdai_1_1Exception}{
+\section{dai::Exception Class Reference}
+\label{classdai_1_1Exception}\index{dai::Exception@{dai::Exception}}
+}
+{\tt \#include $<$dai/exceptions.h$>$}
+
+Inherits std::runtime\_\-error.
+
+
+
+\subsection{Detailed Description}
+Represents an exception (based on std::runtime\_\-error). \subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classdai_1_1Exception_39671dae0b9533d8ed596927160d023b}{codes} \{ \par
+\textbf{NOT\_\-IMPLEMENTED}, 
+\textbf{UNKNOWN\_\-DAI\_\-ALGORITHM}, 
+\textbf{UNKNOWN\_\-PROPERTY\_\-TYPE}, 
+\textbf{MALFORMED\_\-PROPERTY}, 
+\par
+\textbf{UNKNOWN\_\-ENUM\_\-VALUE}, 
+\textbf{CANNOT\_\-READ\_\-FILE}, 
+\textbf{CANNOT\_\-WRITE\_\-FILE}, 
+\textbf{INVALID\_\-FACTORGRAPH\_\-FILE}, 
+\par
+\textbf{NOT\_\-ALL\_\-PROPERTIES\_\-SPECIFIED}, 
+\textbf{MULTIPLE\_\-UNDO}, 
+\textbf{FACTORGRAPH\_\-NOT\_\-CONNECTED}, 
+\textbf{IMPOSSIBLE\_\-TYPECAST}, 
+\par
+\textbf{INTERNAL\_\-ERROR}, 
+\textbf{NUM\_\-ERRORS}
+ \}
+\begin{CompactList}\small\item\em Enumeration of exceptions used in libDAI. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1Exception_a10fe7cf9d3e20c5aae77f1892554236}{
+\hyperlink{classdai_1_1Exception_a10fe7cf9d3e20c5aae77f1892554236}{Exception} (size\_\-t code, const std::string \&msg=\char`\"{}\char`\"{})}
+\label{classdai_1_1Exception_a10fe7cf9d3e20c5aae77f1892554236}
+
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\end{CompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{exceptions_8h}{exceptions.h}\item 
+src/exceptions.cpp\end{CompactItemize}

@@ -1,0 +1,357 @@
+\hypertarget{classdai_1_1FactorGraph}{
+\section{dai::FactorGraph Class Reference}
+\label{classdai_1_1FactorGraph}\index{dai::FactorGraph@{dai::FactorGraph}}
+}
+{\tt \#include $<$dai/factorgraph.h$>$}
+
+Inheritance diagram for dai::FactorGraph::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classdai_1_1FactorGraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Represents a factor graph. 
+
+Both Bayesian Networks and Markov random fields can be represented in a unifying representation, called {\em factor graph\/} \mbox{[}\hyperlink{Bibliography_KFL01}{KFL01}\mbox{]}, implemented in libDAI by the \hyperlink{classdai_1_1FactorGraph}{FactorGraph} class.
+
+Consider a probability distribution over $N$ discrete random variables $x_0,x_1,\dots,x_N$ that factorizes as a product of factors, each of which depends on some subset of the variables: \[ P(x_0,x_1,\dots,x_N) = \frac{1}{Z} \prod_{I=0}^M f_I(x_I), \qquad Z = \sum_{x_0}\dots\sum_{x_N} \prod_{I=0}^M f_I(X_I). \] Each factor $f_I$ is a function from an associated subset of variables $X_I \subset \{x_0,x_1,\dots,x_N\}$ to the nonnegative real numbers.
+
+For a Bayesian network, each factor corresponds to a (conditional) probability table, whereas for a Markov random field, each factor corresponds to a maximal clique of the undirected graph.
+
+Factor graphs explicitly express the factorization structure of the corresponding probability distribution. \subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1FactorGraph_1552870151bb7f7a88b3120a777c1056}{
+typedef \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{BipartiteGraph::Neighbor} \hyperlink{classdai_1_1FactorGraph_1552870151bb7f7a88b3120a777c1056}{Neighbor}}
+\label{classdai_1_1FactorGraph_1552870151bb7f7a88b3120a777c1056}
+
+\begin{CompactList}\small\item\em Shorthand for \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{BipartiteGraph::Neighbor}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}{
+typedef \hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{BipartiteGraph::Neighbors} \hyperlink{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}{Neighbors}}
+\label{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}
+
+\begin{CompactList}\small\item\em Shorthand for \hyperlink{classdai_1_1BipartiteGraph_031237b607d2868b80052e71b4149b29}{BipartiteGraph::Neighbors}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_743243688f787418eff5352140980119}{
+typedef \hyperlink{classdai_1_1BipartiteGraph_ff511d0eba0fd2956c08b602029ba95f}{BipartiteGraph::Edge} \hyperlink{classdai_1_1FactorGraph_743243688f787418eff5352140980119}{Edge}}
+\label{classdai_1_1FactorGraph_743243688f787418eff5352140980119}
+
+\begin{CompactList}\small\item\em Shorthand for \hyperlink{classdai_1_1BipartiteGraph_ff511d0eba0fd2956c08b602029ba95f}{BipartiteGraph::Edge}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1FactorGraph_424fd4b5e9950b2510ff35e83e191a34}{
+\hyperlink{classdai_1_1FactorGraph_424fd4b5e9950b2510ff35e83e191a34}{FactorGraph} ()}
+\label{classdai_1_1FactorGraph_424fd4b5e9950b2510ff35e83e191a34}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_e71fa240259d15df26741197922ee821}{
+\hyperlink{classdai_1_1FactorGraph_e71fa240259d15df26741197922ee821}{FactorGraph} (const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&x)}
+\label{classdai_1_1FactorGraph_e71fa240259d15df26741197922ee821}
+
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_6a72c598cfdebb009de69ba269017ff1}{
+\hyperlink{classdai_1_1FactorGraph}{FactorGraph} \& \hyperlink{classdai_1_1FactorGraph_6a72c598cfdebb009de69ba269017ff1}{operator=} (const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&x)}
+\label{classdai_1_1FactorGraph_6a72c598cfdebb009de69ba269017ff1}
+
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_fd0bbc52192c65e207d721906e3e0a2b}{
+\hyperlink{classdai_1_1FactorGraph_fd0bbc52192c65e207d721906e3e0a2b}{FactorGraph} (const std::vector$<$ \hyperlink{classdai_1_1TFactor}{Factor} $>$ \&P)}
+\label{classdai_1_1FactorGraph_fd0bbc52192c65e207d721906e3e0a2b}
+
+\begin{CompactList}\small\item\em Constructs a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} from a vector of factors. \item\end{CompactList}\item 
+{\footnotesize template$<$typename FactorInputIterator, typename VarInputIterator$>$ }\\\hyperlink{classdai_1_1FactorGraph_15bdffc0b20cdfc99953b8e25e111059}{FactorGraph} (FactorInputIterator fact\_\-begin, FactorInputIterator fact\_\-end, VarInputIterator var\_\-begin, VarInputIterator var\_\-end, size\_\-t nr\_\-fact\_\-hint=0, size\_\-t nr\_\-var\_\-hint=0)
+\begin{CompactList}\small\item\em Constructs a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} from given factor and variable iterators. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_a61b15f74745e593f7b4e5bcda9ab469}{
+virtual \hyperlink{classdai_1_1FactorGraph_a61b15f74745e593f7b4e5bcda9ab469}{$\sim$FactorGraph} ()}
+\label{classdai_1_1FactorGraph_a61b15f74745e593f7b4e5bcda9ab469}
+
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_71544daf860d24d525f860f4151e621d}{
+virtual \hyperlink{classdai_1_1FactorGraph}{FactorGraph} $\ast$ \hyperlink{classdai_1_1FactorGraph_71544daf860d24d525f860f4151e621d}{clone} () const }
+\label{classdai_1_1FactorGraph_71544daf860d24d525f860f4151e621d}
+
+\begin{CompactList}\small\item\em Clone $\ast$this (virtual copy constructor). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_4fc50242fef17ae21a1b4b559478ee29}{
+virtual \hyperlink{classdai_1_1FactorGraph}{FactorGraph} $\ast$ \hyperlink{classdai_1_1FactorGraph_4fc50242fef17ae21a1b4b559478ee29}{create} () const }
+\label{classdai_1_1FactorGraph_4fc50242fef17ae21a1b4b559478ee29}
+
+\begin{CompactList}\small\item\em Create (virtual default constructor). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_87036afc568a8658dee9bff52f8fd3e1}{
+const \hyperlink{classdai_1_1Var}{Var} \& \hyperlink{classdai_1_1FactorGraph_87036afc568a8658dee9bff52f8fd3e1}{var} (size\_\-t i) const }
+\label{classdai_1_1FactorGraph_87036afc568a8658dee9bff52f8fd3e1}
+
+\begin{CompactList}\small\item\em Returns const reference to i'th variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_4e82ddbe1e2ca8a58bc7aec4d9fa61b6}{
+const std::vector$<$ \hyperlink{classdai_1_1Var}{Var} $>$ \& \hyperlink{classdai_1_1FactorGraph_4e82ddbe1e2ca8a58bc7aec4d9fa61b6}{vars} () const }
+\label{classdai_1_1FactorGraph_4e82ddbe1e2ca8a58bc7aec4d9fa61b6}
+
+\begin{CompactList}\small\item\em Returns const reference to all factors. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_4f73bace8b2ecd16654116467f38045b}{
+\hyperlink{classdai_1_1TFactor}{Factor} \& \hyperlink{classdai_1_1FactorGraph_4f73bace8b2ecd16654116467f38045b}{factor} (size\_\-t I)}
+\label{classdai_1_1FactorGraph_4f73bace8b2ecd16654116467f38045b}
+
+\begin{CompactList}\small\item\em Returns reference to I'th factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_9a930964b0d006bb0d6ace88fb1da481}{
+const \hyperlink{classdai_1_1TFactor}{Factor} \& \hyperlink{classdai_1_1FactorGraph_9a930964b0d006bb0d6ace88fb1da481}{factor} (size\_\-t I) const }
+\label{classdai_1_1FactorGraph_9a930964b0d006bb0d6ace88fb1da481}
+
+\begin{CompactList}\small\item\em Returns const reference to I'th factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_35030e580fdcab5abd877f0e0bd883d5}{
+const std::vector$<$ \hyperlink{classdai_1_1TFactor}{Factor} $>$ \& \hyperlink{classdai_1_1FactorGraph_35030e580fdcab5abd877f0e0bd883d5}{factors} () const }
+\label{classdai_1_1FactorGraph_35030e580fdcab5abd877f0e0bd883d5}
+
+\begin{CompactList}\small\item\em Returns const reference to all factors. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_107d707b4ef22d83f19c40989c227d5d}{
+size\_\-t \hyperlink{classdai_1_1FactorGraph_107d707b4ef22d83f19c40989c227d5d}{nrVars} () const }
+\label{classdai_1_1FactorGraph_107d707b4ef22d83f19c40989c227d5d}
+
+\begin{CompactList}\small\item\em Returns number of variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_de52f40e90ae438c985f9568811654a9}{
+size\_\-t \hyperlink{classdai_1_1FactorGraph_de52f40e90ae438c985f9568811654a9}{nrFactors} () const }
+\label{classdai_1_1FactorGraph_de52f40e90ae438c985f9568811654a9}
+
+\begin{CompactList}\small\item\em Returns number of factors. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_a1b94e2729ef0a941f6dbee1b7ea1b24}{
+size\_\-t \hyperlink{classdai_1_1FactorGraph_a1b94e2729ef0a941f6dbee1b7ea1b24}{nrEdges} () const }
+\label{classdai_1_1FactorGraph_a1b94e2729ef0a941f6dbee1b7ea1b24}
+
+\begin{CompactList}\small\item\em Calculates number of edges. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_dce52503905082b5288da10147358d03}{
+const \hyperlink{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}{Neighbors} \& \hyperlink{classdai_1_1FactorGraph_dce52503905082b5288da10147358d03}{nbV} (size\_\-t i) const }
+\label{classdai_1_1FactorGraph_dce52503905082b5288da10147358d03}
+
+\begin{CompactList}\small\item\em Provides read access to neighbors of variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_1b69b08da98de54b911cb8c1245d3622}{
+\hyperlink{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}{Neighbors} \& \hyperlink{classdai_1_1FactorGraph_1b69b08da98de54b911cb8c1245d3622}{nbV} (size\_\-t i)}
+\label{classdai_1_1FactorGraph_1b69b08da98de54b911cb8c1245d3622}
+
+\begin{CompactList}\small\item\em Provides full access to neighbors of variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_d3ae273e55d134fe0eb6ed67492953d7}{
+const \hyperlink{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}{Neighbors} \& \hyperlink{classdai_1_1FactorGraph_d3ae273e55d134fe0eb6ed67492953d7}{nbF} (size\_\-t I) const }
+\label{classdai_1_1FactorGraph_d3ae273e55d134fe0eb6ed67492953d7}
+
+\begin{CompactList}\small\item\em Provides read access to neighbors of factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_10914ba06b0c939cc5d1f3fe7a1c27c2}{
+\hyperlink{classdai_1_1FactorGraph_326942db90fe2dbdf99041d5d966019e}{Neighbors} \& \hyperlink{classdai_1_1FactorGraph_10914ba06b0c939cc5d1f3fe7a1c27c2}{nbF} (size\_\-t I)}
+\label{classdai_1_1FactorGraph_10914ba06b0c939cc5d1f3fe7a1c27c2}
+
+\begin{CompactList}\small\item\em Provides full access to neighbors of factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_cffe2211b3a588c92cdabe40071f0c77}{
+const \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1FactorGraph_cffe2211b3a588c92cdabe40071f0c77}{nbV} (size\_\-t i, size\_\-t \_\-I) const }
+\label{classdai_1_1FactorGraph_cffe2211b3a588c92cdabe40071f0c77}
+
+\begin{CompactList}\small\item\em Provides read access to neighbor of variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_06ee72e5307fb2aa1af3cfcfec1fc449}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1FactorGraph_06ee72e5307fb2aa1af3cfcfec1fc449}{nbV} (size\_\-t i, size\_\-t \_\-I)}
+\label{classdai_1_1FactorGraph_06ee72e5307fb2aa1af3cfcfec1fc449}
+
+\begin{CompactList}\small\item\em Provides full access to neighbor of variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_882dbd45fd323d8020df45c0d23a85da}{
+const \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1FactorGraph_882dbd45fd323d8020df45c0d23a85da}{nbF} (size\_\-t I, size\_\-t \_\-i) const }
+\label{classdai_1_1FactorGraph_882dbd45fd323d8020df45c0d23a85da}
+
+\begin{CompactList}\small\item\em Provides read access to neighbor of factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_bb04181cfad3d5e461bff89c6fa0f83a}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} \& \hyperlink{classdai_1_1FactorGraph_bb04181cfad3d5e461bff89c6fa0f83a}{nbF} (size\_\-t I, size\_\-t \_\-i)}
+\label{classdai_1_1FactorGraph_bb04181cfad3d5e461bff89c6fa0f83a}
+
+\begin{CompactList}\small\item\em Provides full access to neighbor of factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_25f3ffef7d09bbea7fe4ec69840395b3}{
+size\_\-t \hyperlink{classdai_1_1FactorGraph_25f3ffef7d09bbea7fe4ec69840395b3}{findVar} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1FactorGraph_25f3ffef7d09bbea7fe4ec69840395b3}
+
+\begin{CompactList}\small\item\em Returns the index of a particular variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_ae887d817c2e6e081d91e54083abc6ad}{
+std::set$<$ size\_\-t $>$ \hyperlink{classdai_1_1FactorGraph_ae887d817c2e6e081d91e54083abc6ad}{findVars} (\hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1FactorGraph_ae887d817c2e6e081d91e54083abc6ad}
+
+\begin{CompactList}\small\item\em Returns a set of indexes corresponding to a set of variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_c7a2074bd52b7cb35a6473208140bb34}{
+size\_\-t \hyperlink{classdai_1_1FactorGraph_c7a2074bd52b7cb35a6473208140bb34}{findFactor} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1FactorGraph_c7a2074bd52b7cb35a6473208140bb34}
+
+\begin{CompactList}\small\item\em Returns index of the first factor that depends on the variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_b0c02cc79dbbe2d23f67281b7af76ed1}{
+\hyperlink{classdai_1_1VarSet}{VarSet} \hyperlink{classdai_1_1FactorGraph_b0c02cc79dbbe2d23f67281b7af76ed1}{Delta} (unsigned i) const }
+\label{classdai_1_1FactorGraph_b0c02cc79dbbe2d23f67281b7af76ed1}
+
+\begin{CompactList}\small\item\em Return all variables that occur in a factor involving the i'th variable, itself included. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_6c74472eacbfc029cc6cc5ba4e865b1d}{
+\hyperlink{classdai_1_1VarSet}{VarSet} \hyperlink{classdai_1_1FactorGraph_6c74472eacbfc029cc6cc5ba4e865b1d}{Delta} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1FactorGraph_6c74472eacbfc029cc6cc5ba4e865b1d}
+
+\begin{CompactList}\small\item\em Return all variables that occur in a factor involving some variable in ns, ns itself included. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_bd749cf993fdc774b993e72d7d07bc40}{
+\hyperlink{classdai_1_1VarSet}{VarSet} \hyperlink{classdai_1_1FactorGraph_bd749cf993fdc774b993e72d7d07bc40}{delta} (unsigned i) const }
+\label{classdai_1_1FactorGraph_bd749cf993fdc774b993e72d7d07bc40}
+
+\begin{CompactList}\small\item\em Return all variables that occur in a factor involving the i'th variable, n itself excluded. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_358d94bc2adb7be856ea7b60e2e21096}{
+\hyperlink{classdai_1_1VarSet}{VarSet} \hyperlink{classdai_1_1FactorGraph_358d94bc2adb7be856ea7b60e2e21096}{delta} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1FactorGraph_358d94bc2adb7be856ea7b60e2e21096}
+
+\begin{CompactList}\small\item\em Return all variables that occur in a factor involving some variable in ns, ns itself excluded. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_506a66f1b25e49700f6ae564a5c33531}{
+virtual void \hyperlink{classdai_1_1FactorGraph_506a66f1b25e49700f6ae564a5c33531}{setFactor} (size\_\-t I, const \hyperlink{classdai_1_1TFactor}{Factor} \&newFactor, bool backup=false)}
+\label{classdai_1_1FactorGraph_506a66f1b25e49700f6ae564a5c33531}
+
+\begin{CompactList}\small\item\em Set the content of the I'th factor and make a backup of its old content if backup == true. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_e620ed3291b0a1a229a94b0872c8ad81}{
+virtual void \hyperlink{classdai_1_1FactorGraph_e620ed3291b0a1a229a94b0872c8ad81}{setFactors} (const std::map$<$ size\_\-t, \hyperlink{classdai_1_1TFactor}{Factor} $>$ \&facs, bool backup=false)}
+\label{classdai_1_1FactorGraph_e620ed3291b0a1a229a94b0872c8ad81}
+
+\begin{CompactList}\small\item\em Set the contents of all factors as specified by facs and make a backup of the old contents if backup == true. \item\end{CompactList}\item 
+virtual void \hyperlink{classdai_1_1FactorGraph_3cb7d91ca96090372bd0aacbf70a8948}{clamp} (const \hyperlink{classdai_1_1Var}{Var} \&n, size\_\-t i, bool backup=false)
+\item 
+\hypertarget{classdai_1_1FactorGraph_42791a748401710f846e3ac1a3d7a10a}{
+virtual void \hyperlink{classdai_1_1FactorGraph_42791a748401710f846e3ac1a3d7a10a}{makeCavity} (unsigned i, bool backup=false)}
+\label{classdai_1_1FactorGraph_42791a748401710f846e3ac1a3d7a10a}
+
+\begin{CompactList}\small\item\em Set all factors interacting with the i'th variable 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_6965352b4e04b47fd7ad551d9c1916f2}{
+virtual void \hyperlink{classdai_1_1FactorGraph_6965352b4e04b47fd7ad551d9c1916f2}{backupFactors} (const std::set$<$ size\_\-t $>$ \&facs)}
+\label{classdai_1_1FactorGraph_6965352b4e04b47fd7ad551d9c1916f2}
+
+\begin{CompactList}\small\item\em Backup the factors specified by indices in facs. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_0fe64720797972b14f1b41486d339f81}{
+virtual void \hyperlink{classdai_1_1FactorGraph_0fe64720797972b14f1b41486d339f81}{restoreFactors} ()}
+\label{classdai_1_1FactorGraph_0fe64720797972b14f1b41486d339f81}
+
+\begin{CompactList}\small\item\em Restore all factors to the backup copies. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_d1e3c45492a64959fec4736adf555528}{
+bool \hyperlink{classdai_1_1FactorGraph_d1e3c45492a64959fec4736adf555528}{isConnected} () const }
+\label{classdai_1_1FactorGraph_d1e3c45492a64959fec4736adf555528}
+
+\begin{CompactList}\small\item\em Returns true if the \hyperlink{classdai_1_1FactorGraph}{FactorGraph} is connected. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_a4e258a9fc003b49491529dfcf45d56a}{
+bool \hyperlink{classdai_1_1FactorGraph_a4e258a9fc003b49491529dfcf45d56a}{isTree} () const }
+\label{classdai_1_1FactorGraph_a4e258a9fc003b49491529dfcf45d56a}
+
+\begin{CompactList}\small\item\em Returns true if the \hyperlink{classdai_1_1FactorGraph}{FactorGraph} is a tree. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_f1b9c45ee2670aca3d04c2733193f611}{
+bool \hyperlink{classdai_1_1FactorGraph_f1b9c45ee2670aca3d04c2733193f611}{isPairwise} () const }
+\label{classdai_1_1FactorGraph_f1b9c45ee2670aca3d04c2733193f611}
+
+\begin{CompactList}\small\item\em Returns true if each factor depends on at most two variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_f3c0f08798db25845cb518ec6cccbd05}{
+bool \hyperlink{classdai_1_1FactorGraph_f3c0f08798db25845cb518ec6cccbd05}{isBinary} () const }
+\label{classdai_1_1FactorGraph_f3c0f08798db25845cb518ec6cccbd05}
+
+\begin{CompactList}\small\item\em Returns true if each variable has only two possible values. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_89ee98ae7d3bc1723452e1c11ace4b51}{
+void \hyperlink{classdai_1_1FactorGraph_89ee98ae7d3bc1723452e1c11ace4b51}{ReadFromFile} (const char $\ast$filename)}
+\label{classdai_1_1FactorGraph_89ee98ae7d3bc1723452e1c11ace4b51}
+
+\begin{CompactList}\small\item\em Reads a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} from a file. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_0916dbc2ac40ad7e5bf0cca9740d3c2c}{
+void \hyperlink{classdai_1_1FactorGraph_0916dbc2ac40ad7e5bf0cca9740d3c2c}{WriteToFile} (const char $\ast$filename) const }
+\label{classdai_1_1FactorGraph_0916dbc2ac40ad7e5bf0cca9740d3c2c}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} to a file. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_607c9a821e789121cf2ccbfacc5f8d5f}{
+void \hyperlink{classdai_1_1FactorGraph_607c9a821e789121cf2ccbfacc5f8d5f}{printDot} (std::ostream \&os) const }
+\label{classdai_1_1FactorGraph_607c9a821e789121cf2ccbfacc5f8d5f}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} to a GraphViz .dot file. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_9cd8cc192cac877725b2bae9f3e61a9f}{
+std::vector$<$ \hyperlink{classdai_1_1VarSet}{VarSet} $>$ \hyperlink{classdai_1_1FactorGraph_9cd8cc192cac877725b2bae9f3e61a9f}{Cliques} () const }
+\label{classdai_1_1FactorGraph_9cd8cc192cac877725b2bae9f3e61a9f}
+
+\begin{CompactList}\small\item\em Returns the cliques in this \hyperlink{classdai_1_1FactorGraph}{FactorGraph}. \item\end{CompactList}\item 
+\hyperlink{classdai_1_1FactorGraph}{FactorGraph} \hyperlink{classdai_1_1FactorGraph_915d21c0da8c2c1f342371bef6adb0f5}{clamped} (const \hyperlink{classdai_1_1Var}{Var} \&v\_\-i, size\_\-t x) const 
+\begin{CompactList}\small\item\em Clamp variable v\_\-i to value state (i.e. multiply with a Kronecker delta $\delta_{x_{v_i},x}$);. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_213527d7bcd00ccedce6276311332500}{
+\hyperlink{classdai_1_1FactorGraph}{FactorGraph} \hyperlink{classdai_1_1FactorGraph_213527d7bcd00ccedce6276311332500}{maximalFactors} () const }
+\label{classdai_1_1FactorGraph_213527d7bcd00ccedce6276311332500}
+
+\begin{CompactList}\small\item\em Returns a copy of $\ast$this, where all factors that are subsumed by some larger factor are merged with the larger factors. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_39ce217df7d9ea85b2b04b8d65101230}{
+void \hyperlink{classdai_1_1FactorGraph_39ce217df7d9ea85b2b04b8d65101230}{restoreFactor} (size\_\-t I)}
+\label{classdai_1_1FactorGraph_39ce217df7d9ea85b2b04b8d65101230}
+
+\begin{CompactList}\small\item\em Makes a backup of the I'th Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_e2fe32e831db3e649e6ddd66762fea7c}{
+void \hyperlink{classdai_1_1FactorGraph_e2fe32e831db3e649e6ddd66762fea7c}{backupFactor} (size\_\-t I)}
+\label{classdai_1_1FactorGraph_e2fe32e831db3e649e6ddd66762fea7c}
+
+\begin{CompactList}\small\item\em Restores the I'th Factor from the backup (it should be backed up first). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_8b3606b4ee589e4a0fb8fcdbdff97bae}{
+void \hyperlink{classdai_1_1FactorGraph_8b3606b4ee589e4a0fb8fcdbdff97bae}{backupFactors} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns)}
+\label{classdai_1_1FactorGraph_8b3606b4ee589e4a0fb8fcdbdff97bae}
+
+\begin{CompactList}\small\item\em Makes a backup of all factors connected to a set of variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_4e042494d8e453005d0c8bfd788dc687}{
+void \hyperlink{classdai_1_1FactorGraph_4e042494d8e453005d0c8bfd788dc687}{restoreFactors} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns)}
+\label{classdai_1_1FactorGraph_4e042494d8e453005d0c8bfd788dc687}
+
+\begin{CompactList}\small\item\em Restores all factors connected to a set of variables from their backups. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1FactorGraph_67a15374178683fedb49355701a30576}{
+\hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph} \hyperlink{classdai_1_1FactorGraph_67a15374178683fedb49355701a30576}{G}}
+\label{classdai_1_1FactorGraph_67a15374178683fedb49355701a30576}
+
+\begin{CompactList}\small\item\em Stores the neighborhood structure. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1FactorGraph_c2f9ce21f6b9947b11c2bd731bb882d9}{
+std::ostream \& \hyperlink{classdai_1_1FactorGraph_c2f9ce21f6b9947b11c2bd731bb882d9}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&fg)}
+\label{classdai_1_1FactorGraph_c2f9ce21f6b9947b11c2bd731bb882d9}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} to an output stream. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FactorGraph_5b4639a278afc734c0d4b074f53d87b5}{
+std::istream \& \hyperlink{classdai_1_1FactorGraph_5b4639a278afc734c0d4b074f53d87b5}{operator$>$$>$} (std::istream \&is, \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&fg)}
+\label{classdai_1_1FactorGraph_5b4639a278afc734c0d4b074f53d87b5}
+
+\begin{CompactList}\small\item\em Reads a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} from an input stream. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdai_1_1FactorGraph_15bdffc0b20cdfc99953b8e25e111059}{
+\index{dai::FactorGraph@{dai::FactorGraph}!FactorGraph@{FactorGraph}}
+\index{FactorGraph@{FactorGraph}!dai::FactorGraph@{dai::FactorGraph}}
+\subsubsection[FactorGraph]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename FactorInputIterator, typename VarInputIterator$>$ dai::FactorGraph::FactorGraph (FactorInputIterator {\em fact\_\-begin}, \/  FactorInputIterator {\em fact\_\-end}, \/  VarInputIterator {\em var\_\-begin}, \/  VarInputIterator {\em var\_\-end}, \/  size\_\-t {\em nr\_\-fact\_\-hint} = {\tt 0}, \/  size\_\-t {\em nr\_\-var\_\-hint} = {\tt 0})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classdai_1_1FactorGraph_15bdffc0b20cdfc99953b8e25e111059}
+
+
+Constructs a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} from given factor and variable iterators. 
+
+\begin{Desc}
+\item[Template Parameters:]
+\begin{description}
+\item[{\em FactorInputIterator}]Iterator with value\_\-type Factor \item[{\em VarInputIterator}]Iterator with value\_\-type \hyperlink{classdai_1_1Var}{Var} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Precondition:]Assumes that the set of variables in \mbox{[}var\_\-begin,var\_\-end) is the union of the variables in the factors in \mbox{[}fact\_\-begin, fact\_\-end) \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdai_1_1FactorGraph_3cb7d91ca96090372bd0aacbf70a8948}{
+\index{dai::FactorGraph@{dai::FactorGraph}!clamp@{clamp}}
+\index{clamp@{clamp}!dai::FactorGraph@{dai::FactorGraph}}
+\subsubsection[clamp]{\setlength{\rightskip}{0pt plus 5cm}void dai::FactorGraph::clamp (const {\bf Var} \& {\em n}, \/  size\_\-t {\em i}, \/  bool {\em backup} = {\tt false})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classdai_1_1FactorGraph_3cb7d91ca96090372bd0aacbf70a8948}
+
+
+Clamp variable n to value i (i.e. multiply with a Kronecker delta $\delta_{x_n, i}$); If backup == true, make a backup of all factors that are changed 
+
+Reimplemented in \hyperlink{classdai_1_1DAIAlg_b7d537f1a9d116617d8dce722ce65dc0}{dai::DAIAlg$<$ dai::RegionGraph $>$}, and \hyperlink{classdai_1_1DAIAlg_b7d537f1a9d116617d8dce722ce65dc0}{dai::DAIAlg$<$ dai::FactorGraph $>$}.\hypertarget{classdai_1_1FactorGraph_915d21c0da8c2c1f342371bef6adb0f5}{
+\index{dai::FactorGraph@{dai::FactorGraph}!clamped@{clamped}}
+\index{clamped@{clamped}!dai::FactorGraph@{dai::FactorGraph}}
+\subsubsection[clamped]{\setlength{\rightskip}{0pt plus 5cm}{\bf FactorGraph} dai::FactorGraph::clamped (const {\bf Var} \& {\em v\_\-i}, \/  size\_\-t {\em x}) const}}
+\label{classdai_1_1FactorGraph_915d21c0da8c2c1f342371bef6adb0f5}
+
+
+Clamp variable v\_\-i to value state (i.e. multiply with a Kronecker delta $\delta_{x_{v_i},x}$);. 
+
+This version changes the factor graph structure and thus returns a newly constructed \hyperlink{classdai_1_1FactorGraph}{FactorGraph} and keeps the current one constant, contrary to \hyperlink{classdai_1_1FactorGraph_3cb7d91ca96090372bd0aacbf70a8948}{clamp()} 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{factorgraph_8h}{factorgraph.h}\item 
+src/factorgraph.cpp\end{CompactItemize}

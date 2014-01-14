@@ -1,0 +1,15 @@
+\begin{Desc}
+\item[Author:]Joris Mooij \end{Desc}
+\begin{Desc}
+\item[Version:]0.2.2 \end{Desc}
+\begin{Desc}
+\item[Date:]30 September 2008\end{Desc}
+\hypertarget{index_about}{}\section{About libDAI}\label{index_about}
+libDAI is a free/open source C++ library (licensed under GPL) that provides implementations of various (approximate) inference methods for discrete graphical models. libDAI supports arbitrary factor graphs with discrete variables; this includes discrete Markov Random Fields and Bayesian Networks.
+
+The library is targeted at researchers; to be able to use the library, a good understanding of graphical models is needed.\hypertarget{index_limitations}{}\section{Limitations}\label{index_limitations}
+libDAI is not intended to be a complete package for approximate inference. Instead, it should be considered as an \char`\"{}inference engine\char`\"{}, providing various inference methods. In particular, it contains no GUI, currently only supports its own file format for input and output (although support for standard file formats may be added later), and provides very limited visualization functionalities.\hypertarget{index_features}{}\section{Features}\label{index_features}
+Currently, libDAI supports the following (approximate) inference methods:\begin{itemize}
+\item Exact inference by brute force enumeration;\item Exact inference by junction-tree methods;\item Mean Field;\item Loopy Belief Propagation \mbox{[}\hyperlink{Bibliography_KFL01}{KFL01}\mbox{]};\item Tree Expectation Propagation \mbox{[}\hyperlink{Bibliography_MiQ04}{MiQ04}\mbox{]};\item Generalized Belief Propagation \mbox{[}\hyperlink{Bibliography_YFW05}{YFW05}\mbox{]};\item Double-loop GBP \mbox{[}\hyperlink{Bibliography_HAK03}{HAK03}\mbox{]};\item Various variants of Loop Corrected Belief Propagation \mbox{[}\hyperlink{Bibliography_MoK07}{MoK07}, \hyperlink{Bibliography_MoR05}{MoR05}\mbox{]}.\end{itemize}
+\hypertarget{index_language}{}\section{Why C++?}\label{index_language}
+Because libDAI is implemented in C++, it is very fast compared with implementations in MatLab (a factor 1000 faster is not uncommon). libDAI does provide a MatLab interface for easy integration with MatLab. 

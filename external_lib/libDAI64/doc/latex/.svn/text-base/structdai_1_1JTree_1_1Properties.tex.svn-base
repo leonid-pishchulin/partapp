@@ -1,0 +1,36 @@
+\hypertarget{structdai_1_1JTree_1_1Properties}{
+\section{dai::JTree::Properties Struct Reference}
+\label{structdai_1_1JTree_1_1Properties}\index{dai::JTree::Properties@{dai::JTree::Properties}}
+}
+{\tt \#include $<$dai/jtree.h$>$}
+
+
+
+\subsection{Detailed Description}
+Parameters of this inference algorithm. \subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+size\_\-t \hyperlink{structdai_1_1JTree_1_1Properties_f1115a3a2efbb2047f4305f3e88e364d}{verbose}
+\begin{CompactList}\small\item\em Enumeration of possible \hyperlink{classdai_1_1JTree}{JTree} updates. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1JTree_1_1Properties_9120abdd0ab3d1456cc25526013df494}{
+UpdateType \hyperlink{structdai_1_1JTree_1_1Properties_9120abdd0ab3d1456cc25526013df494}{updates}}
+\label{structdai_1_1JTree_1_1Properties_9120abdd0ab3d1456cc25526013df494}
+
+\begin{CompactList}\small\item\em Type of updates. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdai_1_1JTree_1_1Properties_f1115a3a2efbb2047f4305f3e88e364d}{
+\index{dai::JTree::Properties@{dai::JTree::Properties}!verbose@{verbose}}
+\index{verbose@{verbose}!dai::JTree::Properties@{dai::JTree::Properties}}
+\subsubsection[verbose]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf dai::JTree::Properties::verbose}}}
+\label{structdai_1_1JTree_1_1Properties_f1115a3a2efbb2047f4305f3e88e364d}
+
+
+Enumeration of possible \hyperlink{classdai_1_1JTree}{JTree} updates. 
+
+Verbosity 
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{jtree_8h}{jtree.h}\end{CompactItemize}

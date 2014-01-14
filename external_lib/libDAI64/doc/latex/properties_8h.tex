@@ -1,0 +1,54 @@
+\hypertarget{properties_8h}{
+\section{include/dai/properties.h File Reference}
+\label{properties_8h}\index{include/dai/properties.h@{include/dai/properties.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines the Property and PropertySet classes. 
+
+
+
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$sstream$>$}\par
+{\tt \#include $<$boost/any.hpp$>$}\par
+{\tt \#include $<$map$>$}\par
+{\tt \#include $<$cassert$>$}\par
+{\tt \#include $<$typeinfo$>$}\par
+{\tt \#include $<$dai/exceptions.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1PropertySet}{dai::PropertySet}
+\begin{CompactList}\small\item\em Represents a set of properties, mapping keys (of type PropertyKey) to values (of type PropertyValue). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{
+typedef std::string \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{dai::PropertyKey}}
+\label{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}
+
+\begin{CompactList}\small\item\em Type of the key of a Property. \item\end{CompactList}\item 
+\hypertarget{namespacedai_eb056b768d73d02c5796c4012f4170c7}{
+typedef boost::any \hyperlink{namespacedai_eb056b768d73d02c5796c4012f4170c7}{dai::PropertyValue}}
+\label{namespacedai_eb056b768d73d02c5796c4012f4170c7}
+
+\begin{CompactList}\small\item\em Type of the value of a Property. \item\end{CompactList}\item 
+\hypertarget{namespacedai_cbc670414e04eecf5c284e42d9d036e3}{
+typedef std::pair$<$ PropertyKey, PropertyValue $>$ \hyperlink{namespacedai_cbc670414e04eecf5c284e42d9d036e3}{dai::Property}}
+\label{namespacedai_cbc670414e04eecf5c284e42d9d036e3}
+
+\begin{CompactList}\small\item\em A Property is a pair of a key and a corresponding value. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_c63c2f1d67d01aeda5c3cdd95843ea86}{
+std::ostream \& \hyperlink{namespacedai_c63c2f1d67d01aeda5c3cdd95843ea86}{dai::operator$<$$<$} (std::ostream \&os, const Property \&p)}
+\label{namespacedai_c63c2f1d67d01aeda5c3cdd95843ea86}
+
+\begin{CompactList}\small\item\em Writes a Property object to an output stream. \item\end{CompactList}\end{CompactItemize}

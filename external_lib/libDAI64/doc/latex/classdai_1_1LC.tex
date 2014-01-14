@@ -1,0 +1,254 @@
+\hypertarget{classdai_1_1LC}{
+\section{dai::LC Class Reference}
+\label{classdai_1_1LC}\index{dai::LC@{dai::LC}}
+}
+{\tt \#include $<$dai/lc.h$>$}
+
+Inheritance diagram for dai::LC::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classdai_1_1LC}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Approximate inference algorithm \char`\"{}Loop Corrected Belief Propagation\char`\"{} by Mooij and Kappen. \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1LC_e46e76de9def71e83ff7d95604e641b4}{
+\hyperlink{classdai_1_1LC_e46e76de9def71e83ff7d95604e641b4}{LC} ()}
+\label{classdai_1_1LC_e46e76de9def71e83ff7d95604e641b4}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_2f9f79af763757bbc8507e63c0440a27}{
+\hyperlink{classdai_1_1LC_2f9f79af763757bbc8507e63c0440a27}{LC} (const \hyperlink{classdai_1_1LC}{LC} \&x)}
+\label{classdai_1_1LC_2f9f79af763757bbc8507e63c0440a27}
+
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_d8650f8491916e9d9fd96f2b9a76ed53}{
+\hyperlink{classdai_1_1LC}{LC} \& \hyperlink{classdai_1_1LC_d8650f8491916e9d9fd96f2b9a76ed53}{operator=} (const \hyperlink{classdai_1_1LC}{LC} \&x)}
+\label{classdai_1_1LC_d8650f8491916e9d9fd96f2b9a76ed53}
+
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_f7876f0893b969c4d2842927085c18e3}{
+\hyperlink{classdai_1_1LC_f7876f0893b969c4d2842927085c18e3}{LC} (const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&fg, const \hyperlink{classdai_1_1PropertySet}{PropertySet} \&opts)}
+\label{classdai_1_1LC_f7876f0893b969c4d2842927085c18e3}
+
+\begin{CompactList}\small\item\em Construct from \hyperlink{classdai_1_1FactorGraph}{FactorGraph} fg and \hyperlink{classdai_1_1PropertySet}{PropertySet} opts. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_48ba6a58d10b8802d690e5e92ec5abe9}{
+void \hyperlink{classdai_1_1DAIAlg_48ba6a58d10b8802d690e5e92ec5abe9}{backupFactor} (size\_\-t I)}
+\label{classdai_1_1DAIAlg_48ba6a58d10b8802d690e5e92ec5abe9}
+
+\begin{CompactList}\small\item\em Save factor I. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_0176904d3b4b9d083288ea8c4a2dc8bc}{
+void \hyperlink{classdai_1_1DAIAlg_0176904d3b4b9d083288ea8c4a2dc8bc}{backupFactors} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns)}
+\label{classdai_1_1DAIAlg_0176904d3b4b9d083288ea8c4a2dc8bc}
+
+\begin{CompactList}\small\item\em Save Factors involving ns. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_bf8dbd2797ec871e86566a6dfc0864e3}{
+void \hyperlink{classdai_1_1DAIAlg_bf8dbd2797ec871e86566a6dfc0864e3}{restoreFactor} (size\_\-t I)}
+\label{classdai_1_1DAIAlg_bf8dbd2797ec871e86566a6dfc0864e3}
+
+\begin{CompactList}\small\item\em Restore factor I. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_3ce97e9370f1cdc785526c1a6c1eaadf}{
+void \hyperlink{classdai_1_1DAIAlg_3ce97e9370f1cdc785526c1a6c1eaadf}{restoreFactors} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns)}
+\label{classdai_1_1DAIAlg_3ce97e9370f1cdc785526c1a6c1eaadf}
+
+\begin{CompactList}\small\item\em Restore Factors involving ns. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_b7d537f1a9d116617d8dce722ce65dc0}{
+void \hyperlink{classdai_1_1DAIAlg_b7d537f1a9d116617d8dce722ce65dc0}{clamp} (const \hyperlink{classdai_1_1Var}{Var} \&n, size\_\-t i, bool backup=false)}
+\label{classdai_1_1DAIAlg_b7d537f1a9d116617d8dce722ce65dc0}
+
+\begin{CompactList}\small\item\em Clamp variable n to value i (i.e. multiply with a Kronecker delta $\delta_{x_n, i}$). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_7f0b8452352080a1e35ab9a68cb589fd}{
+void \hyperlink{classdai_1_1DAIAlg_7f0b8452352080a1e35ab9a68cb589fd}{makeCavity} (size\_\-t i, bool backup=false)}
+\label{classdai_1_1DAIAlg_7f0b8452352080a1e35ab9a68cb589fd}
+
+\begin{CompactList}\small\item\em Set all factors interacting with var(i) to 1. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_9348542c22d04ed804388f1fe3009fa3}{
+\hyperlink{classdai_1_1FactorGraph}{FactorGraph} \& \hyperlink{classdai_1_1DAIAlg_9348542c22d04ed804388f1fe3009fa3}{fg} ()}
+\label{classdai_1_1DAIAlg_9348542c22d04ed804388f1fe3009fa3}
+
+\begin{CompactList}\small\item\em Get reference to underlying \hyperlink{classdai_1_1FactorGraph}{FactorGraph}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1DAIAlg_35400e471b8c3c98bef6c74ceac8fa16}{
+const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \& \hyperlink{classdai_1_1DAIAlg_35400e471b8c3c98bef6c74ceac8fa16}{fg} () const }
+\label{classdai_1_1DAIAlg_35400e471b8c3c98bef6c74ceac8fa16}
+
+\begin{CompactList}\small\item\em Get const reference to underlying \hyperlink{classdai_1_1FactorGraph}{FactorGraph}. \item\end{CompactList}\end{CompactItemize}
+\begin{Indent}{\bf General InfAlg interface}\par
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1LC_0e98719468000085434e9fc0419d53d0}{
+virtual \hyperlink{classdai_1_1LC}{LC} $\ast$ \hyperlink{classdai_1_1LC_0e98719468000085434e9fc0419d53d0}{clone} () const }
+\label{classdai_1_1LC_0e98719468000085434e9fc0419d53d0}
+
+\begin{CompactList}\small\item\em Returns a pointer to a new, cloned copy of $\ast$this (i.e., virtual copy constructor). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_94a6ba124dc5b56dca2693f19f5093d7}{
+virtual \hyperlink{classdai_1_1LC}{LC} $\ast$ \hyperlink{classdai_1_1LC_94a6ba124dc5b56dca2693f19f5093d7}{create} () const }
+\label{classdai_1_1LC_94a6ba124dc5b56dca2693f19f5093d7}
+
+\begin{CompactList}\small\item\em Returns a pointer to a newly constructed object $\ast$this (i.e., virtual default constructor). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_7600e9344f474bfc866531044fc02b45}{
+virtual std::string \hyperlink{classdai_1_1LC_7600e9344f474bfc866531044fc02b45}{identify} () const }
+\label{classdai_1_1LC_7600e9344f474bfc866531044fc02b45}
+
+\begin{CompactList}\small\item\em Identifies itself for logging purposes. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_af4d1578168f9f1ed4622b971f76e21c}{
+virtual \hyperlink{classdai_1_1TFactor}{Factor} \hyperlink{classdai_1_1LC_af4d1578168f9f1ed4622b971f76e21c}{belief} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1LC_af4d1578168f9f1ed4622b971f76e21c}
+
+\begin{CompactList}\small\item\em Returns the \char`\"{}belief\char`\"{} (i.e., approximate marginal probability distribution) of a variable. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_8399d420190caeb55a3a13a62e454d8e}{
+virtual \hyperlink{classdai_1_1TFactor}{Factor} \hyperlink{classdai_1_1LC_8399d420190caeb55a3a13a62e454d8e}{belief} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&) const }
+\label{classdai_1_1LC_8399d420190caeb55a3a13a62e454d8e}
+
+\begin{CompactList}\small\item\em Returns the \char`\"{}belief\char`\"{} (i.e., approximate marginal probability distribution) of a set of variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_73b806c54ec2001a34c4e5777833820f}{
+virtual std::vector$<$ \hyperlink{classdai_1_1TFactor}{Factor} $>$ \hyperlink{classdai_1_1LC_73b806c54ec2001a34c4e5777833820f}{beliefs} () const }
+\label{classdai_1_1LC_73b806c54ec2001a34c4e5777833820f}
+
+\begin{CompactList}\small\item\em Returns all \char`\"{}beliefs\char`\"{} (i.e., approximate marginal probability distribution) calculated by the algorithm. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_76364b27eb464d03a1cbf214acdcc5dc}{
+virtual \hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} \hyperlink{classdai_1_1LC_76364b27eb464d03a1cbf214acdcc5dc}{logZ} () const }
+\label{classdai_1_1LC_76364b27eb464d03a1cbf214acdcc5dc}
+
+\begin{CompactList}\small\item\em Returns the logarithm of the (approximated) partition sum (normalizing constant of the factor graph). \item\end{CompactList}\item 
+virtual void \hyperlink{classdai_1_1LC_007ab11f0d08d0ed23ae141230b122cc}{init} ()
+\begin{CompactList}\small\item\em Initializes all data structures of the approximate inference algorithm. \item\end{CompactList}\item 
+virtual void \hyperlink{classdai_1_1LC_b077c808ad6ca6b9e134746d0846ea5d}{init} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&)
+\begin{CompactList}\small\item\em Initializes all data structures corresponding to some set of variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1LC_ff5884412fd193b8c525c3ccdd84b40b}{
+virtual double \hyperlink{classdai_1_1LC_ff5884412fd193b8c525c3ccdd84b40b}{run} ()}
+\label{classdai_1_1LC_ff5884412fd193b8c525c3ccdd84b40b}
+
+\begin{CompactList}\small\item\em Runs the approximate inference algorithm. \item\end{CompactList}\item 
+virtual double \hyperlink{classdai_1_1LC_32b30963958c3f408d1c5a618fcf418d}{maxDiff} () const 
+\item 
+virtual size\_\-t \hyperlink{classdai_1_1LC_8654c28fad78fa6cd850b2207b271086}{Iterations} () const 
+\end{CompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Additional interface specific for LC}\par
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1LC_b436b2c4f3f7f5ecb426852306ce68b8}{
+double \textbf{CalcCavityDist} (size\_\-t i, const std::string \&name, const \hyperlink{classdai_1_1PropertySet}{PropertySet} \&opts)}
+\label{classdai_1_1LC_b436b2c4f3f7f5ecb426852306ce68b8}
+
+\item 
+\hypertarget{classdai_1_1LC_ef45360a369721b4a42b91837969bb59}{
+double \textbf{InitCavityDists} (const std::string \&name, const \hyperlink{classdai_1_1PropertySet}{PropertySet} \&opts)}
+\label{classdai_1_1LC_ef45360a369721b4a42b91837969bb59}
+
+\item 
+\hypertarget{classdai_1_1LC_8f378501c011772b7bf9a753af3e131d}{
+long \textbf{SetCavityDists} (std::vector$<$ \hyperlink{classdai_1_1TFactor}{Factor} $>$ \&Q)}
+\label{classdai_1_1LC_8f378501c011772b7bf9a753af3e131d}
+
+\item 
+\hypertarget{classdai_1_1LC_0fddd5b0eee7c54f4294aeed0a01acc2}{
+\hyperlink{classdai_1_1TFactor}{Factor} \textbf{NewPancake} (size\_\-t i, size\_\-t \_\-I, bool \&hasNaNs)}
+\label{classdai_1_1LC_0fddd5b0eee7c54f4294aeed0a01acc2}
+
+\item 
+\hypertarget{classdai_1_1LC_c0b31ad501fc7051874162a000165894}{
+void \textbf{CalcBelief} (size\_\-t i)}
+\label{classdai_1_1LC_c0b31ad501fc7051874162a000165894}
+
+\item 
+\hypertarget{classdai_1_1LC_6272f35e369c9afe6d7564ee2da063ed}{
+const \hyperlink{classdai_1_1TFactor}{Factor} \& \textbf{belief} (size\_\-t i) const }
+\label{classdai_1_1LC_6272f35e369c9afe6d7564ee2da063ed}
+
+\item 
+\hypertarget{classdai_1_1LC_e7b919d633b102c51165c7e67a6ab9cb}{
+const \hyperlink{classdai_1_1TFactor}{Factor} \& \textbf{pancake} (size\_\-t i) const }
+\label{classdai_1_1LC_e7b919d633b102c51165c7e67a6ab9cb}
+
+\item 
+\hypertarget{classdai_1_1LC_1e33809feff60fd0c6b2cffa1b614fca}{
+const \hyperlink{classdai_1_1TFactor}{Factor} \& \textbf{cavitydist} (size\_\-t i) const }
+\label{classdai_1_1LC_1e33809feff60fd0c6b2cffa1b614fca}
+
+\end{CompactItemize}
+\end{Indent}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1LC_cbaf0aaf68d0645f215be238f58c8dd9}{
+struct \hyperlink{structdai_1_1LC_1_1Properties}{dai::LC::Properties} \hyperlink{classdai_1_1LC_cbaf0aaf68d0645f215be238f58c8dd9}{props}}
+\label{classdai_1_1LC_cbaf0aaf68d0645f215be238f58c8dd9}
+
+\begin{CompactList}\small\item\em Parameters of this inference algorithm. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1LC_a0993f897e7c68145cfbd658f5511e64}{
+static const char $\ast$ \hyperlink{classdai_1_1LC_a0993f897e7c68145cfbd658f5511e64}{Name} = \char`\"{}LC\char`\"{}}
+\label{classdai_1_1LC_a0993f897e7c68145cfbd658f5511e64}
+
+\begin{CompactList}\small\item\em Name of this inference algorithm. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structdai_1_1LC_1_1Properties}{Properties}
+\begin{CompactList}\small\item\em Parameters of this inference algorithm. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdai_1_1LC_007ab11f0d08d0ed23ae141230b122cc}{
+\index{dai::LC@{dai::LC}!init@{init}}
+\index{init@{init}!dai::LC@{dai::LC}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}void dai::LC::init ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classdai_1_1LC_007ab11f0d08d0ed23ae141230b122cc}
+
+
+Initializes all data structures of the approximate inference algorithm. 
+
+This method should be called at least once before \hyperlink{classdai_1_1LC_ff5884412fd193b8c525c3ccdd84b40b}{run()} is called 
+
+Implements \hyperlink{classdai_1_1InfAlg_99dd53d1aaccf09a4b977a49a983cc85}{dai::InfAlg}.\hypertarget{classdai_1_1LC_b077c808ad6ca6b9e134746d0846ea5d}{
+\index{dai::LC@{dai::LC}!init@{init}}
+\index{init@{init}!dai::LC@{dai::LC}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}virtual void dai::LC::init (const {\bf VarSet} \& {\em ns})\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classdai_1_1LC_b077c808ad6ca6b9e134746d0846ea5d}
+
+
+Initializes all data structures corresponding to some set of variables. 
+
+This method can be used to do a partial initialization after a part of the factor graph has changed. Instead of initializing all data structures, it only initializes those involving the variables in ns. 
+
+Implements \hyperlink{classdai_1_1InfAlg_7d006e89e01a2f3e2a40b0f7f6e37ae5}{dai::InfAlg}.\hypertarget{classdai_1_1LC_32b30963958c3f408d1c5a618fcf418d}{
+\index{dai::LC@{dai::LC}!maxDiff@{maxDiff}}
+\index{maxDiff@{maxDiff}!dai::LC@{dai::LC}}
+\subsubsection[maxDiff]{\setlength{\rightskip}{0pt plus 5cm}virtual double dai::LC::maxDiff () const\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classdai_1_1LC_32b30963958c3f408d1c5a618fcf418d}
+
+
+Return maximum difference between single node beliefs in the last pass \begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classdai_1_1Exception}{Exception}}]if not implemented/supported \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classdai_1_1InfAlg_7e1ca7da15403d5d2af4a855186c0b46}{dai::InfAlg}.\hypertarget{classdai_1_1LC_8654c28fad78fa6cd850b2207b271086}{
+\index{dai::LC@{dai::LC}!Iterations@{Iterations}}
+\index{Iterations@{Iterations}!dai::LC@{dai::LC}}
+\subsubsection[Iterations]{\setlength{\rightskip}{0pt plus 5cm}virtual size\_\-t dai::LC::Iterations () const\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classdai_1_1LC_8654c28fad78fa6cd850b2207b271086}
+
+
+Return number of passes over the factorgraph \begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classdai_1_1Exception}{Exception}}]if not implemented/supported \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classdai_1_1InfAlg_7a93807863cc0a2025c1a78bdf1e14b8}{dai::InfAlg}.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{lc_8h}{lc.h}\item 
+src/lc.cpp\end{CompactItemize}

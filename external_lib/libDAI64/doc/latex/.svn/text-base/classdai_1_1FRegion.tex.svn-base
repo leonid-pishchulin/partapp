@@ -1,0 +1,303 @@
+\hypertarget{classdai_1_1FRegion}{
+\section{dai::FRegion Class Reference}
+\label{classdai_1_1FRegion}\index{dai::FRegion@{dai::FRegion}}
+}
+{\tt \#include $<$dai/regiongraph.h$>$}
+
+Inheritance diagram for dai::FRegion::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classdai_1_1FRegion}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classdai_1_1FRegion}{FRegion} is a factor with a counting number. \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1FRegion_b81b699de467dab74cd11d315497c636}{
+\hyperlink{classdai_1_1FRegion_b81b699de467dab74cd11d315497c636}{FRegion} ()}
+\label{classdai_1_1FRegion_b81b699de467dab74cd11d315497c636}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FRegion_72b2f014dfb2f98aefa18f2972cf9108}{
+\hyperlink{classdai_1_1FRegion_72b2f014dfb2f98aefa18f2972cf9108}{FRegion} (const \hyperlink{classdai_1_1TFactor}{Factor} \&x, double c)}
+\label{classdai_1_1FRegion_72b2f014dfb2f98aefa18f2972cf9108}
+
+\begin{CompactList}\small\item\em Constructs \hyperlink{classdai_1_1FRegion}{FRegion} from a Factor and a counting number. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FRegion_ba8e41c104c66c0c6c47a12184b0df17}{
+\hyperlink{classdai_1_1FRegion_ba8e41c104c66c0c6c47a12184b0df17}{FRegion} (const \hyperlink{classdai_1_1FRegion}{FRegion} \&x)}
+\label{classdai_1_1FRegion_ba8e41c104c66c0c6c47a12184b0df17}
+
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FRegion_2a6f340d8cfdef5e5925f5030160920d}{
+\hyperlink{classdai_1_1FRegion}{FRegion} \& \hyperlink{classdai_1_1FRegion_2a6f340d8cfdef5e5925f5030160920d}{operator=} (const \hyperlink{classdai_1_1FRegion}{FRegion} \&x)}
+\label{classdai_1_1FRegion_2a6f340d8cfdef5e5925f5030160920d}
+
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FRegion_94c63ec48848b132eeb024515978f654}{
+const double \& \hyperlink{classdai_1_1FRegion_94c63ec48848b132eeb024515978f654}{c} () const }
+\label{classdai_1_1FRegion_94c63ec48848b132eeb024515978f654}
+
+\begin{CompactList}\small\item\em Provide read access to counting number. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1FRegion_f6e5b1ea80c052f98056d29d47a76145}{
+double \& \hyperlink{classdai_1_1FRegion_f6e5b1ea80c052f98056d29d47a76145}{c} ()}
+\label{classdai_1_1FRegion_f6e5b1ea80c052f98056d29d47a76145}
+
+\begin{CompactList}\small\item\em Provide full access to counting number. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_c742180c0abe1be45fbf3208f7014a1b}{
+const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_c742180c0abe1be45fbf3208f7014a1b}{p} () const }
+\label{classdai_1_1TFactor_c742180c0abe1be45fbf3208f7014a1b}
+
+\begin{CompactList}\small\item\em Returns const reference to probability entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_ba85b145db1c3b72978e11fb385659e1}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_ba85b145db1c3b72978e11fb385659e1}{p} ()}
+\label{classdai_1_1TFactor_ba85b145db1c3b72978e11fb385659e1}
+
+\begin{CompactList}\small\item\em Returns reference to probability entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{
+const \hyperlink{classdai_1_1VarSet}{VarSet} \& \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars} () const }
+\label{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}
+
+\begin{CompactList}\small\item\em Returns const reference to variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_57d676927a5dcacbef47f564c46bf128}{
+size\_\-t \hyperlink{classdai_1_1TFactor_57d676927a5dcacbef47f564c46bf128}{states} () const }
+\label{classdai_1_1TFactor_57d676927a5dcacbef47f564c46bf128}
+
+\begin{CompactList}\small\item\em Returns the number of possible joint states of the variables. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_22a12143c01d05a1e70ca3f92ec42595}{
+T \hyperlink{classdai_1_1TFactor_22a12143c01d05a1e70ca3f92ec42595}{operator\mbox{[}$\,$\mbox{]}} (size\_\-t i) const }
+\label{classdai_1_1TFactor_22a12143c01d05a1e70ca3f92ec42595}
+
+\begin{CompactList}\small\item\em Returns a copy of the i'th probability value. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_8be917166f0f32f2da09e09fc5fa2651}{
+T \& \hyperlink{classdai_1_1TFactor_8be917166f0f32f2da09e09fc5fa2651}{operator\mbox{[}$\,$\mbox{]}} (size\_\-t i)}
+\label{classdai_1_1TFactor_8be917166f0f32f2da09e09fc5fa2651}
+
+\begin{CompactList}\small\item\em Returns a reference to the i'th probability value. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_949ed2c4aefdf1aadfe33d0c2dac89b3}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_949ed2c4aefdf1aadfe33d0c2dac89b3}{fill} (T p)}
+\label{classdai_1_1TFactor_949ed2c4aefdf1aadfe33d0c2dac89b3}
+
+\begin{CompactList}\small\item\em Sets all probability entries to p. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_f52a4ee1544b4e628390918239b7bc1b}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_f52a4ee1544b4e628390918239b7bc1b}{randomize} ()}
+\label{classdai_1_1TFactor_f52a4ee1544b4e628390918239b7bc1b}
+
+\begin{CompactList}\small\item\em Fills all probability entries with random values. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_cf5fc0dd70aa8a7e7c2da3b3acdf6747}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_cf5fc0dd70aa8a7e7c2da3b3acdf6747}{operator$\ast$} (T x) const }
+\label{classdai_1_1TFactor_cf5fc0dd70aa8a7e7c2da3b3acdf6747}
+
+\begin{CompactList}\small\item\em Returns product of $\ast$this with x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_53f052f85f5274b783eaa1ecd31a6b35}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_53f052f85f5274b783eaa1ecd31a6b35}{operator$\ast$} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q) const }
+\label{classdai_1_1TFactor_53f052f85f5274b783eaa1ecd31a6b35}
+
+\begin{CompactList}\small\item\em Returns product of $\ast$this with another Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_e8a33191e3bc570737ff29e77966c33e}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_e8a33191e3bc570737ff29e77966c33e}{operator$\ast$=} (T x)}
+\label{classdai_1_1TFactor_e8a33191e3bc570737ff29e77966c33e}
+
+\begin{CompactList}\small\item\em Multiplies each probability entry with x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_914cb4b11fdffa4daaebf645f539d5d1}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_914cb4b11fdffa4daaebf645f539d5d1}{operator$\ast$=} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q)}
+\label{classdai_1_1TFactor_914cb4b11fdffa4daaebf645f539d5d1}
+
+\begin{CompactList}\small\item\em Multiplies $\ast$this with another Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_35fd7313a64a83aba0cd087d1b60289d}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_35fd7313a64a83aba0cd087d1b60289d}{operator/} (T x) const }
+\label{classdai_1_1TFactor_35fd7313a64a83aba0cd087d1b60289d}
+
+\begin{CompactList}\small\item\em Returns quotient of $\ast$this with x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_f5894eb556d2c440774e650102207d80}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_f5894eb556d2c440774e650102207d80}{operator/} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q) const }
+\label{classdai_1_1TFactor_f5894eb556d2c440774e650102207d80}
+
+\begin{CompactList}\small\item\em Returns quotient of $\ast$this with another Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_45c34bf15cc9b37e5c0718d96d9d2c1a}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_45c34bf15cc9b37e5c0718d96d9d2c1a}{operator/=} (T x)}
+\label{classdai_1_1TFactor_45c34bf15cc9b37e5c0718d96d9d2c1a}
+
+\begin{CompactList}\small\item\em Divides each probability entry by x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_c5ac7c898b536ecbed7a1f58e3899cdb}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_c5ac7c898b536ecbed7a1f58e3899cdb}{operator/=} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q)}
+\label{classdai_1_1TFactor_c5ac7c898b536ecbed7a1f58e3899cdb}
+
+\begin{CompactList}\small\item\em Divides $\ast$this by another Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_5db00c03b427e577bab01646c451ae23}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_5db00c03b427e577bab01646c451ae23}{operator+} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q) const }
+\label{classdai_1_1TFactor_5db00c03b427e577bab01646c451ae23}
+
+\begin{CompactList}\small\item\em Returns sum of $\ast$this and another Factor (their \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars()} should be identical). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_3c2f95c6fddf19bd871a89f419991c08}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_3c2f95c6fddf19bd871a89f419991c08}{operator+} (T q) const }
+\label{classdai_1_1TFactor_3c2f95c6fddf19bd871a89f419991c08}
+
+\begin{CompactList}\small\item\em Returns sum of $\ast$this and a scalar. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_36cd699efe9bcce52fb21d6a3eb7024a}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_36cd699efe9bcce52fb21d6a3eb7024a}{operator-} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q) const }
+\label{classdai_1_1TFactor_36cd699efe9bcce52fb21d6a3eb7024a}
+
+\begin{CompactList}\small\item\em Returns difference of $\ast$this and another Factor (their \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars()} should be identical). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_171e3bab13b2cd054e8ce1eb97be1112}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_171e3bab13b2cd054e8ce1eb97be1112}{operator-} (T q) const }
+\label{classdai_1_1TFactor_171e3bab13b2cd054e8ce1eb97be1112}
+
+\begin{CompactList}\small\item\em Returns difference of $\ast$this with a scalar. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_098a7c22159f23dead9e16ad3dff1e90}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_098a7c22159f23dead9e16ad3dff1e90}{operator+=} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q)}
+\label{classdai_1_1TFactor_098a7c22159f23dead9e16ad3dff1e90}
+
+\begin{CompactList}\small\item\em Adds another Factor to $\ast$this (their \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars()} should be identical). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_fda1418de5d67a6ba004eaea3ef66f77}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_fda1418de5d67a6ba004eaea3ef66f77}{operator+=} (T q)}
+\label{classdai_1_1TFactor_fda1418de5d67a6ba004eaea3ef66f77}
+
+\begin{CompactList}\small\item\em Adds scalar to $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_a6dd7ae3384f6f329e2cb3c3fa31e514}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_a6dd7ae3384f6f329e2cb3c3fa31e514}{operator-=} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q)}
+\label{classdai_1_1TFactor_a6dd7ae3384f6f329e2cb3c3fa31e514}
+
+\begin{CompactList}\small\item\em Subtracts another Factor from $\ast$this (their \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars()} should be identical). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_d74386483d4f28011ddc962db443e3aa}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_d74386483d4f28011ddc962db443e3aa}{operator-=} (T q)}
+\label{classdai_1_1TFactor_d74386483d4f28011ddc962db443e3aa}
+
+\begin{CompactList}\small\item\em Subtracts scalar from $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_9b87c70ab153534d5cdbbdba6aaa7921}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_9b87c70ab153534d5cdbbdba6aaa7921}{operator$^\wedge$} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} a) const }
+\label{classdai_1_1TFactor_9b87c70ab153534d5cdbbdba6aaa7921}
+
+\begin{CompactList}\small\item\em Returns $\ast$this raised to some power. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_4cd8337eb9ae63205692a28435322d3b}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_4cd8337eb9ae63205692a28435322d3b}{operator$^\wedge$=} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} a)}
+\label{classdai_1_1TFactor_4cd8337eb9ae63205692a28435322d3b}
+
+\begin{CompactList}\small\item\em Raises $\ast$this to some power. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_8ab0a98ebf512cd5a27e6a2618ed4353}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_8ab0a98ebf512cd5a27e6a2618ed4353}{makeZero} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} epsilon)}
+\label{classdai_1_1TFactor_8ab0a98ebf512cd5a27e6a2618ed4353}
+
+\begin{CompactList}\small\item\em Sets all entries that are smaller than epsilon to zero. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_731c8683fc17269c4bf3f7b52e0c4b40}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_731c8683fc17269c4bf3f7b52e0c4b40}{makePositive} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} epsilon)}
+\label{classdai_1_1TFactor_731c8683fc17269c4bf3f7b52e0c4b40}
+
+\begin{CompactList}\small\item\em Sets all entries that are smaller than epsilon to epsilon. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_de249c30222894e50170a834aca6d708}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_de249c30222894e50170a834aca6d708}{inverse} () const }
+\label{classdai_1_1TFactor_de249c30222894e50170a834aca6d708}
+
+\begin{CompactList}\small\item\em Returns inverse of $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_1747eaa67d359d34d9221d368753ecdf}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_1747eaa67d359d34d9221d368753ecdf}{divided\_\-by} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&denom) const }
+\label{classdai_1_1TFactor_1747eaa67d359d34d9221d368753ecdf}
+
+\begin{CompactList}\small\item\em Returns $\ast$this divided by another Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_275c1fd149c36a9e67256d21ad97dde1}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \& \hyperlink{classdai_1_1TFactor_275c1fd149c36a9e67256d21ad97dde1}{divide} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&denom)}
+\label{classdai_1_1TFactor_275c1fd149c36a9e67256d21ad97dde1}
+
+\begin{CompactList}\small\item\em Divides $\ast$this by another Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_284a962817d33244c261be5d7f0159ca}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_284a962817d33244c261be5d7f0159ca}{exp} () const }
+\label{classdai_1_1TFactor_284a962817d33244c261be5d7f0159ca}
+
+\begin{CompactList}\small\item\em Returns exp of $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_fa3435d85ca11399aba42c63a008765a}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_fa3435d85ca11399aba42c63a008765a}{abs} () const }
+\label{classdai_1_1TFactor_fa3435d85ca11399aba42c63a008765a}
+
+\begin{CompactList}\small\item\em Returns absolute value of $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_fbbcf3a69afa5fb3bde1f5a8180860c6}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_fbbcf3a69afa5fb3bde1f5a8180860c6}{log} () const }
+\label{classdai_1_1TFactor_fbbcf3a69afa5fb3bde1f5a8180860c6}
+
+\begin{CompactList}\small\item\em Returns logarithm of $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_72b37d26ccac6edb39e71209bb675ba7}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_72b37d26ccac6edb39e71209bb675ba7}{log0} () const }
+\label{classdai_1_1TFactor_72b37d26ccac6edb39e71209bb675ba7}
+
+\begin{CompactList}\small\item\em Returns logarithm of $\ast$this (defining log(0)=0). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_c69a94a4d055c3cac107b2a55bb42944}{
+T \hyperlink{classdai_1_1TFactor_c69a94a4d055c3cac107b2a55bb42944}{normalize} (typename \hyperlink{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}{Prob::NormType} norm=Prob::NORMPROB)}
+\label{classdai_1_1TFactor_c69a94a4d055c3cac107b2a55bb42944}
+
+\begin{CompactList}\small\item\em Normalizes $\ast$this Factor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_df4740f4558ed9bc27029c0c362923e2}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_df4740f4558ed9bc27029c0c362923e2}{normalized} (typename \hyperlink{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}{Prob::NormType} norm=Prob::NORMPROB) const }
+\label{classdai_1_1TFactor_df4740f4558ed9bc27029c0c362923e2}
+
+\begin{CompactList}\small\item\em Returns a normalized copy of $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_7cc9e6bca2b9c187f8d907942264508f}{
+\hyperlink{classdai_1_1TFactor}{Factor} \hyperlink{classdai_1_1TFactor_7cc9e6bca2b9c187f8d907942264508f}{slice} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns, size\_\-t ns\_\-state) const }
+\label{classdai_1_1TFactor_7cc9e6bca2b9c187f8d907942264508f}
+
+\begin{CompactList}\small\item\em Returns a slice of this factor, where the subset ns is in state ns\_\-state. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_f90e2a8a5ef94809ae8905e19fc523e4}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_f90e2a8a5ef94809ae8905e19fc523e4}{partSum} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1TFactor_f90e2a8a5ef94809ae8905e19fc523e4}
+
+\begin{CompactList}\small\item\em Returns unnormalized marginal; ns should be a subset of \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars()}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_692df5b8aed5f6faeb60e076624d5854}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_692df5b8aed5f6faeb60e076624d5854}{marginal} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns, bool normed=true) const }
+\label{classdai_1_1TFactor_692df5b8aed5f6faeb60e076624d5854}
+
+\begin{CompactList}\small\item\em Returns (normalized by default) marginal; ns should be a subset of \hyperlink{classdai_1_1TFactor_54c575d53b8c8a6a03c26c8cdc600ce4}{vars()}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_fd92183f10a4214341ce771b02f8744d}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_fd92183f10a4214341ce771b02f8744d}{notSum} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1TFactor_fd92183f10a4214341ce771b02f8744d}
+
+\begin{CompactList}\small\item\em Sums out all variables except those in ns. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_81c344b9e204bb57aaca92c281aa7dd3}{
+\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{classdai_1_1TFactor_81c344b9e204bb57aaca92c281aa7dd3}{embed} (const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns) const }
+\label{classdai_1_1TFactor_81c344b9e204bb57aaca92c281aa7dd3}
+
+\begin{CompactList}\small\item\em Embeds this factor in a larger \hyperlink{classdai_1_1VarSet}{VarSet}. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_dafb816c6d9f93ceea858709391841d2}{
+bool \hyperlink{classdai_1_1TFactor_dafb816c6d9f93ceea858709391841d2}{hasNaNs} () const }
+\label{classdai_1_1TFactor_dafb816c6d9f93ceea858709391841d2}
+
+\begin{CompactList}\small\item\em Returns true if $\ast$this has NANs. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_7353d87f8a1d4c6c24b9cc5de7b18219}{
+bool \hyperlink{classdai_1_1TFactor_7353d87f8a1d4c6c24b9cc5de7b18219}{hasNegatives} () const }
+\label{classdai_1_1TFactor_7353d87f8a1d4c6c24b9cc5de7b18219}
+
+\begin{CompactList}\small\item\em Returns true if $\ast$this has negative entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_aff9f62e6ef5792a459946cd81bd35af}{
+T \hyperlink{classdai_1_1TFactor_aff9f62e6ef5792a459946cd81bd35af}{totalSum} () const }
+\label{classdai_1_1TFactor_aff9f62e6ef5792a459946cd81bd35af}
+
+\begin{CompactList}\small\item\em Returns total sum of probability entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_8e67b044dfaebf20c77031a2378e65f5}{
+T \hyperlink{classdai_1_1TFactor_8e67b044dfaebf20c77031a2378e65f5}{maxAbs} () const }
+\label{classdai_1_1TFactor_8e67b044dfaebf20c77031a2378e65f5}
+
+\begin{CompactList}\small\item\em Returns maximum absolute value of probability entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_160c82f59a3202180025853a9e5caaa5}{
+T \hyperlink{classdai_1_1TFactor_160c82f59a3202180025853a9e5caaa5}{maxVal} () const }
+\label{classdai_1_1TFactor_160c82f59a3202180025853a9e5caaa5}
+
+\begin{CompactList}\small\item\em Returns maximum value of probability entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_891e98fd0cd9f65f945eb5733c6c3e9f}{
+T \hyperlink{classdai_1_1TFactor_891e98fd0cd9f65f945eb5733c6c3e9f}{minVal} () const }
+\label{classdai_1_1TFactor_891e98fd0cd9f65f945eb5733c6c3e9f}
+
+\begin{CompactList}\small\item\em Returns minimum value of probability entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_948c0013f741040ecdcad7da53377268}{
+\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} \hyperlink{classdai_1_1TFactor_948c0013f741040ecdcad7da53377268}{entropy} () const }
+\label{classdai_1_1TFactor_948c0013f741040ecdcad7da53377268}
+
+\begin{CompactList}\small\item\em Returns entropy of $\ast$this. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TFactor_4908ad29222b60d669d234d0805605b8}{
+T \hyperlink{classdai_1_1TFactor_4908ad29222b60d669d234d0805605b8}{strength} (const \hyperlink{classdai_1_1Var}{Var} \&i, const \hyperlink{classdai_1_1Var}{Var} \&j) const }
+\label{classdai_1_1TFactor_4908ad29222b60d669d234d0805605b8}
+
+\begin{CompactList}\small\item\em Returns strength of $\ast$this, between variables i and j, using (52) of \mbox{[}\hyperlink{Bibliography_MoK07b}{MoK07b}\mbox{]}. \item\end{CompactList}\end{CompactItemize}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{regiongraph_8h}{regiongraph.h}\end{CompactItemize}

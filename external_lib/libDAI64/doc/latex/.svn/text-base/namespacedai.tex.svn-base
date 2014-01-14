@@ -1,0 +1,398 @@
+\hypertarget{namespacedai}{
+\section{dai Namespace Reference}
+\label{namespacedai}\index{dai@{dai}}
+}
+
+
+\subsection{Detailed Description}
+Namespace for libDAI. 
+
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph}
+\begin{CompactList}\small\item\em Represents the neighborhood structure of nodes in a bipartite graph. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1BP}{BP}
+\begin{CompactList}\small\item\em Approximate inference algorithm \char`\"{}(Loopy) Belief Propagation\char`\"{}. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1ClusterGraph}{ClusterGraph}
+\begin{CompactList}\small\item\em A \hyperlink{classdai_1_1ClusterGraph}{ClusterGraph} is a hypergraph with VarSets as nodes. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1InfAlg}{InfAlg}
+\begin{CompactList}\small\item\em \hyperlink{classdai_1_1InfAlg}{InfAlg} is an abstract base class, defining the common interface of all inference algorithms in libDAI. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1DAIAlg}{DAIAlg}
+\begin{CompactList}\small\item\em Combines an \hyperlink{classdai_1_1InfAlg}{InfAlg} and a graphical model, e.g., a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} or \hyperlink{classdai_1_1RegionGraph}{RegionGraph}. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1ExactInf}{ExactInf}
+\begin{CompactList}\small\item\em Exact inference algorithm using brute force enumeration (mainly useful for testing purposes). \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Exception}{Exception}
+\begin{CompactList}\small\item\em Represents an exception (based on std::runtime\_\-error). \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1TFactor}{TFactor}
+\begin{CompactList}\small\item\em Represents a probability factor. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1FactorGraph}{FactorGraph}
+\begin{CompactList}\small\item\em Represents a factor graph. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1HAK}{HAK}
+\begin{CompactList}\small\item\em Approximate inference algorithm: implementation of single-loop (\char`\"{}Generalized Belief Propagation\char`\"{}) and double-loop algorithms by Heskes, Albers and Kappen. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1IndexFor}{IndexFor}
+\begin{CompactList}\small\item\em Tool for looping over the states of several variables. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1MultiFor}{MultiFor}
+\begin{CompactList}\small\item\em \hyperlink{classdai_1_1MultiFor}{MultiFor} makes it easy to perform a dynamic number of nested for loops. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Permute}{Permute}
+\begin{CompactList}\small\item\em Tool for calculating permutations of multiple indices. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1State}{State}
+\begin{CompactList}\small\item\em Contains the joint state of variables within a \hyperlink{classdai_1_1VarSet}{VarSet} and useful things to do with this information. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1JTree}{JTree}
+\begin{CompactList}\small\item\em Exact inference algorithm using junction tree. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1LC}{LC}
+\begin{CompactList}\small\item\em Approximate inference algorithm \char`\"{}Loop Corrected Belief Propagation\char`\"{} by Mooij and Kappen. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1MF}{MF}
+\begin{CompactList}\small\item\em Approximate inference algorithm \char`\"{}Mean Field\char`\"{}. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1MR}{MR}
+\begin{CompactList}\small\item\em Approximate inference algorithm by Montanari and Rizzo. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1TProb}{TProb}
+\begin{CompactList}\small\item\em Represents a probability measure on a finite outcome space (i.e., corresponding to a discrete random variable). \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1PropertySet}{PropertySet}
+\begin{CompactList}\small\item\em Represents a set of properties, mapping keys (of type PropertyKey) to values (of type PropertyValue). \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Region}{Region}
+\begin{CompactList}\small\item\em A \hyperlink{classdai_1_1Region}{Region} is a set of variables with a counting number. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1FRegion}{FRegion}
+\begin{CompactList}\small\item\em A \hyperlink{classdai_1_1FRegion}{FRegion} is a factor with a counting number. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1RegionGraph}{RegionGraph}
+\begin{CompactList}\small\item\em A \hyperlink{classdai_1_1RegionGraph}{RegionGraph} is a bipartite graph consisting of outer regions (type \hyperlink{classdai_1_1FRegion}{FRegion}) and inner regions (type \hyperlink{classdai_1_1Region}{Region}). \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1smallSet}{smallSet}
+\begin{CompactList}\small\item\em Represents a set (optimized for a small number of elements). \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1TreeEP}{TreeEP}
+\begin{CompactList}\small\item\em Approximate inference algorithm \char`\"{}TreeEP\char`\"{} by Minka and Qi. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1hash__map}{hash\_\-map}
+\begin{CompactList}\small\item\em \hyperlink{classdai_1_1hash__map}{hash\_\-map} is an alias for std::tr1::unordered\_\-map. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Diffs}{Diffs}
+\begin{CompactList}\small\item\em Used to keep track of the progress made by iterative algorithms. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Var}{Var}
+\begin{CompactList}\small\item\em Represents a discrete random variable. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1VarSet}{VarSet}
+\begin{CompactList}\small\item\em Represents a set of variables. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1DEdge}{DEdge}
+\begin{CompactList}\small\item\em Represents a directed edge pointing from n1 to n2. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1UEdge}{UEdge}
+\begin{CompactList}\small\item\em Undirected edge between nodes n1 and n2. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1WeightedGraph}{WeightedGraph}
+\begin{CompactList}\small\item\em Represents an undirected weighted graph, with weights of type T. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_d2fa14208786f0746805efc9fbf3e56e}{
+typedef boost::minstd\_\-rand \textbf{\_\-rnd\_\-gen\_\-type}}
+\label{namespacedai_d2fa14208786f0746805efc9fbf3e56e}
+
+\item 
+\hypertarget{namespacedai_4d66d71f2b2c7ac4845bba057eb7cee5}{
+typedef \hyperlink{classdai_1_1DAIAlg}{DAIAlg}$<$ \hyperlink{classdai_1_1FactorGraph}{FactorGraph} $>$ \hyperlink{namespacedai_4d66d71f2b2c7ac4845bba057eb7cee5}{DAIAlgFG}}
+\label{namespacedai_4d66d71f2b2c7ac4845bba057eb7cee5}
+
+\begin{CompactList}\small\item\em Base class for inference algorithms that operate on a \hyperlink{classdai_1_1FactorGraph}{FactorGraph}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_6b5cb6d79a324915d2c88ad368437e21}{
+typedef \hyperlink{classdai_1_1DAIAlg}{DAIAlg}$<$ \hyperlink{classdai_1_1RegionGraph}{RegionGraph} $>$ \hyperlink{namespacedai_6b5cb6d79a324915d2c88ad368437e21}{DAIAlgRG}}
+\label{namespacedai_6b5cb6d79a324915d2c88ad368437e21}
+
+\begin{CompactList}\small\item\em Base class for inference algorithms that operate on a \hyperlink{classdai_1_1RegionGraph}{RegionGraph}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_7515abf9952cd312e95a34ada0670e85}{
+typedef \hyperlink{classdai_1_1TFactor}{TFactor}$<$ \hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} $>$ \hyperlink{namespacedai_7515abf9952cd312e95a34ada0670e85}{Factor}}
+\label{namespacedai_7515abf9952cd312e95a34ada0670e85}
+
+\begin{CompactList}\small\item\em Represents a factor with probability entries represented as Real. \item\end{CompactList}\item 
+\hypertarget{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{
+typedef double \hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real}}
+\label{namespacedai_e7d0472fdc89a8635825d01940e91cbf}
+
+\begin{CompactList}\small\item\em Real number (alias for double, could be changed to long double if necessary). \item\end{CompactList}\item 
+\hypertarget{namespacedai_90f06137ef74bb483e30ee2c7e31b2c8}{
+typedef \hyperlink{classdai_1_1TProb}{TProb}$<$ \hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} $>$ \hyperlink{namespacedai_90f06137ef74bb483e30ee2c7e31b2c8}{Prob}}
+\label{namespacedai_90f06137ef74bb483e30ee2c7e31b2c8}
+
+\begin{CompactList}\small\item\em Represents a probability measure, with entries of type Real. \item\end{CompactList}\item 
+\hypertarget{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{
+typedef std::string \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey}}
+\label{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}
+
+\begin{CompactList}\small\item\em Type of the key of a Property. \item\end{CompactList}\item 
+\hypertarget{namespacedai_eb056b768d73d02c5796c4012f4170c7}{
+typedef boost::any \hyperlink{namespacedai_eb056b768d73d02c5796c4012f4170c7}{PropertyValue}}
+\label{namespacedai_eb056b768d73d02c5796c4012f4170c7}
+
+\begin{CompactList}\small\item\em Type of the value of a Property. \item\end{CompactList}\item 
+\hypertarget{namespacedai_cbc670414e04eecf5c284e42d9d036e3}{
+typedef std::pair$<$ \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey}, \hyperlink{namespacedai_eb056b768d73d02c5796c4012f4170c7}{PropertyValue} $>$ \hyperlink{namespacedai_cbc670414e04eecf5c284e42d9d036e3}{Property}}
+\label{namespacedai_cbc670414e04eecf5c284e42d9d036e3}
+
+\begin{CompactList}\small\item\em A Property is a pair of a key and a corresponding value. \item\end{CompactList}\item 
+\hypertarget{namespacedai_ee930c2594ad57112ff5e230c4ca3391}{
+typedef std::vector$<$ \hyperlink{classdai_1_1UEdge}{UEdge} $>$ \hyperlink{namespacedai_ee930c2594ad57112ff5e230c4ca3391}{UEdgeVec}}
+\label{namespacedai_ee930c2594ad57112ff5e230c4ca3391}
+
+\begin{CompactList}\small\item\em Vector of \hyperlink{classdai_1_1UEdge}{UEdge}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{
+typedef std::vector$<$ \hyperlink{classdai_1_1DEdge}{DEdge} $>$ \hyperlink{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{DEdgeVec}}
+\label{namespacedai_e7764251ab4d4b2d4fbec214eac83079}
+
+\begin{CompactList}\small\item\em Vector of \hyperlink{classdai_1_1DEdge}{DEdge}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_dfcfd53771d59db79ddd826928e76400}{
+typedef std::set$<$ \hyperlink{classdai_1_1UEdge}{UEdge} $>$ \hyperlink{namespacedai_dfcfd53771d59db79ddd826928e76400}{Graph}}
+\label{namespacedai_dfcfd53771d59db79ddd826928e76400}
+
+\begin{CompactList}\small\item\em Represents an undirected graph. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classdai_1_1InfAlg}{InfAlg} $\ast$ \hyperlink{namespacedai_4b9e5254e7ec388e69aa68dfc54509e0}{newInfAlg} (const std::string \&name, const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&fg, const \hyperlink{classdai_1_1PropertySet}{PropertySet} \&opts)
+\begin{CompactList}\small\item\em Constructs a new approximate inference algorithm. \item\end{CompactList}\item 
+\hypertarget{namespacedai_aca72feba62fa99197ef6b9f8bc72e3e}{
+\hyperlink{classdai_1_1TFactor}{Factor} \hyperlink{namespacedai_aca72feba62fa99197ef6b9f8bc72e3e}{calcMarginal} (const \hyperlink{classdai_1_1InfAlg}{InfAlg} \&obj, const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns, bool reInit)}
+\label{namespacedai_aca72feba62fa99197ef6b9f8bc72e3e}
+
+\begin{CompactList}\small\item\em Calculates the marginal of obj on ns by clamping all variables in ns and calculating logZ for each joined state. \item\end{CompactList}\item 
+\hypertarget{namespacedai_22940584470b8ef98412e92427fb8a91}{
+vector$<$ \hyperlink{classdai_1_1TFactor}{Factor} $>$ \hyperlink{namespacedai_22940584470b8ef98412e92427fb8a91}{calcPairBeliefs} (const \hyperlink{classdai_1_1InfAlg}{InfAlg} \&obj, const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns, bool reInit)}
+\label{namespacedai_22940584470b8ef98412e92427fb8a91}
+
+\begin{CompactList}\small\item\em Calculates beliefs of all pairs in ns (by clamping nodes in ns and calculating logZ and the beliefs for each state). \item\end{CompactList}\item 
+\hypertarget{namespacedai_3ef899f27a3662e771e978bca7615f33}{
+\hyperlink{classdai_1_1TFactor}{Factor} \hyperlink{namespacedai_3ef899f27a3662e771e978bca7615f33}{calcMarginal2ndO} (const \hyperlink{classdai_1_1InfAlg}{InfAlg} \&obj, const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns, bool reInit)}
+\label{namespacedai_3ef899f27a3662e771e978bca7615f33}
+
+\begin{CompactList}\small\item\em Calculates beliefs of all pairs in ns (by clamping pairs in ns and calculating logZ for each joined state). \item\end{CompactList}\item 
+\hypertarget{namespacedai_5a70c8cebb3df468779b93704af33a2e}{
+vector$<$ \hyperlink{classdai_1_1TFactor}{Factor} $>$ \hyperlink{namespacedai_5a70c8cebb3df468779b93704af33a2e}{calcPairBeliefsNew} (const \hyperlink{classdai_1_1InfAlg}{InfAlg} \&obj, const \hyperlink{classdai_1_1VarSet}{VarSet} \&ns, bool reInit)}
+\label{namespacedai_5a70c8cebb3df468779b93704af33a2e}
+
+\begin{CompactList}\small\item\em Calculates 2nd order interactions of the marginal of obj on ns. \item\end{CompactList}\item 
+\hypertarget{namespacedai_5142341b00644dce3b6f982cc6d283c0}{
+ostream \& \hyperlink{namespacedai_5142341b00644dce3b6f982cc6d283c0}{operator$<$$<$} (ostream \&os, const \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&fg)}
+\label{namespacedai_5142341b00644dce3b6f982cc6d283c0}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} to an output stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_9d1623757eae10cc61ff92dcd98b7290}{
+istream \& \hyperlink{namespacedai_9d1623757eae10cc61ff92dcd98b7290}{operator$>$$>$} (istream \&is, \hyperlink{classdai_1_1FactorGraph}{FactorGraph} \&fg)}
+\label{namespacedai_9d1623757eae10cc61ff92dcd98b7290}
+
+\begin{CompactList}\small\item\em Reads a \hyperlink{classdai_1_1FactorGraph}{FactorGraph} from an input stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_c63c2f1d67d01aeda5c3cdd95843ea86}{
+std::ostream \& \hyperlink{namespacedai_c63c2f1d67d01aeda5c3cdd95843ea86}{operator$<$$<$} (std::ostream \&os, const \hyperlink{namespacedai_cbc670414e04eecf5c284e42d9d036e3}{Property} \&p)}
+\label{namespacedai_c63c2f1d67d01aeda5c3cdd95843ea86}
+
+\begin{CompactList}\small\item\em Writes a Property object to an output stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_b339baefa9f588de2fba07526d8df7ba}{
+std::ostream \& \hyperlink{namespacedai_b339baefa9f588de2fba07526d8df7ba}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classdai_1_1PropertySet}{PropertySet} \&ps)}
+\label{namespacedai_b339baefa9f588de2fba07526d8df7ba}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1PropertySet}{PropertySet} object to an output stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_ab0479dd285fd4021ecaa80947d40da3}{
+std::istream \& \hyperlink{namespacedai_ab0479dd285fd4021ecaa80947d40da3}{operator$>$$>$} (std::istream \&is, \hyperlink{classdai_1_1PropertySet}{PropertySet} \&ps)}
+\label{namespacedai_ab0479dd285fd4021ecaa80947d40da3}
+
+\begin{CompactList}\small\item\em Reads a \hyperlink{classdai_1_1PropertySet}{PropertySet} object from an input stream, storing values as strings. \item\end{CompactList}\item 
+\hypertarget{namespacedai_0e910ae9247869ee549df8eed173a6df}{
+ostream \& \hyperlink{namespacedai_0e910ae9247869ee549df8eed173a6df}{operator$<$$<$} (ostream \&os, const \hyperlink{classdai_1_1RegionGraph}{RegionGraph} \&rg)}
+\label{namespacedai_0e910ae9247869ee549df8eed173a6df}
+
+\begin{CompactList}\small\item\em Send \hyperlink{classdai_1_1RegionGraph}{RegionGraph} to output stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_b27c0799ddef29bb3833477e32c53862}{
+double \hyperlink{namespacedai_b27c0799ddef29bb3833477e32c53862}{toc} ()}
+\label{namespacedai_b27c0799ddef29bb3833477e32c53862}
+
+\begin{CompactList}\small\item\em Returns the time in seconds. \item\end{CompactList}\item 
+\hypertarget{namespacedai_8676cd0faacaec12b2acf0e0472e3280}{
+\_\-rnd\_\-gen\_\-type \textbf{\_\-rnd\_\-gen} (42U)}
+\label{namespacedai_8676cd0faacaec12b2acf0e0472e3280}
+
+\item 
+\hypertarget{namespacedai_c351fd5d4833c533592d179d97f64ef8}{
+boost::uniform\_\-real \textbf{\_\-uni\_\-dist} (0, 1)}
+\label{namespacedai_c351fd5d4833c533592d179d97f64ef8}
+
+\item 
+\hypertarget{namespacedai_917c487cfce021627972a12d644c0e9d}{
+boost::variate\_\-generator$<$ \_\-rnd\_\-gen\_\-type \&, boost::uniform\_\-real$<$$>$ $>$ \textbf{\_\-uni\_\-rnd} (\_\-rnd\_\-gen, \_\-uni\_\-dist)}
+\label{namespacedai_917c487cfce021627972a12d644c0e9d}
+
+\item 
+\hypertarget{namespacedai_e8632edc2f82d536ec59fd5a50e8bf47}{
+boost::variate\_\-generator$<$ \_\-rnd\_\-gen\_\-type \&, boost::normal\_\-distribution$<$$>$ $>$ \textbf{\_\-normal\_\-rnd} (\_\-rnd\_\-gen, \_\-normal\_\-dist)}
+\label{namespacedai_e8632edc2f82d536ec59fd5a50e8bf47}
+
+\item 
+\hypertarget{namespacedai_e699eca7ca4d6e971b54c2b4a95942d4}{
+void \hyperlink{namespacedai_e699eca7ca4d6e971b54c2b4a95942d4}{rnd\_\-seed} (size\_\-t seed)}
+\label{namespacedai_e699eca7ca4d6e971b54c2b4a95942d4}
+
+\begin{CompactList}\small\item\em Sets the random seed. \item\end{CompactList}\item 
+\hypertarget{namespacedai_409fb3c0ffc14bf9e03a45014a9b4093}{
+double \hyperlink{namespacedai_409fb3c0ffc14bf9e03a45014a9b4093}{rnd\_\-uniform} ()}
+\label{namespacedai_409fb3c0ffc14bf9e03a45014a9b4093}
+
+\begin{CompactList}\small\item\em Returns a real number, distributed uniformly on \mbox{[}0,1). \item\end{CompactList}\item 
+\hypertarget{namespacedai_4367d2d1c1518023dd91b645d641fce7}{
+double \hyperlink{namespacedai_4367d2d1c1518023dd91b645d641fce7}{rnd\_\-stdnormal} ()}
+\label{namespacedai_4367d2d1c1518023dd91b645d641fce7}
+
+\begin{CompactList}\small\item\em Returns a real number from a standard-normal distribution. \item\end{CompactList}\item 
+\hypertarget{namespacedai_c02317b960b112637976333f90d1f937}{
+int \hyperlink{namespacedai_c02317b960b112637976333f90d1f937}{rnd\_\-int} (int min, int max)}
+\label{namespacedai_c02317b960b112637976333f90d1f937}
+
+\begin{CompactList}\small\item\em Returns a random integer in interval \mbox{[}min, max\mbox{]}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_602bda76af8301b981bc9147793d72e0}{
+\hyperlink{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{DEdgeVec} \hyperlink{namespacedai_602bda76af8301b981bc9147793d72e0}{GrowRootedTree} (const \hyperlink{namespacedai_dfcfd53771d59db79ddd826928e76400}{Graph} \&T, size\_\-t Root)}
+\label{namespacedai_602bda76af8301b981bc9147793d72e0}
+
+\begin{CompactList}\small\item\em Constructs a rooted tree from a tree and a root. \item\end{CompactList}\item 
+\hypertarget{namespacedai_7e19e088006a5e91e0d34d26cf6f3a8d}{
+\hyperlink{namespacedai_ee930c2594ad57112ff5e230c4ca3391}{UEdgeVec} \hyperlink{namespacedai_7e19e088006a5e91e0d34d26cf6f3a8d}{RandomDRegularGraph} (size\_\-t N, size\_\-t d)}
+\label{namespacedai_7e19e088006a5e91e0d34d26cf6f3a8d}
+
+\begin{CompactList}\small\item\em Constructs a random undirected graph of N nodes, where each node has connectivity d. \item\end{CompactList}\item 
+\hypertarget{namespacedai_dbcd0bf0cd16bda03f4483530611dbae}{
+{\footnotesize template$<$typename T$>$ }\\std::ostream \& \hyperlink{namespacedai_dbcd0bf0cd16bda03f4483530611dbae}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&P)}
+\label{namespacedai_dbcd0bf0cd16bda03f4483530611dbae}
+
+\begin{CompactList}\small\item\em Writes a Factor to an output stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_21104476f853192821ff6685732ac0af}{
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} \hyperlink{namespacedai_21104476f853192821ff6685732ac0af}{dist} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&x, const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&y, \hyperlink{classdai_1_1TProb_492487fd71f6e87673853e5e2fda2f27}{Prob::DistType} dt)}
+\label{namespacedai_21104476f853192821ff6685732ac0af}
+
+\begin{CompactList}\small\item\em Returns distance between two Factors (with identical vars()). \item\end{CompactList}\item 
+\hypertarget{namespacedai_26014cccb4cc16b53e83d350e280a705}{
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{namespacedai_26014cccb4cc16b53e83d350e280a705}{max} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&P, const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q)}
+\label{namespacedai_26014cccb4cc16b53e83d350e280a705}
+
+\begin{CompactList}\small\item\em Returns the pointwise maximum of two Factors. \item\end{CompactList}\item 
+\hypertarget{namespacedai_0957f2d605d64a2e13b8dc3eb9fc8800}{
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \hyperlink{namespacedai_0957f2d605d64a2e13b8dc3eb9fc8800}{min} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&P, const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&Q)}
+\label{namespacedai_0957f2d605d64a2e13b8dc3eb9fc8800}
+
+\begin{CompactList}\small\item\em Returns the pointwise minimum of two Factors. \item\end{CompactList}\item 
+\hypertarget{namespacedai_716237fb73c302a0ee0d3e334d71517c}{
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} \hyperlink{namespacedai_716237fb73c302a0ee0d3e334d71517c}{MutualInfo} (const \hyperlink{classdai_1_1TFactor}{TFactor}$<$ T $>$ \&P)}
+\label{namespacedai_716237fb73c302a0ee0d3e334d71517c}
+
+\begin{CompactList}\small\item\em Calculates the mutual information between the two variables in P. \item\end{CompactList}\item 
+\hypertarget{namespacedai_db3928b138c1ec8f06433a84a670f56c}{
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{namespacedai_db3928b138c1ec8f06433a84a670f56c}{min} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&a, const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&b)}
+\label{namespacedai_db3928b138c1ec8f06433a84a670f56c}
+
+\begin{CompactList}\small\item\em Returns TProb$<$T$>$ containing the pointwise minimum of a and b (which should have equal size). \item\end{CompactList}\item 
+\hypertarget{namespacedai_1d1e1236b5993b3cbdca8302d5305021}{
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{namespacedai_1d1e1236b5993b3cbdca8302d5305021}{max} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&a, const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&b)}
+\label{namespacedai_1d1e1236b5993b3cbdca8302d5305021}
+
+\begin{CompactList}\small\item\em Returns TProb$<$T$>$ containing the pointwise maximum of a and b (which should have equal size). \item\end{CompactList}\item 
+\hypertarget{namespacedai_1a0b1c88c46fb8763c2c783cc3fe9a62}{
+{\footnotesize template$<$class T$>$ }\\std::ostream \& \hyperlink{namespacedai_1a0b1c88c46fb8763c2c783cc3fe9a62}{operator$<$$<$} (std::ostream \&os, const std::vector$<$ T $>$ \&x)}
+\label{namespacedai_1a0b1c88c46fb8763c2c783cc3fe9a62}
+
+\begin{CompactList}\small\item\em Writes a std::vector to a std::ostream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_4f8ad5d0c47c7fdfe17e5d0f4c0a32d9}{
+{\footnotesize template$<$class T$>$ }\\std::ostream \& \hyperlink{namespacedai_4f8ad5d0c47c7fdfe17e5d0f4c0a32d9}{operator$<$$<$} (std::ostream \&os, const std::set$<$ T $>$ \&x)}
+\label{namespacedai_4f8ad5d0c47c7fdfe17e5d0f4c0a32d9}
+
+\begin{CompactList}\small\item\em Writes a std::set to a std::ostream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_5913957fb1c3c3d3fbd1f3102b8eb04c}{
+{\footnotesize template$<$class T1, class T2$>$ }\\std::ostream \& \hyperlink{namespacedai_5913957fb1c3c3d3fbd1f3102b8eb04c}{operator$<$$<$} (std::ostream \&os, const std::map$<$ T1, T2 $>$ \&x)}
+\label{namespacedai_5913957fb1c3c3d3fbd1f3102b8eb04c}
+
+\begin{CompactList}\small\item\em Writes a std::map to a std::ostream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_575f6202aa88de6bf5146b85d8832eb5}{
+{\footnotesize template$<$class T1, class T2$>$ }\\std::ostream \& \hyperlink{namespacedai_575f6202aa88de6bf5146b85d8832eb5}{operator$<$$<$} (std::ostream \&os, const std::pair$<$ T1, T2 $>$ \&x)}
+\label{namespacedai_575f6202aa88de6bf5146b85d8832eb5}
+
+\begin{CompactList}\small\item\em Writes a std::pair to a std::ostream. \item\end{CompactList}\item 
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{DEdgeVec} \hyperlink{namespacedai_7ede01daa445869cce29730d0cc29d74}{MinSpanningTreePrims} (const \hyperlink{classdai_1_1WeightedGraph}{WeightedGraph}$<$ T $>$ \&G)
+\begin{CompactList}\small\item\em Uses Prim's algorithm to construct a minimal spanning tree from the (positively) weighted graph G. \item\end{CompactList}\item 
+{\footnotesize template$<$typename T$>$ }\\\hyperlink{namespacedai_e7764251ab4d4b2d4fbec214eac83079}{DEdgeVec} \hyperlink{namespacedai_461d882462bc6625c3874e1481fd9d68}{MaxSpanningTreePrims} (const \hyperlink{classdai_1_1WeightedGraph}{WeightedGraph}$<$ T $>$ \&\hyperlink{namespacedai_dfcfd53771d59db79ddd826928e76400}{Graph})
+\begin{CompactList}\small\item\em Use Prim's algorithm to construct a minimal spanning tree from the (positively) weighted graph G. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_db5bd6385f9f88d7f191c8c7dc8d2d74}{
+boost::normal\_\-distribution \textbf{\_\-normal\_\-dist}}
+\label{namespacedai_db5bd6385f9f88d7f191c8c7dc8d2d74}
+
+\item 
+static const char $\ast$ \hyperlink{namespacedai_faf76457d5d1ad9cfd37feb44ae94669}{DAINames} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em Contains the names of all approximate inference algorithms compiled into libDAI. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacedai_4b9e5254e7ec388e69aa68dfc54509e0}{
+\index{dai@{dai}!newInfAlg@{newInfAlg}}
+\index{newInfAlg@{newInfAlg}!dai@{dai}}
+\subsubsection[newInfAlg]{\setlength{\rightskip}{0pt plus 5cm}{\bf InfAlg} $\ast$ dai::newInfAlg (const std::string \& {\em name}, \/  const FactorGraph \& {\em fg}, \/  const PropertySet \& {\em opts})}}
+\label{namespacedai_4b9e5254e7ec388e69aa68dfc54509e0}
+
+
+Constructs a new approximate inference algorithm. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name}]The name of the approximate inference algorithm (should be one of the names in DAINames). \item[{\em fg}]The \hyperlink{classdai_1_1FactorGraph}{FactorGraph} that the algorithm should be applied to. \item[{\em opts}]A \hyperlink{classdai_1_1PropertySet}{PropertySet} specifying the options for the algorithm. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Returns a pointer to the new \hyperlink{classdai_1_1InfAlg}{InfAlg} object; it is the responsibility of the caller to delete it later. \end{Desc}
+\hypertarget{namespacedai_7ede01daa445869cce29730d0cc29d74}{
+\index{dai@{dai}!MinSpanningTreePrims@{MinSpanningTreePrims}}
+\index{MinSpanningTreePrims@{MinSpanningTreePrims}!dai@{dai}}
+\subsubsection[MinSpanningTreePrims]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf DEdgeVec} dai::MinSpanningTreePrims (const WeightedGraph$<$ T $>$ \& {\em G})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{namespacedai_7ede01daa445869cce29730d0cc29d74}
+
+
+Uses Prim's algorithm to construct a minimal spanning tree from the (positively) weighted graph G. 
+
+Uses implementation in Boost Graph Library. \hypertarget{namespacedai_461d882462bc6625c3874e1481fd9d68}{
+\index{dai@{dai}!MaxSpanningTreePrims@{MaxSpanningTreePrims}}
+\index{MaxSpanningTreePrims@{MaxSpanningTreePrims}!dai@{dai}}
+\subsubsection[MaxSpanningTreePrims]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf DEdgeVec} dai::MaxSpanningTreePrims (const WeightedGraph$<$ T $>$ \& {\em Graph})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{namespacedai_461d882462bc6625c3874e1481fd9d68}
+
+
+Use Prim's algorithm to construct a minimal spanning tree from the (positively) weighted graph G. 
+
+Uses implementation in Boost Graph Library. 
+
+\subsection{Variable Documentation}
+\hypertarget{namespacedai_faf76457d5d1ad9cfd37feb44ae94669}{
+\index{dai@{dai}!DAINames@{DAINames}}
+\index{DAINames@{DAINames}!dai@{dai}}
+\subsubsection[DAINames]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf dai::DAINames}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{namespacedai_faf76457d5d1ad9cfd37feb44ae94669}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim} {
+    ExactInf::Name,
+
+    BP::Name, 
+
+
+    MF::Name,
+
+
+    HAK::Name,
+
+
+    LC::Name,
+
+
+    TreeEP::Name,
+
+
+    JTree::Name,
+
+
+    MR::Name,
+
+    ""
+}
+\end{verbatim}
+\end{Code}
+Contains the names of all approximate inference algorithms compiled into libDAI. 
+

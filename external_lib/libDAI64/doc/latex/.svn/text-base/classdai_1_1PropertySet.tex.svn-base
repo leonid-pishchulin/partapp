@@ -1,0 +1,72 @@
+\hypertarget{classdai_1_1PropertySet}{
+\section{dai::PropertySet Class Reference}
+\label{classdai_1_1PropertySet}\index{dai::PropertySet@{dai::PropertySet}}
+}
+{\tt \#include $<$dai/properties.h$>$}
+
+Inherits std::map$<$ std::string, boost::any $>$.
+
+
+
+\subsection{Detailed Description}
+Represents a set of properties, mapping keys (of type PropertyKey) to values (of type PropertyValue). \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1PropertySet_cdc6cbd296f457d4a21d5795c62e8e8a}{
+const \hyperlink{namespacedai_eb056b768d73d02c5796c4012f4170c7}{PropertyValue} \& \hyperlink{classdai_1_1PropertySet_cdc6cbd296f457d4a21d5795c62e8e8a}{Get} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key) const }
+\label{classdai_1_1PropertySet_cdc6cbd296f457d4a21d5795c62e8e8a}
+
+\begin{CompactList}\small\item\em Gets a property. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_c5e6bb10fcbcbe1302494cd995e412df}{
+\hyperlink{classdai_1_1PropertySet}{PropertySet} \& \hyperlink{classdai_1_1PropertySet_c5e6bb10fcbcbe1302494cd995e412df}{Set} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key, const \hyperlink{namespacedai_eb056b768d73d02c5796c4012f4170c7}{PropertyValue} \&val)}
+\label{classdai_1_1PropertySet_c5e6bb10fcbcbe1302494cd995e412df}
+
+\begin{CompactList}\small\item\em Sets a property. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_1458c0be9e07b400b4e54df72dae6a3a}{
+{\footnotesize template$<$typename ValueType$>$ }\\ValueType \hyperlink{classdai_1_1PropertySet_1458c0be9e07b400b4e54df72dae6a3a}{GetAs} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key) const }
+\label{classdai_1_1PropertySet_1458c0be9e07b400b4e54df72dae6a3a}
+
+\begin{CompactList}\small\item\em Gets a property, casted as ValueType. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_0a18aa933d4b58c043e39f79a8870862}{
+{\footnotesize template$<$typename ValueType$>$ }\\void \hyperlink{classdai_1_1PropertySet_0a18aa933d4b58c043e39f79a8870862}{ConvertTo} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key)}
+\label{classdai_1_1PropertySet_0a18aa933d4b58c043e39f79a8870862}
+
+\begin{CompactList}\small\item\em Converts a property from string to ValueType (if necessary). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_8d8bebf882f713af015ffb02a563db60}{
+{\footnotesize template$<$typename ValueType$>$ }\\ValueType \hyperlink{classdai_1_1PropertySet_8d8bebf882f713af015ffb02a563db60}{getStringAs} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key) const }
+\label{classdai_1_1PropertySet_8d8bebf882f713af015ffb02a563db60}
+
+\begin{CompactList}\small\item\em Converts a property from string to ValueType (if necessary). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_8febf05009938e2cee9988a93b8a1d56}{
+{\footnotesize template$<$typename ValueType$>$ }\\\hyperlink{classdai_1_1PropertySet}{PropertySet} \& \hyperlink{classdai_1_1PropertySet_8febf05009938e2cee9988a93b8a1d56}{setAsString} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key, ValueType \&val)}
+\label{classdai_1_1PropertySet_8febf05009938e2cee9988a93b8a1d56}
+
+\begin{CompactList}\small\item\em Converts a property from ValueType to string (if necessary). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_51bfe57cacf9f79e788c490ed369869e}{
+\hyperlink{classdai_1_1PropertySet}{PropertySet} \hyperlink{classdai_1_1PropertySet_51bfe57cacf9f79e788c490ed369869e}{operator()} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key, const \hyperlink{namespacedai_eb056b768d73d02c5796c4012f4170c7}{PropertyValue} \&val) const }
+\label{classdai_1_1PropertySet_51bfe57cacf9f79e788c490ed369869e}
+
+\begin{CompactList}\small\item\em Shorthand for (temporarily) adding properties, e.g. \hyperlink{classdai_1_1PropertySet}{PropertySet} p()(\char`\"{}method\char`\"{},\char`\"{}BP\char`\"{})(\char`\"{}verbose\char`\"{},1)(\char`\"{}tol\char`\"{},1e-9). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_bc3df170db0dbba57cb11e3ef87f5948}{
+bool \hyperlink{classdai_1_1PropertySet_bc3df170db0dbba57cb11e3ef87f5948}{hasKey} (const \hyperlink{namespacedai_cc877a85f4f4dbb6a0d58c434bb2b996}{PropertyKey} \&key) const }
+\label{classdai_1_1PropertySet_bc3df170db0dbba57cb11e3ef87f5948}
+
+\begin{CompactList}\small\item\em Check if a property with the given key exists. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1PropertySet_55c10d86bc897277108b545f22e06fb7}{
+std::ostream \& \hyperlink{classdai_1_1PropertySet_55c10d86bc897277108b545f22e06fb7}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classdai_1_1PropertySet}{PropertySet} \&ps)}
+\label{classdai_1_1PropertySet_55c10d86bc897277108b545f22e06fb7}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1PropertySet}{PropertySet} object to an output stream. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1PropertySet_0ec4068ab9fe8a5690f560a2e7d778fc}{
+std::istream \& \hyperlink{classdai_1_1PropertySet_0ec4068ab9fe8a5690f560a2e7d778fc}{operator$>$$>$} (std::istream \&is, \hyperlink{classdai_1_1PropertySet}{PropertySet} \&ps)}
+\label{classdai_1_1PropertySet_0ec4068ab9fe8a5690f560a2e7d778fc}
+
+\begin{CompactList}\small\item\em Reads a \hyperlink{classdai_1_1PropertySet}{PropertySet} object from an input stream, storing values as strings. \item\end{CompactList}\end{CompactItemize}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{properties_8h}{properties.h}\end{CompactItemize}

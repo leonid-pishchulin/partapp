@@ -1,0 +1,70 @@
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor}{
+\section{dai::BipartiteGraph::Neighbor Struct Reference}
+\label{structdai_1_1BipartiteGraph_1_1Neighbor}\index{dai::BipartiteGraph::Neighbor@{dai::BipartiteGraph::Neighbor}}
+}
+{\tt \#include $<$dai/bipgraph.h$>$}
+
+
+
+\subsection{Detailed Description}
+Describes a neighboring node of some other node in a \hyperlink{classdai_1_1BipartiteGraph}{BipartiteGraph}. 
+
+Iterating over all neighbors of the n1'th node of type 1 can be done in the following way: 
+
+\begin{Code}\begin{verbatim}      size_t n1 = ...;
+      foreach( const BipartiteGraph::Neighbor &n2, nb1(n1) ) {
+          size_t _n2 = n2.iter;
+          size_t _n1 = n2.dual;
+          std::cout << "The " << _n2 << "'th neighbor of the " << n1 << "'th node of type 1 is: the " << n2 << "'th node of type 2" << endl;
+
+          // The _n2'th neighbor of n1 is n2:
+          assert( nb1(n1)[_n2] == n2 );
+          // The _n1'th neighbor of n2 is n1:
+          assert( nb2(n2)[_n1] == n1 );
+          // n2 can be used as an abbreviation of n2.node:
+          assert( static_cast<size_t>(n2) == n2.node );
+      }
+\end{verbatim}
+\end{Code}
+
+ \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor_0f0b8b66954a515ce875c3a6d1a0ac76}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_0f0b8b66954a515ce875c3a6d1a0ac76}{Neighbor} ()}
+\label{structdai_1_1BipartiteGraph_1_1Neighbor_0f0b8b66954a515ce875c3a6d1a0ac76}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor_071eaf505d2ccf4fa1acfe86a3b5fd75}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_071eaf505d2ccf4fa1acfe86a3b5fd75}{Neighbor} (size\_\-t \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_66412c1951bbf7023ee692b60af52979}{iter}, size\_\-t \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_59a333d966c5662fa19aa08ca8fb9aba}{node}, size\_\-t \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_4b63f7dff21e11d61518f1264c541bd8}{dual})}
+\label{structdai_1_1BipartiteGraph_1_1Neighbor_071eaf505d2ccf4fa1acfe86a3b5fd75}
+
+\begin{CompactList}\small\item\em Constructor that sets the \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} members accordingly to the parameters. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor_d3d8a5b23bdb5986fa4d1ad8937ccd73}{
+\hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_d3d8a5b23bdb5986fa4d1ad8937ccd73}{operator size\_\-t} () const }
+\label{structdai_1_1BipartiteGraph_1_1Neighbor_d3d8a5b23bdb5986fa4d1ad8937ccd73}
+
+\begin{CompactList}\small\item\em Cast to size\_\-t returns member node. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor_66412c1951bbf7023ee692b60af52979}{
+size\_\-t \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_66412c1951bbf7023ee692b60af52979}{iter}}
+\label{structdai_1_1BipartiteGraph_1_1Neighbor_66412c1951bbf7023ee692b60af52979}
+
+\begin{CompactList}\small\item\em Corresponds to the index of this \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor}{Neighbor} entry in the vector of neighbors. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor_59a333d966c5662fa19aa08ca8fb9aba}{
+size\_\-t \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_59a333d966c5662fa19aa08ca8fb9aba}{node}}
+\label{structdai_1_1BipartiteGraph_1_1Neighbor_59a333d966c5662fa19aa08ca8fb9aba}
+
+\begin{CompactList}\small\item\em Contains the number of the neighboring node. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1BipartiteGraph_1_1Neighbor_4b63f7dff21e11d61518f1264c541bd8}{
+size\_\-t \hyperlink{structdai_1_1BipartiteGraph_1_1Neighbor_4b63f7dff21e11d61518f1264c541bd8}{dual}}
+\label{structdai_1_1BipartiteGraph_1_1Neighbor_4b63f7dff21e11d61518f1264c541bd8}
+
+\begin{CompactList}\small\item\em Contains the \char`\"{}dual\char`\"{} iter. \item\end{CompactList}\end{CompactItemize}
+
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{bipgraph_8h}{bipgraph.h}\end{CompactItemize}

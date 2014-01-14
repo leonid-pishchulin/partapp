@@ -1,0 +1,31 @@
+\hypertarget{mr_8h}{
+\section{include/dai/mr.h File Reference}
+\label{mr_8h}\index{include/dai/mr.h@{include/dai/mr.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines class MR. 
+
+
+
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$string$>$}\par
+{\tt \#include $<$dai/factorgraph.h$>$}\par
+{\tt \#include $<$dai/daialg.h$>$}\par
+{\tt \#include $<$dai/enum.h$>$}\par
+{\tt \#include $<$dai/properties.h$>$}\par
+{\tt \#include $<$dai/exceptions.h$>$}\par
+{\tt \#include $<$boost/dynamic\_\-bitset.hpp$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1MR}{dai::MR}
+\begin{CompactList}\small\item\em Approximate inference algorithm by Montanari and Rizzo. \item\end{CompactList}\item 
+struct \hyperlink{structdai_1_1MR_1_1Properties}{dai::MR::Properties}
+\begin{CompactList}\small\item\em Parameters of this inference algorithm. \item\end{CompactList}\end{CompactItemize}

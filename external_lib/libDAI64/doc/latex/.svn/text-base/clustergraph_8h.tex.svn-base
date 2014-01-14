@@ -1,0 +1,25 @@
+\hypertarget{clustergraph_8h}{
+\section{include/dai/clustergraph.h File Reference}
+\label{clustergraph_8h}\index{include/dai/clustergraph.h@{include/dai/clustergraph.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines class ClusterGraph. 
+
+
+
+{\tt \#include $<$set$>$}\par
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$dai/varset.h$>$}\par
+{\tt \#include $<$dai/bipgraph.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1ClusterGraph}{dai::ClusterGraph}
+\begin{CompactList}\small\item\em A \hyperlink{classdai_1_1ClusterGraph}{ClusterGraph} is a hypergraph with VarSets as nodes. \item\end{CompactList}\end{CompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{util_8h}{
+\section{include/dai/util.h File Reference}
+\label{util_8h}\index{include/dai/util.h@{include/dai/util.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines general utility functions and adds an abstraction layer for platform-dependent functionality. 
+
+
+
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$set$>$}\par
+{\tt \#include $<$map$>$}\par
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$cstdio$>$}\par
+{\tt \#include $<$boost/foreach.hpp$>$}\par
+{\tt \#include $<$algorithm$>$}\par
+{\tt \#include $<$tr1/unordered\_\-map$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1hash__map}{dai::hash\_\-map$<$ T, U $>$}
+\begin{CompactList}\small\item\em \hyperlink{classdai_1_1hash__map}{hash\_\-map} is an alias for std::tr1::unordered\_\-map. \item\end{CompactList}\item 
+class \hyperlink{classdai_1_1Diffs}{dai::Diffs}
+\begin{CompactList}\small\item\em Used to keep track of the progress made by iterative algorithms. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\hypertarget{util_8h_85d9ac269eba33293361f4ed7c2a697b}{
+\#define \hyperlink{util_8h_85d9ac269eba33293361f4ed7c2a697b}{foreach}~BOOST\_\-FOREACH}
+\label{util_8h_85d9ac269eba33293361f4ed7c2a697b}
+
+\begin{CompactList}\small\item\em An alias to the BOOST\_\-FOREACH macro from the \hyperlink{util_8h_85d9ac269eba33293361f4ed7c2a697b}{boost::foreach} library. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_b27c0799ddef29bb3833477e32c53862}{
+double \hyperlink{namespacedai_b27c0799ddef29bb3833477e32c53862}{dai::toc} ()}
+\label{namespacedai_b27c0799ddef29bb3833477e32c53862}
+
+\begin{CompactList}\small\item\em Returns the time in seconds. \item\end{CompactList}\item 
+\hypertarget{namespacedai_e699eca7ca4d6e971b54c2b4a95942d4}{
+void \hyperlink{namespacedai_e699eca7ca4d6e971b54c2b4a95942d4}{dai::rnd\_\-seed} (size\_\-t seed)}
+\label{namespacedai_e699eca7ca4d6e971b54c2b4a95942d4}
+
+\begin{CompactList}\small\item\em Sets the random seed. \item\end{CompactList}\item 
+\hypertarget{namespacedai_409fb3c0ffc14bf9e03a45014a9b4093}{
+double \hyperlink{namespacedai_409fb3c0ffc14bf9e03a45014a9b4093}{dai::rnd\_\-uniform} ()}
+\label{namespacedai_409fb3c0ffc14bf9e03a45014a9b4093}
+
+\begin{CompactList}\small\item\em Returns a real number, distributed uniformly on \mbox{[}0,1). \item\end{CompactList}\item 
+\hypertarget{namespacedai_4367d2d1c1518023dd91b645d641fce7}{
+double \hyperlink{namespacedai_4367d2d1c1518023dd91b645d641fce7}{dai::rnd\_\-stdnormal} ()}
+\label{namespacedai_4367d2d1c1518023dd91b645d641fce7}
+
+\begin{CompactList}\small\item\em Returns a real number from a standard-normal distribution. \item\end{CompactList}\item 
+\hypertarget{namespacedai_c02317b960b112637976333f90d1f937}{
+int \hyperlink{namespacedai_c02317b960b112637976333f90d1f937}{dai::rnd\_\-int} (int min, int max)}
+\label{namespacedai_c02317b960b112637976333f90d1f937}
+
+\begin{CompactList}\small\item\em Returns a random integer in interval \mbox{[}min, max\mbox{]}. \item\end{CompactList}\item 
+\hypertarget{namespacedai_1a0b1c88c46fb8763c2c783cc3fe9a62}{
+{\footnotesize template$<$class T$>$ }\\std::ostream \& \hyperlink{namespacedai_1a0b1c88c46fb8763c2c783cc3fe9a62}{dai::operator$<$$<$} (std::ostream \&os, const std::vector$<$ T $>$ \&x)}
+\label{namespacedai_1a0b1c88c46fb8763c2c783cc3fe9a62}
+
+\begin{CompactList}\small\item\em Writes a std::vector to a std::ostream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_4f8ad5d0c47c7fdfe17e5d0f4c0a32d9}{
+{\footnotesize template$<$class T$>$ }\\std::ostream \& \hyperlink{namespacedai_4f8ad5d0c47c7fdfe17e5d0f4c0a32d9}{dai::operator$<$$<$} (std::ostream \&os, const std::set$<$ T $>$ \&x)}
+\label{namespacedai_4f8ad5d0c47c7fdfe17e5d0f4c0a32d9}
+
+\begin{CompactList}\small\item\em Writes a std::set to a std::ostream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_5913957fb1c3c3d3fbd1f3102b8eb04c}{
+{\footnotesize template$<$class T1, class T2$>$ }\\std::ostream \& \hyperlink{namespacedai_5913957fb1c3c3d3fbd1f3102b8eb04c}{dai::operator$<$$<$} (std::ostream \&os, const std::map$<$ T1, T2 $>$ \&x)}
+\label{namespacedai_5913957fb1c3c3d3fbd1f3102b8eb04c}
+
+\begin{CompactList}\small\item\em Writes a std::map to a std::ostream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_575f6202aa88de6bf5146b85d8832eb5}{
+{\footnotesize template$<$class T1, class T2$>$ }\\std::ostream \& \hyperlink{namespacedai_575f6202aa88de6bf5146b85d8832eb5}{dai::operator$<$$<$} (std::ostream \&os, const std::pair$<$ T1, T2 $>$ \&x)}
+\label{namespacedai_575f6202aa88de6bf5146b85d8832eb5}
+
+\begin{CompactList}\small\item\em Writes a std::pair to a std::ostream. \item\end{CompactList}\end{CompactItemize}

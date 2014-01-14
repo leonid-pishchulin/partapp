@@ -1,0 +1,337 @@
+\hypertarget{classdai_1_1TProb}{
+\section{dai::TProb$<$ T $>$ Class Template Reference}
+\label{classdai_1_1TProb}\index{dai::TProb@{dai::TProb}}
+}
+{\tt \#include $<$dai/prob.h$>$}
+
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class dai::TProb$<$ T $>$}
+
+Represents a probability measure on a finite outcome space (i.e., corresponding to a discrete random variable). 
+
+It is implemented as a std::vector$<$T$>$ but adds a convenient interface. It is not necessarily normalized at all times. \begin{Desc}
+\item[Template Parameters:]
+\begin{description}
+\item[{\em T}]Should be castable from and to double. \end{description}
+\end{Desc}
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}{NormType} \{ \textbf{NORMPROB}, 
+\textbf{NORMLINF}
+ \}
+\begin{CompactList}\small\item\em Enumerates different ways of normalizing a probability measure. \item\end{CompactList}\item 
+enum \hyperlink{classdai_1_1TProb_492487fd71f6e87673853e5e2fda2f27}{DistType} \{ \textbf{DISTL1}, 
+\textbf{DISTLINF}, 
+\textbf{DISTTV}, 
+\textbf{DISTKL}
+ \}
+\begin{CompactList}\small\item\em Enumerates different distance measures between probability measures. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1TProb_81f9393fa860a6bb005c8286bf9aceab}{
+\hyperlink{classdai_1_1TProb_81f9393fa860a6bb005c8286bf9aceab}{TProb} ()}
+\label{classdai_1_1TProb_81f9393fa860a6bb005c8286bf9aceab}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_851cd9b5be495df487fb177b0e06a1dd}{
+\hyperlink{classdai_1_1TProb_851cd9b5be495df487fb177b0e06a1dd}{TProb} (size\_\-t n)}
+\label{classdai_1_1TProb_851cd9b5be495df487fb177b0e06a1dd}
+
+\begin{CompactList}\small\item\em Construct uniform distribution of given length. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_de3ff7ee6617e3ae59dd8c4e4fb146f3}{
+\hyperlink{classdai_1_1TProb_de3ff7ee6617e3ae59dd8c4e4fb146f3}{TProb} (size\_\-t n, \hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} p)}
+\label{classdai_1_1TProb_de3ff7ee6617e3ae59dd8c4e4fb146f3}
+
+\begin{CompactList}\small\item\em Construct from given length and initial value. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_b139b37cc0533d119a55054a574987a5}{
+\hyperlink{classdai_1_1TProb_b139b37cc0533d119a55054a574987a5}{TProb} (size\_\-t n, const \hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} $\ast$p)}
+\label{classdai_1_1TProb_b139b37cc0533d119a55054a574987a5}
+
+\begin{CompactList}\small\item\em Construct from given length and initial array. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_408eb13e9e57cbf19c1d03218f7781ee}{
+const std::vector$<$ T $>$ \& \hyperlink{classdai_1_1TProb_408eb13e9e57cbf19c1d03218f7781ee}{p} () const }
+\label{classdai_1_1TProb_408eb13e9e57cbf19c1d03218f7781ee}
+
+\begin{CompactList}\small\item\em Returns a const reference to the probability vector. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_18a38409fa138e021c2dd90fd1303fe0}{
+std::vector$<$ T $>$ \& \hyperlink{classdai_1_1TProb_18a38409fa138e021c2dd90fd1303fe0}{p} ()}
+\label{classdai_1_1TProb_18a38409fa138e021c2dd90fd1303fe0}
+
+\begin{CompactList}\small\item\em Returns a reference to the probability vector. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_a349fd5cb6373a5268f7ad6caa41c03b}{
+T \hyperlink{classdai_1_1TProb_a349fd5cb6373a5268f7ad6caa41c03b}{operator\mbox{[}$\,$\mbox{]}} (size\_\-t i) const }
+\label{classdai_1_1TProb_a349fd5cb6373a5268f7ad6caa41c03b}
+
+\begin{CompactList}\small\item\em Returns a copy of the i'th probability entry. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_e305a0821f4afacf5a324297cc6fdb99}{
+T \& \hyperlink{classdai_1_1TProb_e305a0821f4afacf5a324297cc6fdb99}{operator\mbox{[}$\,$\mbox{]}} (size\_\-t i)}
+\label{classdai_1_1TProb_e305a0821f4afacf5a324297cc6fdb99}
+
+\begin{CompactList}\small\item\em Returns a reference to the i'th probability entry. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_3689cfd281f04418c9e38e9ac1900a1b}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_3689cfd281f04418c9e38e9ac1900a1b}{fill} (T x)}
+\label{classdai_1_1TProb_3689cfd281f04418c9e38e9ac1900a1b}
+
+\begin{CompactList}\small\item\em Sets all elements to x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_4a4e6fcb0008c8d4a36ac90c7b960ee4}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_4a4e6fcb0008c8d4a36ac90c7b960ee4}{randomize} ()}
+\label{classdai_1_1TProb_4a4e6fcb0008c8d4a36ac90c7b960ee4}
+
+\begin{CompactList}\small\item\em Sets all elements to i.i.d. random numbers from a uniform\mbox{[}0,1) distribution. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_8bfc7de7f2a1ed95cb129d0467c7b88d}{
+size\_\-t \hyperlink{classdai_1_1TProb_8bfc7de7f2a1ed95cb129d0467c7b88d}{size} () const }
+\label{classdai_1_1TProb_8bfc7de7f2a1ed95cb129d0467c7b88d}
+
+\begin{CompactList}\small\item\em Returns number of elements. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_0373bb829c4c88ea74c326b6f4385a43}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_0373bb829c4c88ea74c326b6f4385a43}{makeZero} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} epsilon)}
+\label{classdai_1_1TProb_0373bb829c4c88ea74c326b6f4385a43}
+
+\begin{CompactList}\small\item\em Sets entries that are smaller than epsilon to zero. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_4adfaa532006cfe1c19141a78469a787}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_4adfaa532006cfe1c19141a78469a787}{makePositive} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} epsilon)}
+\label{classdai_1_1TProb_4adfaa532006cfe1c19141a78469a787}
+
+\begin{CompactList}\small\item\em Sets entries that are smaller than epsilon to epsilon. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_a1bcc069dfbdc09f577255cf57201534}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_a1bcc069dfbdc09f577255cf57201534}{operator$\ast$=} (T x)}
+\label{classdai_1_1TProb_a1bcc069dfbdc09f577255cf57201534}
+
+\begin{CompactList}\small\item\em Multiplies each entry with x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_2026e865ea6dfafb3d5a6d0e59e85902}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_2026e865ea6dfafb3d5a6d0e59e85902}{operator$\ast$} (T x) const }
+\label{classdai_1_1TProb_2026e865ea6dfafb3d5a6d0e59e85902}
+
+\begin{CompactList}\small\item\em Returns product of $\ast$this with x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_ccbcb269e889aab6128a96f101833644}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_ccbcb269e889aab6128a96f101833644}{operator/=} (T x)}
+\label{classdai_1_1TProb_ccbcb269e889aab6128a96f101833644}
+
+\begin{CompactList}\small\item\em Divides each entry by x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_d303957b01e97aa2adef2d811ed1a29b}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_d303957b01e97aa2adef2d811ed1a29b}{operator/} (T x) const }
+\label{classdai_1_1TProb_d303957b01e97aa2adef2d811ed1a29b}
+
+\begin{CompactList}\small\item\em Returns quotient of $\ast$this and x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_8afe53893e4cc203d650a883320af400}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_8afe53893e4cc203d650a883320af400}{operator+=} (T x)}
+\label{classdai_1_1TProb_8afe53893e4cc203d650a883320af400}
+
+\begin{CompactList}\small\item\em Adds x to each entry. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_b28e4fb9d90f886763305a4a541cd81e}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_b28e4fb9d90f886763305a4a541cd81e}{operator+} (T x) const }
+\label{classdai_1_1TProb_b28e4fb9d90f886763305a4a541cd81e}
+
+\begin{CompactList}\small\item\em Returns sum of $\ast$this and x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_88c7008673408160472513670deec3e7}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_88c7008673408160472513670deec3e7}{operator-=} (T x)}
+\label{classdai_1_1TProb_88c7008673408160472513670deec3e7}
+
+\begin{CompactList}\small\item\em Subtracts x from each entry. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_0d8a626e4ad9490232b9781711bc734e}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_0d8a626e4ad9490232b9781711bc734e}{operator-} (T x) const }
+\label{classdai_1_1TProb_0d8a626e4ad9490232b9781711bc734e}
+
+\begin{CompactList}\small\item\em Returns difference of $\ast$this and x. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_c8b541a8d26894b80658607b2602d8c8}{
+bool \hyperlink{classdai_1_1TProb_c8b541a8d26894b80658607b2602d8c8}{operator$<$=} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q) const }
+\label{classdai_1_1TProb_c8b541a8d26894b80658607b2602d8c8}
+
+\begin{CompactList}\small\item\em Pointwise comparison. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_afd5fa074210c4d0f135db0b7ae78564}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_afd5fa074210c4d0f135db0b7ae78564}{operator$\ast$=} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q)}
+\label{classdai_1_1TProb_afd5fa074210c4d0f135db0b7ae78564}
+
+\begin{CompactList}\small\item\em Pointwise multiplication with q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_e3ca229a6be0b1949a9431e51ba765e4}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_e3ca229a6be0b1949a9431e51ba765e4}{operator$\ast$} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q) const }
+\label{classdai_1_1TProb_e3ca229a6be0b1949a9431e51ba765e4}
+
+\begin{CompactList}\small\item\em Return product of $\ast$this with q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_7fc01ebf107a1a7f770771059d10d809}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_7fc01ebf107a1a7f770771059d10d809}{operator+=} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q)}
+\label{classdai_1_1TProb_7fc01ebf107a1a7f770771059d10d809}
+
+\begin{CompactList}\small\item\em Pointwise addition with q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_c463f4d9883705539a8e707d2ab35fdf}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_c463f4d9883705539a8e707d2ab35fdf}{operator+} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q) const }
+\label{classdai_1_1TProb_c463f4d9883705539a8e707d2ab35fdf}
+
+\begin{CompactList}\small\item\em Return sum of $\ast$this and q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_c928c35ab6f3489d9d107360185b14eb}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_c928c35ab6f3489d9d107360185b14eb}{operator-=} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q)}
+\label{classdai_1_1TProb_c928c35ab6f3489d9d107360185b14eb}
+
+\begin{CompactList}\small\item\em Pointwise subtraction of q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_4e607fcb8a1feb9987c1ecf51947a44a}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_4e607fcb8a1feb9987c1ecf51947a44a}{operator-} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q) const }
+\label{classdai_1_1TProb_4e607fcb8a1feb9987c1ecf51947a44a}
+
+\begin{CompactList}\small\item\em Return $\ast$this minus q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_f37735e848ce38640604e2f8046a800b}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_f37735e848ce38640604e2f8046a800b}{operator/=} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q)}
+\label{classdai_1_1TProb_f37735e848ce38640604e2f8046a800b}
+
+\begin{CompactList}\small\item\em Pointwise division by q, where division by zero yields zero. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_e8de1a2b3da02cea030d8d84e975d7b2}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_e8de1a2b3da02cea030d8d84e975d7b2}{divide} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q)}
+\label{classdai_1_1TProb_e8de1a2b3da02cea030d8d84e975d7b2}
+
+\begin{CompactList}\small\item\em Pointwise division by q, where division by zero yields infinity. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_1f0009d733883a95657b198f1ed4ee76}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_1f0009d733883a95657b198f1ed4ee76}{operator/} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q) const }
+\label{classdai_1_1TProb_1f0009d733883a95657b198f1ed4ee76}
+
+\begin{CompactList}\small\item\em Returns quotient of $\ast$this with q. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_d6cbd3faba7d7fb19dae43b5fc7b05c9}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_d6cbd3faba7d7fb19dae43b5fc7b05c9}{inverse} (bool zero=false) const }
+\label{classdai_1_1TProb_d6cbd3faba7d7fb19dae43b5fc7b05c9}
+
+\begin{CompactList}\small\item\em Returns pointwise inverse. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_33860a9d4e3b5c94add50fe0a7db4ec2}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_33860a9d4e3b5c94add50fe0a7db4ec2}{operator$^\wedge$=} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} a)}
+\label{classdai_1_1TProb_33860a9d4e3b5c94add50fe0a7db4ec2}
+
+\begin{CompactList}\small\item\em Raises elements to the power a. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_e40363175a9cdaeceb038e2bccaaa7d2}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_e40363175a9cdaeceb038e2bccaaa7d2}{operator$^\wedge$} (\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} a) const }
+\label{classdai_1_1TProb_e40363175a9cdaeceb038e2bccaaa7d2}
+
+\begin{CompactList}\small\item\em Returns $\ast$this raised to the power a. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_a6bbe8ec97718030d2e029edbd5b47c7}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_a6bbe8ec97718030d2e029edbd5b47c7}{sgn} () const }
+\label{classdai_1_1TProb_a6bbe8ec97718030d2e029edbd5b47c7}
+
+\begin{CompactList}\small\item\em Returns pointwise signum. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_d89f2c6966d7cf7d61dae9dc2dcd1e2d}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_d89f2c6966d7cf7d61dae9dc2dcd1e2d}{abs} () const }
+\label{classdai_1_1TProb_d89f2c6966d7cf7d61dae9dc2dcd1e2d}
+
+\begin{CompactList}\small\item\em Returns pointwise absolute value. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_5b930446181afe0a2114244703de4259}{
+const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_5b930446181afe0a2114244703de4259}{takeExp} ()}
+\label{classdai_1_1TProb_5b930446181afe0a2114244703de4259}
+
+\begin{CompactList}\small\item\em Applies exp pointwise. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_76eb7f2ee5d018098b0c285f7c0f301c}{
+const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_76eb7f2ee5d018098b0c285f7c0f301c}{takeLog} ()}
+\label{classdai_1_1TProb_76eb7f2ee5d018098b0c285f7c0f301c}
+
+\begin{CompactList}\small\item\em Applies log pointwise. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_224768de2c85c548ed3b5c048b5f06ce}{
+const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \& \hyperlink{classdai_1_1TProb_224768de2c85c548ed3b5c048b5f06ce}{takeLog0} ()}
+\label{classdai_1_1TProb_224768de2c85c548ed3b5c048b5f06ce}
+
+\begin{CompactList}\small\item\em Applies log pointwise (defining log(0)=0). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_50ca204e2127206670b8dd1abca386a5}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_50ca204e2127206670b8dd1abca386a5}{exp} () const }
+\label{classdai_1_1TProb_50ca204e2127206670b8dd1abca386a5}
+
+\begin{CompactList}\small\item\em Returns pointwise exp. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_df48fa2efe5f23ad00ce16058c91953f}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_df48fa2efe5f23ad00ce16058c91953f}{log} () const }
+\label{classdai_1_1TProb_df48fa2efe5f23ad00ce16058c91953f}
+
+\begin{CompactList}\small\item\em Returns pointwise log. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_ff15b2194fe4f15e962ac9afed0b20b3}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_ff15b2194fe4f15e962ac9afed0b20b3}{log0} () const }
+\label{classdai_1_1TProb_ff15b2194fe4f15e962ac9afed0b20b3}
+
+\begin{CompactList}\small\item\em Returns pointwise log (defining log(0)=0). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_e521e8c536e407a0c26ab31584f800c7}{
+T \hyperlink{classdai_1_1TProb_e521e8c536e407a0c26ab31584f800c7}{totalSum} () const }
+\label{classdai_1_1TProb_e521e8c536e407a0c26ab31584f800c7}
+
+\begin{CompactList}\small\item\em Returns sum of all entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_55b056b8834e159f4551136728bdb36a}{
+T \hyperlink{classdai_1_1TProb_55b056b8834e159f4551136728bdb36a}{maxAbs} () const }
+\label{classdai_1_1TProb_55b056b8834e159f4551136728bdb36a}
+
+\begin{CompactList}\small\item\em Returns maximum absolute value of entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_e4d9d19c9d0ef86e69852684622c139f}{
+T \hyperlink{classdai_1_1TProb_e4d9d19c9d0ef86e69852684622c139f}{maxVal} () const }
+\label{classdai_1_1TProb_e4d9d19c9d0ef86e69852684622c139f}
+
+\begin{CompactList}\small\item\em Returns maximum value of entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_6ce944b2c6ba4c1cfe0c2d564d12e5a5}{
+T \hyperlink{classdai_1_1TProb_6ce944b2c6ba4c1cfe0c2d564d12e5a5}{minVal} () const }
+\label{classdai_1_1TProb_6ce944b2c6ba4c1cfe0c2d564d12e5a5}
+
+\begin{CompactList}\small\item\em Returns minimum value of entries. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_f02925c99dbafb3c5c53add53d581bc2}{
+T \hyperlink{classdai_1_1TProb_f02925c99dbafb3c5c53add53d581bc2}{normalize} (\hyperlink{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}{NormType} norm=NORMPROB)}
+\label{classdai_1_1TProb_f02925c99dbafb3c5c53add53d581bc2}
+
+\begin{CompactList}\small\item\em Normalizes using the specified norm. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_7e6039d541a2d8eecb223803d641c49d}{
+\hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \hyperlink{classdai_1_1TProb_7e6039d541a2d8eecb223803d641c49d}{normalized} (\hyperlink{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}{NormType} norm=NORMPROB) const }
+\label{classdai_1_1TProb_7e6039d541a2d8eecb223803d641c49d}
+
+\begin{CompactList}\small\item\em Returns normalized copy of $\ast$this, using the specified norm. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_b6a4ee056d92a0d59aab7cc0e141fd68}{
+bool \hyperlink{classdai_1_1TProb_b6a4ee056d92a0d59aab7cc0e141fd68}{hasNaNs} () const }
+\label{classdai_1_1TProb_b6a4ee056d92a0d59aab7cc0e141fd68}
+
+\begin{CompactList}\small\item\em Returns true if one or more entries are NaN. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_aeabc65b661d9aa8b1321c7fcece7da4}{
+bool \hyperlink{classdai_1_1TProb_aeabc65b661d9aa8b1321c7fcece7da4}{hasNegatives} () const }
+\label{classdai_1_1TProb_aeabc65b661d9aa8b1321c7fcece7da4}
+
+\begin{CompactList}\small\item\em Returns true if one or more entries are negative. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_ceffba52dcb0053ac26deb8442539be8}{
+bool \hyperlink{classdai_1_1TProb_ceffba52dcb0053ac26deb8442539be8}{hasNonPositives} () const }
+\label{classdai_1_1TProb_ceffba52dcb0053ac26deb8442539be8}
+
+\begin{CompactList}\small\item\em Returns true if one or more entries are non-positive (causes problems with logscale). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_93b4b55c0ade960ed9b7523405f50854}{
+\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} \hyperlink{classdai_1_1TProb_93b4b55c0ade960ed9b7523405f50854}{entropy} () const }
+\label{classdai_1_1TProb_93b4b55c0ade960ed9b7523405f50854}
+
+\begin{CompactList}\small\item\em Returns entropy. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1TProb_b9357d8976414f99e230c17261377d33}{
+\hyperlink{namespacedai_e7d0472fdc89a8635825d01940e91cbf}{Real} \hyperlink{classdai_1_1TProb_b9357d8976414f99e230c17261377d33}{dist} (const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&p, const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&q, \hyperlink{classdai_1_1TProb_492487fd71f6e87673853e5e2fda2f27}{DistType} dt)}
+\label{classdai_1_1TProb_b9357d8976414f99e230c17261377d33}
+
+\begin{CompactList}\small\item\em Returns distance of p and q, measured using dt. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1TProb_69d2223fac859e2c372826a1eecdf55e}{
+std::ostream \& \hyperlink{classdai_1_1TProb_69d2223fac859e2c372826a1eecdf55e}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classdai_1_1TProb}{TProb}$<$ T $>$ \&P)}
+\label{classdai_1_1TProb_69d2223fac859e2c372826a1eecdf55e}
+
+\begin{CompactList}\small\item\em Writes a TProb$<$T$>$ to an output stream. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}{
+\index{dai::TProb@{dai::TProb}!NormType@{NormType}}
+\index{NormType@{NormType}!dai::TProb@{dai::TProb}}
+\subsubsection[NormType]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ enum {\bf dai::TProb::NormType}}}
+\label{classdai_1_1TProb_31d9206096f52574dbd24cbb2502080c}
+
+
+Enumerates different ways of normalizing a probability measure. 
+
+\begin{itemize}
+\item NORMPROB means that the sum of all entries should be 1;\item NORMLINF means that the maximum absolute value of all entries should be 1. \end{itemize}
+\hypertarget{classdai_1_1TProb_492487fd71f6e87673853e5e2fda2f27}{
+\index{dai::TProb@{dai::TProb}!DistType@{DistType}}
+\index{DistType@{DistType}!dai::TProb@{dai::TProb}}
+\subsubsection[DistType]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ enum {\bf dai::TProb::DistType}}}
+\label{classdai_1_1TProb_492487fd71f6e87673853e5e2fda2f27}
+
+
+Enumerates different distance measures between probability measures. 
+
+\begin{itemize}
+\item DISTL1 is the L-1 distance (sum of absolute values of pointwise difference);\item DISTLINF is the L-inf distance (maximum absolute value of pointwise difference);\item DISTTV is the Total Variation distance;\item DISTKL is the Kullback-Leibler distance. \end{itemize}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{prob_8h}{prob.h}\end{CompactItemize}

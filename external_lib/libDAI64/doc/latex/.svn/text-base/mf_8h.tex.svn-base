@@ -1,0 +1,27 @@
+\hypertarget{mf_8h}{
+\section{include/dai/mf.h File Reference}
+\label{mf_8h}\index{include/dai/mf.h@{include/dai/mf.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines class MF. 
+
+
+
+{\tt \#include $<$string$>$}\par
+{\tt \#include $<$dai/daialg.h$>$}\par
+{\tt \#include $<$dai/factorgraph.h$>$}\par
+{\tt \#include $<$dai/properties.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1MF}{dai::MF}
+\begin{CompactList}\small\item\em Approximate inference algorithm \char`\"{}Mean Field\char`\"{}. \item\end{CompactList}\item 
+struct \hyperlink{structdai_1_1MF_1_1Properties}{dai::MF::Properties}
+\begin{CompactList}\small\item\em Parameters of this inference algorithm. \item\end{CompactList}\end{CompactItemize}

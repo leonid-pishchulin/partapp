@@ -1,0 +1,87 @@
+\hypertarget{classdai_1_1Var}{
+\section{dai::Var Class Reference}
+\label{classdai_1_1Var}\index{dai::Var@{dai::Var}}
+}
+{\tt \#include $<$dai/var.h$>$}
+
+
+
+\subsection{Detailed Description}
+Represents a discrete random variable. 
+
+It contains the {\em label\/} of the variable (an integer-valued unique ID) and the number of possible values ({\em states\/}) of the variable. \subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1Var_f8261d1878d0930ad9914f2a9fa2ef40}{
+\hyperlink{classdai_1_1Var_f8261d1878d0930ad9914f2a9fa2ef40}{Var} ()}
+\label{classdai_1_1Var_f8261d1878d0930ad9914f2a9fa2ef40}
+
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_38eeca70cd2dbb8bc793c406af79a5b8}{
+\hyperlink{classdai_1_1Var_38eeca70cd2dbb8bc793c406af79a5b8}{Var} (long label, size\_\-t states)}
+\label{classdai_1_1Var_38eeca70cd2dbb8bc793c406af79a5b8}
+
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_1570f11c8b5acdacd5234b9897ae6914}{
+long \hyperlink{classdai_1_1Var_1570f11c8b5acdacd5234b9897ae6914}{label} () const }
+\label{classdai_1_1Var_1570f11c8b5acdacd5234b9897ae6914}
+
+\begin{CompactList}\small\item\em Returns the label. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_f71c9cda72e600e7fb8b41fe15bd2054}{
+long \& \hyperlink{classdai_1_1Var_f71c9cda72e600e7fb8b41fe15bd2054}{label} ()}
+\label{classdai_1_1Var_f71c9cda72e600e7fb8b41fe15bd2054}
+
+\begin{CompactList}\small\item\em Returns reference to label. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_41f8d939741336bca2080bedfaf92302}{
+size\_\-t \hyperlink{classdai_1_1Var_41f8d939741336bca2080bedfaf92302}{states} () const }
+\label{classdai_1_1Var_41f8d939741336bca2080bedfaf92302}
+
+\begin{CompactList}\small\item\em Returns the number of states. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_274936b287bddd1b6384b52907df7e31}{
+size\_\-t \& \hyperlink{classdai_1_1Var_274936b287bddd1b6384b52907df7e31}{states} ()}
+\label{classdai_1_1Var_274936b287bddd1b6384b52907df7e31}
+
+\begin{CompactList}\small\item\em Returns reference to number of states. \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_c997b317a3b324312d03d8adaf387f15}{
+bool \hyperlink{classdai_1_1Var_c997b317a3b324312d03d8adaf387f15}{operator$<$} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1Var_c997b317a3b324312d03d8adaf387f15}
+
+\begin{CompactList}\small\item\em Smaller-than operator (only compares labels). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_d7480992a3c33f1b18e7b18b1f7f4241}{
+bool \hyperlink{classdai_1_1Var_d7480992a3c33f1b18e7b18b1f7f4241}{operator$>$} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1Var_d7480992a3c33f1b18e7b18b1f7f4241}
+
+\begin{CompactList}\small\item\em Larger-than operator (only compares labels). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_deaba07976118ad2b6b2d891a4bf2009}{
+bool \hyperlink{classdai_1_1Var_deaba07976118ad2b6b2d891a4bf2009}{operator$<$=} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1Var_deaba07976118ad2b6b2d891a4bf2009}
+
+\begin{CompactList}\small\item\em Smaller-than-or-equal-to operator (only compares labels). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_7bfc52374ce25ebf05f9bd8387512428}{
+bool \hyperlink{classdai_1_1Var_7bfc52374ce25ebf05f9bd8387512428}{operator$>$=} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1Var_7bfc52374ce25ebf05f9bd8387512428}
+
+\begin{CompactList}\small\item\em Larger-than-or-equal-to operator (only compares labels). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_b0668fe05276356dd72bc0c4ba8e38fb}{
+bool \hyperlink{classdai_1_1Var_b0668fe05276356dd72bc0c4ba8e38fb}{operator!=} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1Var_b0668fe05276356dd72bc0c4ba8e38fb}
+
+\begin{CompactList}\small\item\em Not-equal-to operator (only compares labels). \item\end{CompactList}\item 
+\hypertarget{classdai_1_1Var_6c82ecf70996c18280e063d1c5e02834}{
+bool \hyperlink{classdai_1_1Var_6c82ecf70996c18280e063d1c5e02834}{operator==} (const \hyperlink{classdai_1_1Var}{Var} \&n) const }
+\label{classdai_1_1Var_6c82ecf70996c18280e063d1c5e02834}
+
+\begin{CompactList}\small\item\em Equal-to operator (only compares labels). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+\hypertarget{classdai_1_1Var_2afe0ebb307f835920656e75f9a1961e}{
+std::ostream \& \hyperlink{classdai_1_1Var_2afe0ebb307f835920656e75f9a1961e}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classdai_1_1Var}{Var} \&n)}
+\label{classdai_1_1Var_2afe0ebb307f835920656e75f9a1961e}
+
+\begin{CompactList}\small\item\em Writes a \hyperlink{classdai_1_1Var}{Var} to an output stream. \item\end{CompactList}\end{CompactItemize}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{var_8h}{var.h}\end{CompactItemize}

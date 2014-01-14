@@ -1,0 +1,61 @@
+\hypertarget{structdai_1_1HAK_1_1Properties}{
+\section{dai::HAK::Properties Struct Reference}
+\label{structdai_1_1HAK_1_1Properties}\index{dai::HAK::Properties@{dai::HAK::Properties}}
+}
+{\tt \#include $<$dai/hak.h$>$}
+
+
+
+\subsection{Detailed Description}
+Parameters of this inference algorithm. \subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+size\_\-t \hyperlink{structdai_1_1HAK_1_1Properties_ec022aa8f91caa4d99e929da522e639e}{verbose}
+\begin{CompactList}\small\item\em Enumeration of possible cluster choices. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1HAK_1_1Properties_ac41df3900f9c3520728e30a1c28197d}{
+size\_\-t \hyperlink{structdai_1_1HAK_1_1Properties_ac41df3900f9c3520728e30a1c28197d}{maxiter}}
+\label{structdai_1_1HAK_1_1Properties_ac41df3900f9c3520728e30a1c28197d}
+
+\begin{CompactList}\small\item\em Maximum number of iterations. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1HAK_1_1Properties_da2e0e30c7e113e7df2e836753e9af4e}{
+double \hyperlink{structdai_1_1HAK_1_1Properties_da2e0e30c7e113e7df2e836753e9af4e}{tol}}
+\label{structdai_1_1HAK_1_1Properties_da2e0e30c7e113e7df2e836753e9af4e}
+
+\begin{CompactList}\small\item\em Tolerance. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1HAK_1_1Properties_76c0e44459b62e62445acf49932b69de}{
+double \hyperlink{structdai_1_1HAK_1_1Properties_76c0e44459b62e62445acf49932b69de}{damping}}
+\label{structdai_1_1HAK_1_1Properties_76c0e44459b62e62445acf49932b69de}
+
+\begin{CompactList}\small\item\em Damping constant. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1HAK_1_1Properties_26d7eba338a67cd56533b368d4e8b889}{
+ClustersType \hyperlink{structdai_1_1HAK_1_1Properties_26d7eba338a67cd56533b368d4e8b889}{clusters}}
+\label{structdai_1_1HAK_1_1Properties_26d7eba338a67cd56533b368d4e8b889}
+
+\begin{CompactList}\small\item\em How to choose the clusters. \item\end{CompactList}\item 
+\hypertarget{structdai_1_1HAK_1_1Properties_415c14d03f49774d4bb92988003520a2}{
+bool \hyperlink{structdai_1_1HAK_1_1Properties_415c14d03f49774d4bb92988003520a2}{doubleloop}}
+\label{structdai_1_1HAK_1_1Properties_415c14d03f49774d4bb92988003520a2}
+
+\begin{CompactList}\small\item\em Use single-loop (GBP) or double-loop (\hyperlink{classdai_1_1HAK}{HAK}). \item\end{CompactList}\item 
+\hypertarget{structdai_1_1HAK_1_1Properties_eaecf3d77c6e6a2036cc652056783523}{
+size\_\-t \hyperlink{structdai_1_1HAK_1_1Properties_eaecf3d77c6e6a2036cc652056783523}{loopdepth}}
+\label{structdai_1_1HAK_1_1Properties_eaecf3d77c6e6a2036cc652056783523}
+
+\begin{CompactList}\small\item\em Depth of loops (only relevant for clusters == ClustersType::LOOP). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structdai_1_1HAK_1_1Properties_ec022aa8f91caa4d99e929da522e639e}{
+\index{dai::HAK::Properties@{dai::HAK::Properties}!verbose@{verbose}}
+\index{verbose@{verbose}!dai::HAK::Properties@{dai::HAK::Properties}}
+\subsubsection[verbose]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t {\bf dai::HAK::Properties::verbose}}}
+\label{structdai_1_1HAK_1_1Properties_ec022aa8f91caa4d99e929da522e639e}
+
+
+Enumeration of possible cluster choices. 
+
+Verbosity 
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/dai/\hyperlink{hak_8h}{hak.h}\end{CompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{factor_8h}{
+\section{include/dai/factor.h File Reference}
+\label{factor_8h}\index{include/dai/factor.h@{include/dai/factor.h}}
+}
+
+
+\subsection{Detailed Description}
+Defines TFactor$<$T$>$ and Factor classes. 
+
+
+
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$cmath$>$}\par
+{\tt \#include $<$dai/prob.h$>$}\par
+{\tt \#include $<$dai/varset.h$>$}\par
+{\tt \#include $<$dai/index.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacedai}{dai}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classdai_1_1TFactor}{dai::TFactor$<$ T $>$}
+\begin{CompactList}\small\item\em Represents a probability factor. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_7515abf9952cd312e95a34ada0670e85}{
+typedef TFactor$<$ Real $>$ \hyperlink{namespacedai_7515abf9952cd312e95a34ada0670e85}{dai::Factor}}
+\label{namespacedai_7515abf9952cd312e95a34ada0670e85}
+
+\begin{CompactList}\small\item\em Represents a factor with probability entries represented as Real. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{namespacedai_dbcd0bf0cd16bda03f4483530611dbae}{
+{\footnotesize template$<$typename T$>$ }\\std::ostream \& \hyperlink{namespacedai_dbcd0bf0cd16bda03f4483530611dbae}{dai::operator$<$$<$} (std::ostream \&os, const TFactor$<$ T $>$ \&P)}
+\label{namespacedai_dbcd0bf0cd16bda03f4483530611dbae}
+
+\begin{CompactList}\small\item\em Writes a Factor to an output stream. \item\end{CompactList}\item 
+\hypertarget{namespacedai_21104476f853192821ff6685732ac0af}{
+{\footnotesize template$<$typename T$>$ }\\Real \hyperlink{namespacedai_21104476f853192821ff6685732ac0af}{dai::dist} (const TFactor$<$ T $>$ \&x, const TFactor$<$ T $>$ \&y, Prob::DistType dt)}
+\label{namespacedai_21104476f853192821ff6685732ac0af}
+
+\begin{CompactList}\small\item\em Returns distance between two Factors (with identical vars()). \item\end{CompactList}\item 
+\hypertarget{namespacedai_26014cccb4cc16b53e83d350e280a705}{
+{\footnotesize template$<$typename T$>$ }\\TFactor$<$ T $>$ \hyperlink{namespacedai_26014cccb4cc16b53e83d350e280a705}{dai::max} (const TFactor$<$ T $>$ \&P, const TFactor$<$ T $>$ \&Q)}
+\label{namespacedai_26014cccb4cc16b53e83d350e280a705}
+
+\begin{CompactList}\small\item\em Returns the pointwise maximum of two Factors. \item\end{CompactList}\item 
+\hypertarget{namespacedai_0957f2d605d64a2e13b8dc3eb9fc8800}{
+{\footnotesize template$<$typename T$>$ }\\TFactor$<$ T $>$ \hyperlink{namespacedai_0957f2d605d64a2e13b8dc3eb9fc8800}{dai::min} (const TFactor$<$ T $>$ \&P, const TFactor$<$ T $>$ \&Q)}
+\label{namespacedai_0957f2d605d64a2e13b8dc3eb9fc8800}
+
+\begin{CompactList}\small\item\em Returns the pointwise minimum of two Factors. \item\end{CompactList}\item 
+\hypertarget{namespacedai_716237fb73c302a0ee0d3e334d71517c}{
+{\footnotesize template$<$typename T$>$ }\\Real \hyperlink{namespacedai_716237fb73c302a0ee0d3e334d71517c}{dai::MutualInfo} (const TFactor$<$ T $>$ \&P)}
+\label{namespacedai_716237fb73c302a0ee0d3e334d71517c}
+
+\begin{CompactList}\small\item\em Calculates the mutual information between the two variables in P. \item\end{CompactList}\end{CompactItemize}
