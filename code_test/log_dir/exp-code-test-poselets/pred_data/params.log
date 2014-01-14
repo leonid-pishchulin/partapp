@@ -1,9 +1,0 @@
-idxMode: 2
-idxFactor: -1
-nClus: 12
-nParts: 22
-saveTo: /BS/leonid-pose/work/experiments-iccv13/log_dir//exp-lsp-poselets-dense05/pred_data
-poseletResponcesTrainDir: /BS/leonid-pose/work/experiments-iccv13/log_dir//exp-lsp-poselets-dense05/resp_train
-torsoPosTrainDir: /BS/leonid-pose/work/experiments-iccv13/log_dir/exp-lsp-train-torso-dense05/part_marginals/
-torsoPartIdx: 10
-annotationsTrain: /BS/leonid-people-3d/work/data/lsp_dataset/images/png/h200/lsp-train-human-full-h200-OC-add-flipped.al
