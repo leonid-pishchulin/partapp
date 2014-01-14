@@ -1,0 +1,28 @@
+message PartWindowParam
+{
+	message PartParam 
+	{	
+		optional int32 part_id = 6;
+		optional int32 type_id = 11;
+	        // average size of part bounding box 
+		optional int32 window_size_x = 1 [default = 0];
+		optional int32 window_size_y = 2 [default = 0];
+
+	        // average offset of part position with respect to top/left corner of bounding box
+	        optional int32 pos_offset_x = 3;
+		optional int32 pos_offset_y = 4;
+		
+		// average offset of part center w.r.t. the root center
+		optional int32 root_offset_x = 13;
+		optional int32 root_offset_y = 14;
+		optional float root_rot = 15;
+	}
+
+	repeated PartParam part = 5; 
+	optional double train_object_height = 7 [default = 200];
+	//optional double train_object_width = 8 [default = 80];
+
+	// average offset between root part and bounding box
+	optional double bbox_offset_x = 9 [default = 0];
+	optional double bbox_offset_y = 10 [default = 0];
+}

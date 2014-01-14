@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 38
+Release
+Debug
+squeeze
+lenny
+Makefile
+
+
+END

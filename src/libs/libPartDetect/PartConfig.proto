@@ -1,0 +1,59 @@
+message PartDef {
+	optional int32 part_id = 1;
+
+	// id's of annopoints which define part position
+	repeated int32 part_pos = 2;
+
+	// reference point for part types clustering
+	optional int32 ref_pos = 15;
+	
+	// id's of annopoints which define part orientation (x axis of the part coordinate system)
+	//optional int32 part_x_axis_from = 4;	
+	//optional int32 part_x_axis_to = 5;
+	
+	repeated int32 part_x_axis_from = 4;	
+	repeated int32 part_x_axis_to = 5;
+
+	// fixed offset added to orientation to obtain x axis
+	optional float part_x_axis_offset = 6 [default = 0]; 
+
+	// additional offsets along the x and y axis of part cs (in pixels)
+	optional float ext_x_pos = 7 [default = 0];
+	optional float ext_x_neg = 8 [default = 0];
+
+	optional float ext_y_pos = 9 [default = 0];
+	optional float ext_y_neg = 10 [default = 0];
+
+	optional bool is_root = 11 [default = false];
+	optional bool is_detect = 12 [default = true];
+	optional bool is_upright = 13 [default = false];
+
+	optional bool has_mult_types = 14 [default = false];
+	optional int32 max_num_part_types = 16 [default = 1];
+	optional int32 num_pred_part_types = 20 [default = 1];
+	
+	optional float ext_x_pos_vis = 18 [default = 0];
+	optional float ext_x_neg_vis = 19 [default = 0];
+}
+
+message Joint 
+{
+	optional int32 child_idx = 1;
+	optional int32 parent_idx = 2;
+	
+	// type: Gaussian
+	optional string type = 3 [default = "Gaussian"];
+	repeated int32 joint_pos = 4;
+	optional uint32 num_joint_types = 5 [default = 1];
+}
+
+message AppearanceGroup 
+{
+	repeated int32 part_id = 1;
+}
+
+message PartConfig {
+	repeated PartDef part = 1;
+	repeated Joint joint = 2;
+	repeated AppearanceGroup app_group = 3;
+}	

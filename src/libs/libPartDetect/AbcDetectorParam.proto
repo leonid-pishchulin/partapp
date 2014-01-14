@@ -1,0 +1,36 @@
+message AbcDetectorParam 
+{
+	// feature descriptor size (feature radius in pixels)
+	optional int32 desc_size = 2;
+
+	// distance between local features in pixels inside the window
+	optional int32 desc_step = 3;
+
+	// window_step = desc_step * window_desc_step_ratio
+	// 1 / window_desc_step_ratio - must be integer number
+	// specify how dence the sliding window scan will be with respect to distance between features
+	optional double window_desc_step_ratio = 4 [default = 1];
+
+	// AdaBoost parameters
+	optional int32 boosting_rounds = 1 [default = 500];
+
+	optional int32 num_train_pos = 6 [default = -1];
+	optional int32 num_train_neg = 8 [default = -1];
+
+	// reshaped samples
+	optional int32 num_train_reshaped = 20 [default = 0];
+
+	optional string feature_type = 10 [default = "SHAPE"];
+
+	//repeated PartParam part_param = 5; 
+
+	optional bool do_jitter = 12 [default = true];
+	optional double bootstrap_fraction = 14 [default = 0.0];
+
+	optional bool feature_full_orientation = 15 [default = false];
+	optional int32 feature_orisize = 17 [default = 8];
+
+	optional double min_score = 19 [default = 1e-4];
+
+}
+

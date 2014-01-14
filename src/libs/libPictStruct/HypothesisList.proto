@@ -1,0 +1,11 @@
+message HypothesisList {
+	message ObjectHypothesis {
+		optional float x = 1;
+		optional float y = 2;
+		optional float scale = 3;
+		optional float score = 4;
+		optional bool flip = 5 [default = false];
+	}	
+
+	repeated ObjectHypothesis hyp = 1;		
+}

@@ -1,0 +1,26 @@
+message RepulsiveFactor {
+	required int32 pidx1 = 1;
+	required int32 pidx2 = 2;
+	optional double min_relative_area = 3 [default = 0.2];
+	optional double alpha = 4 [default = 1.2];
+	
+}	
+
+message AttractiveFactor {
+	required int32 didx1 = 1;
+	required int32 pidx1 = 2;
+		
+	required int32 didx2 = 3;
+	required int32 pidx2 = 4;		
+
+	optional double mu_x = 5 [default = 0];
+	optional double mu_y = 6 [default = 0];
+
+	optional double sigma_x = 7 [default = 5];
+	optional double sigma_y = 8 [default = 5];
+}
+
+message FactorDefs {
+	repeated RepulsiveFactor repulsive_factor = 4;
+	repeated AttractiveFactor attractive_factor = 5;
+}

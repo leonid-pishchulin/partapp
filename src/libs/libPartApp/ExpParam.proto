@@ -1,0 +1,292 @@
+message ExpParam
+{
+	repeated string train_dataset = 1;
+	repeated string validation_dataset = 8;
+	repeated string test_dataset = 2;
+	repeated string neg_dataset = 51;
+	repeated string bootstrap_dataset = 86;
+
+	// reshaped data
+	repeated string train_dataset_reshaped = 39;
+
+	optional string log_dir = 3;
+
+	// subdirectory of log directory where all intermediate data is stored (default is basename of expparam file)
+	optional string log_subdir = 7;
+
+	// directory where classifiers are stored
+	optional string class_dir = 4;
+	
+	// directory where classifiers are stored in the case of multiple components
+	repeated string comp_class_dir = 50;
+
+	// directory for the classification results on the test set
+	optional string scoregrid_dir = 16;
+
+	// directory for part detections of positive samples on validation set
+	optional string scoregrid_train_dir = 44;
+	
+ 	// normalize annotations before k-means clustering of part types
+	optional bool normalize_kmeans = 81 [default = false];
+	
+	// number of annotations per joint
+	optional uint32 ndim_joint = 82 [default = 2];
+	
+	// window size for detecting poselets
+	optional uint32 poselet_strip = 83 [default = 40];
+	
+	// weight of visibility feature during k-means clustering
+	optional float vis_weight = 84 [default = 0];
+	
+	// view point weight during k-means clustering
+	optional float vp_weight = 85 [default = 0];
+
+	// overlap threshold for bootstraping
+	optional float bootstrap_threshold = 88 [default = 0.3];
+
+	// visualize number of top best scored detections of the same part type
+	optional int32 num_best_part_det_vis = 90 [default = 1];
+
+	// min cluster size 
+	optional float min_clus_size = 92 [default = 10];
+	
+	// predict unary rotations
+	optional bool pred_unary_rot = 93 [default = false];
+	
+	// weight to combine unary position prediction
+	optional float pred_unary_pos_weight = 95 [default = 1];
+
+	// weight to combine unary rotation prediction
+	optional float pred_unary_rot_weight = 96 [default = 1];
+
+	// weight to combine unary rotation prediction
+	optional uint32 pred_unary_rot_comp = 97 [default = 1];
+	
+	// directory for training prediction parameters
+	optional string pred_data_dir = 98;
+
+	// directory for testing prediction parameters
+	optional string pred_data_test_dir = 135;
+
+	// directory for poselet responces on validation set
+	optional string poselet_resp_val_dir = 137;
+
+	// directory for poselet responces on test set
+	optional string poselet_resp_test_dir = 138;
+	
+	// directory for spatial model
+	optional string spatial_dir = 139;
+
+	// weight to combine dpm torso score
+	optional float dpm_torso_weight = 99 [default = 1];
+
+	// force re-computing of classifier scoremaps before the inference
+	// otherwise pre-computed scoremaps are loaded
+	optional bool force_recompute_scores = 101 [default = true];
+
+	// torso pos prior weight
+	optional float torso_pos_prior_weight = 105 [default = 1];
+		
+	// torso detector test dir
+	optional string torso_det_test_dir = 107;
+
+	// torso detector train dir
+	optional string torso_det_train_dir = 108;
+   
+	// rotation strip size for detecting poselets (in degrees)
+	optional uint32 poselet_rot_strip = 109;
+	
+	// rootidx in the torso detector configuration
+	optional uint32 rootidx_det = 110 [default = 1000];
+	
+	// using GT torso position when predicting parts positions
+	optional bool use_gt_torso = 111 [default = false];
+	
+	// using torso dpm
+	optional bool use_dpm_torso = 112 [default = false];
+	
+	// preduct unary position
+	optional bool pred_unary_pos = 114 [default = false];
+	
+	// predict occlusion
+	// optional bool predict_occlusion = 117 [default = false];
+	
+	// occlusion unary treatment
+	// supported: "uniform" - set uniform
+	// supported: "replace_score" - replace score of occluded unary by occluder
+	// supported: "add_score" - add score to occluded unary from occluder
+	// optional string occl_unary_type = 118 [default = "replace_score"];
+	
+	// use position prior for the torso
+	optional bool use_torso_pos_prior = 120 [default = false];
+
+	// use dpm head
+	optional bool use_dpm_head = 122 [default = false];
+	
+	// weight to combine dpm head score
+	optional float dpm_head_weight = 125 [default = 1];
+
+	// directory for DPM unaries on test images
+	optional string test_dpm_unary_dir = 126;
+	
+	// weight to combine dpm unary score
+	optional float dpm_unary_weight = 127 [default = 1];
+		
+	// use dpm unary
+	optional bool use_dpm_unary = 128 [default = false];
+
+	// test dpm over multiple orientations
+	optional bool do_dpm_rot = 131 [default = false];
+
+	// use pairwise during inference
+	optional bool use_pairwise = 132 [default = true];
+
+	// save part marginals
+	optional bool save_part_marginals = 133 [default = false];
+		
+	// directory for DPM models
+	optional string dpm_model_dir = 134;
+	
+	// unary weight
+	optional float unary_weight = 56 [default = 1];
+
+	// interpolate between detections
+	optional bool interpolate = 77 [default = false];
+		
+	// directory for DMP detections on pos images
+	optional string pos_dpm_torso_dir = 69;
+	
+	// directory for DMP detections on test images
+	optional string test_dpm_torso_dir = 71;
+
+	// idx of torso hypothesis in top best list
+	optional uint32 torso_hyp_idx = 72;
+	
+	// directory to save part marginals
+	optional string part_marginals_dir = 73;
+		
+	// directory for the part probabilities (computed in partdetect_comppartprob.cpp) are stored 
+	//optional string partprob_dir = 17;
+
+	optional string part_conf = 5;
+
+	// part configuration used for evaluation (evaluated parts can be different from model parts)
+	optional string part_conf_eval = 32;
+
+	// type of the part configuration (required in part_eval for convertion from model parts to evaluation parts)
+	// supported types: "human_full", "human_full_joints", "human_full_torso4"
+	optional string part_conf_type = 33 [default = "human_full"];
+
+	optional string abc_param = 6;
+
+	// parameters which determine how dense scales and rotations will be scanned
+	optional float min_object_scale = 9 [default = 1];
+	optional float max_object_scale = 10 [default = 1];
+	optional uint32 num_scale_steps = 11 [default = 1];
+
+	optional float min_part_rotation = 12 [default = -180];
+	optional float max_part_rotation = 13 [default = 180];
+	optional uint32 num_rotation_steps = 14 [default = 48];
+
+	optional bool flip_orientation = 15 [default = false];
+
+	//optional uint32 scorehist_nbins = 18 [default = 20];
+	//optional uint32 scorehist_def_pw = 19 [default = 10];
+	//optional uint32 scorehist_def_ph = 20 [default = 10];
+	//optional double scorehist_minval = 26 [default = -0.5];
+	//optional double scorehist_maxval = 27 [default = 0.5];
+
+	// default equal to 2.5 comes from pedestrians which are typically 200x80
+	optional float object_height_width_ratio = 21 [default = 2.5];
+
+	optional bool compute_part_marginals = 22 [default = true];
+
+	// 
+	// MA: shouldn't this parameter be deprecated??? we don't sample poses any more 
+	// 
+	optional int32 num_pose_samples = 23 [default = 0];
+
+	//
+	// MA: started implementing multiple PS models 
+	//
+	optional bool is_multicomponent = 40 [default = false];
+	optional int32 num_components = 41 [default = 1];
+	
+	// directory to save final pose estimation results by mixture of components
+	optional string mix_dir = 45;
+	
+	// zero all upper body detection in the region close to left/right image border 
+	//(size of the region in given in percent of the image width), this is useful if
+	// dataset is made by cropping predetected bounding boxes and we want to enforce
+	// that object is in the middle of the image	
+
+	optional float strip_border_detections = 24 [default = 0];
+
+	// save detections in image coordinates 
+	optional bool save_image_scoregrid = 25 [default = false];
+
+	//
+	// libDiscPS parameters 
+	//
+
+	// number of samples to be drawn from the posterior distibution
+	optional int32 dai_num_samples = 28 [default = 1000]; 
+
+	// file in "protocol buffers" format describing factors used in addition to standard pictorial structures
+	optional string dai_factors = 29 [default = ""];
+
+	// directory used to load the discrete samples (similarly to how scores can be loaded from "scoregrid_dir")
+	optional string dai_samples_dir = 30 [default = ""];
+
+	// BP type, currently supported types: sumprod, maxprod
+	optional string dai_bp_type = 31 [default = "sumprod"];
+
+	// determines whether samples come from part detections of part posteriors: "part_post" or "part_det"
+	optional string dai_samples_type = 34 [default = "part_post"];
+
+	// generate samples for each bounding box in the test image (should help to evenly spread samples across detected people);
+	optional bool dai_bbox_prior = 35 [default = false];
+
+	// get the root position directly from the annopoints (assume that dai_bbox_prior) == true
+	optional bool dai_bbox_prior_annopoints = 37 [default = false];
+
+	// switch between single person model (22 parts) and 2-person model (44 parts)
+	optional bool dai_multiperson = 36 [default = false];
+
+	// detection masks, part detectors will be evaluated only for positions where 
+	// detection_mask is non-zero
+	// 
+	// this should be deprecated after we implement "regions of interest"
+	//
+	
+	optional string detection_masks_dir = 38 [default = ""];
+
+
+	//
+	// annolist with the same images as test_annolist, each bounding box marking "region of interest"
+	//
+	// pose estimation is then peformed for the "region of interest" and not for the full image
+	// 
+
+	optional string roi_annolist = 42 [default = ""];
+	optional int32 roi_extend_x = 46 [default = -1];
+	optional int32 roi_extend_y = 47 [default = -1];
+
+	// number of part positions with highest score to be saved for each roi (both part detections and posterior marginals are saved)
+	optional float roi_save_num_samples = 48 [default = 1000];
+
+	// MAP estimation
+	optional bool compute_max = 43 [default = false];
+		 
+        // 
+	optional bool reweight_inference = 53 [default = false];
+
+	// LEGACY options to make CVPR'10 code run (add 100 to the id)
+
+	//
+	// save root marginal (it is computed anyway, plan: use this to combine view specific models)
+	// currently supported only in objectdetect_findpos.cpp
+	//
+	optional bool save_root_marginal = 136 [default = false];
+
+}
