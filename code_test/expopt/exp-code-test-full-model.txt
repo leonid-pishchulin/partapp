@@ -1,0 +1,28 @@
+train_dataset: "./train.al"
+validation_dataset: "./train.al"
+test_dataset: "./code_test.al"
+
+part_conf: "./part_conf_22_parts_joint_types_12.txt"
+part_conf_eval: "./part_conf_10_parts.txt"
+part_conf_type: "human_full_22_parts"
+abc_param: "./abcparams_rounds500_dense05_2000.txt"
+
+log_dir: "./log_dir/"
+
+test_dpm_unary_dir: "./log_dir/exp-lsp-local-app-model/test_dpm_unary/"
+use_dpm_unary: true
+use_dpm_torso: true
+
+test_dpm_torso_dir: "./log_dir/exp-lsp-local-app-model/test_dpm_unary/torso/"
+use_torso_pos_prior: true
+use_dpm_head: true
+
+torso_det_test_dir: "./log_dir/exp-lsp-local-app-model-dense05/part_marginals/"
+poselet_resp_test_dir: "./log_dir/exp-lsp-poselets-dense05/resp_test"
+rootidx_det: 10
+
+pred_data_dir: "./log_dir/exp-lsp-poselets-dense05/pred_data/"
+pred_unary_rot_weight: 0.05
+pred_unary_pos_weight: 0.05
+pred_unary_rot: true
+pred_unary_pos: true

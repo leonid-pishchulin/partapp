@@ -1,0 +1,631 @@
+part {
+     part_id: 1
+
+     part_pos: 0
+     
+     part_x_axis_from: 1
+     part_x_axis_to: 0
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 20
+     ext_y_neg: 20
+}
+
+part {
+     part_id: 2
+
+     part_pos: 0
+     part_pos: 1
+     
+     part_x_axis_from: 1
+     part_x_axis_to: 0
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0
+}
+
+part {
+     part_id: 3
+
+     part_pos: 1
+     
+     part_x_axis_from: 1
+     part_x_axis_to: 0
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 20
+     ext_y_neg: 20
+}
+
+part {
+     part_id: 4
+
+     part_pos: 1
+     part_pos: 2
+     
+     part_x_axis_from: 2
+     part_x_axis_to: 1
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0
+}
+
+part {
+     part_id: 5
+
+     part_pos: 2
+     
+     part_x_axis_from: 2
+     part_x_axis_to: 1
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 20
+     ext_y_neg: 20
+}
+
+part {
+     part_id: 6
+
+     part_pos: 3
+     
+     part_x_axis_from: 3
+     part_x_axis_to: 4
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 20
+     ext_y_neg: 20
+}
+
+part {
+     part_id: 7
+
+     part_pos: 3
+     part_pos: 4
+     
+     part_x_axis_from: 3
+     part_x_axis_to: 4
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0
+}
+
+part {
+     part_id: 8
+
+     part_pos: 4
+     
+     part_x_axis_from: 4
+     part_x_axis_to: 5
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 20
+     ext_y_neg: 20
+}
+
+part {
+     part_id: 9
+
+     part_pos: 4
+     part_pos: 5
+     
+     part_x_axis_from: 4
+     part_x_axis_to: 5
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0
+}
+
+part {
+     part_id: 10
+
+     part_pos: 5
+     
+     part_x_axis_from: 4
+     part_x_axis_to: 5
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 20
+     ext_y_neg: 20
+}
+
+part {
+     part_id: 11
+     
+     part_pos: 6
+     part_pos: 7
+
+     part_x_axis_from: 7
+     part_x_axis_to: 6
+     part_x_axis_offset: -90
+
+     ext_x_pos: 30
+     ext_x_neg: 30
+     ext_y_pos: 10
+     ext_y_neg: 10
+
+     is_root: true
+}
+
+part {
+     part_id: 12
+     
+     part_pos: 8
+     part_pos: 9
+     
+     part_x_axis_from: 9
+     part_x_axis_to: 8
+     part_x_axis_offset: -90
+
+     ext_x_pos: 20
+     ext_x_neg: 20
+     ext_y_pos: 5
+     ext_y_neg: 5     
+}
+
+part {
+     part_id: 13
+     
+     part_pos: 10
+     
+     part_x_axis_from: 11
+     part_x_axis_to: 10
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 15
+     ext_y_neg: 15    
+}
+
+part {
+     part_id: 14
+     
+     part_pos: 11
+     part_pos: 10
+     
+     part_x_axis_from: 11
+     part_x_axis_to: 10
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0     
+}
+
+part {
+     part_id: 15
+     
+     part_pos: 11
+     
+     part_x_axis_from: 11
+     part_x_axis_to: 10
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 15
+     ext_y_neg: 15    
+}
+
+part {
+     part_id: 16
+     
+     part_pos: 12
+     part_pos: 11
+     
+     part_x_axis_from: 12
+     part_x_axis_to: 11
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0     
+}
+
+part {
+     part_id: 17
+     
+     part_pos: 12
+     
+     part_x_axis_from: 12
+     part_x_axis_to: 11
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 15
+     ext_y_neg: 15    
+}
+
+part {
+     part_id: 18
+     
+     part_pos: 13
+     
+     part_x_axis_from: 13
+     part_x_axis_to: 14
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 15
+     ext_y_neg: 15    
+}
+
+part {
+     part_id: 19
+     
+     part_pos: 13
+     part_pos: 14
+     
+     part_x_axis_from: 13
+     part_x_axis_to: 14
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0     
+}
+
+part {
+     part_id: 20
+     
+     part_pos: 14
+     
+     part_x_axis_from: 14
+     part_x_axis_to: 15
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 15
+     ext_y_neg: 15    
+}
+
+
+part {
+     part_id: 21
+     
+     part_pos: 14
+     part_pos: 15
+     
+     part_x_axis_from: 14
+     part_x_axis_to: 15
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 0
+     ext_y_neg: 0     
+}
+
+part {
+     part_id: 22
+     
+     part_pos: 15
+     
+     part_x_axis_from: 14
+     part_x_axis_to: 15
+     part_x_axis_offset: -90
+
+     ext_x_pos: 15
+     ext_x_neg: 15
+     ext_y_pos: 15
+     ext_y_neg: 15    
+}
+
+joint {
+     child_idx: 1
+     parent_idx: 2
+
+     type: "RotGaussian"
+
+     joint_pos: 0
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 2
+     parent_idx: 3
+
+     type: "RotGaussian"
+
+     joint_pos: 1
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 3
+     parent_idx: 4
+
+     type: "RotGaussian"
+
+     joint_pos: 1
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 4
+     parent_idx: 5
+
+     type: "RotGaussian"
+
+     joint_pos: 2
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 5
+     parent_idx: 11
+
+     type: "RotGaussian"
+
+     joint_pos: 2
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 6
+     parent_idx: 11
+
+     type: "RotGaussian"
+
+     joint_pos: 3
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 7
+     parent_idx: 6
+
+     type: "RotGaussian"
+
+     joint_pos: 3
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 8
+     parent_idx: 7
+
+     type: "RotGaussian"
+
+     joint_pos: 4
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 9
+     parent_idx: 8
+
+     type: "RotGaussian"
+
+     joint_pos: 4
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 10
+     parent_idx: 9
+
+     type: "RotGaussian"
+
+     joint_pos: 5
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 12
+     parent_idx: 11
+
+     type: "RotGaussian"
+
+     joint_pos: 7
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 13
+     parent_idx: 14
+
+     type: "RotGaussian"
+
+     joint_pos: 10
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 14
+     parent_idx: 15
+
+     type: "RotGaussian"
+
+     joint_pos: 11
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 15
+     parent_idx: 16
+
+     type: "RotGaussian"
+
+     joint_pos: 11
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 16
+     parent_idx: 17
+
+     type: "RotGaussian"
+
+     joint_pos: 12
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 17
+     parent_idx: 11
+
+     type: "RotGaussian"
+
+     joint_pos: 12
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 18
+     parent_idx: 11
+
+     type: "RotGaussian"
+
+     joint_pos: 13
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 19
+     parent_idx: 18
+
+     type: "RotGaussian"
+
+     joint_pos: 13
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 20
+     parent_idx: 19
+
+     type: "RotGaussian"
+
+     joint_pos: 14
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 21
+     parent_idx: 20
+
+     type: "RotGaussian"
+
+     joint_pos: 14
+
+     num_joint_types: 12	
+}
+
+joint {
+     child_idx: 22
+     parent_idx: 21
+
+     type: "RotGaussian"
+
+     joint_pos: 15
+
+     num_joint_types: 12	
+}
+
+app_group {
+     part_id: 1
+     part_id: 10  
+}
+
+app_group {
+     part_id: 2
+     part_id: 9  
+}
+
+app_group {
+     part_id: 3
+     part_id: 8  
+}
+
+app_group {
+     part_id: 4
+     part_id: 7  
+}
+
+app_group {
+     part_id: 5
+     part_id: 6  
+}
+
+app_group {
+     part_id: 11
+}
+
+app_group {
+     part_id: 12
+}
+
+app_group {
+     part_id: 13
+     part_id: 22
+}
+
+app_group {
+     part_id: 14
+     part_id: 21
+}
+
+app_group {
+     part_id: 15
+     part_id: 20
+}
+
+app_group {
+     part_id: 16
+     part_id: 19
+}
+
+app_group {
+     part_id: 17
+     part_id: 18
+}

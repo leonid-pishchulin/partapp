@@ -1,0 +1,11146 @@
+part {
+  window_size_x: 30
+  window_size_y: 51
+  pos_offset_x: 15
+  pos_offset_y: 25
+  part_id: 1
+  type_id: 0
+  root_offset_x: -14
+  root_offset_y: 85
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 49
+  pos_offset_x: 15
+  pos_offset_y: 24
+  part_id: 2
+  type_id: 0
+  root_offset_x: -10
+  root_offset_y: 46
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 49
+  pos_offset_x: 15
+  pos_offset_y: 24
+  part_id: 3
+  type_id: 0
+  root_offset_x: 10
+  root_offset_y: 46
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 51
+  pos_offset_x: 15
+  pos_offset_y: 25
+  part_id: 4
+  type_id: 0
+  root_offset_x: 14
+  root_offset_y: 85
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 60
+  window_size_y: 85
+  pos_offset_x: 30
+  pos_offset_y: 42
+  part_id: 5
+  type_id: 0
+  root_offset_x: 0
+  root_offset_y: 0
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 40
+  window_size_y: 37
+  pos_offset_x: 20
+  pos_offset_y: 18
+  part_id: 6
+  type_id: 0
+  root_offset_x: 0
+  root_offset_y: -47
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 29
+  pos_offset_x: 15
+  pos_offset_y: 14
+  part_id: 7
+  type_id: 0
+  root_offset_x: -20
+  root_offset_y: -1
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 33
+  pos_offset_x: 15
+  pos_offset_y: 16
+  part_id: 8
+  type_id: 0
+  root_offset_x: -17
+  root_offset_y: -16
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 33
+  pos_offset_x: 15
+  pos_offset_y: 16
+  part_id: 9
+  type_id: 0
+  root_offset_x: 17
+  root_offset_y: -16
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 30
+  window_size_y: 29
+  pos_offset_x: 15
+  pos_offset_y: 14
+  part_id: 10
+  type_id: 0
+  root_offset_x: 20
+  root_offset_y: -1
+  root_rot: -0.18731092
+}
+part {
+  window_size_x: 72
+  window_size_y: 192
+  pos_offset_x: 36
+  pos_offset_y: 96
+  part_id: 11
+  type_id: 0
+  root_offset_x: 0
+  root_offset_y: 25
+  root_rot: 1.3901099
+}
+part {
+  window_size_x: 70
+  window_size_y: 206
+  pos_offset_x: 35
+  pos_offset_y: 103
+  part_id: 11
+  type_id: 1
+  root_offset_x: -4
+  root_offset_y: 34
+  root_rot: 13.864439
+}
+part {
+  window_size_x: 94
+  window_size_y: 197
+  pos_offset_x: 47
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 2
+  root_offset_x: 13
+  root_offset_y: 29
+  root_rot: 6.4738722
+}
+part {
+  window_size_x: 109
+  window_size_y: 142
+  pos_offset_x: 54
+  pos_offset_y: 71
+  part_id: 11
+  type_id: 3
+  root_offset_x: -10
+  root_offset_y: -13
+  root_rot: 130.32426
+}
+part {
+  window_size_x: 57
+  window_size_y: 197
+  pos_offset_x: 28
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 4
+  root_offset_x: 0
+  root_offset_y: 26
+  root_rot: 0.25050721
+}
+part {
+  window_size_x: 92
+  window_size_y: 192
+  pos_offset_x: 46
+  pos_offset_y: 96
+  part_id: 11
+  type_id: 5
+  root_offset_x: -1
+  root_offset_y: 29
+  root_rot: 18.215843
+}
+part {
+  window_size_x: 92
+  window_size_y: 188
+  pos_offset_x: 46
+  pos_offset_y: 94
+  part_id: 11
+  type_id: 6
+  root_offset_x: 0
+  root_offset_y: 24
+  root_rot: -3.0212579
+}
+part {
+  window_size_x: 160
+  window_size_y: 91
+  pos_offset_x: 80
+  pos_offset_y: 45
+  part_id: 11
+  type_id: 7
+  root_offset_x: 9
+  root_offset_y: 21
+  root_rot: -98.90873
+}
+part {
+  window_size_x: 88
+  window_size_y: 198
+  pos_offset_x: 44
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 8
+  root_offset_x: -14
+  root_offset_y: 29
+  root_rot: -5.0418921
+}
+part {
+  window_size_x: 109
+  window_size_y: 199
+  pos_offset_x: 54
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 9
+  root_offset_x: 14
+  root_offset_y: 31
+  root_rot: 20.698906
+}
+part {
+  window_size_x: 77
+  window_size_y: 198
+  pos_offset_x: 38
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 10
+  root_offset_x: 0
+  root_offset_y: 29
+  root_rot: -4.5972905
+}
+part {
+  window_size_x: 85
+  window_size_y: 200
+  pos_offset_x: 42
+  pos_offset_y: 100
+  part_id: 11
+  type_id: 11
+  root_offset_x: -11
+  root_offset_y: 25
+  root_rot: -15.02001
+}
+part {
+  window_size_x: 105
+  window_size_y: 194
+  pos_offset_x: 52
+  pos_offset_y: 97
+  part_id: 11
+  type_id: 12
+  root_offset_x: 2
+  root_offset_y: 29
+  root_rot: -16.362589
+}
+part {
+  window_size_x: 83
+  window_size_y: 197
+  pos_offset_x: 41
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 13
+  root_offset_x: 1
+  root_offset_y: 27
+  root_rot: 2.1422203
+}
+part {
+  window_size_x: 80
+  window_size_y: 197
+  pos_offset_x: 40
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 14
+  root_offset_x: 0
+  root_offset_y: 27
+  root_rot: -2.73599
+}
+part {
+  window_size_x: 88
+  window_size_y: 214
+  pos_offset_x: 44
+  pos_offset_y: 107
+  part_id: 11
+  type_id: 15
+  root_offset_x: -1
+  root_offset_y: 35
+  root_rot: 2.301791
+}
+part {
+  window_size_x: 70
+  window_size_y: 212
+  pos_offset_x: 35
+  pos_offset_y: 106
+  part_id: 11
+  type_id: 16
+  root_offset_x: 0
+  root_offset_y: 33
+  root_rot: 4.3406825
+}
+part {
+  window_size_x: 76
+  window_size_y: 198
+  pos_offset_x: 38
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 17
+  root_offset_x: 5
+  root_offset_y: 29
+  root_rot: -3.6875348
+}
+part {
+  window_size_x: 119
+  window_size_y: 196
+  pos_offset_x: 59
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 18
+  root_offset_x: 0
+  root_offset_y: 29
+  root_rot: 4.6029682
+}
+part {
+  window_size_x: 78
+  window_size_y: 222
+  pos_offset_x: 39
+  pos_offset_y: 111
+  part_id: 11
+  type_id: 19
+  root_offset_x: 1
+  root_offset_y: 40
+  root_rot: -2.5319395
+}
+part {
+  window_size_x: 68
+  window_size_y: 211
+  pos_offset_x: 34
+  pos_offset_y: 105
+  part_id: 11
+  type_id: 20
+  root_offset_x: 0
+  root_offset_y: 32
+  root_rot: 1.3022428
+}
+part {
+  window_size_x: 54
+  window_size_y: 211
+  pos_offset_x: 27
+  pos_offset_y: 105
+  part_id: 11
+  type_id: 21
+  root_offset_x: -4
+  root_offset_y: 33
+  root_rot: -1.3080376
+}
+part {
+  window_size_x: 69
+  window_size_y: 179
+  pos_offset_x: 34
+  pos_offset_y: 89
+  part_id: 11
+  type_id: 22
+  root_offset_x: 8
+  root_offset_y: 19
+  root_rot: -3.2418106
+}
+part {
+  window_size_x: 46
+  window_size_y: 195
+  pos_offset_x: 23
+  pos_offset_y: 97
+  part_id: 11
+  type_id: 23
+  root_offset_x: 6
+  root_offset_y: 28
+  root_rot: 10.212436
+}
+part {
+  window_size_x: 48
+  window_size_y: 208
+  pos_offset_x: 24
+  pos_offset_y: 104
+  part_id: 11
+  type_id: 24
+  root_offset_x: 7
+  root_offset_y: 32
+  root_rot: 0.91722643
+}
+part {
+  window_size_x: 110
+  window_size_y: 183
+  pos_offset_x: 55
+  pos_offset_y: 91
+  part_id: 11
+  type_id: 25
+  root_offset_x: 4
+  root_offset_y: 23
+  root_rot: -10.432566
+}
+part {
+  window_size_x: 67
+  window_size_y: 208
+  pos_offset_x: 33
+  pos_offset_y: 104
+  part_id: 11
+  type_id: 26
+  root_offset_x: -2
+  root_offset_y: 33
+  root_rot: 3.1203609
+}
+part {
+  window_size_x: 107
+  window_size_y: 197
+  pos_offset_x: 53
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 27
+  root_offset_x: -17
+  root_offset_y: 30
+  root_rot: -20.577902
+}
+part {
+  window_size_x: 61
+  window_size_y: 206
+  pos_offset_x: 30
+  pos_offset_y: 103
+  part_id: 11
+  type_id: 28
+  root_offset_x: 0
+  root_offset_y: 32
+  root_rot: -5.7926764
+}
+part {
+  window_size_x: 118
+  window_size_y: 197
+  pos_offset_x: 59
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 29
+  root_offset_x: 2
+  root_offset_y: 31
+  root_rot: -7.4960842
+}
+part {
+  window_size_x: 80
+  window_size_y: 194
+  pos_offset_x: 40
+  pos_offset_y: 97
+  part_id: 11
+  type_id: 30
+  root_offset_x: 0
+  root_offset_y: 26
+  root_rot: -8.9160957
+}
+part {
+  window_size_x: 93
+  window_size_y: 184
+  pos_offset_x: 46
+  pos_offset_y: 92
+  part_id: 11
+  type_id: 31
+  root_offset_x: 3
+  root_offset_y: 24
+  root_rot: 17.644295
+}
+part {
+  window_size_x: 66
+  window_size_y: 200
+  pos_offset_x: 33
+  pos_offset_y: 100
+  part_id: 11
+  type_id: 32
+  root_offset_x: 3
+  root_offset_y: 29
+  root_rot: 2.6183045
+}
+part {
+  window_size_x: 69
+  window_size_y: 220
+  pos_offset_x: 34
+  pos_offset_y: 110
+  part_id: 11
+  type_id: 33
+  root_offset_x: 0
+  root_offset_y: 25
+  root_rot: -11.073771
+}
+part {
+  window_size_x: 69
+  window_size_y: 204
+  pos_offset_x: 34
+  pos_offset_y: 102
+  part_id: 11
+  type_id: 34
+  root_offset_x: -6
+  root_offset_y: 32
+  root_rot: 9.0566158
+}
+part {
+  window_size_x: 66
+  window_size_y: 208
+  pos_offset_x: 33
+  pos_offset_y: 104
+  part_id: 11
+  type_id: 35
+  root_offset_x: 1
+  root_offset_y: 33
+  root_rot: 6.8189411
+}
+part {
+  window_size_x: 98
+  window_size_y: 214
+  pos_offset_x: 49
+  pos_offset_y: 107
+  part_id: 11
+  type_id: 36
+  root_offset_x: 11
+  root_offset_y: 35
+  root_rot: -0.54277205
+}
+part {
+  window_size_x: 100
+  window_size_y: 199
+  pos_offset_x: 50
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 37
+  root_offset_x: 2
+  root_offset_y: 31
+  root_rot: -19.983858
+}
+part {
+  window_size_x: 72
+  window_size_y: 209
+  pos_offset_x: 36
+  pos_offset_y: 104
+  part_id: 11
+  type_id: 38
+  root_offset_x: 0
+  root_offset_y: 32
+  root_rot: -0.8035717
+}
+part {
+  window_size_x: 75
+  window_size_y: 221
+  pos_offset_x: 37
+  pos_offset_y: 110
+  part_id: 11
+  type_id: 39
+  root_offset_x: 1
+  root_offset_y: 29
+  root_rot: 0.95072329
+}
+part {
+  window_size_x: 81
+  window_size_y: 215
+  pos_offset_x: 40
+  pos_offset_y: 107
+  part_id: 11
+  type_id: 40
+  root_offset_x: 2
+  root_offset_y: 35
+  root_rot: -1.371214
+}
+part {
+  window_size_x: 115
+  window_size_y: 196
+  pos_offset_x: 57
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 41
+  root_offset_x: -8
+  root_offset_y: 33
+  root_rot: 19.425797
+}
+part {
+  window_size_x: 97
+  window_size_y: 204
+  pos_offset_x: 48
+  pos_offset_y: 102
+  part_id: 11
+  type_id: 42
+  root_offset_x: -12
+  root_offset_y: 27
+  root_rot: -1.7424457
+}
+part {
+  window_size_x: 75
+  window_size_y: 233
+  pos_offset_x: 37
+  pos_offset_y: 116
+  part_id: 11
+  type_id: 43
+  root_offset_x: -10
+  root_offset_y: 14
+  root_rot: -8.82627
+}
+part {
+  window_size_x: 79
+  window_size_y: 206
+  pos_offset_x: 39
+  pos_offset_y: 103
+  part_id: 11
+  type_id: 44
+  root_offset_x: 1
+  root_offset_y: 31
+  root_rot: -1.8467273
+}
+part {
+  window_size_x: 59
+  window_size_y: 210
+  pos_offset_x: 29
+  pos_offset_y: 105
+  part_id: 11
+  type_id: 45
+  root_offset_x: 1
+  root_offset_y: 32
+  root_rot: -1.8820424
+}
+part {
+  window_size_x: 126
+  window_size_y: 122
+  pos_offset_x: 63
+  pos_offset_y: 61
+  part_id: 11
+  type_id: 46
+  root_offset_x: 11
+  root_offset_y: -11
+  root_rot: -124.2328
+}
+part {
+  window_size_x: 66
+  window_size_y: 204
+  pos_offset_x: 33
+  pos_offset_y: 102
+  part_id: 11
+  type_id: 47
+  root_offset_x: 2
+  root_offset_y: 30
+  root_rot: -3.8943799
+}
+part {
+  window_size_x: 59
+  window_size_y: 203
+  pos_offset_x: 29
+  pos_offset_y: 101
+  part_id: 11
+  type_id: 48
+  root_offset_x: -1
+  root_offset_y: 31
+  root_rot: 2.7708485
+}
+part {
+  window_size_x: 107
+  window_size_y: 206
+  pos_offset_x: 53
+  pos_offset_y: 103
+  part_id: 11
+  type_id: 49
+  root_offset_x: 6
+  root_offset_y: 33
+  root_rot: -15.30829
+}
+part {
+  window_size_x: 109
+  window_size_y: 197
+  pos_offset_x: 54
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 50
+  root_offset_x: -13
+  root_offset_y: 29
+  root_rot: 15.606877
+}
+part {
+  window_size_x: 55
+  window_size_y: 205
+  pos_offset_x: 27
+  pos_offset_y: 102
+  part_id: 11
+  type_id: 51
+  root_offset_x: -3
+  root_offset_y: 32
+  root_rot: -7.9579649
+}
+part {
+  window_size_x: 72
+  window_size_y: 213
+  pos_offset_x: 36
+  pos_offset_y: 106
+  part_id: 11
+  type_id: 52
+  root_offset_x: 4
+  root_offset_y: 36
+  root_rot: -5.2758322
+}
+part {
+  window_size_x: 94
+  window_size_y: 173
+  pos_offset_x: 47
+  pos_offset_y: 86
+  part_id: 11
+  type_id: 53
+  root_offset_x: 4
+  root_offset_y: 30
+  root_rot: -41.552357
+}
+part {
+  window_size_x: 88
+  window_size_y: 192
+  pos_offset_x: 44
+  pos_offset_y: 96
+  part_id: 11
+  type_id: 54
+  root_offset_x: 0
+  root_offset_y: 26
+  root_rot: 3.3105288
+}
+part {
+  window_size_x: 100
+  window_size_y: 189
+  pos_offset_x: 50
+  pos_offset_y: 94
+  part_id: 11
+  type_id: 55
+  root_offset_x: -2
+  root_offset_y: 25
+  root_rot: -18.064798
+}
+part {
+  window_size_x: 123
+  window_size_y: 183
+  pos_offset_x: 61
+  pos_offset_y: 91
+  part_id: 11
+  type_id: 56
+  root_offset_x: 16
+  root_offset_y: 25
+  root_rot: -11.059784
+}
+part {
+  window_size_x: 111
+  window_size_y: 198
+  pos_offset_x: 55
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 57
+  root_offset_x: 7
+  root_offset_y: -33
+  root_rot: 11.629821
+}
+part {
+  window_size_x: 58
+  window_size_y: 213
+  pos_offset_x: 29
+  pos_offset_y: 106
+  part_id: 11
+  type_id: 58
+  root_offset_x: 0
+  root_offset_y: 36
+  root_rot: -0.23184009
+}
+part {
+  window_size_x: 83
+  window_size_y: 203
+  pos_offset_x: 41
+  pos_offset_y: 101
+  part_id: 11
+  type_id: 59
+  root_offset_x: 3
+  root_offset_y: 38
+  root_rot: -14.637789
+}
+part {
+  window_size_x: 74
+  window_size_y: 231
+  pos_offset_x: 37
+  pos_offset_y: 115
+  part_id: 11
+  type_id: 60
+  root_offset_x: 10
+  root_offset_y: 15
+  root_rot: 8.6514559
+}
+part {
+  window_size_x: 66
+  window_size_y: 200
+  pos_offset_x: 33
+  pos_offset_y: 100
+  part_id: 11
+  type_id: 61
+  root_offset_x: 0
+  root_offset_y: 28
+  root_rot: -0.63121063
+}
+part {
+  window_size_x: 98
+  window_size_y: 126
+  pos_offset_x: 49
+  pos_offset_y: 63
+  part_id: 11
+  type_id: 62
+  root_offset_x: -12
+  root_offset_y: 10
+  root_rot: -48.975597
+}
+part {
+  window_size_x: 78
+  window_size_y: 187
+  pos_offset_x: 39
+  pos_offset_y: 93
+  part_id: 11
+  type_id: 63
+  root_offset_x: -13
+  root_offset_y: 31
+  root_rot: -32.058411
+}
+part {
+  window_size_x: 97
+  window_size_y: 211
+  pos_offset_x: 48
+  pos_offset_y: 105
+  part_id: 11
+  type_id: 64
+  root_offset_x: -11
+  root_offset_y: 34
+  root_rot: -0.45670551
+}
+part {
+  window_size_x: 128
+  window_size_y: 190
+  pos_offset_x: 64
+  pos_offset_y: 95
+  part_id: 11
+  type_id: 65
+  root_offset_x: -3
+  root_offset_y: 29
+  root_rot: -7.9713111
+}
+part {
+  window_size_x: 65
+  window_size_y: 205
+  pos_offset_x: 32
+  pos_offset_y: 102
+  part_id: 11
+  type_id: 66
+  root_offset_x: 0
+  root_offset_y: 37
+  root_rot: -16.420294
+}
+part {
+  window_size_x: 123
+  window_size_y: 191
+  pos_offset_x: 61
+  pos_offset_y: 95
+  part_id: 11
+  type_id: 67
+  root_offset_x: 0
+  root_offset_y: 27
+  root_rot: -2.6708674
+}
+part {
+  window_size_x: 55
+  window_size_y: 204
+  pos_offset_x: 27
+  pos_offset_y: 102
+  part_id: 11
+  type_id: 68
+  root_offset_x: -11
+  root_offset_y: 30
+  root_rot: 2.1223342
+}
+part {
+  window_size_x: 77
+  window_size_y: 201
+  pos_offset_x: 38
+  pos_offset_y: 100
+  part_id: 11
+  type_id: 69
+  root_offset_x: -9
+  root_offset_y: 30
+  root_rot: 4.7776079
+}
+part {
+  window_size_x: 106
+  window_size_y: 192
+  pos_offset_x: 53
+  pos_offset_y: 96
+  part_id: 11
+  type_id: 70
+  root_offset_x: -2
+  root_offset_y: 25
+  root_rot: 16.338007
+}
+part {
+  window_size_x: 50
+  window_size_y: 248
+  pos_offset_x: 25
+  pos_offset_y: 124
+  part_id: 11
+  type_id: 71
+  root_offset_x: -2
+  root_offset_y: 21
+  root_rot: -1.3379258
+}
+part {
+  window_size_x: 108
+  window_size_y: 192
+  pos_offset_x: 54
+  pos_offset_y: 96
+  part_id: 11
+  type_id: 72
+  root_offset_x: 13
+  root_offset_y: 31
+  root_rot: -19.026497
+}
+part {
+  window_size_x: 62
+  window_size_y: 197
+  pos_offset_x: 31
+  pos_offset_y: 98
+  part_id: 11
+  type_id: 73
+  root_offset_x: 0
+  root_offset_y: 27
+  root_rot: 0.74395531
+}
+part {
+  window_size_x: 92
+  window_size_y: 229
+  pos_offset_x: 46
+  pos_offset_y: 114
+  part_id: 11
+  type_id: 74
+  root_offset_x: 0
+  root_offset_y: -13
+  root_rot: -17.6152
+}
+part {
+  window_size_x: 102
+  window_size_y: 198
+  pos_offset_x: 51
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 75
+  root_offset_x: 1
+  root_offset_y: 30
+  root_rot: -18.826462
+}
+part {
+  window_size_x: 52
+  window_size_y: 198
+  pos_offset_x: 26
+  pos_offset_y: 99
+  part_id: 11
+  type_id: 76
+  root_offset_x: 1
+  root_offset_y: 31
+  root_rot: 8.4844437
+}
+part {
+  window_size_x: 53
+  window_size_y: 191
+  pos_offset_x: 26
+  pos_offset_y: 95
+  part_id: 11
+  type_id: 77
+  root_offset_x: -3
+  root_offset_y: 27
+  root_rot: -9.6626225
+}
+part {
+  window_size_x: 71
+  window_size_y: 187
+  pos_offset_x: 35
+  pos_offset_y: 93
+  part_id: 11
+  type_id: 78
+  root_offset_x: -1
+  root_offset_y: 22
+  root_rot: 7.2546172
+}
+part {
+  window_size_x: 120
+  window_size_y: 189
+  pos_offset_x: 60
+  pos_offset_y: 94
+  part_id: 11
+  type_id: 79
+  root_offset_x: 0
+  root_offset_y: 25
+  root_rot: -0.37531608
+}
+part {
+  window_size_x: 113
+  window_size_y: 151
+  pos_offset_x: 56
+  pos_offset_y: 75
+  part_id: 11
+  type_id: 80
+  root_offset_x: 10
+  root_offset_y: -18
+  root_rot: -124.32968
+}
+part {
+  window_size_x: 91
+  window_size_y: 100
+  pos_offset_x: 45
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 0
+  root_offset_x: 21
+  root_offset_y: -19
+  root_rot: 11.096187
+}
+part {
+  window_size_x: 94
+  window_size_y: 103
+  pos_offset_x: 47
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 1
+  root_offset_x: -2
+  root_offset_y: -20
+  root_rot: 2.856653
+}
+part {
+  window_size_x: 104
+  window_size_y: 101
+  pos_offset_x: 52
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 2
+  root_offset_x: 26
+  root_offset_y: -17
+  root_rot: 14.491885
+}
+part {
+  window_size_x: 86
+  window_size_y: 135
+  pos_offset_x: 43
+  pos_offset_y: 67
+  part_id: 12
+  type_id: 3
+  root_offset_x: 0
+  root_offset_y: 37
+  root_rot: 0.0087982807
+}
+part {
+  window_size_x: 135
+  window_size_y: 100
+  pos_offset_x: 67
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 4
+  root_offset_x: 8
+  root_offset_y: -17
+  root_rot: 3.4063635
+}
+part {
+  window_size_x: 102
+  window_size_y: 97
+  pos_offset_x: 51
+  pos_offset_y: 48
+  part_id: 12
+  type_id: 5
+  root_offset_x: -11
+  root_offset_y: -1
+  root_rot: -130.16156
+}
+part {
+  window_size_x: 89
+  window_size_y: 104
+  pos_offset_x: 44
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 6
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: 0.57516044
+}
+part {
+  window_size_x: 98
+  window_size_y: 102
+  pos_offset_x: 49
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 7
+  root_offset_x: -21
+  root_offset_y: -17
+  root_rot: -6.7219234
+}
+part {
+  window_size_x: 94
+  window_size_y: 105
+  pos_offset_x: 47
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 8
+  root_offset_x: 3
+  root_offset_y: -20
+  root_rot: -5.3765831
+}
+part {
+  window_size_x: 85
+  window_size_y: 120
+  pos_offset_x: 42
+  pos_offset_y: 60
+  part_id: 12
+  type_id: 9
+  root_offset_x: 2
+  root_offset_y: -27
+  root_rot: -14.823833
+}
+part {
+  window_size_x: 154
+  window_size_y: 104
+  pos_offset_x: 77
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 10
+  root_offset_x: -10
+  root_offset_y: -15
+  root_rot: 3.0327253
+}
+part {
+  window_size_x: 188
+  window_size_y: 96
+  pos_offset_x: 94
+  pos_offset_y: 48
+  part_id: 12
+  type_id: 11
+  root_offset_x: 0
+  root_offset_y: -15
+  root_rot: 0.086960748
+}
+part {
+  window_size_x: 67
+  window_size_y: 102
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 12
+  root_offset_x: 0
+  root_offset_y: -16
+  root_rot: -3.443521
+}
+part {
+  window_size_x: 67
+  window_size_y: 103
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 13
+  root_offset_x: 12
+  root_offset_y: -18
+  root_rot: 2.2832205
+}
+part {
+  window_size_x: 162
+  window_size_y: 100
+  pos_offset_x: 81
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 14
+  root_offset_x: 13
+  root_offset_y: -17
+  root_rot: 7.52207
+}
+part {
+  window_size_x: 83
+  window_size_y: 113
+  pos_offset_x: 41
+  pos_offset_y: 56
+  part_id: 12
+  type_id: 15
+  root_offset_x: -8
+  root_offset_y: -29
+  root_rot: -33.067455
+}
+part {
+  window_size_x: 69
+  window_size_y: 103
+  pos_offset_x: 34
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 16
+  root_offset_x: -12
+  root_offset_y: -18
+  root_rot: -5.5844679
+}
+part {
+  window_size_x: 160
+  window_size_y: 101
+  pos_offset_x: 80
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 17
+  root_offset_x: 12
+  root_offset_y: -15
+  root_rot: -3.5905313
+}
+part {
+  window_size_x: 129
+  window_size_y: 100
+  pos_offset_x: 64
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 18
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: 14.755177
+}
+part {
+  window_size_x: 82
+  window_size_y: 108
+  pos_offset_x: 41
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 19
+  root_offset_x: -1
+  root_offset_y: -17
+  root_rot: -0.35992491
+}
+part {
+  window_size_x: 73
+  window_size_y: 108
+  pos_offset_x: 36
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 20
+  root_offset_x: -3
+  root_offset_y: -12
+  root_rot: -10.846736
+}
+part {
+  window_size_x: 104
+  window_size_y: 107
+  pos_offset_x: 52
+  pos_offset_y: 53
+  part_id: 12
+  type_id: 21
+  root_offset_x: -2
+  root_offset_y: -17
+  root_rot: 0.89142865
+}
+part {
+  window_size_x: 74
+  window_size_y: 101
+  pos_offset_x: 37
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 22
+  root_offset_x: 5
+  root_offset_y: -18
+  root_rot: 10.611123
+}
+part {
+  window_size_x: 118
+  window_size_y: 99
+  pos_offset_x: 59
+  pos_offset_y: 49
+  part_id: 12
+  type_id: 23
+  root_offset_x: 3
+  root_offset_y: -17
+  root_rot: -15.530302
+}
+part {
+  window_size_x: 74
+  window_size_y: 102
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 24
+  root_offset_x: -1
+  root_offset_y: -20
+  root_rot: -2.3386915
+}
+part {
+  window_size_x: 114
+  window_size_y: 104
+  pos_offset_x: 57
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 25
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: -0.0903467
+}
+part {
+  window_size_x: 119
+  window_size_y: 111
+  pos_offset_x: 59
+  pos_offset_y: 55
+  part_id: 12
+  type_id: 26
+  root_offset_x: 5
+  root_offset_y: -13
+  root_rot: -5.9118514
+}
+part {
+  window_size_x: 106
+  window_size_y: 106
+  pos_offset_x: 53
+  pos_offset_y: 53
+  part_id: 12
+  type_id: 27
+  root_offset_x: 1
+  root_offset_y: -17
+  root_rot: -1.9880267
+}
+part {
+  window_size_x: 99
+  window_size_y: 108
+  pos_offset_x: 49
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 28
+  root_offset_x: 1
+  root_offset_y: -19
+  root_rot: 0.20626502
+}
+part {
+  window_size_x: 58
+  window_size_y: 110
+  pos_offset_x: 29
+  pos_offset_y: 55
+  part_id: 12
+  type_id: 29
+  root_offset_x: 6
+  root_offset_y: -15
+  root_rot: 1.386717
+}
+part {
+  window_size_x: 128
+  window_size_y: 102
+  pos_offset_x: 64
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 30
+  root_offset_x: -2
+  root_offset_y: -18
+  root_rot: 1.1664288
+}
+part {
+  window_size_x: 106
+  window_size_y: 108
+  pos_offset_x: 53
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 31
+  root_offset_x: 0
+  root_offset_y: -16
+  root_rot: 1.956952
+}
+part {
+  window_size_x: 123
+  window_size_y: 105
+  pos_offset_x: 61
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 32
+  root_offset_x: 4
+  root_offset_y: -16
+  root_rot: 11.527328
+}
+part {
+  window_size_x: 94
+  window_size_y: 112
+  pos_offset_x: 47
+  pos_offset_y: 56
+  part_id: 12
+  type_id: 33
+  root_offset_x: 0
+  root_offset_y: -24
+  root_rot: 19.467546
+}
+part {
+  window_size_x: 94
+  window_size_y: 104
+  pos_offset_x: 47
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 34
+  root_offset_x: -2
+  root_offset_y: -19
+  root_rot: 3.4957247
+}
+part {
+  window_size_x: 101
+  window_size_y: 102
+  pos_offset_x: 50
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 35
+  root_offset_x: -1
+  root_offset_y: -17
+  root_rot: -6.768436
+}
+part {
+  window_size_x: 72
+  window_size_y: 102
+  pos_offset_x: 36
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 36
+  root_offset_x: 1
+  root_offset_y: -18
+  root_rot: 4.0704379
+}
+part {
+  window_size_x: 115
+  window_size_y: 98
+  pos_offset_x: 57
+  pos_offset_y: 49
+  part_id: 12
+  type_id: 37
+  root_offset_x: -28
+  root_offset_y: -18
+  root_rot: -15.15479
+}
+part {
+  window_size_x: 96
+  window_size_y: 103
+  pos_offset_x: 48
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 38
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: 0.97468728
+}
+part {
+  window_size_x: 82
+  window_size_y: 101
+  pos_offset_x: 41
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 39
+  root_offset_x: -11
+  root_offset_y: -17
+  root_rot: -7.5394335
+}
+part {
+  window_size_x: 88
+  window_size_y: 98
+  pos_offset_x: 44
+  pos_offset_y: 49
+  part_id: 12
+  type_id: 40
+  root_offset_x: -6
+  root_offset_y: -12
+  root_rot: -29.232977
+}
+part {
+  window_size_x: 157
+  window_size_y: 103
+  pos_offset_x: 78
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 41
+  root_offset_x: -11
+  root_offset_y: -18
+  root_rot: -2.6423581
+}
+part {
+  window_size_x: 123
+  window_size_y: 102
+  pos_offset_x: 61
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 42
+  root_offset_x: -12
+  root_offset_y: -15
+  root_rot: -22.45587
+}
+part {
+  window_size_x: 110
+  window_size_y: 100
+  pos_offset_x: 55
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 43
+  root_offset_x: 9
+  root_offset_y: -17
+  root_rot: 18.482485
+}
+part {
+  window_size_x: 89
+  window_size_y: 105
+  pos_offset_x: 44
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 44
+  root_offset_x: 0
+  root_offset_y: -17
+  root_rot: 0.7012763
+}
+part {
+  window_size_x: 126
+  window_size_y: 100
+  pos_offset_x: 63
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 45
+  root_offset_x: 0
+  root_offset_y: -14
+  root_rot: -0.024537763
+}
+part {
+  window_size_x: 84
+  window_size_y: 102
+  pos_offset_x: 42
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 46
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: 2.5747433
+}
+part {
+  window_size_x: 100
+  window_size_y: 103
+  pos_offset_x: 50
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 47
+  root_offset_x: 4
+  root_offset_y: -18
+  root_rot: -2.1565714
+}
+part {
+  window_size_x: 96
+  window_size_y: 105
+  pos_offset_x: 48
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 48
+  root_offset_x: 4
+  root_offset_y: -19
+  root_rot: -3.5261602
+}
+part {
+  window_size_x: 75
+  window_size_y: 99
+  pos_offset_x: 37
+  pos_offset_y: 49
+  part_id: 12
+  type_id: 49
+  root_offset_x: -4
+  root_offset_y: -17
+  root_rot: -14.205624
+}
+part {
+  window_size_x: 102
+  window_size_y: 97
+  pos_offset_x: 51
+  pos_offset_y: 48
+  part_id: 12
+  type_id: 50
+  root_offset_x: 11
+  root_offset_y: -1
+  root_rot: 130.12163
+}
+part {
+  window_size_x: 102
+  window_size_y: 104
+  pos_offset_x: 51
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 51
+  root_offset_x: 10
+  root_offset_y: -16
+  root_rot: -0.75391144
+}
+part {
+  window_size_x: 138
+  window_size_y: 102
+  pos_offset_x: 69
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 52
+  root_offset_x: 3
+  root_offset_y: -18
+  root_rot: -4.5087743
+}
+part {
+  window_size_x: 92
+  window_size_y: 109
+  pos_offset_x: 46
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 53
+  root_offset_x: 0
+  root_offset_y: -15
+  root_rot: -8.0894947
+}
+part {
+  window_size_x: 105
+  window_size_y: 103
+  pos_offset_x: 52
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 54
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: 0.53914845
+}
+part {
+  window_size_x: 97
+  window_size_y: 123
+  pos_offset_x: 48
+  pos_offset_y: 61
+  part_id: 12
+  type_id: 55
+  root_offset_x: 4
+  root_offset_y: -11
+  root_rot: -1.2634662
+}
+part {
+  window_size_x: 114
+  window_size_y: 112
+  pos_offset_x: 57
+  pos_offset_y: 56
+  part_id: 12
+  type_id: 56
+  root_offset_x: 2
+  root_offset_y: -25
+  root_rot: -2.2391486
+}
+part {
+  window_size_x: 95
+  window_size_y: 103
+  pos_offset_x: 47
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 57
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: 0.79026675
+}
+part {
+  window_size_x: 108
+  window_size_y: 103
+  pos_offset_x: 54
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 58
+  root_offset_x: 0
+  root_offset_y: -17
+  root_rot: -1.6370065
+}
+part {
+  window_size_x: 84
+  window_size_y: 111
+  pos_offset_x: 42
+  pos_offset_y: 55
+  part_id: 12
+  type_id: 59
+  root_offset_x: 2
+  root_offset_y: -15
+  root_rot: -0.077302545
+}
+part {
+  window_size_x: 99
+  window_size_y: 110
+  pos_offset_x: 49
+  pos_offset_y: 55
+  part_id: 12
+  type_id: 60
+  root_offset_x: -3
+  root_offset_y: -17
+  root_rot: -2.3734369
+}
+part {
+  window_size_x: 98
+  window_size_y: 114
+  pos_offset_x: 49
+  pos_offset_y: 57
+  part_id: 12
+  type_id: 61
+  root_offset_x: -2
+  root_offset_y: -15
+  root_rot: 3.8789358
+}
+part {
+  window_size_x: 97
+  window_size_y: 101
+  pos_offset_x: 48
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 62
+  root_offset_x: 12
+  root_offset_y: -18
+  root_rot: -2.6193449
+}
+part {
+  window_size_x: 110
+  window_size_y: 97
+  pos_offset_x: 55
+  pos_offset_y: 48
+  part_id: 12
+  type_id: 63
+  root_offset_x: -6
+  root_offset_y: -18
+  root_rot: -20.446722
+}
+part {
+  window_size_x: 90
+  window_size_y: 101
+  pos_offset_x: 45
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 64
+  root_offset_x: -1
+  root_offset_y: -18
+  root_rot: -5.5940619
+}
+part {
+  window_size_x: 90
+  window_size_y: 94
+  pos_offset_x: 45
+  pos_offset_y: 47
+  part_id: 12
+  type_id: 65
+  root_offset_x: 12
+  root_offset_y: -16
+  root_rot: 31.698893
+}
+part {
+  window_size_x: 70
+  window_size_y: 100
+  pos_offset_x: 35
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 66
+  root_offset_x: -2
+  root_offset_y: -15
+  root_rot: -4.4295669
+}
+part {
+  window_size_x: 88
+  window_size_y: 96
+  pos_offset_x: 44
+  pos_offset_y: 48
+  part_id: 12
+  type_id: 67
+  root_offset_x: 0
+  root_offset_y: -16
+  root_rot: -15.768907
+}
+part {
+  window_size_x: 74
+  window_size_y: 136
+  pos_offset_x: 37
+  pos_offset_y: 68
+  part_id: 12
+  type_id: 68
+  root_offset_x: -3
+  root_offset_y: -32
+  root_rot: 1.1606973
+}
+part {
+  window_size_x: 100
+  window_size_y: 103
+  pos_offset_x: 50
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 69
+  root_offset_x: -4
+  root_offset_y: -18
+  root_rot: 2.4855216
+}
+part {
+  window_size_x: 94
+  window_size_y: 100
+  pos_offset_x: 47
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 70
+  root_offset_x: 7
+  root_offset_y: -16
+  root_rot: 0.24995962
+}
+part {
+  window_size_x: 92
+  window_size_y: 126
+  pos_offset_x: 46
+  pos_offset_y: 63
+  part_id: 12
+  type_id: 71
+  root_offset_x: 8
+  root_offset_y: -30
+  root_rot: 43.456245
+}
+part {
+  window_size_x: 79
+  window_size_y: 109
+  pos_offset_x: 39
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 72
+  root_offset_x: -11
+  root_offset_y: -17
+  root_rot: -5.1518707
+}
+part {
+  window_size_x: 133
+  window_size_y: 103
+  pos_offset_x: 66
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 73
+  root_offset_x: 13
+  root_offset_y: -17
+  root_rot: -9.6467781
+}
+part {
+  window_size_x: 81
+  window_size_y: 103
+  pos_offset_x: 40
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 74
+  root_offset_x: 5
+  root_offset_y: -18
+  root_rot: -3.860064
+}
+part {
+  window_size_x: 105
+  window_size_y: 105
+  pos_offset_x: 52
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 75
+  root_offset_x: 0
+  root_offset_y: 10
+  root_rot: -0.17359544
+}
+part {
+  window_size_x: 78
+  window_size_y: 103
+  pos_offset_x: 39
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 76
+  root_offset_x: -8
+  root_offset_y: -18
+  root_rot: -1.4894793
+}
+part {
+  window_size_x: 75
+  window_size_y: 108
+  pos_offset_x: 37
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 77
+  root_offset_x: 4
+  root_offset_y: -11
+  root_rot: 12.935861
+}
+part {
+  window_size_x: 133
+  window_size_y: 100
+  pos_offset_x: 66
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 78
+  root_offset_x: -8
+  root_offset_y: -17
+  root_rot: -3.8658102
+}
+part {
+  window_size_x: 94
+  window_size_y: 100
+  pos_offset_x: 47
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 79
+  root_offset_x: -10
+  root_offset_y: -17
+  root_rot: 5.5626106
+}
+part {
+  window_size_x: 109
+  window_size_y: 133
+  pos_offset_x: 54
+  pos_offset_y: 66
+  part_id: 12
+  type_id: 80
+  root_offset_x: -13
+  root_offset_y: -33
+  root_rot: -3.3640158
+}
+part {
+  window_size_x: 54
+  window_size_y: 116
+  pos_offset_x: 27
+  pos_offset_y: 58
+  part_id: 12
+  type_id: 81
+  root_offset_x: -5
+  root_offset_y: -13
+  root_rot: -0.832341
+}
+part {
+  window_size_x: 106
+  window_size_y: 135
+  pos_offset_x: 53
+  pos_offset_y: 67
+  part_id: 12
+  type_id: 82
+  root_offset_x: 10
+  root_offset_y: -33
+  root_rot: 3.9854057
+}
+part {
+  window_size_x: 99
+  window_size_y: 103
+  pos_offset_x: 49
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 83
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: -1.0153046
+}
+part {
+  window_size_x: 109
+  window_size_y: 108
+  pos_offset_x: 54
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 84
+  root_offset_x: -16
+  root_offset_y: -2
+  root_rot: -49.201031
+}
+part {
+  window_size_x: 103
+  window_size_y: 90
+  pos_offset_x: 51
+  pos_offset_y: 45
+  part_id: 12
+  type_id: 85
+  root_offset_x: -21
+  root_offset_y: -16
+  root_rot: -28.726992
+}
+part {
+  window_size_x: 108
+  window_size_y: 103
+  pos_offset_x: 54
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 86
+  root_offset_x: 20
+  root_offset_y: -18
+  root_rot: 0.94487953
+}
+part {
+  window_size_x: 87
+  window_size_y: 103
+  pos_offset_x: 43
+  pos_offset_y: 51
+  part_id: 12
+  type_id: 87
+  root_offset_x: -1
+  root_offset_y: -19
+  root_rot: -2.775023
+}
+part {
+  window_size_x: 121
+  window_size_y: 109
+  pos_offset_x: 60
+  pos_offset_y: 54
+  part_id: 12
+  type_id: 88
+  root_offset_x: -12
+  root_offset_y: -14
+  root_rot: 8.0160427
+}
+part {
+  window_size_x: 91
+  window_size_y: 100
+  pos_offset_x: 45
+  pos_offset_y: 50
+  part_id: 12
+  type_id: 89
+  root_offset_x: -20
+  root_offset_y: -18
+  root_rot: -6.383882
+}
+part {
+  window_size_x: 105
+  window_size_y: 106
+  pos_offset_x: 52
+  pos_offset_y: 53
+  part_id: 12
+  type_id: 90
+  root_offset_x: -8
+  root_offset_y: -16
+  root_rot: 0.47593814
+}
+part {
+  window_size_x: 96
+  window_size_y: 106
+  pos_offset_x: 48
+  pos_offset_y: 53
+  part_id: 12
+  type_id: 91
+  root_offset_x: 0
+  root_offset_y: -16
+  root_rot: 12.120585
+}
+part {
+  window_size_x: 104
+  window_size_y: 95
+  pos_offset_x: 52
+  pos_offset_y: 47
+  part_id: 12
+  type_id: 92
+  root_offset_x: -24
+  root_offset_y: -17
+  root_rot: -17.590673
+}
+part {
+  window_size_x: 86
+  window_size_y: 104
+  pos_offset_x: 43
+  pos_offset_y: 52
+  part_id: 12
+  type_id: 93
+  root_offset_x: 14
+  root_offset_y: -19
+  root_rot: 9.0839777
+}
+part {
+  window_size_x: 119
+  window_size_y: 98
+  pos_offset_x: 59
+  pos_offset_y: 49
+  part_id: 12
+  type_id: 94
+  root_offset_x: 2
+  root_offset_y: -15
+  root_rot: -5.5217605
+}
+part {
+  window_size_x: 120
+  window_size_y: 47
+  pos_offset_x: 60
+  pos_offset_y: 23
+  part_id: 13
+  type_id: 0
+  root_offset_x: -18
+  root_offset_y: 5
+  root_rot: -123.50482
+}
+part {
+  window_size_x: 40
+  window_size_y: 103
+  pos_offset_x: 20
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 1
+  root_offset_x: 0
+  root_offset_y: -20
+  root_rot: 9.2878
+}
+part {
+  window_size_x: 65
+  window_size_y: 94
+  pos_offset_x: 32
+  pos_offset_y: 47
+  part_id: 13
+  type_id: 2
+  root_offset_x: 12
+  root_offset_y: -14
+  root_rot: 8.2498493
+}
+part {
+  window_size_x: 109
+  window_size_y: 52
+  pos_offset_x: 54
+  pos_offset_y: 26
+  part_id: 13
+  type_id: 3
+  root_offset_x: -12
+  root_offset_y: -12
+  root_rot: -63.1353
+}
+part {
+  window_size_x: 34
+  window_size_y: 104
+  pos_offset_x: 17
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 4
+  root_offset_x: 0
+  root_offset_y: -20
+  root_rot: -1.7355865
+}
+part {
+  window_size_x: 36
+  window_size_y: 105
+  pos_offset_x: 18
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 5
+  root_offset_x: 0
+  root_offset_y: -23
+  root_rot: -4.111968
+}
+part {
+  window_size_x: 80
+  window_size_y: 92
+  pos_offset_x: 40
+  pos_offset_y: 46
+  part_id: 13
+  type_id: 6
+  root_offset_x: 10
+  root_offset_y: -17
+  root_rot: 27.203373
+}
+part {
+  window_size_x: 36
+  window_size_y: 102
+  pos_offset_x: 18
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 7
+  root_offset_x: -1
+  root_offset_y: -19
+  root_rot: 2.4713843
+}
+part {
+  window_size_x: 126
+  window_size_y: 19
+  pos_offset_x: 63
+  pos_offset_y: 9
+  part_id: 13
+  type_id: 8
+  root_offset_x: -18
+  root_offset_y: 1
+  root_rot: -98.824409
+}
+part {
+  window_size_x: 34
+  window_size_y: 103
+  pos_offset_x: 17
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 9
+  root_offset_x: 0
+  root_offset_y: -20
+  root_rot: -2.8348582
+}
+part {
+  window_size_x: 54
+  window_size_y: 101
+  pos_offset_x: 27
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 10
+  root_offset_x: -7
+  root_offset_y: -18
+  root_rot: -8.7015276
+}
+part {
+  window_size_x: 62
+  window_size_y: 97
+  pos_offset_x: 31
+  pos_offset_y: 48
+  part_id: 13
+  type_id: 11
+  root_offset_x: -7
+  root_offset_y: -17
+  root_rot: -14.985027
+}
+part {
+  window_size_x: 44
+  window_size_y: 103
+  pos_offset_x: 22
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 12
+  root_offset_x: 4
+  root_offset_y: -20
+  root_rot: 3.711854
+}
+part {
+  window_size_x: 34
+  window_size_y: 103
+  pos_offset_x: 17
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 13
+  root_offset_x: 0
+  root_offset_y: -20
+  root_rot: 1.6795905
+}
+part {
+  window_size_x: 40
+  window_size_y: 103
+  pos_offset_x: 20
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 14
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: -8.5931673
+}
+part {
+  window_size_x: 39
+  window_size_y: 102
+  pos_offset_x: 19
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 15
+  root_offset_x: -1
+  root_offset_y: -18
+  root_rot: 1.6293975
+}
+part {
+  window_size_x: 32
+  window_size_y: 104
+  pos_offset_x: 16
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 16
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: 0.80937427
+}
+part {
+  window_size_x: 38
+  window_size_y: 104
+  pos_offset_x: 19
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 17
+  root_offset_x: -2
+  root_offset_y: -20
+  root_rot: -2.0994954
+}
+part {
+  window_size_x: 92
+  window_size_y: 79
+  pos_offset_x: 46
+  pos_offset_y: 39
+  part_id: 13
+  type_id: 18
+  root_offset_x: -10
+  root_offset_y: -15
+  root_rot: -40.070839
+}
+part {
+  window_size_x: 56
+  window_size_y: 101
+  pos_offset_x: 28
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 19
+  root_offset_x: 7
+  root_offset_y: -18
+  root_rot: 10.229473
+}
+part {
+  window_size_x: 38
+  window_size_y: 100
+  pos_offset_x: 19
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 20
+  root_offset_x: 0
+  root_offset_y: -17
+  root_rot: 7.3033819
+}
+part {
+  window_size_x: 37
+  window_size_y: 102
+  pos_offset_x: 18
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 21
+  root_offset_x: -1
+  root_offset_y: -16
+  root_rot: 3.2257793
+}
+part {
+  window_size_x: 36
+  window_size_y: 105
+  pos_offset_x: 18
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 22
+  root_offset_x: -2
+  root_offset_y: -20
+  root_rot: -0.9858014
+}
+part {
+  window_size_x: 69
+  window_size_y: 95
+  pos_offset_x: 34
+  pos_offset_y: 47
+  part_id: 13
+  type_id: 23
+  root_offset_x: 6
+  root_offset_y: -17
+  root_rot: 23.540934
+}
+part {
+  window_size_x: 56
+  window_size_y: 99
+  pos_offset_x: 28
+  pos_offset_y: 49
+  part_id: 13
+  type_id: 24
+  root_offset_x: -1
+  root_offset_y: -17
+  root_rot: -19.904343
+}
+part {
+  window_size_x: 42
+  window_size_y: 104
+  pos_offset_x: 21
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 25
+  root_offset_x: -3
+  root_offset_y: -19
+  root_rot: -3.6126223
+}
+part {
+  window_size_x: 51
+  window_size_y: 100
+  pos_offset_x: 25
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 26
+  root_offset_x: 6
+  root_offset_y: -16
+  root_rot: 7.5633593
+}
+part {
+  window_size_x: 43
+  window_size_y: 104
+  pos_offset_x: 21
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 27
+  root_offset_x: 5
+  root_offset_y: -20
+  root_rot: -0.9270978
+}
+part {
+  window_size_x: 36
+  window_size_y: 100
+  pos_offset_x: 18
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 28
+  root_offset_x: -1
+  root_offset_y: -21
+  root_rot: -3.9048355
+}
+part {
+  window_size_x: 39
+  window_size_y: 102
+  pos_offset_x: 19
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 29
+  root_offset_x: 3
+  root_offset_y: -16
+  root_rot: 1.066103
+}
+part {
+  window_size_x: 49
+  window_size_y: 101
+  pos_offset_x: 24
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 30
+  root_offset_x: -7
+  root_offset_y: -15
+  root_rot: -2.1296329
+}
+part {
+  window_size_x: 52
+  window_size_y: 102
+  pos_offset_x: 26
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 31
+  root_offset_x: -5
+  root_offset_y: -18
+  root_rot: -10.002144
+}
+part {
+  window_size_x: 87
+  window_size_y: 74
+  pos_offset_x: 43
+  pos_offset_y: 37
+  part_id: 13
+  type_id: 32
+  root_offset_x: 9
+  root_offset_y: -15
+  root_rot: 42.425114
+}
+part {
+  window_size_x: 46
+  window_size_y: 101
+  pos_offset_x: 23
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 33
+  root_offset_x: -3
+  root_offset_y: -19
+  root_rot: -8.1044006
+}
+part {
+  window_size_x: 38
+  window_size_y: 103
+  pos_offset_x: 19
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 34
+  root_offset_x: -2
+  root_offset_y: -17
+  root_rot: -3.4780707
+}
+part {
+  window_size_x: 68
+  window_size_y: 92
+  pos_offset_x: 34
+  pos_offset_y: 46
+  part_id: 13
+  type_id: 35
+  root_offset_x: -8
+  root_offset_y: -14
+  root_rot: -19.102888
+}
+part {
+  window_size_x: 48
+  window_size_y: 99
+  pos_offset_x: 24
+  pos_offset_y: 49
+  part_id: 13
+  type_id: 36
+  root_offset_x: -2
+  root_offset_y: -18
+  root_rot: -12.46588
+}
+part {
+  window_size_x: 46
+  window_size_y: 100
+  pos_offset_x: 23
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 37
+  root_offset_x: 3
+  root_offset_y: -19
+  root_rot: 8.9319048
+}
+part {
+  window_size_x: 35
+  window_size_y: 104
+  pos_offset_x: 17
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 38
+  root_offset_x: 2
+  root_offset_y: -19
+  root_rot: 0.086177707
+}
+part {
+  window_size_x: 36
+  window_size_y: 104
+  pos_offset_x: 18
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 39
+  root_offset_x: 1
+  root_offset_y: -18
+  root_rot: -2.5305488
+}
+part {
+  window_size_x: 33
+  window_size_y: 105
+  pos_offset_x: 16
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 40
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: 1.7165326
+}
+part {
+  window_size_x: 37
+  window_size_y: 102
+  pos_offset_x: 18
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 41
+  root_offset_x: 2
+  root_offset_y: -17
+  root_rot: -1.2469958
+}
+part {
+  window_size_x: 36
+  window_size_y: 105
+  pos_offset_x: 18
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 42
+  root_offset_x: 0
+  root_offset_y: -20
+  root_rot: 4.4353089
+}
+part {
+  window_size_x: 33
+  window_size_y: 104
+  pos_offset_x: 16
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 43
+  root_offset_x: 0
+  root_offset_y: -23
+  root_rot: 2.0383904
+}
+part {
+  window_size_x: 58
+  window_size_y: 98
+  pos_offset_x: 29
+  pos_offset_y: 49
+  part_id: 13
+  type_id: 44
+  root_offset_x: -6
+  root_offset_y: -17
+  root_rot: -14.077853
+}
+part {
+  window_size_x: 42
+  window_size_y: 103
+  pos_offset_x: 21
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 45
+  root_offset_x: -1
+  root_offset_y: -20
+  root_rot: -8.8562708
+}
+part {
+  window_size_x: 53
+  window_size_y: 96
+  pos_offset_x: 26
+  pos_offset_y: 48
+  part_id: 13
+  type_id: 46
+  root_offset_x: 1
+  root_offset_y: 18
+  root_rot: 134.49461
+}
+part {
+  window_size_x: 58
+  window_size_y: 98
+  pos_offset_x: 29
+  pos_offset_y: 49
+  part_id: 13
+  type_id: 47
+  root_offset_x: -4
+  root_offset_y: -21
+  root_rot: -19.935268
+}
+part {
+  window_size_x: 44
+  window_size_y: 103
+  pos_offset_x: 22
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 48
+  root_offset_x: 0
+  root_offset_y: -16
+  root_rot: 10.895664
+}
+part {
+  window_size_x: 34
+  window_size_y: 105
+  pos_offset_x: 17
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 49
+  root_offset_x: 1
+  root_offset_y: -20
+  root_rot: -0.36973858
+}
+part {
+  window_size_x: 46
+  window_size_y: 100
+  pos_offset_x: 23
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 50
+  root_offset_x: 5
+  root_offset_y: -15
+  root_rot: 1.2870017
+}
+part {
+  window_size_x: 40
+  window_size_y: 104
+  pos_offset_x: 20
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 51
+  root_offset_x: 1
+  root_offset_y: -18
+  root_rot: 5.5650239
+}
+part {
+  window_size_x: 98
+  window_size_y: 70
+  pos_offset_x: 49
+  pos_offset_y: 35
+  part_id: 13
+  type_id: 52
+  root_offset_x: -9
+  root_offset_y: -16
+  root_rot: -53.699581
+}
+part {
+  window_size_x: 36
+  window_size_y: 103
+  pos_offset_x: 18
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 53
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: -3.2888315
+}
+part {
+  window_size_x: 47
+  window_size_y: 101
+  pos_offset_x: 23
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 54
+  root_offset_x: 2
+  root_offset_y: -19
+  root_rot: 10.602522
+}
+part {
+  window_size_x: 33
+  window_size_y: 105
+  pos_offset_x: 16
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 55
+  root_offset_x: 0
+  root_offset_y: -19
+  root_rot: 0.751626
+}
+part {
+  window_size_x: 33
+  window_size_y: 105
+  pos_offset_x: 16
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 56
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: -0.30637082
+}
+part {
+  window_size_x: 49
+  window_size_y: 102
+  pos_offset_x: 24
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 57
+  root_offset_x: 7
+  root_offset_y: -17
+  root_rot: 4.4152122
+}
+part {
+  window_size_x: 65
+  window_size_y: 94
+  pos_offset_x: 32
+  pos_offset_y: 47
+  part_id: 13
+  type_id: 58
+  root_offset_x: -12
+  root_offset_y: -14
+  root_rot: -8.64947
+}
+part {
+  window_size_x: 72
+  window_size_y: 92
+  pos_offset_x: 36
+  pos_offset_y: 46
+  part_id: 13
+  type_id: 59
+  root_offset_x: -5
+  root_offset_y: -19
+  root_rot: -30.769571
+}
+part {
+  window_size_x: 32
+  window_size_y: 104
+  pos_offset_x: 16
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 60
+  root_offset_x: 0
+  root_offset_y: -21
+  root_rot: -0.23521797
+}
+part {
+  window_size_x: 56
+  window_size_y: 98
+  pos_offset_x: 28
+  pos_offset_y: 49
+  part_id: 13
+  type_id: 61
+  root_offset_x: 4
+  root_offset_y: -18
+  root_rot: 15.743828
+}
+part {
+  window_size_x: 60
+  window_size_y: 85
+  pos_offset_x: 30
+  pos_offset_y: 42
+  part_id: 13
+  type_id: 62
+  root_offset_x: -10
+  root_offset_y: 10
+  root_rot: -137.16795
+}
+part {
+  window_size_x: 81
+  window_size_y: 92
+  pos_offset_x: 40
+  pos_offset_y: 46
+  part_id: 13
+  type_id: 63
+  root_offset_x: -9
+  root_offset_y: -16
+  root_rot: -27.732529
+}
+part {
+  window_size_x: 59
+  window_size_y: 97
+  pos_offset_x: 29
+  pos_offset_y: 48
+  part_id: 13
+  type_id: 64
+  root_offset_x: 4
+  root_offset_y: -21
+  root_rot: 20.260178
+}
+part {
+  window_size_x: 64
+  window_size_y: 95
+  pos_offset_x: 32
+  pos_offset_y: 47
+  part_id: 13
+  type_id: 65
+  root_offset_x: 6
+  root_offset_y: -15
+  root_rot: 17.718641
+}
+part {
+  window_size_x: 37
+  window_size_y: 103
+  pos_offset_x: 18
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 66
+  root_offset_x: -1
+  root_offset_y: -17
+  root_rot: -4.0107012
+}
+part {
+  window_size_x: 62
+  window_size_y: 97
+  pos_offset_x: 31
+  pos_offset_y: 48
+  part_id: 13
+  type_id: 67
+  root_offset_x: -3
+  root_offset_y: -18
+  root_rot: -21.997698
+}
+part {
+  window_size_x: 61
+  window_size_y: 97
+  pos_offset_x: 30
+  pos_offset_y: 48
+  part_id: 13
+  type_id: 68
+  root_offset_x: 2
+  root_offset_y: -18
+  root_rot: 24.285376
+}
+part {
+  window_size_x: 39
+  window_size_y: 104
+  pos_offset_x: 19
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 69
+  root_offset_x: -2
+  root_offset_y: -19
+  root_rot: -3.4230421
+}
+part {
+  window_size_x: 44
+  window_size_y: 103
+  pos_offset_x: 22
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 70
+  root_offset_x: -5
+  root_offset_y: -19
+  root_rot: -0.17022982
+}
+part {
+  window_size_x: 37
+  window_size_y: 105
+  pos_offset_x: 18
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 71
+  root_offset_x: 2
+  root_offset_y: -19
+  root_rot: 2.2240696
+}
+part {
+  window_size_x: 42
+  window_size_y: 102
+  pos_offset_x: 21
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 72
+  root_offset_x: 2
+  root_offset_y: -16
+  root_rot: 5.9198489
+}
+part {
+  window_size_x: 60
+  window_size_y: 100
+  pos_offset_x: 30
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 73
+  root_offset_x: 7
+  root_offset_y: -15
+  root_rot: 12.354066
+}
+part {
+  window_size_x: 89
+  window_size_y: 81
+  pos_offset_x: 44
+  pos_offset_y: 40
+  part_id: 13
+  type_id: 74
+  root_offset_x: -14
+  root_offset_y: -11
+  root_rot: -27.942818
+}
+part {
+  window_size_x: 115
+  window_size_y: 55
+  pos_offset_x: 57
+  pos_offset_y: 27
+  part_id: 13
+  type_id: 75
+  root_offset_x: 13
+  root_offset_y: -10
+  root_rot: 59.321991
+}
+part {
+  window_size_x: 49
+  window_size_y: 103
+  pos_offset_x: 24
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 76
+  root_offset_x: -3
+  root_offset_y: -19
+  root_rot: -10.375191
+}
+part {
+  window_size_x: 75
+  window_size_y: 76
+  pos_offset_x: 37
+  pos_offset_y: 38
+  part_id: 13
+  type_id: 77
+  root_offset_x: 11
+  root_offset_y: 7
+  root_rot: 160.65459
+}
+part {
+  window_size_x: 33
+  window_size_y: 103
+  pos_offset_x: 16
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 78
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: 0.064560167
+}
+part {
+  window_size_x: 37
+  window_size_y: 104
+  pos_offset_x: 18
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 79
+  root_offset_x: -1
+  root_offset_y: -19
+  root_rot: 4.2319555
+}
+part {
+  window_size_x: 72
+  window_size_y: 94
+  pos_offset_x: 36
+  pos_offset_y: 47
+  part_id: 13
+  type_id: 80
+  root_offset_x: -8
+  root_offset_y: -17
+  root_rot: -23.531837
+}
+part {
+  window_size_x: 54
+  window_size_y: 102
+  pos_offset_x: 27
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 81
+  root_offset_x: -2
+  root_offset_y: -20
+  root_rot: -17.395893
+}
+part {
+  window_size_x: 34
+  window_size_y: 103
+  pos_offset_x: 17
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 82
+  root_offset_x: 0
+  root_offset_y: -20
+  root_rot: -1.4493986
+}
+part {
+  window_size_x: 63
+  window_size_y: 98
+  pos_offset_x: 31
+  pos_offset_y: 49
+  part_id: 13
+  type_id: 83
+  root_offset_x: 8
+  root_offset_y: -18
+  root_rot: 15.210714
+}
+part {
+  window_size_x: 42
+  window_size_y: 102
+  pos_offset_x: 21
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 84
+  root_offset_x: 0
+  root_offset_y: -16
+  root_rot: -8.4236774
+}
+part {
+  window_size_x: 43
+  window_size_y: 103
+  pos_offset_x: 21
+  pos_offset_y: 51
+  part_id: 13
+  type_id: 85
+  root_offset_x: -3
+  root_offset_y: -18
+  root_rot: -5.7120404
+}
+part {
+  window_size_x: 44
+  window_size_y: 101
+  pos_offset_x: 22
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 86
+  root_offset_x: 2
+  root_offset_y: -18
+  root_rot: 9.1756258
+}
+part {
+  window_size_x: 102
+  window_size_y: 68
+  pos_offset_x: 51
+  pos_offset_y: 34
+  part_id: 13
+  type_id: 87
+  root_offset_x: 11
+  root_offset_y: -15
+  root_rot: 53.544376
+}
+part {
+  window_size_x: 38
+  window_size_y: 104
+  pos_offset_x: 19
+  pos_offset_y: 52
+  part_id: 13
+  type_id: 88
+  root_offset_x: -2
+  root_offset_y: -19
+  root_rot: -2.5783389
+}
+part {
+  window_size_x: 39
+  window_size_y: 100
+  pos_offset_x: 19
+  pos_offset_y: 50
+  part_id: 13
+  type_id: 89
+  root_offset_x: 0
+  root_offset_y: -17
+  root_rot: -6.7164483
+}
+part {
+  window_size_x: 49
+  window_size_y: 92
+  pos_offset_x: 24
+  pos_offset_y: 46
+  part_id: 13
+  type_id: 90
+  root_offset_x: 4
+  root_offset_y: 14
+  root_rot: -32.663731
+}
+part {
+  window_size_x: 103
+  window_size_y: 99
+  pos_offset_x: 51
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 0
+  root_offset_x: 26
+  root_offset_y: -16
+  root_rot: 17.109507
+}
+part {
+  window_size_x: 76
+  window_size_y: 103
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 1
+  root_offset_x: -16
+  root_offset_y: -18
+  root_rot: 2.4793522
+}
+part {
+  window_size_x: 65
+  window_size_y: 106
+  pos_offset_x: 32
+  pos_offset_y: 53
+  part_id: 14
+  type_id: 2
+  root_offset_x: -14
+  root_offset_y: -20
+  root_rot: -2.3200285
+}
+part {
+  window_size_x: 82
+  window_size_y: 103
+  pos_offset_x: 41
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 3
+  root_offset_x: 17
+  root_offset_y: 14
+  root_rot: -16.354591
+}
+part {
+  window_size_x: 82
+  window_size_y: 101
+  pos_offset_x: 41
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 4
+  root_offset_x: -22
+  root_offset_y: -17
+  root_rot: -4.7661128
+}
+part {
+  window_size_x: 91
+  window_size_y: 90
+  pos_offset_x: 45
+  pos_offset_y: 45
+  part_id: 14
+  type_id: 5
+  root_offset_x: -9
+  root_offset_y: 8
+  root_rot: -133.87727
+}
+part {
+  window_size_x: 65
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 6
+  root_offset_x: -3
+  root_offset_y: -18
+  root_rot: -3.9793155
+}
+part {
+  window_size_x: 110
+  window_size_y: 100
+  pos_offset_x: 55
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 7
+  root_offset_x: -35
+  root_offset_y: -16
+  root_rot: -8.0339766
+}
+part {
+  window_size_x: 86
+  window_size_y: 99
+  pos_offset_x: 43
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 8
+  root_offset_x: 17
+  root_offset_y: -18
+  root_rot: 17.134773
+}
+part {
+  window_size_x: 89
+  window_size_y: 101
+  pos_offset_x: 44
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 9
+  root_offset_x: 16
+  root_offset_y: -17
+  root_rot: 7.3542962
+}
+part {
+  window_size_x: 67
+  window_size_y: 105
+  pos_offset_x: 33
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 10
+  root_offset_x: -16
+  root_offset_y: -19
+  root_rot: -0.42167616
+}
+part {
+  window_size_x: 72
+  window_size_y: 102
+  pos_offset_x: 36
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 11
+  root_offset_x: -14
+  root_offset_y: -18
+  root_rot: 2.6206431
+}
+part {
+  window_size_x: 90
+  window_size_y: 98
+  pos_offset_x: 45
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 12
+  root_offset_x: -19
+  root_offset_y: -19
+  root_rot: -19.778744
+}
+part {
+  window_size_x: 67
+  window_size_y: 108
+  pos_offset_x: 33
+  pos_offset_y: 54
+  part_id: 14
+  type_id: 13
+  root_offset_x: -10
+  root_offset_y: -17
+  root_rot: 2.0411928
+}
+part {
+  window_size_x: 61
+  window_size_y: 101
+  pos_offset_x: 30
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 14
+  root_offset_x: 3
+  root_offset_y: -17
+  root_rot: 6.6698422
+}
+part {
+  window_size_x: 68
+  window_size_y: 99
+  pos_offset_x: 34
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 15
+  root_offset_x: -11
+  root_offset_y: -17
+  root_rot: -14.974593
+}
+part {
+  window_size_x: 67
+  window_size_y: 103
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 16
+  root_offset_x: -11
+  root_offset_y: -18
+  root_rot: 2.3910358
+}
+part {
+  window_size_x: 63
+  window_size_y: 103
+  pos_offset_x: 31
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 17
+  root_offset_x: 6
+  root_offset_y: -19
+  root_rot: 9.8009892
+}
+part {
+  window_size_x: 76
+  window_size_y: 102
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 18
+  root_offset_x: -11
+  root_offset_y: -18
+  root_rot: 3.8159003
+}
+part {
+  window_size_x: 88
+  window_size_y: 98
+  pos_offset_x: 44
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 19
+  root_offset_x: -5
+  root_offset_y: -17
+  root_rot: 17.710091
+}
+part {
+  window_size_x: 77
+  window_size_y: 103
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 20
+  root_offset_x: -20
+  root_offset_y: -18
+  root_rot: -3.968678
+}
+part {
+  window_size_x: 65
+  window_size_y: 106
+  pos_offset_x: 32
+  pos_offset_y: 53
+  part_id: 14
+  type_id: 21
+  root_offset_x: -16
+  root_offset_y: -17
+  root_rot: 0.24749903
+}
+part {
+  window_size_x: 86
+  window_size_y: 104
+  pos_offset_x: 43
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 22
+  root_offset_x: -20
+  root_offset_y: -16
+  root_rot: -15.087973
+}
+part {
+  window_size_x: 95
+  window_size_y: 100
+  pos_offset_x: 47
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 23
+  root_offset_x: 22
+  root_offset_y: -17
+  root_rot: 5.6469822
+}
+part {
+  window_size_x: 68
+  window_size_y: 98
+  pos_offset_x: 34
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 24
+  root_offset_x: -10
+  root_offset_y: -16
+  root_rot: -15.258461
+}
+part {
+  window_size_x: 86
+  window_size_y: 102
+  pos_offset_x: 43
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 25
+  root_offset_x: -23
+  root_offset_y: -19
+  root_rot: 2.4605014
+}
+part {
+  window_size_x: 75
+  window_size_y: 105
+  pos_offset_x: 37
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 26
+  root_offset_x: -19
+  root_offset_y: -19
+  root_rot: 0.55826133
+}
+part {
+  window_size_x: 80
+  window_size_y: 105
+  pos_offset_x: 40
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 27
+  root_offset_x: -17
+  root_offset_y: -18
+  root_rot: 5.9147706
+}
+part {
+  window_size_x: 61
+  window_size_y: 104
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 28
+  root_offset_x: -13
+  root_offset_y: -18
+  root_rot: -0.33089992
+}
+part {
+  window_size_x: 59
+  window_size_y: 104
+  pos_offset_x: 29
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 29
+  root_offset_x: -12
+  root_offset_y: -20
+  root_rot: -1.7143279
+}
+part {
+  window_size_x: 90
+  window_size_y: 101
+  pos_offset_x: 45
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 30
+  root_offset_x: -21
+  root_offset_y: -18
+  root_rot: -1.5460119
+}
+part {
+  window_size_x: 64
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 31
+  root_offset_x: -14
+  root_offset_y: -18
+  root_rot: -1.9231257
+}
+part {
+  window_size_x: 53
+  window_size_y: 132
+  pos_offset_x: 26
+  pos_offset_y: 66
+  part_id: 14
+  type_id: 32
+  root_offset_x: -2
+  root_offset_y: -31
+  root_rot: 2.8705583
+}
+part {
+  window_size_x: 62
+  window_size_y: 105
+  pos_offset_x: 31
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 33
+  root_offset_x: -12
+  root_offset_y: -19
+  root_rot: -7.1512651
+}
+part {
+  window_size_x: 62
+  window_size_y: 102
+  pos_offset_x: 31
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 34
+  root_offset_x: -12
+  root_offset_y: -18
+  root_rot: -4.60913
+}
+part {
+  window_size_x: 78
+  window_size_y: 97
+  pos_offset_x: 39
+  pos_offset_y: 48
+  part_id: 14
+  type_id: 35
+  root_offset_x: -15
+  root_offset_y: -16
+  root_rot: -15.660418
+}
+part {
+  window_size_x: 95
+  window_size_y: 102
+  pos_offset_x: 47
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 36
+  root_offset_x: -23
+  root_offset_y: -18
+  root_rot: 7.4130716
+}
+part {
+  window_size_x: 69
+  window_size_y: 123
+  pos_offset_x: 34
+  pos_offset_y: 61
+  part_id: 14
+  type_id: 37
+  root_offset_x: -11
+  root_offset_y: -28
+  root_rot: 5.0485673
+}
+part {
+  window_size_x: 74
+  window_size_y: 105
+  pos_offset_x: 37
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 38
+  root_offset_x: -8
+  root_offset_y: -18
+  root_rot: 12.115057
+}
+part {
+  window_size_x: 88
+  window_size_y: 100
+  pos_offset_x: 44
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 39
+  root_offset_x: -24
+  root_offset_y: -17
+  root_rot: 3.1693962
+}
+part {
+  window_size_x: 60
+  window_size_y: 102
+  pos_offset_x: 30
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 40
+  root_offset_x: -10
+  root_offset_y: -18
+  root_rot: -0.94125217
+}
+part {
+  window_size_x: 106
+  window_size_y: 70
+  pos_offset_x: 53
+  pos_offset_y: 35
+  part_id: 14
+  type_id: 41
+  root_offset_x: 12
+  root_offset_y: -7
+  root_rot: 54.69035
+}
+part {
+  window_size_x: 67
+  window_size_y: 104
+  pos_offset_x: 33
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 42
+  root_offset_x: -14
+  root_offset_y: -20
+  root_rot: 2.5385561
+}
+part {
+  window_size_x: 87
+  window_size_y: 92
+  pos_offset_x: 43
+  pos_offset_y: 46
+  part_id: 14
+  type_id: 43
+  root_offset_x: -13
+  root_offset_y: -18
+  root_rot: -28.413563
+}
+part {
+  window_size_x: 99
+  window_size_y: 98
+  pos_offset_x: 49
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 44
+  root_offset_x: -24
+  root_offset_y: -18
+  root_rot: -18.279261
+}
+part {
+  window_size_x: 71
+  window_size_y: 111
+  pos_offset_x: 35
+  pos_offset_y: 55
+  part_id: 14
+  type_id: 45
+  root_offset_x: -18
+  root_offset_y: -17
+  root_rot: -3.3503773
+}
+part {
+  window_size_x: 71
+  window_size_y: 102
+  pos_offset_x: 35
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 46
+  root_offset_x: 0
+  root_offset_y: -18
+  root_rot: 0.9645378
+}
+part {
+  window_size_x: 91
+  window_size_y: 92
+  pos_offset_x: 45
+  pos_offset_y: 46
+  part_id: 14
+  type_id: 47
+  root_offset_x: -16
+  root_offset_y: -16
+  root_rot: -26.215195
+}
+part {
+  window_size_x: 101
+  window_size_y: 99
+  pos_offset_x: 50
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 48
+  root_offset_x: -23
+  root_offset_y: -16
+  root_rot: 5.59189
+}
+part {
+  window_size_x: 75
+  window_size_y: 99
+  pos_offset_x: 37
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 49
+  root_offset_x: -6
+  root_offset_y: -18
+  root_rot: 10.426707
+}
+part {
+  window_size_x: 85
+  window_size_y: 108
+  pos_offset_x: 42
+  pos_offset_y: 54
+  part_id: 14
+  type_id: 50
+  root_offset_x: -20
+  root_offset_y: -19
+  root_rot: -5.5298052
+}
+part {
+  window_size_x: 101
+  window_size_y: 93
+  pos_offset_x: 50
+  pos_offset_y: 46
+  part_id: 14
+  type_id: 51
+  root_offset_x: -6
+  root_offset_y: -17
+  root_rot: 23.689148
+}
+part {
+  window_size_x: 74
+  window_size_y: 132
+  pos_offset_x: 37
+  pos_offset_y: 66
+  part_id: 14
+  type_id: 52
+  root_offset_x: 0
+  root_offset_y: -34
+  root_rot: 15.407919
+}
+part {
+  window_size_x: 51
+  window_size_y: 111
+  pos_offset_x: 25
+  pos_offset_y: 55
+  part_id: 14
+  type_id: 53
+  root_offset_x: 4
+  root_offset_y: -17
+  root_rot: 2.9860203
+}
+part {
+  window_size_x: 71
+  window_size_y: 104
+  pos_offset_x: 35
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 54
+  root_offset_x: -18
+  root_offset_y: -18
+  root_rot: 2.1582892
+}
+part {
+  window_size_x: 59
+  window_size_y: 109
+  pos_offset_x: 29
+  pos_offset_y: 54
+  part_id: 14
+  type_id: 55
+  root_offset_x: -12
+  root_offset_y: -18
+  root_rot: -3.065881
+}
+part {
+  window_size_x: 59
+  window_size_y: 115
+  pos_offset_x: 29
+  pos_offset_y: 57
+  part_id: 14
+  type_id: 56
+  root_offset_x: -9
+  root_offset_y: -14
+  root_rot: 0.10626215
+}
+part {
+  window_size_x: 70
+  window_size_y: 110
+  pos_offset_x: 35
+  pos_offset_y: 55
+  part_id: 14
+  type_id: 57
+  root_offset_x: -16
+  root_offset_y: -17
+  root_rot: -0.39752802
+}
+part {
+  window_size_x: 65
+  window_size_y: 102
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 58
+  root_offset_x: -14
+  root_offset_y: -19
+  root_rot: -4.7160826
+}
+part {
+  window_size_x: 90
+  window_size_y: 100
+  pos_offset_x: 45
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 59
+  root_offset_x: -26
+  root_offset_y: -17
+  root_rot: -5.852468
+}
+part {
+  window_size_x: 69
+  window_size_y: 101
+  pos_offset_x: 34
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 60
+  root_offset_x: 4
+  root_offset_y: -17
+  root_rot: -8.3197594
+}
+part {
+  window_size_x: 65
+  window_size_y: 111
+  pos_offset_x: 32
+  pos_offset_y: 55
+  part_id: 14
+  type_id: 61
+  root_offset_x: -13
+  root_offset_y: -13
+  root_rot: -7.4403706
+}
+part {
+  window_size_x: 63
+  window_size_y: 102
+  pos_offset_x: 31
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 62
+  root_offset_x: 1
+  root_offset_y: -18
+  root_rot: 12.123262
+}
+part {
+  window_size_x: 59
+  window_size_y: 100
+  pos_offset_x: 29
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 63
+  root_offset_x: -6
+  root_offset_y: -17
+  root_rot: -7.7969084
+}
+part {
+  window_size_x: 71
+  window_size_y: 104
+  pos_offset_x: 35
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 64
+  root_offset_x: -15
+  root_offset_y: -20
+  root_rot: -1.2860411
+}
+part {
+  window_size_x: 65
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 65
+  root_offset_x: -8
+  root_offset_y: -19
+  root_rot: 2.478951
+}
+part {
+  window_size_x: 78
+  window_size_y: 107
+  pos_offset_x: 39
+  pos_offset_y: 53
+  part_id: 14
+  type_id: 66
+  root_offset_x: -12
+  root_offset_y: -13
+  root_rot: -22.416325
+}
+part {
+  window_size_x: 76
+  window_size_y: 99
+  pos_offset_x: 38
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 67
+  root_offset_x: -7
+  root_offset_y: -18
+  root_rot: 15.339971
+}
+part {
+  window_size_x: 53
+  window_size_y: 110
+  pos_offset_x: 26
+  pos_offset_y: 55
+  part_id: 14
+  type_id: 68
+  root_offset_x: -7
+  root_offset_y: -14
+  root_rot: -2.6266339
+}
+part {
+  window_size_x: 57
+  window_size_y: 102
+  pos_offset_x: 28
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 69
+  root_offset_x: -8
+  root_offset_y: -19
+  root_rot: -0.84615433
+}
+part {
+  window_size_x: 85
+  window_size_y: 98
+  pos_offset_x: 42
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 70
+  root_offset_x: 1
+  root_offset_y: -15
+  root_rot: 28.376053
+}
+part {
+  window_size_x: 74
+  window_size_y: 102
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 71
+  root_offset_x: 13
+  root_offset_y: -18
+  root_rot: 8.755888
+}
+part {
+  window_size_x: 96
+  window_size_y: 101
+  pos_offset_x: 48
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 72
+  root_offset_x: -17
+  root_offset_y: -18
+  root_rot: 11.615357
+}
+part {
+  window_size_x: 76
+  window_size_y: 92
+  pos_offset_x: 38
+  pos_offset_y: 46
+  part_id: 14
+  type_id: 73
+  root_offset_x: -9
+  root_offset_y: -13
+  root_rot: -24.765028
+}
+part {
+  window_size_x: 83
+  window_size_y: 102
+  pos_offset_x: 41
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 74
+  root_offset_x: -17
+  root_offset_y: -17
+  root_rot: 4.909893
+}
+part {
+  window_size_x: 60
+  window_size_y: 101
+  pos_offset_x: 30
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 75
+  root_offset_x: -11
+  root_offset_y: -17
+  root_rot: -4.1162181
+}
+part {
+  window_size_x: 98
+  window_size_y: 109
+  pos_offset_x: 49
+  pos_offset_y: 54
+  part_id: 14
+  type_id: 76
+  root_offset_x: -10
+  root_offset_y: 1
+  root_rot: -51.683487
+}
+part {
+  window_size_x: 79
+  window_size_y: 101
+  pos_offset_x: 39
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 77
+  root_offset_x: -20
+  root_offset_y: -18
+  root_rot: 0.39997828
+}
+part {
+  window_size_x: 75
+  window_size_y: 103
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 78
+  root_offset_x: -19
+  root_offset_y: -18
+  root_rot: -1.069591
+}
+part {
+  window_size_x: 73
+  window_size_y: 101
+  pos_offset_x: 36
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 79
+  root_offset_x: -17
+  root_offset_y: -17
+  root_rot: -1.5874335
+}
+part {
+  window_size_x: 92
+  window_size_y: 102
+  pos_offset_x: 46
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 80
+  root_offset_x: -26
+  root_offset_y: -17
+  root_rot: -6.3947716
+}
+part {
+  window_size_x: 69
+  window_size_y: 101
+  pos_offset_x: 34
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 81
+  root_offset_x: -15
+  root_offset_y: -17
+  root_rot: -4.60664
+}
+part {
+  window_size_x: 60
+  window_size_y: 105
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 82
+  root_offset_x: -8
+  root_offset_y: -18
+  root_rot: -0.14171091
+}
+part {
+  window_size_x: 110
+  window_size_y: 98
+  pos_offset_x: 55
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 83
+  root_offset_x: -30
+  root_offset_y: -17
+  root_rot: -15.774341
+}
+part {
+  window_size_x: 66
+  window_size_y: 103
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 84
+  root_offset_x: -13
+  root_offset_y: -17
+  root_rot: 3.356734
+}
+part {
+  window_size_x: 109
+  window_size_y: 99
+  pos_offset_x: 54
+  pos_offset_y: 49
+  part_id: 14
+  type_id: 85
+  root_offset_x: -35
+  root_offset_y: -16
+  root_rot: -4.8746123
+}
+part {
+  window_size_x: 78
+  window_size_y: 101
+  pos_offset_x: 39
+  pos_offset_y: 50
+  part_id: 14
+  type_id: 86
+  root_offset_x: -19
+  root_offset_y: -17
+  root_rot: 0.0931601
+}
+part {
+  window_size_x: 64
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 87
+  root_offset_x: -14
+  root_offset_y: -19
+  root_rot: 0.032907553
+}
+part {
+  window_size_x: 102
+  window_size_y: 73
+  pos_offset_x: 51
+  pos_offset_y: 36
+  part_id: 14
+  type_id: 88
+  root_offset_x: -12
+  root_offset_y: -8
+  root_rot: -56.34259
+}
+part {
+  window_size_x: 61
+  window_size_y: 104
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 14
+  type_id: 89
+  root_offset_x: -12
+  root_offset_y: -19
+  root_rot: -2.4497833
+}
+part {
+  window_size_x: 103
+  window_size_y: 103
+  pos_offset_x: 51
+  pos_offset_y: 51
+  part_id: 14
+  type_id: 90
+  root_offset_x: -32
+  root_offset_y: -18
+  root_rot: -0.44435319
+}
+part {
+  window_size_x: 80
+  window_size_y: 90
+  pos_offset_x: 40
+  pos_offset_y: 45
+  part_id: 15
+  type_id: 0
+  root_offset_x: 8
+  root_offset_y: -17
+  root_rot: 30.224518
+}
+part {
+  window_size_x: 64
+  window_size_y: 104
+  pos_offset_x: 32
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 1
+  root_offset_x: 13
+  root_offset_y: -18
+  root_rot: 4.1058259
+}
+part {
+  window_size_x: 92
+  window_size_y: 101
+  pos_offset_x: 46
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 2
+  root_offset_x: 27
+  root_offset_y: -18
+  root_rot: -1.2285286
+}
+part {
+  window_size_x: 51
+  window_size_y: 137
+  pos_offset_x: 25
+  pos_offset_y: 68
+  part_id: 15
+  type_id: 3
+  root_offset_x: 4
+  root_offset_y: -33
+  root_rot: -2.997071
+}
+part {
+  window_size_x: 92
+  window_size_y: 100
+  pos_offset_x: 46
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 4
+  root_offset_x: 22
+  root_offset_y: -17
+  root_rot: 2.0683472
+}
+part {
+  window_size_x: 57
+  window_size_y: 101
+  pos_offset_x: 28
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 5
+  root_offset_x: 0
+  root_offset_y: -17
+  root_rot: 0.063602433
+}
+part {
+  window_size_x: 87
+  window_size_y: 98
+  pos_offset_x: 43
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 6
+  root_offset_x: 16
+  root_offset_y: -19
+  root_rot: 21.228313
+}
+part {
+  window_size_x: 74
+  window_size_y: 134
+  pos_offset_x: 37
+  pos_offset_y: 67
+  part_id: 15
+  type_id: 7
+  root_offset_x: 0
+  root_offset_y: -35
+  root_rot: -15.399883
+}
+part {
+  window_size_x: 100
+  window_size_y: 92
+  pos_offset_x: 50
+  pos_offset_y: 46
+  part_id: 15
+  type_id: 8
+  root_offset_x: -11
+  root_offset_y: -3
+  root_rot: -105.98676
+}
+part {
+  window_size_x: 74
+  window_size_y: 103
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 9
+  root_offset_x: 12
+  root_offset_y: -18
+  root_rot: -6.0620589
+}
+part {
+  window_size_x: 92
+  window_size_y: 103
+  pos_offset_x: 46
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 10
+  root_offset_x: 26
+  root_offset_y: -17
+  root_rot: 7.1170955
+}
+part {
+  window_size_x: 116
+  window_size_y: 100
+  pos_offset_x: 58
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 11
+  root_offset_x: 37
+  root_offset_y: -16
+  root_rot: 10.078401
+}
+part {
+  window_size_x: 82
+  window_size_y: 89
+  pos_offset_x: 41
+  pos_offset_y: 44
+  part_id: 15
+  type_id: 12
+  root_offset_x: -8
+  root_offset_y: -16
+  root_rot: -33.652546
+}
+part {
+  window_size_x: 67
+  window_size_y: 103
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 13
+  root_offset_x: 9
+  root_offset_y: -19
+  root_rot: -0.045922242
+}
+part {
+  window_size_x: 67
+  window_size_y: 103
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 14
+  root_offset_x: 15
+  root_offset_y: -17
+  root_rot: -4.55004
+}
+part {
+  window_size_x: 65
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 15
+  root_offset_x: -2
+  root_offset_y: -18
+  root_rot: 2.9102974
+}
+part {
+  window_size_x: 68
+  window_size_y: 98
+  pos_offset_x: 34
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 16
+  root_offset_x: 8
+  root_offset_y: -16
+  root_rot: 14.922408
+}
+part {
+  window_size_x: 100
+  window_size_y: 97
+  pos_offset_x: 50
+  pos_offset_y: 48
+  part_id: 15
+  type_id: 17
+  root_offset_x: 24
+  root_offset_y: -17
+  root_rot: 18.751106
+}
+part {
+  window_size_x: 46
+  window_size_y: 106
+  pos_offset_x: 23
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 18
+  root_offset_x: 4
+  root_offset_y: -18
+  root_rot: 0.85689646
+}
+part {
+  window_size_x: 76
+  window_size_y: 104
+  pos_offset_x: 38
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 19
+  root_offset_x: 19
+  root_offset_y: -19
+  root_rot: 0.0020899025
+}
+part {
+  window_size_x: 61
+  window_size_y: 101
+  pos_offset_x: 30
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 20
+  root_offset_x: -4
+  root_offset_y: -17
+  root_rot: -12.475566
+}
+part {
+  window_size_x: 82
+  window_size_y: 101
+  pos_offset_x: 41
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 21
+  root_offset_x: 18
+  root_offset_y: -19
+  root_rot: 12.829481
+}
+part {
+  window_size_x: 71
+  window_size_y: 106
+  pos_offset_x: 35
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 22
+  root_offset_x: 6
+  root_offset_y: -16
+  root_rot: -6.46521
+}
+part {
+  window_size_x: 66
+  window_size_y: 118
+  pos_offset_x: 33
+  pos_offset_y: 59
+  part_id: 15
+  type_id: 23
+  root_offset_x: 15
+  root_offset_y: -13
+  root_rot: 0.65390337
+}
+part {
+  window_size_x: 90
+  window_size_y: 114
+  pos_offset_x: 45
+  pos_offset_y: 57
+  part_id: 15
+  type_id: 24
+  root_offset_x: -9
+  root_offset_y: -2
+  root_rot: -43.478325
+}
+part {
+  window_size_x: 84
+  window_size_y: 100
+  pos_offset_x: 42
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 25
+  root_offset_x: -17
+  root_offset_y: -19
+  root_rot: -17.0911
+}
+part {
+  window_size_x: 70
+  window_size_y: 110
+  pos_offset_x: 35
+  pos_offset_y: 55
+  part_id: 15
+  type_id: 26
+  root_offset_x: 15
+  root_offset_y: -17
+  root_rot: 0.77160764
+}
+part {
+  window_size_x: 61
+  window_size_y: 102
+  pos_offset_x: 30
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 27
+  root_offset_x: -6
+  root_offset_y: -18
+  root_rot: -10.310652
+}
+part {
+  window_size_x: 61
+  window_size_y: 104
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 28
+  root_offset_x: 12
+  root_offset_y: -19
+  root_rot: 4.0483961
+}
+part {
+  window_size_x: 79
+  window_size_y: 104
+  pos_offset_x: 39
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 29
+  root_offset_x: 20
+  root_offset_y: -17
+  root_rot: 3.2812345
+}
+part {
+  window_size_x: 97
+  window_size_y: 101
+  pos_offset_x: 48
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 30
+  root_offset_x: 17
+  root_offset_y: -18
+  root_rot: -11.118988
+}
+part {
+  window_size_x: 60
+  window_size_y: 100
+  pos_offset_x: 30
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 31
+  root_offset_x: 7
+  root_offset_y: -17
+  root_rot: 11.148784
+}
+part {
+  window_size_x: 90
+  window_size_y: 101
+  pos_offset_x: 45
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 32
+  root_offset_x: 13
+  root_offset_y: -17
+  root_rot: -12.104293
+}
+part {
+  window_size_x: 68
+  window_size_y: 103
+  pos_offset_x: 34
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 33
+  root_offset_x: 15
+  root_offset_y: -18
+  root_rot: -0.7269963
+}
+part {
+  window_size_x: 64
+  window_size_y: 107
+  pos_offset_x: 32
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 34
+  root_offset_x: 15
+  root_offset_y: -18
+  root_rot: -0.94113755
+}
+part {
+  window_size_x: 90
+  window_size_y: 99
+  pos_offset_x: 45
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 35
+  root_offset_x: 23
+  root_offset_y: -18
+  root_rot: 11.455898
+}
+part {
+  window_size_x: 68
+  window_size_y: 103
+  pos_offset_x: 34
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 36
+  root_offset_x: 8
+  root_offset_y: -18
+  root_rot: -4.0386033
+}
+part {
+  window_size_x: 58
+  window_size_y: 110
+  pos_offset_x: 29
+  pos_offset_y: 55
+  part_id: 15
+  type_id: 37
+  root_offset_x: 10
+  root_offset_y: -14
+  root_rot: 6.2731194
+}
+part {
+  window_size_x: 64
+  window_size_y: 101
+  pos_offset_x: 32
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 38
+  root_offset_x: 8
+  root_offset_y: -17
+  root_rot: -2.7489271
+}
+part {
+  window_size_x: 126
+  window_size_y: 95
+  pos_offset_x: 63
+  pos_offset_y: 47
+  part_id: 15
+  type_id: 39
+  root_offset_x: 26
+  root_offset_y: -14
+  root_rot: -16.082363
+}
+part {
+  window_size_x: 76
+  window_size_y: 105
+  pos_offset_x: 38
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 40
+  root_offset_x: 20
+  root_offset_y: -18
+  root_rot: -0.91202104
+}
+part {
+  window_size_x: 65
+  window_size_y: 105
+  pos_offset_x: 32
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 41
+  root_offset_x: 13
+  root_offset_y: -20
+  root_rot: 0.44448635
+}
+part {
+  window_size_x: 91
+  window_size_y: 102
+  pos_offset_x: 45
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 42
+  root_offset_x: 27
+  root_offset_y: -17
+  root_rot: 1.6386342
+}
+part {
+  window_size_x: 72
+  window_size_y: 106
+  pos_offset_x: 36
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 43
+  root_offset_x: 17
+  root_offset_y: -17
+  root_rot: 6.3620653
+}
+part {
+  window_size_x: 74
+  window_size_y: 102
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 44
+  root_offset_x: -10
+  root_offset_y: -17
+  root_rot: -4.25654
+}
+part {
+  window_size_x: 100
+  window_size_y: 101
+  pos_offset_x: 50
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 45
+  root_offset_x: -19
+  root_offset_y: 11
+  root_rot: 31.800673
+}
+part {
+  window_size_x: 85
+  window_size_y: 101
+  pos_offset_x: 42
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 46
+  root_offset_x: -17
+  root_offset_y: -17
+  root_rot: -6.7443895
+}
+part {
+  window_size_x: 63
+  window_size_y: 99
+  pos_offset_x: 31
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 47
+  root_offset_x: 10
+  root_offset_y: -17
+  root_rot: 10.773149
+}
+part {
+  window_size_x: 94
+  window_size_y: 96
+  pos_offset_x: 47
+  pos_offset_y: 48
+  part_id: 15
+  type_id: 48
+  root_offset_x: 22
+  root_offset_y: -18
+  root_rot: 19.218721
+}
+part {
+  window_size_x: 63
+  window_size_y: 99
+  pos_offset_x: 31
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 49
+  root_offset_x: -2
+  root_offset_y: -16
+  root_rot: -9.40586
+}
+part {
+  window_size_x: 91
+  window_size_y: 96
+  pos_offset_x: 45
+  pos_offset_y: 48
+  part_id: 15
+  type_id: 50
+  root_offset_x: 18
+  root_offset_y: -14
+  root_rot: -9.3478289
+}
+part {
+  window_size_x: 74
+  window_size_y: 102
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 51
+  root_offset_x: 18
+  root_offset_y: -18
+  root_rot: -4.5375113
+}
+part {
+  window_size_x: 63
+  window_size_y: 106
+  pos_offset_x: 31
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 52
+  root_offset_x: 9
+  root_offset_y: -16
+  root_rot: 0.58053195
+}
+part {
+  window_size_x: 73
+  window_size_y: 101
+  pos_offset_x: 36
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 53
+  root_offset_x: -7
+  root_offset_y: -13
+  root_rot: -17.172157
+}
+part {
+  window_size_x: 74
+  window_size_y: 102
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 54
+  root_offset_x: -9
+  root_offset_y: -18
+  root_rot: -0.25928673
+}
+part {
+  window_size_x: 88
+  window_size_y: 120
+  pos_offset_x: 44
+  pos_offset_y: 60
+  part_id: 15
+  type_id: 55
+  root_offset_x: -10
+  root_offset_y: -34
+  root_rot: -36.278
+}
+part {
+  window_size_x: 119
+  window_size_y: 101
+  pos_offset_x: 59
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 56
+  root_offset_x: 38
+  root_offset_y: -17
+  root_rot: 7.31806
+}
+part {
+  window_size_x: 71
+  window_size_y: 101
+  pos_offset_x: 35
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 57
+  root_offset_x: 14
+  root_offset_y: -17
+  root_rot: 10.514015
+}
+part {
+  window_size_x: 64
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 58
+  root_offset_x: 14
+  root_offset_y: -18
+  root_rot: 0.42010397
+}
+part {
+  window_size_x: 71
+  window_size_y: 124
+  pos_offset_x: 35
+  pos_offset_y: 62
+  part_id: 15
+  type_id: 59
+  root_offset_x: 11
+  root_offset_y: -28
+  root_rot: -4.8622766
+}
+part {
+  window_size_x: 121
+  window_size_y: 98
+  pos_offset_x: 60
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 60
+  root_offset_x: 40
+  root_offset_y: -15
+  root_rot: 4.6693468
+}
+part {
+  window_size_x: 114
+  window_size_y: 95
+  pos_offset_x: 57
+  pos_offset_y: 47
+  part_id: 15
+  type_id: 61
+  root_offset_x: 17
+  root_offset_y: -5
+  root_rot: 54.473576
+}
+part {
+  window_size_x: 65
+  window_size_y: 103
+  pos_offset_x: 32
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 62
+  root_offset_x: 3
+  root_offset_y: -18
+  root_rot: 1.7164409
+}
+part {
+  window_size_x: 72
+  window_size_y: 101
+  pos_offset_x: 36
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 63
+  root_offset_x: 17
+  root_offset_y: -17
+  root_rot: 1.4781442
+}
+part {
+  window_size_x: 61
+  window_size_y: 122
+  pos_offset_x: 30
+  pos_offset_y: 61
+  part_id: 15
+  type_id: 64
+  root_offset_x: 12
+  root_offset_y: -12
+  root_rot: 2.1361063
+}
+part {
+  window_size_x: 76
+  window_size_y: 102
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 65
+  root_offset_x: 15
+  root_offset_y: -19
+  root_rot: -5.6933551
+}
+part {
+  window_size_x: 79
+  window_size_y: 105
+  pos_offset_x: 39
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 66
+  root_offset_x: 16
+  root_offset_y: -18
+  root_rot: -9.5330973
+}
+part {
+  window_size_x: 83
+  window_size_y: 102
+  pos_offset_x: 41
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 67
+  root_offset_x: 21
+  root_offset_y: -18
+  root_rot: -5.9723973
+}
+part {
+  window_size_x: 66
+  window_size_y: 104
+  pos_offset_x: 33
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 68
+  root_offset_x: 14
+  root_offset_y: -20
+  root_rot: -3.0273848
+}
+part {
+  window_size_x: 92
+  window_size_y: 102
+  pos_offset_x: 46
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 69
+  root_offset_x: 4
+  root_offset_y: -21
+  root_rot: -22.980553
+}
+part {
+  window_size_x: 87
+  window_size_y: 109
+  pos_offset_x: 43
+  pos_offset_y: 54
+  part_id: 15
+  type_id: 70
+  root_offset_x: 23
+  root_offset_y: -14
+  root_rot: 0.76811481
+}
+part {
+  window_size_x: 93
+  window_size_y: 104
+  pos_offset_x: 46
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 71
+  root_offset_x: 24
+  root_offset_y: -17
+  root_rot: -1.4477444
+}
+part {
+  window_size_x: 59
+  window_size_y: 104
+  pos_offset_x: 29
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 72
+  root_offset_x: 12
+  root_offset_y: -19
+  root_rot: -0.11949837
+}
+part {
+  window_size_x: 77
+  window_size_y: 103
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 73
+  root_offset_x: 19
+  root_offset_y: -18
+  root_rot: 2.4792454
+}
+part {
+  window_size_x: 81
+  window_size_y: 96
+  pos_offset_x: 40
+  pos_offset_y: 48
+  part_id: 15
+  type_id: 74
+  root_offset_x: 3
+  root_offset_y: -16
+  root_rot: -16.217274
+}
+part {
+  window_size_x: 66
+  window_size_y: 103
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 75
+  root_offset_x: 15
+  root_offset_y: -19
+  root_rot: 2.9232626
+}
+part {
+  window_size_x: 61
+  window_size_y: 115
+  pos_offset_x: 30
+  pos_offset_y: 57
+  part_id: 15
+  type_id: 76
+  root_offset_x: 12
+  root_offset_y: -13
+  root_rot: 5.6012192
+}
+part {
+  window_size_x: 68
+  window_size_y: 104
+  pos_offset_x: 34
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 77
+  root_offset_x: 14
+  root_offset_y: -20
+  root_rot: 0.029793553
+}
+part {
+  window_size_x: 74
+  window_size_y: 103
+  pos_offset_x: 37
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 78
+  root_offset_x: 17
+  root_offset_y: -17
+  root_rot: 2.2782536
+}
+part {
+  window_size_x: 54
+  window_size_y: 111
+  pos_offset_x: 27
+  pos_offset_y: 55
+  part_id: 15
+  type_id: 79
+  root_offset_x: -2
+  root_offset_y: -16
+  root_rot: -0.79153651
+}
+part {
+  window_size_x: 76
+  window_size_y: 102
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 80
+  root_offset_x: 17
+  root_offset_y: -17
+  root_rot: -1.6023939
+}
+part {
+  window_size_x: 61
+  window_size_y: 103
+  pos_offset_x: 30
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 81
+  root_offset_x: 10
+  root_offset_y: -19
+  root_rot: 3.0407035
+}
+part {
+  window_size_x: 64
+  window_size_y: 106
+  pos_offset_x: 32
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 82
+  root_offset_x: 15
+  root_offset_y: -19
+  root_rot: 0.59473515
+}
+part {
+  window_size_x: 101
+  window_size_y: 104
+  pos_offset_x: 50
+  pos_offset_y: 52
+  part_id: 15
+  type_id: 83
+  root_offset_x: 30
+  root_offset_y: -18
+  root_rot: -2.8210974
+}
+part {
+  window_size_x: 69
+  window_size_y: 100
+  pos_offset_x: 34
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 84
+  root_offset_x: 11
+  root_offset_y: -19
+  root_rot: 14.917171
+}
+part {
+  window_size_x: 93
+  window_size_y: 93
+  pos_offset_x: 46
+  pos_offset_y: 46
+  part_id: 15
+  type_id: 85
+  root_offset_x: 1
+  root_offset_y: -15
+  root_rot: -21.1625
+}
+part {
+  window_size_x: 88
+  window_size_y: 95
+  pos_offset_x: 44
+  pos_offset_y: 47
+  part_id: 15
+  type_id: 86
+  root_offset_x: 16
+  root_offset_y: -16
+  root_rot: 22.476694
+}
+part {
+  window_size_x: 79
+  window_size_y: 107
+  pos_offset_x: 39
+  pos_offset_y: 53
+  part_id: 15
+  type_id: 87
+  root_offset_x: -16
+  root_offset_y: 11
+  root_rot: -106.52161
+}
+part {
+  window_size_x: 59
+  window_size_y: 103
+  pos_offset_x: 29
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 88
+  root_offset_x: 11
+  root_offset_y: -19
+  root_rot: 2.4347847
+}
+part {
+  window_size_x: 73
+  window_size_y: 99
+  pos_offset_x: 36
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 89
+  root_offset_x: 0
+  root_offset_y: -17
+  root_rot: -9.58313
+}
+part {
+  window_size_x: 87
+  window_size_y: 96
+  pos_offset_x: 43
+  pos_offset_y: 48
+  part_id: 15
+  type_id: 90
+  root_offset_x: -17
+  root_offset_y: -18
+  root_rot: -18.047642
+}
+part {
+  window_size_x: 83
+  window_size_y: 98
+  pos_offset_x: 41
+  pos_offset_y: 49
+  part_id: 15
+  type_id: 91
+  root_offset_x: 0
+  root_offset_y: -15
+  root_rot: -26.839634
+}
+part {
+  window_size_x: 62
+  window_size_y: 108
+  pos_offset_x: 31
+  pos_offset_y: 54
+  part_id: 15
+  type_id: 92
+  root_offset_x: 2
+  root_offset_y: -17
+  root_rot: -5.9228659
+}
+part {
+  window_size_x: 78
+  window_size_y: 102
+  pos_offset_x: 39
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 93
+  root_offset_x: 10
+  root_offset_y: -17
+  root_rot: -5.0161266
+}
+part {
+  window_size_x: 56
+  window_size_y: 100
+  pos_offset_x: 28
+  pos_offset_y: 50
+  part_id: 15
+  type_id: 94
+  root_offset_x: 10
+  root_offset_y: -16
+  root_rot: 0.74870336
+}
+part {
+  window_size_x: 56
+  window_size_y: 102
+  pos_offset_x: 28
+  pos_offset_y: 51
+  part_id: 15
+  type_id: 95
+  root_offset_x: 9
+  root_offset_y: -18
+  root_rot: 3.967603
+}
+part {
+  window_size_x: 48
+  window_size_y: 29
+  pos_offset_x: 24
+  pos_offset_y: 14
+  part_id: 16
+  type_id: 0
+  root_offset_x: -26
+  root_offset_y: -19
+  root_rot: 0.39595875
+}
+part {
+  window_size_x: 49
+  window_size_y: 37
+  pos_offset_x: 24
+  pos_offset_y: 18
+  part_id: 16
+  type_id: 1
+  root_offset_x: -31
+  root_offset_y: -13
+  root_rot: 1.7348906
+}
+part {
+  window_size_x: 83
+  window_size_y: 15
+  pos_offset_x: 41
+  pos_offset_y: 7
+  part_id: 16
+  type_id: 2
+  root_offset_x: 18
+  root_offset_y: -28
+  root_rot: -4.6134357
+}
+part {
+  window_size_x: 70
+  window_size_y: 53
+  pos_offset_x: 35
+  pos_offset_y: 26
+  part_id: 16
+  type_id: 3
+  root_offset_x: 23
+  root_offset_y: -32
+  root_rot: 17.615278
+}
+part {
+  window_size_x: 71
+  window_size_y: 52
+  pos_offset_x: 35
+  pos_offset_y: 26
+  part_id: 16
+  type_id: 4
+  root_offset_x: -35
+  root_offset_y: -1
+  root_rot: -4.2430453
+}
+part {
+  window_size_x: 42
+  window_size_y: 48
+  pos_offset_x: 21
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 5
+  root_offset_x: 1
+  root_offset_y: -36
+  root_rot: -25.517458
+}
+part {
+  window_size_x: 41
+  window_size_y: 51
+  pos_offset_x: 20
+  pos_offset_y: 25
+  part_id: 16
+  type_id: 6
+  root_offset_x: -21
+  root_offset_y: -6
+  root_rot: 4.4191632
+}
+part {
+  window_size_x: 35
+  window_size_y: 43
+  pos_offset_x: 17
+  pos_offset_y: 21
+  part_id: 16
+  type_id: 7
+  root_offset_x: -10
+  root_offset_y: -6
+  root_rot: 24.079214
+}
+part {
+  window_size_x: 55
+  window_size_y: 33
+  pos_offset_x: 27
+  pos_offset_y: 16
+  part_id: 16
+  type_id: 8
+  root_offset_x: -12
+  root_offset_y: -17
+  root_rot: 4.9415379
+}
+part {
+  window_size_x: 54
+  window_size_y: 36
+  pos_offset_x: 27
+  pos_offset_y: 18
+  part_id: 16
+  type_id: 9
+  root_offset_x: -20
+  root_offset_y: -13
+  root_rot: 5.477612
+}
+part {
+  window_size_x: 65
+  window_size_y: 26
+  pos_offset_x: 32
+  pos_offset_y: 13
+  part_id: 16
+  type_id: 10
+  root_offset_x: -36
+  root_offset_y: -44
+  root_rot: -1.4772713
+}
+part {
+  window_size_x: 47
+  window_size_y: 33
+  pos_offset_x: 23
+  pos_offset_y: 16
+  part_id: 16
+  type_id: 11
+  root_offset_x: -15
+  root_offset_y: -2
+  root_rot: -26.207922
+}
+part {
+  window_size_x: 35
+  window_size_y: 49
+  pos_offset_x: 17
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 12
+  root_offset_x: -25
+  root_offset_y: -6
+  root_rot: -6.8917904
+}
+part {
+  window_size_x: 62
+  window_size_y: 27
+  pos_offset_x: 31
+  pos_offset_y: 13
+  part_id: 16
+  type_id: 13
+  root_offset_x: -36
+  root_offset_y: -16
+  root_rot: -7.0791926
+}
+part {
+  window_size_x: 65
+  window_size_y: 49
+  pos_offset_x: 32
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 14
+  root_offset_x: 9
+  root_offset_y: -7
+  root_rot: 8.8313894
+}
+part {
+  window_size_x: 36
+  window_size_y: 67
+  pos_offset_x: 18
+  pos_offset_y: 33
+  part_id: 16
+  type_id: 15
+  root_offset_x: -26
+  root_offset_y: 2
+  root_rot: -3.1226914
+}
+part {
+  window_size_x: 52
+  window_size_y: 25
+  pos_offset_x: 26
+  pos_offset_y: 12
+  part_id: 16
+  type_id: 16
+  root_offset_x: -28
+  root_offset_y: -39
+  root_rot: 0.10298672
+}
+part {
+  window_size_x: 43
+  window_size_y: 37
+  pos_offset_x: 21
+  pos_offset_y: 18
+  part_id: 16
+  type_id: 17
+  root_offset_x: -27
+  root_offset_y: -11
+  root_rot: -7.0316429
+}
+part {
+  window_size_x: 72
+  window_size_y: 45
+  pos_offset_x: 36
+  pos_offset_y: 22
+  part_id: 16
+  type_id: 18
+  root_offset_x: -28
+  root_offset_y: -9
+  root_rot: 17.570879
+}
+part {
+  window_size_x: 84
+  window_size_y: 32
+  pos_offset_x: 42
+  pos_offset_y: 16
+  part_id: 16
+  type_id: 19
+  root_offset_x: 16
+  root_offset_y: 1
+  root_rot: -23.898821
+}
+part {
+  window_size_x: 70
+  window_size_y: 21
+  pos_offset_x: 35
+  pos_offset_y: 10
+  part_id: 16
+  type_id: 20
+  root_offset_x: 5
+  root_offset_y: -18
+  root_rot: -7.0791016
+}
+part {
+  window_size_x: 74
+  window_size_y: 26
+  pos_offset_x: 37
+  pos_offset_y: 13
+  part_id: 16
+  type_id: 21
+  root_offset_x: 15
+  root_offset_y: -17
+  root_rot: 10.139264
+}
+part {
+  window_size_x: 43
+  window_size_y: 33
+  pos_offset_x: 21
+  pos_offset_y: 16
+  part_id: 16
+  type_id: 22
+  root_offset_x: -26
+  root_offset_y: -17
+  root_rot: 1.0405934
+}
+part {
+  window_size_x: 60
+  window_size_y: 39
+  pos_offset_x: 30
+  pos_offset_y: 19
+  part_id: 16
+  type_id: 23
+  root_offset_x: -29
+  root_offset_y: -10
+  root_rot: -11.00794
+}
+part {
+  window_size_x: 35
+  window_size_y: 64
+  pos_offset_x: 17
+  pos_offset_y: 32
+  part_id: 16
+  type_id: 24
+  root_offset_x: -20
+  root_offset_y: 1
+  root_rot: -1.6365678
+}
+part {
+  window_size_x: 35
+  window_size_y: 63
+  pos_offset_x: 17
+  pos_offset_y: 31
+  part_id: 16
+  type_id: 25
+  root_offset_x: -16
+  root_offset_y: 5
+  root_rot: -0.93511158
+}
+part {
+  window_size_x: 43
+  window_size_y: 41
+  pos_offset_x: 21
+  pos_offset_y: 20
+  part_id: 16
+  type_id: 26
+  root_offset_x: -15
+  root_offset_y: -11
+  root_rot: 0.46575433
+}
+part {
+  window_size_x: 48
+  window_size_y: 58
+  pos_offset_x: 24
+  pos_offset_y: 29
+  part_id: 16
+  type_id: 27
+  root_offset_x: -7
+  root_offset_y: 0
+  root_rot: -1.9174902
+}
+part {
+  window_size_x: 41
+  window_size_y: 64
+  pos_offset_x: 20
+  pos_offset_y: 32
+  part_id: 16
+  type_id: 28
+  root_offset_x: -5
+  root_offset_y: 12
+  root_rot: -8.1769161
+}
+part {
+  window_size_x: 41
+  window_size_y: 70
+  pos_offset_x: 20
+  pos_offset_y: 35
+  part_id: 16
+  type_id: 29
+  root_offset_x: -20
+  root_offset_y: 2
+  root_rot: 3.4203529
+}
+part {
+  window_size_x: 42
+  window_size_y: 31
+  pos_offset_x: 21
+  pos_offset_y: 15
+  part_id: 16
+  type_id: 30
+  root_offset_x: -28
+  root_offset_y: -10
+  root_rot: -15.406955
+}
+part {
+  window_size_x: 41
+  window_size_y: 54
+  pos_offset_x: 20
+  pos_offset_y: 27
+  part_id: 16
+  type_id: 31
+  root_offset_x: -27
+  root_offset_y: -4
+  root_rot: -0.63852382
+}
+part {
+  window_size_x: 44
+  window_size_y: 72
+  pos_offset_x: 22
+  pos_offset_y: 36
+  part_id: 16
+  type_id: 32
+  root_offset_x: -22
+  root_offset_y: 7
+  root_rot: 11.899163
+}
+part {
+  window_size_x: 53
+  window_size_y: 55
+  pos_offset_x: 26
+  pos_offset_y: 27
+  part_id: 16
+  type_id: 33
+  root_offset_x: -32
+  root_offset_y: -2
+  root_rot: -3.7777815
+}
+part {
+  window_size_x: 45
+  window_size_y: 69
+  pos_offset_x: 22
+  pos_offset_y: 34
+  part_id: 16
+  type_id: 34
+  root_offset_x: -26
+  root_offset_y: 4
+  root_rot: -6.57827
+}
+part {
+  window_size_x: 62
+  window_size_y: 35
+  pos_offset_x: 31
+  pos_offset_y: 17
+  part_id: 16
+  type_id: 35
+  root_offset_x: 0
+  root_offset_y: -12
+  root_rot: 4.5541444
+}
+part {
+  window_size_x: 51
+  window_size_y: 63
+  pos_offset_x: 25
+  pos_offset_y: 31
+  part_id: 16
+  type_id: 36
+  root_offset_x: -25
+  root_offset_y: 1
+  root_rot: 12.23533
+}
+part {
+  window_size_x: 51
+  window_size_y: 64
+  pos_offset_x: 25
+  pos_offset_y: 32
+  part_id: 16
+  type_id: 37
+  root_offset_x: 7
+  root_offset_y: -58
+  root_rot: -3.666558
+}
+part {
+  window_size_x: 40
+  window_size_y: 35
+  pos_offset_x: 20
+  pos_offset_y: 17
+  part_id: 16
+  type_id: 38
+  root_offset_x: -5
+  root_offset_y: -25
+  root_rot: -15.004825
+}
+part {
+  window_size_x: 52
+  window_size_y: 68
+  pos_offset_x: 26
+  pos_offset_y: 34
+  part_id: 16
+  type_id: 39
+  root_offset_x: -28
+  root_offset_y: 2
+  root_rot: 8.7448635
+}
+part {
+  window_size_x: 62
+  window_size_y: 58
+  pos_offset_x: 31
+  pos_offset_y: 29
+  part_id: 16
+  type_id: 40
+  root_offset_x: -26
+  root_offset_y: -2
+  root_rot: 16.885775
+}
+part {
+  window_size_x: 39
+  window_size_y: 62
+  pos_offset_x: 19
+  pos_offset_y: 31
+  part_id: 16
+  type_id: 41
+  root_offset_x: -26
+  root_offset_y: -1
+  root_rot: 0.12435541
+}
+part {
+  window_size_x: 46
+  window_size_y: 43
+  pos_offset_x: 23
+  pos_offset_y: 21
+  part_id: 16
+  type_id: 42
+  root_offset_x: -21
+  root_offset_y: -10
+  root_rot: 9.691659
+}
+part {
+  window_size_x: 58
+  window_size_y: 23
+  pos_offset_x: 29
+  pos_offset_y: 11
+  part_id: 16
+  type_id: 43
+  root_offset_x: -35
+  root_offset_y: -23
+  root_rot: -5.2686105
+}
+part {
+  window_size_x: 82
+  window_size_y: 35
+  pos_offset_x: 41
+  pos_offset_y: 17
+  part_id: 16
+  type_id: 44
+  root_offset_x: -38
+  root_offset_y: -12
+  root_rot: 6.6911149
+}
+part {
+  window_size_x: 42
+  window_size_y: 77
+  pos_offset_x: 21
+  pos_offset_y: 38
+  part_id: 16
+  type_id: 45
+  root_offset_x: -2
+  root_offset_y: 22
+  root_rot: -1.0920961
+}
+part {
+  window_size_x: 37
+  window_size_y: 75
+  pos_offset_x: 18
+  pos_offset_y: 37
+  part_id: 16
+  type_id: 46
+  root_offset_x: -27
+  root_offset_y: 9
+  root_rot: -9.1944895
+}
+part {
+  window_size_x: 74
+  window_size_y: 65
+  pos_offset_x: 37
+  pos_offset_y: 32
+  part_id: 16
+  type_id: 47
+  root_offset_x: -35
+  root_offset_y: 11
+  root_rot: 18.334702
+}
+part {
+  window_size_x: 47
+  window_size_y: 63
+  pos_offset_x: 23
+  pos_offset_y: 31
+  part_id: 16
+  type_id: 48
+  root_offset_x: -22
+  root_offset_y: 3
+  root_rot: 9.4297037
+}
+part {
+  window_size_x: 57
+  window_size_y: 40
+  pos_offset_x: 28
+  pos_offset_y: 20
+  part_id: 16
+  type_id: 49
+  root_offset_x: -10
+  root_offset_y: -10
+  root_rot: 11.721886
+}
+part {
+  window_size_x: 71
+  window_size_y: 36
+  pos_offset_x: 35
+  pos_offset_y: 18
+  part_id: 16
+  type_id: 50
+  root_offset_x: 7
+  root_offset_y: -12
+  root_rot: 5.7840672
+}
+part {
+  window_size_x: 67
+  window_size_y: 27
+  pos_offset_x: 33
+  pos_offset_y: 13
+  part_id: 16
+  type_id: 51
+  root_offset_x: 2
+  root_offset_y: -13
+  root_rot: -2.8395531
+}
+part {
+  window_size_x: 54
+  window_size_y: 56
+  pos_offset_x: 27
+  pos_offset_y: 28
+  part_id: 16
+  type_id: 52
+  root_offset_x: -19
+  root_offset_y: 0
+  root_rot: -17.375875
+}
+part {
+  window_size_x: 62
+  window_size_y: 60
+  pos_offset_x: 31
+  pos_offset_y: 30
+  part_id: 16
+  type_id: 53
+  root_offset_x: -37
+  root_offset_y: 0
+  root_rot: -3.5852516
+}
+part {
+  window_size_x: 57
+  window_size_y: 37
+  pos_offset_x: 28
+  pos_offset_y: 18
+  part_id: 16
+  type_id: 54
+  root_offset_x: -4
+  root_offset_y: -12
+  root_rot: -1.8842056
+}
+part {
+  window_size_x: 54
+  window_size_y: 51
+  pos_offset_x: 27
+  pos_offset_y: 25
+  part_id: 16
+  type_id: 55
+  root_offset_x: -34
+  root_offset_y: -4
+  root_rot: -15.246467
+}
+part {
+  window_size_x: 46
+  window_size_y: 48
+  pos_offset_x: 23
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 56
+  root_offset_x: -17
+  root_offset_y: 1
+  root_rot: -6.4474964
+}
+part {
+  window_size_x: 63
+  window_size_y: 23
+  pos_offset_x: 31
+  pos_offset_y: 11
+  part_id: 16
+  type_id: 57
+  root_offset_x: -35
+  root_offset_y: -16
+  root_rot: -12.139832
+}
+part {
+  window_size_x: 53
+  window_size_y: 45
+  pos_offset_x: 26
+  pos_offset_y: 22
+  part_id: 16
+  type_id: 58
+  root_offset_x: -28
+  root_offset_y: -10
+  root_rot: 6.2258863
+}
+part {
+  window_size_x: 55
+  window_size_y: 39
+  pos_offset_x: 27
+  pos_offset_y: 19
+  part_id: 16
+  type_id: 59
+  root_offset_x: -21
+  root_offset_y: -4
+  root_rot: -27.262489
+}
+part {
+  window_size_x: 50
+  window_size_y: 49
+  pos_offset_x: 25
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 60
+  root_offset_x: -27
+  root_offset_y: -10
+  root_rot: 8.8287287
+}
+part {
+  window_size_x: 58
+  window_size_y: 29
+  pos_offset_x: 29
+  pos_offset_y: 14
+  part_id: 16
+  type_id: 61
+  root_offset_x: -32
+  root_offset_y: -12
+  root_rot: -13.861584
+}
+part {
+  window_size_x: 42
+  window_size_y: 67
+  pos_offset_x: 21
+  pos_offset_y: 33
+  part_id: 16
+  type_id: 62
+  root_offset_x: -25
+  root_offset_y: 1
+  root_rot: 0.70700288
+}
+part {
+  window_size_x: 86
+  window_size_y: 12
+  pos_offset_x: 43
+  pos_offset_y: 6
+  part_id: 16
+  type_id: 63
+  root_offset_x: -47
+  root_offset_y: -27
+  root_rot: -7.0456867
+}
+part {
+  window_size_x: 45
+  window_size_y: 58
+  pos_offset_x: 22
+  pos_offset_y: 29
+  part_id: 16
+  type_id: 64
+  root_offset_x: -8
+  root_offset_y: -61
+  root_rot: 30.010941
+}
+part {
+  window_size_x: 70
+  window_size_y: 31
+  pos_offset_x: 35
+  pos_offset_y: 15
+  part_id: 16
+  type_id: 65
+  root_offset_x: -41
+  root_offset_y: -13
+  root_rot: -11.7113
+}
+part {
+  window_size_x: 84
+  window_size_y: 20
+  pos_offset_x: 42
+  pos_offset_y: 10
+  part_id: 16
+  type_id: 66
+  root_offset_x: 15
+  root_offset_y: -22
+  root_rot: 2.6453605
+}
+part {
+  window_size_x: 48
+  window_size_y: 48
+  pos_offset_x: 24
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 67
+  root_offset_x: -17
+  root_offset_y: -7
+  root_rot: 7.0517354
+}
+part {
+  window_size_x: 62
+  window_size_y: 70
+  pos_offset_x: 31
+  pos_offset_y: 35
+  part_id: 16
+  type_id: 68
+  root_offset_x: 6
+  root_offset_y: -44
+  root_rot: 61.269176
+}
+part {
+  window_size_x: 62
+  window_size_y: 43
+  pos_offset_x: 31
+  pos_offset_y: 21
+  part_id: 16
+  type_id: 69
+  root_offset_x: -33
+  root_offset_y: -8
+  root_rot: -5.6033721
+}
+part {
+  window_size_x: 43
+  window_size_y: 61
+  pos_offset_x: 21
+  pos_offset_y: 30
+  part_id: 16
+  type_id: 70
+  root_offset_x: -29
+  root_offset_y: 4
+  root_rot: -13.624033
+}
+part {
+  window_size_x: 55
+  window_size_y: 58
+  pos_offset_x: 27
+  pos_offset_y: 29
+  part_id: 16
+  type_id: 71
+  root_offset_x: -5
+  root_offset_y: 1
+  root_rot: 9.4350033
+}
+part {
+  window_size_x: 73
+  window_size_y: 41
+  pos_offset_x: 36
+  pos_offset_y: 20
+  part_id: 16
+  type_id: 72
+  root_offset_x: -29
+  root_offset_y: -50
+  root_rot: 0.9081744
+}
+part {
+  window_size_x: 77
+  window_size_y: 21
+  pos_offset_x: 38
+  pos_offset_y: 10
+  part_id: 16
+  type_id: 73
+  root_offset_x: -38
+  root_offset_y: -32
+  root_rot: -1.1215591
+}
+part {
+  window_size_x: 52
+  window_size_y: 42
+  pos_offset_x: 26
+  pos_offset_y: 21
+  part_id: 16
+  type_id: 74
+  root_offset_x: -32
+  root_offset_y: -12
+  root_rot: -1.1198543
+}
+part {
+  window_size_x: 34
+  window_size_y: 73
+  pos_offset_x: 17
+  pos_offset_y: 36
+  part_id: 16
+  type_id: 75
+  root_offset_x: -14
+  root_offset_y: 15
+  root_rot: -5.9966531
+}
+part {
+  window_size_x: 61
+  window_size_y: 40
+  pos_offset_x: 30
+  pos_offset_y: 20
+  part_id: 16
+  type_id: 76
+  root_offset_x: -6
+  root_offset_y: -12
+  root_rot: 6.649446
+}
+part {
+  window_size_x: 41
+  window_size_y: 61
+  pos_offset_x: 20
+  pos_offset_y: 30
+  part_id: 16
+  type_id: 77
+  root_offset_x: -22
+  root_offset_y: 0
+  root_rot: -10.01889
+}
+part {
+  window_size_x: 63
+  window_size_y: 49
+  pos_offset_x: 31
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 78
+  root_offset_x: -36
+  root_offset_y: -3
+  root_rot: -9.3478918
+}
+part {
+  window_size_x: 47
+  window_size_y: 60
+  pos_offset_x: 23
+  pos_offset_y: 30
+  part_id: 16
+  type_id: 79
+  root_offset_x: -29
+  root_offset_y: 0
+  root_rot: -2.0656118
+}
+part {
+  window_size_x: 52
+  window_size_y: 48
+  pos_offset_x: 26
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 80
+  root_offset_x: -7
+  root_offset_y: -6
+  root_rot: 4.8155575
+}
+part {
+  window_size_x: 63
+  window_size_y: 47
+  pos_offset_x: 31
+  pos_offset_y: 23
+  part_id: 16
+  type_id: 81
+  root_offset_x: -1
+  root_offset_y: -6
+  root_rot: 11.396966
+}
+part {
+  window_size_x: 57
+  window_size_y: 35
+  pos_offset_x: 28
+  pos_offset_y: 17
+  part_id: 16
+  type_id: 82
+  root_offset_x: -10
+  root_offset_y: -15
+  root_rot: 2.8894923
+}
+part {
+  window_size_x: 50
+  window_size_y: 32
+  pos_offset_x: 25
+  pos_offset_y: 16
+  part_id: 16
+  type_id: 83
+  root_offset_x: -26
+  root_offset_y: -14
+  root_rot: 0.80559355
+}
+part {
+  window_size_x: 41
+  window_size_y: 55
+  pos_offset_x: 20
+  pos_offset_y: 27
+  part_id: 16
+  type_id: 84
+  root_offset_x: -22
+  root_offset_y: -3
+  root_rot: 2.4345391
+}
+part {
+  window_size_x: 54
+  window_size_y: 64
+  pos_offset_x: 27
+  pos_offset_y: 32
+  part_id: 16
+  type_id: 85
+  root_offset_x: -32
+  root_offset_y: 2
+  root_rot: -9.8709888
+}
+part {
+  window_size_x: 49
+  window_size_y: 32
+  pos_offset_x: 24
+  pos_offset_y: 16
+  part_id: 16
+  type_id: 86
+  root_offset_x: -29
+  root_offset_y: -15
+  root_rot: 0.65038317
+}
+part {
+  window_size_x: 88
+  window_size_y: 49
+  pos_offset_x: 44
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 87
+  root_offset_x: -44
+  root_offset_y: 6
+  root_rot: -4.8291821
+}
+part {
+  window_size_x: 47
+  window_size_y: 52
+  pos_offset_x: 23
+  pos_offset_y: 26
+  part_id: 16
+  type_id: 88
+  root_offset_x: -11
+  root_offset_y: 0
+  root_rot: -26.012028
+}
+part {
+  window_size_x: 81
+  window_size_y: 22
+  pos_offset_x: 40
+  pos_offset_y: 11
+  part_id: 16
+  type_id: 89
+  root_offset_x: -43
+  root_offset_y: -19
+  root_rot: -5.3980041
+}
+part {
+  window_size_x: 57
+  window_size_y: 22
+  pos_offset_x: 28
+  pos_offset_y: 11
+  part_id: 16
+  type_id: 90
+  root_offset_x: -3
+  root_offset_y: -23
+  root_rot: 4.2115045
+}
+part {
+  window_size_x: 40
+  window_size_y: 69
+  pos_offset_x: 20
+  pos_offset_y: 34
+  part_id: 16
+  type_id: 91
+  root_offset_x: 5
+  root_offset_y: -42
+  root_rot: 1.5675902
+}
+part {
+  window_size_x: 44
+  window_size_y: 49
+  pos_offset_x: 22
+  pos_offset_y: 24
+  part_id: 16
+  type_id: 92
+  root_offset_x: -34
+  root_offset_y: -2
+  root_rot: -17.631363
+}
+part {
+  window_size_x: 77
+  window_size_y: 20
+  pos_offset_x: 38
+  pos_offset_y: 10
+  part_id: 17
+  type_id: 0
+  root_offset_x: 38
+  root_offset_y: -34
+  root_rot: 0.44654736
+}
+part {
+  window_size_x: 74
+  window_size_y: 65
+  pos_offset_x: 37
+  pos_offset_y: 32
+  part_id: 17
+  type_id: 1
+  root_offset_x: 35
+  root_offset_y: 11
+  root_rot: -18.379398
+}
+part {
+  window_size_x: 50
+  window_size_y: 33
+  pos_offset_x: 25
+  pos_offset_y: 16
+  part_id: 17
+  type_id: 2
+  root_offset_x: 25
+  root_offset_y: -13
+  root_rot: 1.3598927
+}
+part {
+  window_size_x: 50
+  window_size_y: 53
+  pos_offset_x: 25
+  pos_offset_y: 26
+  part_id: 17
+  type_id: 3
+  root_offset_x: 28
+  root_offset_y: -5
+  root_rot: -3.5802407
+}
+part {
+  window_size_x: 66
+  window_size_y: 27
+  pos_offset_x: 33
+  pos_offset_y: 13
+  part_id: 17
+  type_id: 4
+  root_offset_x: 31
+  root_offset_y: -41
+  root_rot: -7.9683046
+}
+part {
+  window_size_x: 37
+  window_size_y: 36
+  pos_offset_x: 18
+  pos_offset_y: 18
+  part_id: 17
+  type_id: 5
+  root_offset_x: 24
+  root_offset_y: -14
+  root_rot: 0.9039008
+}
+part {
+  window_size_x: 38
+  window_size_y: 59
+  pos_offset_x: 19
+  pos_offset_y: 29
+  part_id: 17
+  type_id: 6
+  root_offset_x: 15
+  root_offset_y: 4
+  root_rot: 3.6869926
+}
+part {
+  window_size_x: 69
+  window_size_y: 50
+  pos_offset_x: 34
+  pos_offset_y: 25
+  part_id: 17
+  type_id: 7
+  root_offset_x: -4
+  root_offset_y: -4
+  root_rot: -4.6595626
+}
+part {
+  window_size_x: 67
+  window_size_y: 27
+  pos_offset_x: 33
+  pos_offset_y: 13
+  part_id: 17
+  type_id: 8
+  root_offset_x: 0
+  root_offset_y: -12
+  root_rot: 3.1239591
+}
+part {
+  window_size_x: 63
+  window_size_y: 27
+  pos_offset_x: 31
+  pos_offset_y: 13
+  part_id: 17
+  type_id: 9
+  root_offset_x: 35
+  root_offset_y: -17
+  root_rot: 6.0451536
+}
+part {
+  window_size_x: 38
+  window_size_y: 68
+  pos_offset_x: 19
+  pos_offset_y: 34
+  part_id: 17
+  type_id: 10
+  root_offset_x: -7
+  root_offset_y: -45
+  root_rot: -17.549706
+}
+part {
+  window_size_x: 43
+  window_size_y: 47
+  pos_offset_x: 21
+  pos_offset_y: 23
+  part_id: 17
+  type_id: 11
+  root_offset_x: 15
+  root_offset_y: -8
+  root_rot: -13.019791
+}
+part {
+  window_size_x: 52
+  window_size_y: 58
+  pos_offset_x: 26
+  pos_offset_y: 29
+  part_id: 17
+  type_id: 12
+  root_offset_x: 1
+  root_offset_y: 3
+  root_rot: -5.7538815
+}
+part {
+  window_size_x: 36
+  window_size_y: 65
+  pos_offset_x: 18
+  pos_offset_y: 32
+  part_id: 17
+  type_id: 13
+  root_offset_x: 27
+  root_offset_y: 1
+  root_rot: 0.16013861
+}
+part {
+  window_size_x: 42
+  window_size_y: 70
+  pos_offset_x: 21
+  pos_offset_y: 35
+  part_id: 17
+  type_id: 14
+  root_offset_x: 25
+  root_offset_y: 2
+  root_rot: -0.20807
+}
+part {
+  window_size_x: 63
+  window_size_y: 10
+  pos_offset_x: 31
+  pos_offset_y: 5
+  part_id: 17
+  type_id: 15
+  root_offset_x: 21
+  root_offset_y: -22
+  root_rot: 7.7230406
+}
+part {
+  window_size_x: 43
+  window_size_y: 66
+  pos_offset_x: 21
+  pos_offset_y: 33
+  part_id: 17
+  type_id: 16
+  root_offset_x: 27
+  root_offset_y: 1
+  root_rot: 0.48895854
+}
+part {
+  window_size_x: 50
+  window_size_y: 47
+  pos_offset_x: 25
+  pos_offset_y: 23
+  part_id: 17
+  type_id: 17
+  root_offset_x: 12
+  root_offset_y: -7
+  root_rot: -7.8112712
+}
+part {
+  window_size_x: 47
+  window_size_y: 52
+  pos_offset_x: 23
+  pos_offset_y: 26
+  part_id: 17
+  type_id: 18
+  root_offset_x: 8
+  root_offset_y: -4
+  root_rot: 0.074434146
+}
+part {
+  window_size_x: 52
+  window_size_y: 48
+  pos_offset_x: 26
+  pos_offset_y: 24
+  part_id: 17
+  type_id: 19
+  root_offset_x: 27
+  root_offset_y: -9
+  root_rot: -8.2456751
+}
+part {
+  window_size_x: 60
+  window_size_y: 34
+  pos_offset_x: 30
+  pos_offset_y: 17
+  part_id: 17
+  type_id: 20
+  root_offset_x: 5
+  root_offset_y: -17
+  root_rot: -4.5907321
+}
+part {
+  window_size_x: 45
+  window_size_y: 50
+  pos_offset_x: 22
+  pos_offset_y: 25
+  part_id: 17
+  type_id: 21
+  root_offset_x: 6
+  root_offset_y: 10
+  root_rot: 15.827792
+}
+part {
+  window_size_x: 50
+  window_size_y: 61
+  pos_offset_x: 25
+  pos_offset_y: 30
+  part_id: 17
+  type_id: 22
+  root_offset_x: 32
+  root_offset_y: 0
+  root_rot: 3.5163534
+}
+part {
+  window_size_x: 40
+  window_size_y: 61
+  pos_offset_x: 20
+  pos_offset_y: 30
+  part_id: 17
+  type_id: 23
+  root_offset_x: 25
+  root_offset_y: -2
+  root_rot: -0.17463452
+}
+part {
+  window_size_x: 46
+  window_size_y: 70
+  pos_offset_x: 23
+  pos_offset_y: 35
+  part_id: 17
+  type_id: 24
+  root_offset_x: 27
+  root_offset_y: 5
+  root_rot: 9.7224932
+}
+part {
+  window_size_x: 83
+  window_size_y: 33
+  pos_offset_x: 41
+  pos_offset_y: 16
+  part_id: 17
+  type_id: 25
+  root_offset_x: 39
+  root_offset_y: -13
+  root_rot: -1.6006967
+}
+part {
+  window_size_x: 48
+  window_size_y: 32
+  pos_offset_x: 24
+  pos_offset_y: 16
+  part_id: 17
+  type_id: 26
+  root_offset_x: 12
+  root_offset_y: -19
+  root_rot: 0.25852334
+}
+part {
+  window_size_x: 51
+  window_size_y: 29
+  pos_offset_x: 25
+  pos_offset_y: 14
+  part_id: 17
+  type_id: 27
+  root_offset_x: 28
+  root_offset_y: -15
+  root_rot: 12.696068
+}
+part {
+  window_size_x: 43
+  window_size_y: 60
+  pos_offset_x: 21
+  pos_offset_y: 30
+  part_id: 17
+  type_id: 28
+  root_offset_x: 23
+  root_offset_y: 0
+  root_rot: 12.364894
+}
+part {
+  window_size_x: 45
+  window_size_y: 33
+  pos_offset_x: 22
+  pos_offset_y: 16
+  part_id: 17
+  type_id: 29
+  root_offset_x: 29
+  root_offset_y: -16
+  root_rot: 3.5828984
+}
+part {
+  window_size_x: 48
+  window_size_y: 71
+  pos_offset_x: 24
+  pos_offset_y: 35
+  part_id: 17
+  type_id: 30
+  root_offset_x: 25
+  root_offset_y: 5
+  root_rot: -11.882455
+}
+part {
+  window_size_x: 37
+  window_size_y: 52
+  pos_offset_x: 18
+  pos_offset_y: 26
+  part_id: 17
+  type_id: 31
+  root_offset_x: 26
+  root_offset_y: -5
+  root_rot: 2.7868261
+}
+part {
+  window_size_x: 86
+  window_size_y: 17
+  pos_offset_x: 43
+  pos_offset_y: 8
+  part_id: 17
+  type_id: 32
+  root_offset_x: -13
+  root_offset_y: -18
+  root_rot: 7.6870141
+}
+part {
+  window_size_x: 34
+  window_size_y: 65
+  pos_offset_x: 17
+  pos_offset_y: 32
+  part_id: 17
+  type_id: 33
+  root_offset_x: 13
+  root_offset_y: 8
+  root_rot: -8.5190458
+}
+part {
+  window_size_x: 43
+  window_size_y: 67
+  pos_offset_x: 21
+  pos_offset_y: 33
+  part_id: 17
+  type_id: 34
+  root_offset_x: 22
+  root_offset_y: 2
+  root_rot: 0.91895849
+}
+part {
+  window_size_x: 43
+  window_size_y: 55
+  pos_offset_x: 21
+  pos_offset_y: 27
+  part_id: 17
+  type_id: 35
+  root_offset_x: 15
+  root_offset_y: -3
+  root_rot: -8.2839527
+}
+part {
+  window_size_x: 35
+  window_size_y: 51
+  pos_offset_x: 17
+  pos_offset_y: 25
+  part_id: 17
+  type_id: 36
+  root_offset_x: 22
+  root_offset_y: -5
+  root_rot: 7.4164238
+}
+part {
+  window_size_x: 52
+  window_size_y: 29
+  pos_offset_x: 26
+  pos_offset_y: 14
+  part_id: 17
+  type_id: 37
+  root_offset_x: 7
+  root_offset_y: -19
+  root_rot: 4.1126533
+}
+part {
+  window_size_x: 53
+  window_size_y: 35
+  pos_offset_x: 26
+  pos_offset_y: 17
+  part_id: 17
+  type_id: 38
+  root_offset_x: 19
+  root_offset_y: -15
+  root_rot: -17.720957
+}
+part {
+  window_size_x: 82
+  window_size_y: 20
+  pos_offset_x: 41
+  pos_offset_y: 10
+  part_id: 17
+  type_id: 39
+  root_offset_x: 42
+  root_offset_y: -19
+  root_rot: 7.377882
+}
+part {
+  window_size_x: 43
+  window_size_y: 71
+  pos_offset_x: 21
+  pos_offset_y: 35
+  part_id: 17
+  type_id: 40
+  root_offset_x: 19
+  root_offset_y: 4
+  root_rot: 1.3061171
+}
+part {
+  window_size_x: 51
+  window_size_y: 63
+  pos_offset_x: 25
+  pos_offset_y: 31
+  part_id: 17
+  type_id: 41
+  root_offset_x: 25
+  root_offset_y: 1
+  root_rot: -12.010339
+}
+part {
+  window_size_x: 43
+  window_size_y: 63
+  pos_offset_x: 21
+  pos_offset_y: 31
+  part_id: 17
+  type_id: 42
+  root_offset_x: 26
+  root_offset_y: 0
+  root_rot: -0.52258104
+}
+part {
+  window_size_x: 83
+  window_size_y: 15
+  pos_offset_x: 41
+  pos_offset_y: 7
+  part_id: 17
+  type_id: 43
+  root_offset_x: -19
+  root_offset_y: -30
+  root_rot: 8.1995325
+}
+part {
+  window_size_x: 51
+  window_size_y: 50
+  pos_offset_x: 25
+  pos_offset_y: 25
+  part_id: 17
+  type_id: 44
+  root_offset_x: 36
+  root_offset_y: -2
+  root_rot: 19.300549
+}
+part {
+  window_size_x: 52
+  window_size_y: 44
+  pos_offset_x: 26
+  pos_offset_y: 22
+  part_id: 17
+  type_id: 45
+  root_offset_x: 26
+  root_offset_y: -11
+  root_rot: -7.8311243
+}
+part {
+  window_size_x: 57
+  window_size_y: 31
+  pos_offset_x: 28
+  pos_offset_y: 15
+  part_id: 17
+  type_id: 46
+  root_offset_x: 28
+  root_offset_y: -50
+  root_rot: -6.7257395
+}
+part {
+  window_size_x: 102
+  window_size_y: 12
+  pos_offset_x: 51
+  pos_offset_y: 6
+  part_id: 17
+  type_id: 47
+  root_offset_x: 48
+  root_offset_y: -38
+  root_rot: -14.32026
+}
+part {
+  window_size_x: 70
+  window_size_y: 21
+  pos_offset_x: 35
+  pos_offset_y: 10
+  part_id: 17
+  type_id: 48
+  root_offset_x: -5
+  root_offset_y: -18
+  root_rot: 6.3358669
+}
+part {
+  window_size_x: 61
+  window_size_y: 61
+  pos_offset_x: 30
+  pos_offset_y: 30
+  part_id: 17
+  type_id: 49
+  root_offset_x: 39
+  root_offset_y: 0
+  root_rot: 4.5723982
+}
+part {
+  window_size_x: 38
+  window_size_y: 62
+  pos_offset_x: 19
+  pos_offset_y: 31
+  part_id: 17
+  type_id: 50
+  root_offset_x: 27
+  root_offset_y: 6
+  root_rot: 18.281858
+}
+part {
+  window_size_x: 70
+  window_size_y: 35
+  pos_offset_x: 35
+  pos_offset_y: 17
+  part_id: 17
+  type_id: 51
+  root_offset_x: -7
+  root_offset_y: -13
+  root_rot: -4.8986621
+}
+part {
+  window_size_x: 35
+  window_size_y: 74
+  pos_offset_x: 17
+  pos_offset_y: 37
+  part_id: 17
+  type_id: 52
+  root_offset_x: 26
+  root_offset_y: 10
+  root_rot: 11.643615
+}
+part {
+  window_size_x: 51
+  window_size_y: 64
+  pos_offset_x: 25
+  pos_offset_y: 32
+  part_id: 17
+  type_id: 53
+  root_offset_x: -7
+  root_offset_y: -58
+  root_rot: 3.5594327
+}
+part {
+  window_size_x: 41
+  window_size_y: 32
+  pos_offset_x: 20
+  pos_offset_y: 16
+  part_id: 17
+  type_id: 54
+  root_offset_x: 27
+  root_offset_y: -17
+  root_rot: -0.69185853
+}
+part {
+  window_size_x: 61
+  window_size_y: 57
+  pos_offset_x: 30
+  pos_offset_y: 28
+  part_id: 17
+  type_id: 55
+  root_offset_x: 30
+  root_offset_y: -4
+  root_rot: -12.979995
+}
+part {
+  window_size_x: 70
+  window_size_y: 44
+  pos_offset_x: 35
+  pos_offset_y: 22
+  part_id: 17
+  type_id: 56
+  root_offset_x: 25
+  root_offset_y: -9
+  root_rot: -20.227282
+}
+part {
+  window_size_x: 43
+  window_size_y: 40
+  pos_offset_x: 21
+  pos_offset_y: 20
+  part_id: 17
+  type_id: 57
+  root_offset_x: 31
+  root_offset_y: -11
+  root_rot: 1.9292675
+}
+part {
+  window_size_x: 41
+  window_size_y: 50
+  pos_offset_x: 20
+  pos_offset_y: 25
+  part_id: 17
+  type_id: 58
+  root_offset_x: 28
+  root_offset_y: -5
+  root_rot: 2.7378721
+}
+part {
+  window_size_x: 54
+  window_size_y: 68
+  pos_offset_x: 27
+  pos_offset_y: 34
+  part_id: 17
+  type_id: 59
+  root_offset_x: 31
+  root_offset_y: 1
+  root_rot: -3.5907767
+}
+part {
+  window_size_x: 67
+  window_size_y: 43
+  pos_offset_x: 33
+  pos_offset_y: 21
+  part_id: 17
+  type_id: 60
+  root_offset_x: 25
+  root_offset_y: -49
+  root_rot: -11.415467
+}
+part {
+  window_size_x: 50
+  window_size_y: 34
+  pos_offset_x: 25
+  pos_offset_y: 17
+  part_id: 17
+  type_id: 61
+  root_offset_x: 28
+  root_offset_y: -15
+  root_rot: 2.5448523
+}
+part {
+  window_size_x: 57
+  window_size_y: 38
+  pos_offset_x: 28
+  pos_offset_y: 19
+  part_id: 17
+  type_id: 62
+  root_offset_x: 0
+  root_offset_y: -11
+  root_rot: -1.7604606
+}
+part {
+  window_size_x: 41
+  window_size_y: 48
+  pos_offset_x: 20
+  pos_offset_y: 24
+  part_id: 17
+  type_id: 63
+  root_offset_x: 14
+  root_offset_y: -6
+  root_rot: 14.084917
+}
+part {
+  window_size_x: 85
+  window_size_y: 30
+  pos_offset_x: 42
+  pos_offset_y: 15
+  part_id: 17
+  type_id: 64
+  root_offset_x: 37
+  root_offset_y: -45
+  root_rot: -11.42629
+}
+part {
+  window_size_x: 55
+  window_size_y: 24
+  pos_offset_x: 27
+  pos_offset_y: 12
+  part_id: 17
+  type_id: 65
+  root_offset_x: 20
+  root_offset_y: -21
+  root_rot: -3.9527376
+}
+part {
+  window_size_x: 55
+  window_size_y: 25
+  pos_offset_x: 27
+  pos_offset_y: 12
+  part_id: 17
+  type_id: 66
+  root_offset_x: 33
+  root_offset_y: -23
+  root_rot: 6.3426132
+}
+part {
+  window_size_x: 40
+  window_size_y: 73
+  pos_offset_x: 20
+  pos_offset_y: 36
+  part_id: 17
+  type_id: 67
+  root_offset_x: 27
+  root_offset_y: 5
+  root_rot: 0.046003573
+}
+part {
+  window_size_x: 45
+  window_size_y: 57
+  pos_offset_x: 22
+  pos_offset_y: 28
+  part_id: 17
+  type_id: 68
+  root_offset_x: 30
+  root_offset_y: 0
+  root_rot: 4.9058442
+}
+part {
+  window_size_x: 56
+  window_size_y: 60
+  pos_offset_x: 28
+  pos_offset_y: 30
+  part_id: 17
+  type_id: 69
+  root_offset_x: 35
+  root_offset_y: 0
+  root_rot: 8.52369
+}
+part {
+  window_size_x: 42
+  window_size_y: 41
+  pos_offset_x: 21
+  pos_offset_y: 20
+  part_id: 17
+  type_id: 70
+  root_offset_x: 16
+  root_offset_y: -10
+  root_rot: 1.9130962
+}
+part {
+  window_size_x: 34
+  window_size_y: 43
+  pos_offset_x: 17
+  pos_offset_y: 21
+  part_id: 17
+  type_id: 71
+  root_offset_x: 13
+  root_offset_y: -6
+  root_rot: -21.402952
+}
+part {
+  window_size_x: 84
+  window_size_y: 33
+  pos_offset_x: 42
+  pos_offset_y: 16
+  part_id: 17
+  type_id: 72
+  root_offset_x: -13
+  root_offset_y: -5
+  root_rot: 17.71686
+}
+part {
+  window_size_x: 62
+  window_size_y: 24
+  pos_offset_x: 31
+  pos_offset_y: 12
+  part_id: 17
+  type_id: 73
+  root_offset_x: 34
+  root_offset_y: -16
+  root_rot: 10.325007
+}
+part {
+  window_size_x: 54
+  window_size_y: 56
+  pos_offset_x: 27
+  pos_offset_y: 28
+  part_id: 17
+  type_id: 74
+  root_offset_x: 21
+  root_offset_y: -4
+  root_rot: -9.05838
+}
+part {
+  window_size_x: 45
+  window_size_y: 47
+  pos_offset_x: 22
+  pos_offset_y: 23
+  part_id: 17
+  type_id: 75
+  root_offset_x: -1
+  root_offset_y: -40
+  root_rot: 0.091542095
+}
+part {
+  window_size_x: 34
+  window_size_y: 64
+  pos_offset_x: 17
+  pos_offset_y: 32
+  part_id: 17
+  type_id: 76
+  root_offset_x: 20
+  root_offset_y: 1
+  root_rot: 2.7129338
+}
+part {
+  window_size_x: 59
+  window_size_y: 41
+  pos_offset_x: 29
+  pos_offset_y: 20
+  part_id: 17
+  type_id: 77
+  root_offset_x: 33
+  root_offset_y: -9
+  root_rot: 8.585124
+}
+part {
+  window_size_x: 40
+  window_size_y: 35
+  pos_offset_x: 20
+  pos_offset_y: 17
+  part_id: 17
+  type_id: 78
+  root_offset_x: 5
+  root_offset_y: -25
+  root_rot: 14.917474
+}
+part {
+  window_size_x: 54
+  window_size_y: 48
+  pos_offset_x: 27
+  pos_offset_y: 24
+  part_id: 17
+  type_id: 79
+  root_offset_x: 16
+  root_offset_y: -4
+  root_rot: -11.591984
+}
+part {
+  window_size_x: 60
+  window_size_y: 48
+  pos_offset_x: 30
+  pos_offset_y: 24
+  part_id: 17
+  type_id: 80
+  root_offset_x: 2
+  root_offset_y: -7
+  root_rot: -6.6338978
+}
+part {
+  window_size_x: 48
+  window_size_y: 67
+  pos_offset_x: 24
+  pos_offset_y: 33
+  part_id: 17
+  type_id: 81
+  root_offset_x: 2
+  root_offset_y: 9
+  root_rot: -15.431457
+}
+part {
+  window_size_x: 51
+  window_size_y: 37
+  pos_offset_x: 25
+  pos_offset_y: 18
+  part_id: 17
+  type_id: 82
+  root_offset_x: 19
+  root_offset_y: -14
+  root_rot: 0.86870646
+}
+part {
+  window_size_x: 45
+  window_size_y: 56
+  pos_offset_x: 22
+  pos_offset_y: 28
+  part_id: 17
+  type_id: 83
+  root_offset_x: 7
+  root_offset_y: -57
+  root_rot: -36.367905
+}
+part {
+  window_size_x: 61
+  window_size_y: 25
+  pos_offset_x: 30
+  pos_offset_y: 12
+  part_id: 17
+  type_id: 84
+  root_offset_x: -2
+  root_offset_y: -18
+  root_rot: -10.950389
+}
+part {
+  window_size_x: 52
+  window_size_y: 36
+  pos_offset_x: 26
+  pos_offset_y: 18
+  part_id: 17
+  type_id: 85
+  root_offset_x: 10
+  root_offset_y: -9
+  root_rot: 5.0334024
+}
+part {
+  window_size_x: 58
+  window_size_y: 19
+  pos_offset_x: 29
+  pos_offset_y: 9
+  part_id: 17
+  type_id: 86
+  root_offset_x: 21
+  root_offset_y: -45
+  root_rot: -7.6361356
+}
+part {
+  window_size_x: 63
+  window_size_y: 22
+  pos_offset_x: 31
+  pos_offset_y: 11
+  part_id: 17
+  type_id: 87
+  root_offset_x: 37
+  root_offset_y: -21
+  root_rot: 7.4968138
+}
+part {
+  window_size_x: 53
+  window_size_y: 36
+  pos_offset_x: 26
+  pos_offset_y: 18
+  part_id: 17
+  type_id: 88
+  root_offset_x: 20
+  root_offset_y: -12
+  root_rot: -4.0813093
+}
+part {
+  window_size_x: 48
+  window_size_y: 78
+  pos_offset_x: 24
+  pos_offset_y: 39
+  part_id: 17
+  type_id: 89
+  root_offset_x: -2
+  root_offset_y: 16
+  root_rot: -32.612709
+}
+part {
+  window_size_x: 61
+  window_size_y: 40
+  pos_offset_x: 30
+  pos_offset_y: 20
+  part_id: 17
+  type_id: 90
+  root_offset_x: 6
+  root_offset_y: -11
+  root_rot: -6.6270485
+}
+part {
+  window_size_x: 63
+  window_size_y: 69
+  pos_offset_x: 31
+  pos_offset_y: 34
+  part_id: 17
+  type_id: 91
+  root_offset_x: -4
+  root_offset_y: -46
+  root_rot: -51.339111
+}
+part {
+  window_size_x: 87
+  window_size_y: 9
+  pos_offset_x: 43
+  pos_offset_y: 4
+  part_id: 17
+  type_id: 92
+  root_offset_x: 49
+  root_offset_y: -29
+  root_rot: 5.93654
+}
+part {
+  window_size_x: 47
+  window_size_y: 54
+  pos_offset_x: 23
+  pos_offset_y: 27
+  part_id: 17
+  type_id: 93
+  root_offset_x: 26
+  root_offset_y: -3
+  root_rot: -0.40190944
+}
+part {
+  window_size_x: 74
+  window_size_y: 55
+  pos_offset_x: 37
+  pos_offset_y: 27
+  part_id: 17
+  type_id: 94
+  root_offset_x: -11
+  root_offset_y: 6
+  root_rot: 6.8936434
+}
+part {
+  window_size_x: 37
+  window_size_y: 71
+  pos_offset_x: 18
+  pos_offset_y: 35
+  part_id: 17
+  type_id: 95
+  root_offset_x: 20
+  root_offset_y: 6
+  root_rot: -7.2909703
+}
+part {
+  window_size_x: 67
+  window_size_y: 46
+  pos_offset_x: 33
+  pos_offset_y: 23
+  part_id: 17
+  type_id: 96
+  root_offset_x: 37
+  root_offset_y: -2
+  root_rot: 15.514108
+}
+part {
+  window_size_x: 80
+  window_size_y: 24
+  pos_offset_x: 40
+  pos_offset_y: 12
+  part_id: 17
+  type_id: 97
+  root_offset_x: -21
+  root_offset_y: -15
+  root_rot: -4.8767886
+}
+part {
+  window_size_x: 61
+  window_size_y: 30
+  pos_offset_x: 30
+  pos_offset_y: 15
+  part_id: 17
+  type_id: 98
+  root_offset_x: 32
+  root_offset_y: -11
+  root_rot: 10.793386
+}
+part {
+  window_size_x: 67
+  window_size_y: 52
+  pos_offset_x: 33
+  pos_offset_y: 26
+  part_id: 17
+  type_id: 99
+  root_offset_x: -17
+  root_offset_y: -31
+  root_rot: -3.4229407
+}
+part {
+  window_size_x: 54
+  window_size_y: 39
+  pos_offset_x: 27
+  pos_offset_y: 19
+  part_id: 17
+  type_id: 100
+  root_offset_x: 15
+  root_offset_y: -11
+  root_rot: -14.705271
+}
+part {
+  window_size_x: 44
+  window_size_y: 60
+  pos_offset_x: 22
+  pos_offset_y: 30
+  part_id: 17
+  type_id: 101
+  root_offset_x: 16
+  root_offset_y: 0
+  root_rot: -0.76416588
+}
+part {
+  window_size_x: 57
+  window_size_y: 59
+  pos_offset_x: 28
+  pos_offset_y: 29
+  part_id: 17
+  type_id: 102
+  root_offset_x: 6
+  root_offset_y: 0
+  root_rot: -7.9387846
+}
+part {
+  window_size_x: 49
+  window_size_y: 66
+  pos_offset_x: 24
+  pos_offset_y: 33
+  part_id: 17
+  type_id: 103
+  root_offset_x: 14
+  root_offset_y: 2
+  root_rot: -17.220264
+}
+part {
+  window_size_x: 47
+  window_size_y: 48
+  pos_offset_x: 23
+  pos_offset_y: 24
+  part_id: 17
+  type_id: 104
+  root_offset_x: 19
+  root_offset_y: -1
+  root_rot: -7.6543803
+}
+part {
+  window_size_x: 71
+  window_size_y: 155
+  pos_offset_x: 35
+  pos_offset_y: 77
+  part_id: 18
+  type_id: 0
+  root_offset_x: 1
+  root_offset_y: 44
+  root_rot: -1.6528125
+}
+part {
+  window_size_x: 125
+  window_size_y: 160
+  pos_offset_x: 62
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 1
+  root_offset_x: -19
+  root_offset_y: 46
+  root_rot: 10.510273
+}
+part {
+  window_size_x: 82
+  window_size_y: 160
+  pos_offset_x: 41
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 2
+  root_offset_x: -13
+  root_offset_y: 49
+  root_rot: 18.791288
+}
+part {
+  window_size_x: 88
+  window_size_y: 147
+  pos_offset_x: 44
+  pos_offset_y: 73
+  part_id: 18
+  type_id: 3
+  root_offset_x: 6
+  root_offset_y: 41
+  root_rot: 16.078632
+}
+part {
+  window_size_x: 155
+  window_size_y: 157
+  pos_offset_x: 77
+  pos_offset_y: 78
+  part_id: 18
+  type_id: 4
+  root_offset_x: 6
+  root_offset_y: 46
+  root_rot: -5.723031
+}
+part {
+  window_size_x: 88
+  window_size_y: 163
+  pos_offset_x: 44
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 5
+  root_offset_x: -14
+  root_offset_y: 50
+  root_rot: 13.678581
+}
+part {
+  window_size_x: 62
+  window_size_y: 163
+  pos_offset_x: 31
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 6
+  root_offset_x: 1
+  root_offset_y: 48
+  root_rot: 0.15701988
+}
+part {
+  window_size_x: 138
+  window_size_y: 159
+  pos_offset_x: 69
+  pos_offset_y: 79
+  part_id: 18
+  type_id: 7
+  root_offset_x: -19
+  root_offset_y: 48
+  root_rot: 9.3367367
+}
+part {
+  window_size_x: 99
+  window_size_y: 141
+  pos_offset_x: 49
+  pos_offset_y: 70
+  part_id: 18
+  type_id: 8
+  root_offset_x: -4
+  root_offset_y: 39
+  root_rot: -14.37099
+}
+part {
+  window_size_x: 74
+  window_size_y: 158
+  pos_offset_x: 37
+  pos_offset_y: 79
+  part_id: 18
+  type_id: 9
+  root_offset_x: -2
+  root_offset_y: 51
+  root_rot: 31.884829
+}
+part {
+  window_size_x: 68
+  window_size_y: 153
+  pos_offset_x: 34
+  pos_offset_y: 76
+  part_id: 18
+  type_id: 10
+  root_offset_x: -2
+  root_offset_y: 43
+  root_rot: 1.3274854
+}
+part {
+  window_size_x: 82
+  window_size_y: 187
+  pos_offset_x: 41
+  pos_offset_y: 93
+  part_id: 18
+  type_id: 11
+  root_offset_x: 14
+  root_offset_y: 62
+  root_rot: -1.7997026
+}
+part {
+  window_size_x: 85
+  window_size_y: 163
+  pos_offset_x: 42
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 12
+  root_offset_x: -11
+  root_offset_y: 55
+  root_rot: 31.287329
+}
+part {
+  window_size_x: 78
+  window_size_y: 171
+  pos_offset_x: 39
+  pos_offset_y: 85
+  part_id: 18
+  type_id: 13
+  root_offset_x: -13
+  root_offset_y: 53
+  root_rot: 2.8035305
+}
+part {
+  window_size_x: 61
+  window_size_y: 160
+  pos_offset_x: 30
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 14
+  root_offset_x: 0
+  root_offset_y: 48
+  root_rot: -3.7004027
+}
+part {
+  window_size_x: 111
+  window_size_y: 150
+  pos_offset_x: 55
+  pos_offset_y: 75
+  part_id: 18
+  type_id: 15
+  root_offset_x: 7
+  root_offset_y: 43
+  root_rot: -12.989614
+}
+part {
+  window_size_x: 92
+  window_size_y: 161
+  pos_offset_x: 46
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 16
+  root_offset_x: 9
+  root_offset_y: 47
+  root_rot: -3.115623
+}
+part {
+  window_size_x: 84
+  window_size_y: 154
+  pos_offset_x: 42
+  pos_offset_y: 77
+  part_id: 18
+  type_id: 17
+  root_offset_x: 6
+  root_offset_y: 46
+  root_rot: 13.694349
+}
+part {
+  window_size_x: 57
+  window_size_y: 168
+  pos_offset_x: 28
+  pos_offset_y: 84
+  part_id: 18
+  type_id: 18
+  root_offset_x: 4
+  root_offset_y: 51
+  root_rot: -1.0651766
+}
+part {
+  window_size_x: 67
+  window_size_y: 162
+  pos_offset_x: 33
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 19
+  root_offset_x: 9
+  root_offset_y: 47
+  root_rot: -5.94903
+}
+part {
+  window_size_x: 84
+  window_size_y: 175
+  pos_offset_x: 42
+  pos_offset_y: 87
+  part_id: 18
+  type_id: 20
+  root_offset_x: 7
+  root_offset_y: 54
+  root_rot: -3.0311379
+}
+part {
+  window_size_x: 70
+  window_size_y: 161
+  pos_offset_x: 35
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 21
+  root_offset_x: 8
+  root_offset_y: 47
+  root_rot: -0.61582959
+}
+part {
+  window_size_x: 96
+  window_size_y: 167
+  pos_offset_x: 48
+  pos_offset_y: 83
+  part_id: 18
+  type_id: 22
+  root_offset_x: 3
+  root_offset_y: 52
+  root_rot: -16.190044
+}
+part {
+  window_size_x: 81
+  window_size_y: 149
+  pos_offset_x: 40
+  pos_offset_y: 74
+  part_id: 18
+  type_id: 23
+  root_offset_x: -4
+  root_offset_y: 42
+  root_rot: -4.6453047
+}
+part {
+  window_size_x: 85
+  window_size_y: 152
+  pos_offset_x: 42
+  pos_offset_y: 76
+  part_id: 18
+  type_id: 24
+  root_offset_x: 0
+  root_offset_y: 46
+  root_rot: -24.036045
+}
+part {
+  window_size_x: 157
+  window_size_y: 152
+  pos_offset_x: 78
+  pos_offset_y: 76
+  part_id: 18
+  type_id: 25
+  root_offset_x: 0
+  root_offset_y: 44
+  root_rot: 1.2250224
+}
+part {
+  window_size_x: 97
+  window_size_y: 169
+  pos_offset_x: 48
+  pos_offset_y: 84
+  part_id: 18
+  type_id: 26
+  root_offset_x: 1
+  root_offset_y: 53
+  root_rot: 8.8082762
+}
+part {
+  window_size_x: 55
+  window_size_y: 168
+  pos_offset_x: 27
+  pos_offset_y: 84
+  part_id: 18
+  type_id: 27
+  root_offset_x: -4
+  root_offset_y: 51
+  root_rot: 0.44375485
+}
+part {
+  window_size_x: 78
+  window_size_y: 173
+  pos_offset_x: 39
+  pos_offset_y: 86
+  part_id: 18
+  type_id: 28
+  root_offset_x: 12
+  root_offset_y: 53
+  root_rot: 3.5942781
+}
+part {
+  window_size_x: 89
+  window_size_y: 145
+  pos_offset_x: 44
+  pos_offset_y: 72
+  part_id: 18
+  type_id: 29
+  root_offset_x: -18
+  root_offset_y: 39
+  root_rot: 7.193151
+}
+part {
+  window_size_x: 59
+  window_size_y: 168
+  pos_offset_x: 29
+  pos_offset_y: 84
+  part_id: 18
+  type_id: 30
+  root_offset_x: 0
+  root_offset_y: 52
+  root_rot: -2.0882547
+}
+part {
+  window_size_x: 149
+  window_size_y: 157
+  pos_offset_x: 74
+  pos_offset_y: 78
+  part_id: 18
+  type_id: 31
+  root_offset_x: -1
+  root_offset_y: 51
+  root_rot: -17.672472
+}
+part {
+  window_size_x: 72
+  window_size_y: 160
+  pos_offset_x: 36
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 32
+  root_offset_x: -4
+  root_offset_y: 49
+  root_rot: -10.762074
+}
+part {
+  window_size_x: 110
+  window_size_y: 136
+  pos_offset_x: 55
+  pos_offset_y: 68
+  part_id: 18
+  type_id: 33
+  root_offset_x: -24
+  root_offset_y: -38
+  root_rot: 57.029049
+}
+part {
+  window_size_x: 83
+  window_size_y: 145
+  pos_offset_x: 41
+  pos_offset_y: 72
+  part_id: 18
+  type_id: 34
+  root_offset_x: 15
+  root_offset_y: 39
+  root_rot: -5.0479708
+}
+part {
+  window_size_x: 74
+  window_size_y: 155
+  pos_offset_x: 37
+  pos_offset_y: 77
+  part_id: 18
+  type_id: 35
+  root_offset_x: 6
+  root_offset_y: 46
+  root_rot: 10.233437
+}
+part {
+  window_size_x: 89
+  window_size_y: 159
+  pos_offset_x: 44
+  pos_offset_y: 79
+  part_id: 18
+  type_id: 36
+  root_offset_x: 16
+  root_offset_y: 50
+  root_rot: -23.675354
+}
+part {
+  window_size_x: 64
+  window_size_y: 154
+  pos_offset_x: 32
+  pos_offset_y: 77
+  part_id: 18
+  type_id: 37
+  root_offset_x: -2
+  root_offset_y: 44
+  root_rot: 4.2058911
+}
+part {
+  window_size_x: 169
+  window_size_y: 134
+  pos_offset_x: 84
+  pos_offset_y: 67
+  part_id: 18
+  type_id: 38
+  root_offset_x: 0
+  root_offset_y: 34
+  root_rot: -0.12371789
+}
+part {
+  window_size_x: 61
+  window_size_y: 141
+  pos_offset_x: 30
+  pos_offset_y: 70
+  part_id: 18
+  type_id: 39
+  root_offset_x: -6
+  root_offset_y: 39
+  root_rot: 7.8445311
+}
+part {
+  window_size_x: 126
+  window_size_y: 162
+  pos_offset_x: 63
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 40
+  root_offset_x: 22
+  root_offset_y: 50
+  root_rot: -14.399961
+}
+part {
+  window_size_x: 77
+  window_size_y: 163
+  pos_offset_x: 38
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 41
+  root_offset_x: 0
+  root_offset_y: -54
+  root_rot: -16.8149
+}
+part {
+  window_size_x: 66
+  window_size_y: 161
+  pos_offset_x: 33
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 42
+  root_offset_x: -6
+  root_offset_y: 48
+  root_rot: 1.6632782
+}
+part {
+  window_size_x: 122
+  window_size_y: 145
+  pos_offset_x: 61
+  pos_offset_y: 72
+  part_id: 18
+  type_id: 43
+  root_offset_x: -1
+  root_offset_y: 42
+  root_rot: 16.916061
+}
+part {
+  window_size_x: 82
+  window_size_y: 188
+  pos_offset_x: 41
+  pos_offset_y: 94
+  part_id: 18
+  type_id: 44
+  root_offset_x: -7
+  root_offset_y: 61
+  root_rot: 0.36175054
+}
+part {
+  window_size_x: 90
+  window_size_y: 171
+  pos_offset_x: 45
+  pos_offset_y: 85
+  part_id: 18
+  type_id: 45
+  root_offset_x: 6
+  root_offset_y: 51
+  root_rot: 1.2097834
+}
+part {
+  window_size_x: 121
+  window_size_y: 161
+  pos_offset_x: 60
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 46
+  root_offset_x: 17
+  root_offset_y: 46
+  root_rot: -10.591188
+}
+part {
+  window_size_x: 66
+  window_size_y: 162
+  pos_offset_x: 33
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 47
+  root_offset_x: -1
+  root_offset_y: 48
+  root_rot: 7.9462976
+}
+part {
+  window_size_x: 59
+  window_size_y: 148
+  pos_offset_x: 29
+  pos_offset_y: 74
+  part_id: 18
+  type_id: 48
+  root_offset_x: 3
+  root_offset_y: 41
+  root_rot: -3.2447851
+}
+part {
+  window_size_x: 152
+  window_size_y: 139
+  pos_offset_x: 76
+  pos_offset_y: 69
+  part_id: 18
+  type_id: 49
+  root_offset_x: -14
+  root_offset_y: 38
+  root_rot: 12.01128
+}
+part {
+  window_size_x: 85
+  window_size_y: 149
+  pos_offset_x: 42
+  pos_offset_y: 74
+  part_id: 18
+  type_id: 50
+  root_offset_x: 12
+  root_offset_y: 43
+  root_rot: -3.739902
+}
+part {
+  window_size_x: 61
+  window_size_y: 162
+  pos_offset_x: 30
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 51
+  root_offset_x: -2
+  root_offset_y: 48
+  root_rot: 2.8082635
+}
+part {
+  window_size_x: 76
+  window_size_y: 184
+  pos_offset_x: 38
+  pos_offset_y: 92
+  part_id: 18
+  type_id: 52
+  root_offset_x: -10
+  root_offset_y: 59
+  root_rot: -2.1461365
+}
+part {
+  window_size_x: 98
+  window_size_y: 147
+  pos_offset_x: 49
+  pos_offset_y: 73
+  part_id: 18
+  type_id: 53
+  root_offset_x: -4
+  root_offset_y: 43
+  root_rot: 8.0047
+}
+part {
+  window_size_x: 116
+  window_size_y: 177
+  pos_offset_x: 58
+  pos_offset_y: 88
+  part_id: 18
+  type_id: 54
+  root_offset_x: 0
+  root_offset_y: 56
+  root_rot: -6.9716711
+}
+part {
+  window_size_x: 79
+  window_size_y: 173
+  pos_offset_x: 39
+  pos_offset_y: 86
+  part_id: 18
+  type_id: 55
+  root_offset_x: -10
+  root_offset_y: 54
+  root_rot: 4.9727464
+}
+part {
+  window_size_x: 80
+  window_size_y: 158
+  pos_offset_x: 40
+  pos_offset_y: 79
+  part_id: 18
+  type_id: 56
+  root_offset_x: 7
+  root_offset_y: 53
+  root_rot: -35.755394
+}
+part {
+  window_size_x: 48
+  window_size_y: 179
+  pos_offset_x: 24
+  pos_offset_y: 89
+  part_id: 18
+  type_id: 57
+  root_offset_x: -1
+  root_offset_y: 58
+  root_rot: 1.4281659
+}
+part {
+  window_size_x: 58
+  window_size_y: 157
+  pos_offset_x: 29
+  pos_offset_y: 78
+  part_id: 18
+  type_id: 58
+  root_offset_x: -3
+  root_offset_y: 45
+  root_rot: 0.93787313
+}
+part {
+  window_size_x: 60
+  window_size_y: 166
+  pos_offset_x: 30
+  pos_offset_y: 83
+  part_id: 18
+  type_id: 59
+  root_offset_x: 4
+  root_offset_y: 50
+  root_rot: 0.69131184
+}
+part {
+  window_size_x: 91
+  window_size_y: 163
+  pos_offset_x: 45
+  pos_offset_y: 81
+  part_id: 18
+  type_id: 60
+  root_offset_x: -6
+  root_offset_y: 48
+  root_rot: 1.8508463
+}
+part {
+  window_size_x: 79
+  window_size_y: 171
+  pos_offset_x: 39
+  pos_offset_y: 85
+  part_id: 18
+  type_id: 61
+  root_offset_x: 11
+  root_offset_y: 54
+  root_rot: -5.6878963
+}
+part {
+  window_size_x: 85
+  window_size_y: 161
+  pos_offset_x: 42
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 62
+  root_offset_x: -15
+  root_offset_y: 49
+  root_rot: 18.161137
+}
+part {
+  window_size_x: 172
+  window_size_y: 125
+  pos_offset_x: 86
+  pos_offset_y: 62
+  part_id: 18
+  type_id: 63
+  root_offset_x: 27
+  root_offset_y: 34
+  root_rot: -22.6387
+}
+part {
+  window_size_x: 71
+  window_size_y: 159
+  pos_offset_x: 35
+  pos_offset_y: 79
+  part_id: 18
+  type_id: 64
+  root_offset_x: 1
+  root_offset_y: 47
+  root_rot: 1.8273126
+}
+part {
+  window_size_x: 71
+  window_size_y: 165
+  pos_offset_x: 35
+  pos_offset_y: 82
+  part_id: 18
+  type_id: 65
+  root_offset_x: -10
+  root_offset_y: 48
+  root_rot: 5.4802155
+}
+part {
+  window_size_x: 87
+  window_size_y: 167
+  pos_offset_x: 43
+  pos_offset_y: 83
+  part_id: 18
+  type_id: 66
+  root_offset_x: -18
+  root_offset_y: 50
+  root_rot: 3.8638728
+}
+part {
+  window_size_x: 63
+  window_size_y: 173
+  pos_offset_x: 31
+  pos_offset_y: 86
+  part_id: 18
+  type_id: 67
+  root_offset_x: 0
+  root_offset_y: 53
+  root_rot: 0.0045889476
+}
+part {
+  window_size_x: 86
+  window_size_y: 160
+  pos_offset_x: 43
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 68
+  root_offset_x: -2
+  root_offset_y: 47
+  root_rot: -14.682315
+}
+part {
+  window_size_x: 66
+  window_size_y: 164
+  pos_offset_x: 33
+  pos_offset_y: 82
+  part_id: 18
+  type_id: 69
+  root_offset_x: -1
+  root_offset_y: 49
+  root_rot: -7.9127722
+}
+part {
+  window_size_x: 58
+  window_size_y: 186
+  pos_offset_x: 29
+  pos_offset_y: 93
+  part_id: 18
+  type_id: 70
+  root_offset_x: 3
+  root_offset_y: 58
+  root_rot: -1.4237067
+}
+part {
+  window_size_x: 153
+  window_size_y: 151
+  pos_offset_x: 76
+  pos_offset_y: 75
+  part_id: 18
+  type_id: 71
+  root_offset_x: -4
+  root_offset_y: 53
+  root_rot: 30.820307
+}
+part {
+  window_size_x: 136
+  window_size_y: 156
+  pos_offset_x: 68
+  pos_offset_y: 78
+  part_id: 18
+  type_id: 72
+  root_offset_x: 12
+  root_offset_y: 44
+  root_rot: -7.6816974
+}
+part {
+  window_size_x: 74
+  window_size_y: 181
+  pos_offset_x: 37
+  pos_offset_y: 90
+  part_id: 18
+  type_id: 73
+  root_offset_x: 0
+  root_offset_y: 58
+  root_rot: 0.0723855
+}
+part {
+  window_size_x: 122
+  window_size_y: 160
+  pos_offset_x: 61
+  pos_offset_y: 80
+  part_id: 18
+  type_id: 74
+  root_offset_x: -8
+  root_offset_y: 45
+  root_rot: 5.0982833
+}
+part {
+  window_size_x: 101
+  window_size_y: 150
+  pos_offset_x: 50
+  pos_offset_y: 75
+  part_id: 18
+  type_id: 75
+  root_offset_x: -5
+  root_offset_y: 42
+  root_rot: 13.66121
+}
+part {
+  window_size_x: 119
+  window_size_y: 129
+  pos_offset_x: 59
+  pos_offset_y: 64
+  part_id: 18
+  type_id: 76
+  root_offset_x: -14
+  root_offset_y: 32
+  root_rot: 4.1063638
+}
+part {
+  window_size_x: 141
+  window_size_y: 153
+  pos_offset_x: 70
+  pos_offset_y: 76
+  part_id: 18
+  type_id: 77
+  root_offset_x: 12
+  root_offset_y: 45
+  root_rot: -10.226446
+}
+part {
+  window_size_x: 93
+  window_size_y: 164
+  pos_offset_x: 46
+  pos_offset_y: 82
+  part_id: 18
+  type_id: 78
+  root_offset_x: 5
+  root_offset_y: 48
+  root_rot: -1.7134748
+}
+part {
+  window_size_x: 116
+  window_size_y: 164
+  pos_offset_x: 58
+  pos_offset_y: 82
+  part_id: 18
+  type_id: 79
+  root_offset_x: -11
+  root_offset_y: 50
+  root_rot: 14.373885
+}
+part {
+  window_size_x: 74
+  window_size_y: 95
+  pos_offset_x: 37
+  pos_offset_y: 47
+  part_id: 19
+  type_id: 0
+  root_offset_x: -1
+  root_offset_y: 79
+  root_rot: -4.22335
+}
+part {
+  window_size_x: 125
+  window_size_y: 96
+  pos_offset_x: 62
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 1
+  root_offset_x: -20
+  root_offset_y: 78
+  root_rot: 13.175673
+}
+part {
+  window_size_x: 77
+  window_size_y: 96
+  pos_offset_x: 38
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 2
+  root_offset_x: 2
+  root_offset_y: 74
+  root_rot: 26.807562
+}
+part {
+  window_size_x: 67
+  window_size_y: 96
+  pos_offset_x: 33
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 3
+  root_offset_x: 0
+  root_offset_y: 79
+  root_rot: -1.6949894
+}
+part {
+  window_size_x: 127
+  window_size_y: 107
+  pos_offset_x: 63
+  pos_offset_y: 53
+  part_id: 19
+  type_id: 4
+  root_offset_x: -26
+  root_offset_y: 82
+  root_rot: 11.287799
+}
+part {
+  window_size_x: 82
+  window_size_y: 91
+  pos_offset_x: 41
+  pos_offset_y: 45
+  part_id: 19
+  type_id: 5
+  root_offset_x: -13
+  root_offset_y: 77
+  root_rot: 3.4893312
+}
+part {
+  window_size_x: 167
+  window_size_y: 108
+  pos_offset_x: 83
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 6
+  root_offset_x: 51
+  root_offset_y: 63
+  root_rot: -43.640953
+}
+part {
+  window_size_x: 55
+  window_size_y: 103
+  pos_offset_x: 27
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 7
+  root_offset_x: 3
+  root_offset_y: 83
+  root_rot: 2.4658983
+}
+part {
+  window_size_x: 153
+  window_size_y: 91
+  pos_offset_x: 76
+  pos_offset_y: 45
+  part_id: 19
+  type_id: 8
+  root_offset_x: -22
+  root_offset_y: 70
+  root_rot: 23.623774
+}
+part {
+  window_size_x: 57
+  window_size_y: 87
+  pos_offset_x: 28
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 9
+  root_offset_x: 0
+  root_offset_y: 75
+  root_rot: 1.0541115
+}
+part {
+  window_size_x: 85
+  window_size_y: 82
+  pos_offset_x: 42
+  pos_offset_y: 41
+  part_id: 19
+  type_id: 10
+  root_offset_x: 19
+  root_offset_y: 70
+  root_rot: -7.4739833
+}
+part {
+  window_size_x: 85
+  window_size_y: 102
+  pos_offset_x: 42
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 11
+  root_offset_x: -13
+  root_offset_y: 81
+  root_rot: 2.94761
+}
+part {
+  window_size_x: 64
+  window_size_y: 97
+  pos_offset_x: 32
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 12
+  root_offset_x: 8
+  root_offset_y: 80
+  root_rot: -5.1375546
+}
+part {
+  window_size_x: 66
+  window_size_y: 101
+  pos_offset_x: 33
+  pos_offset_y: 50
+  part_id: 19
+  type_id: 13
+  root_offset_x: 5
+  root_offset_y: 80
+  root_rot: -2.9604654
+}
+part {
+  window_size_x: 76
+  window_size_y: 104
+  pos_offset_x: 38
+  pos_offset_y: 52
+  part_id: 19
+  type_id: 14
+  root_offset_x: -5
+  root_offset_y: 81
+  root_rot: 3.6606126
+}
+part {
+  window_size_x: 67
+  window_size_y: 109
+  pos_offset_x: 33
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 15
+  root_offset_x: 5
+  root_offset_y: 84
+  root_rot: -1.4197121
+}
+part {
+  window_size_x: 61
+  window_size_y: 99
+  pos_offset_x: 30
+  pos_offset_y: 49
+  part_id: 19
+  type_id: 16
+  root_offset_x: 1
+  root_offset_y: 82
+  root_rot: -0.38531005
+}
+part {
+  window_size_x: 87
+  window_size_y: 110
+  pos_offset_x: 43
+  pos_offset_y: 55
+  part_id: 19
+  type_id: 17
+  root_offset_x: -3
+  root_offset_y: 84
+  root_rot: -5.4098134
+}
+part {
+  window_size_x: 86
+  window_size_y: 87
+  pos_offset_x: 43
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 18
+  root_offset_x: -12
+  root_offset_y: 73
+  root_rot: 5.7266874
+}
+part {
+  window_size_x: 155
+  window_size_y: 86
+  pos_offset_x: 77
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 19
+  root_offset_x: 7
+  root_offset_y: 72
+  root_rot: -6.4157376
+}
+part {
+  window_size_x: 108
+  window_size_y: 95
+  pos_offset_x: 54
+  pos_offset_y: 47
+  part_id: 19
+  type_id: 20
+  root_offset_x: -8
+  root_offset_y: 78
+  root_rot: 9.5947428
+}
+part {
+  window_size_x: 62
+  window_size_y: 118
+  pos_offset_x: 31
+  pos_offset_y: 59
+  part_id: 19
+  type_id: 21
+  root_offset_x: 0
+  root_offset_y: 92
+  root_rot: -0.10404771
+}
+part {
+  window_size_x: 144
+  window_size_y: 93
+  pos_offset_x: 72
+  pos_offset_y: 46
+  part_id: 19
+  type_id: 22
+  root_offset_x: 7
+  root_offset_y: 75
+  root_rot: 2.8214679
+}
+part {
+  window_size_x: 76
+  window_size_y: 89
+  pos_offset_x: 38
+  pos_offset_y: 44
+  part_id: 19
+  type_id: 23
+  root_offset_x: -8
+  root_offset_y: 73
+  root_rot: -8.90561
+}
+part {
+  window_size_x: 56
+  window_size_y: 75
+  pos_offset_x: 28
+  pos_offset_y: 37
+  part_id: 19
+  type_id: 24
+  root_offset_x: 4
+  root_offset_y: 67
+  root_rot: -4.3348446
+}
+part {
+  window_size_x: 81
+  window_size_y: 107
+  pos_offset_x: 40
+  pos_offset_y: 53
+  part_id: 19
+  type_id: 25
+  root_offset_x: 6
+  root_offset_y: 84
+  root_rot: -0.3129876
+}
+part {
+  window_size_x: 63
+  window_size_y: 97
+  pos_offset_x: 31
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 26
+  root_offset_x: -6
+  root_offset_y: 80
+  root_rot: 4.1960816
+}
+part {
+  window_size_x: 166
+  window_size_y: 74
+  pos_offset_x: 83
+  pos_offset_y: 37
+  part_id: 19
+  type_id: 27
+  root_offset_x: -2
+  root_offset_y: 68
+  root_rot: 3.1121714
+}
+part {
+  window_size_x: 95
+  window_size_y: 81
+  pos_offset_x: 47
+  pos_offset_y: 40
+  part_id: 19
+  type_id: 28
+  root_offset_x: -4
+  root_offset_y: 65
+  root_rot: -24.071901
+}
+part {
+  window_size_x: 135
+  window_size_y: 101
+  pos_offset_x: 67
+  pos_offset_y: 50
+  part_id: 19
+  type_id: 29
+  root_offset_x: 28
+  root_offset_y: 78
+  root_rot: -17.171404
+}
+part {
+  window_size_x: 61
+  window_size_y: 104
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 19
+  type_id: 30
+  root_offset_x: -5
+  root_offset_y: 83
+  root_rot: 0.53701431
+}
+part {
+  window_size_x: 110
+  window_size_y: 85
+  pos_offset_x: 55
+  pos_offset_y: 42
+  part_id: 19
+  type_id: 31
+  root_offset_x: -33
+  root_offset_y: -66
+  root_rot: 22.090899
+}
+part {
+  window_size_x: 85
+  window_size_y: 108
+  pos_offset_x: 42
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 32
+  root_offset_x: 6
+  root_offset_y: 86
+  root_rot: -3.4648101
+}
+part {
+  window_size_x: 108
+  window_size_y: 109
+  pos_offset_x: 54
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 33
+  root_offset_x: -5
+  root_offset_y: 85
+  root_rot: -2.1154759
+}
+part {
+  window_size_x: 67
+  window_size_y: 102
+  pos_offset_x: 33
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 34
+  root_offset_x: 3
+  root_offset_y: 77
+  root_rot: 9.4947987
+}
+part {
+  window_size_x: 87
+  window_size_y: 88
+  pos_offset_x: 43
+  pos_offset_y: 44
+  part_id: 19
+  type_id: 35
+  root_offset_x: 11
+  root_offset_y: 74
+  root_rot: -4.68845
+}
+part {
+  window_size_x: 61
+  window_size_y: 104
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 19
+  type_id: 36
+  root_offset_x: 4
+  root_offset_y: 83
+  root_rot: 1.0730186
+}
+part {
+  window_size_x: 79
+  window_size_y: 126
+  pos_offset_x: 39
+  pos_offset_y: 63
+  part_id: 19
+  type_id: 37
+  root_offset_x: -12
+  root_offset_y: 92
+  root_rot: -3.2794709
+}
+part {
+  window_size_x: 116
+  window_size_y: 65
+  pos_offset_x: 58
+  pos_offset_y: 32
+  part_id: 19
+  type_id: 38
+  root_offset_x: -19
+  root_offset_y: 58
+  root_rot: 7.6151237
+}
+part {
+  window_size_x: 80
+  window_size_y: 117
+  pos_offset_x: 40
+  pos_offset_y: 58
+  part_id: 19
+  type_id: 39
+  root_offset_x: 0
+  root_offset_y: 89
+  root_rot: 0.91980004
+}
+part {
+  window_size_x: 45
+  window_size_y: 118
+  pos_offset_x: 22
+  pos_offset_y: 59
+  part_id: 19
+  type_id: 40
+  root_offset_x: 1
+  root_offset_y: 89
+  root_rot: -1.5003465
+}
+part {
+  window_size_x: 80
+  window_size_y: 111
+  pos_offset_x: 40
+  pos_offset_y: 55
+  part_id: 19
+  type_id: 41
+  root_offset_x: -14
+  root_offset_y: 87
+  root_rot: 6.5629754
+}
+part {
+  window_size_x: 60
+  window_size_y: 97
+  pos_offset_x: 30
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 42
+  root_offset_x: 0
+  root_offset_y: 78
+  root_rot: 3.8149738
+}
+part {
+  window_size_x: 68
+  window_size_y: 100
+  pos_offset_x: 34
+  pos_offset_y: 50
+  part_id: 19
+  type_id: 43
+  root_offset_x: -4
+  root_offset_y: 76
+  root_rot: -9.5036907
+}
+part {
+  window_size_x: 71
+  window_size_y: 114
+  pos_offset_x: 35
+  pos_offset_y: 57
+  part_id: 19
+  type_id: 44
+  root_offset_x: 7
+  root_offset_y: 87
+  root_rot: -0.87923461
+}
+part {
+  window_size_x: 113
+  window_size_y: 67
+  pos_offset_x: 56
+  pos_offset_y: 33
+  part_id: 19
+  type_id: 45
+  root_offset_x: -48
+  root_offset_y: -3
+  root_rot: 26.916065
+}
+part {
+  window_size_x: 151
+  window_size_y: 107
+  pos_offset_x: 75
+  pos_offset_y: 53
+  part_id: 19
+  type_id: 46
+  root_offset_x: 0
+  root_offset_y: 78
+  root_rot: -16.376371
+}
+part {
+  window_size_x: 125
+  window_size_y: 94
+  pos_offset_x: 62
+  pos_offset_y: 47
+  part_id: 19
+  type_id: 47
+  root_offset_x: 20
+  root_offset_y: 78
+  root_rot: -13.890793
+}
+part {
+  window_size_x: 85
+  window_size_y: 97
+  pos_offset_x: 42
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 48
+  root_offset_x: -7
+  root_offset_y: 75
+  root_rot: -17.097002
+}
+part {
+  window_size_x: 74
+  window_size_y: 96
+  pos_offset_x: 37
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 49
+  root_offset_x: 2
+  root_offset_y: 79
+  root_rot: -0.1661977
+}
+part {
+  window_size_x: 91
+  window_size_y: 107
+  pos_offset_x: 45
+  pos_offset_y: 53
+  part_id: 19
+  type_id: 50
+  root_offset_x: -18
+  root_offset_y: 84
+  root_rot: -2.7355537
+}
+part {
+  window_size_x: 62
+  window_size_y: 109
+  pos_offset_x: 31
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 51
+  root_offset_x: 0
+  root_offset_y: 86
+  root_rot: -0.92881274
+}
+part {
+  window_size_x: 64
+  window_size_y: 97
+  pos_offset_x: 32
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 52
+  root_offset_x: -7
+  root_offset_y: 80
+  root_rot: 1.6102011
+}
+part {
+  window_size_x: 53
+  window_size_y: 93
+  pos_offset_x: 26
+  pos_offset_y: 46
+  part_id: 19
+  type_id: 53
+  root_offset_x: 0
+  root_offset_y: 77
+  root_rot: -0.11594156
+}
+part {
+  window_size_x: 84
+  window_size_y: 99
+  pos_offset_x: 42
+  pos_offset_y: 49
+  part_id: 19
+  type_id: 54
+  root_offset_x: 13
+  root_offset_y: 80
+  root_rot: -7.6529422
+}
+part {
+  window_size_x: 68
+  window_size_y: 103
+  pos_offset_x: 34
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 55
+  root_offset_x: -7
+  root_offset_y: 82
+  root_rot: 9.9424534
+}
+part {
+  window_size_x: 78
+  window_size_y: 109
+  pos_offset_x: 39
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 56
+  root_offset_x: 14
+  root_offset_y: 84
+  root_rot: -4.3192186
+}
+part {
+  window_size_x: 137
+  window_size_y: 88
+  pos_offset_x: 68
+  pos_offset_y: 44
+  part_id: 19
+  type_id: 57
+  root_offset_x: -16
+  root_offset_y: 75
+  root_rot: 3.3855755
+}
+part {
+  window_size_x: 56
+  window_size_y: 88
+  pos_offset_x: 28
+  pos_offset_y: 44
+  part_id: 19
+  type_id: 58
+  root_offset_x: 0
+  root_offset_y: 75
+  root_rot: 0.14663863
+}
+part {
+  window_size_x: 147
+  window_size_y: 94
+  pos_offset_x: 73
+  pos_offset_y: 47
+  part_id: 19
+  type_id: 59
+  root_offset_x: 16
+  root_offset_y: 73
+  root_rot: -23.017572
+}
+part {
+  window_size_x: 105
+  window_size_y: 86
+  pos_offset_x: 52
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 60
+  root_offset_x: -4
+  root_offset_y: 73
+  root_rot: 17.192039
+}
+part {
+  window_size_x: 70
+  window_size_y: 95
+  pos_offset_x: 35
+  pos_offset_y: 47
+  part_id: 19
+  type_id: 61
+  root_offset_x: 7
+  root_offset_y: 79
+  root_rot: -1.059589
+}
+part {
+  window_size_x: 60
+  window_size_y: 87
+  pos_offset_x: 30
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 62
+  root_offset_x: 4
+  root_offset_y: 75
+  root_rot: -1.0344297
+}
+part {
+  window_size_x: 117
+  window_size_y: 126
+  pos_offset_x: 58
+  pos_offset_y: 63
+  part_id: 19
+  type_id: 63
+  root_offset_x: -3
+  root_offset_y: 90
+  root_rot: -2.76157
+}
+part {
+  window_size_x: 96
+  window_size_y: 97
+  pos_offset_x: 48
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 64
+  root_offset_x: 1
+  root_offset_y: 80
+  root_rot: 2.8824992
+}
+part {
+  window_size_x: 59
+  window_size_y: 117
+  pos_offset_x: 29
+  pos_offset_y: 58
+  part_id: 19
+  type_id: 65
+  root_offset_x: -1
+  root_offset_y: 89
+  root_rot: 0.28090703
+}
+part {
+  window_size_x: 71
+  window_size_y: 120
+  pos_offset_x: 35
+  pos_offset_y: 60
+  part_id: 19
+  type_id: 66
+  root_offset_x: 5
+  root_offset_y: 91
+  root_rot: 8.7841253
+}
+part {
+  window_size_x: 97
+  window_size_y: 79
+  pos_offset_x: 48
+  pos_offset_y: 39
+  part_id: 19
+  type_id: 67
+  root_offset_x: 4
+  root_offset_y: 64
+  root_rot: 23.629578
+}
+part {
+  window_size_x: 56
+  window_size_y: 110
+  pos_offset_x: 28
+  pos_offset_y: 55
+  part_id: 19
+  type_id: 68
+  root_offset_x: -4
+  root_offset_y: 86
+  root_rot: 3.8058689
+}
+part {
+  window_size_x: 111
+  window_size_y: 94
+  pos_offset_x: 55
+  pos_offset_y: 47
+  part_id: 19
+  type_id: 69
+  root_offset_x: 9
+  root_offset_y: 78
+  root_rot: -12.009358
+}
+part {
+  window_size_x: 61
+  window_size_y: 86
+  pos_offset_x: 30
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 70
+  root_offset_x: -4
+  root_offset_y: 75
+  root_rot: 1.5298707
+}
+part {
+  window_size_x: 113
+  window_size_y: 85
+  pos_offset_x: 56
+  pos_offset_y: 42
+  part_id: 19
+  type_id: 71
+  root_offset_x: 6
+  root_offset_y: 73
+  root_rot: -11.859715
+}
+part {
+  window_size_x: 171
+  window_size_y: 66
+  pos_offset_x: 85
+  pos_offset_y: 33
+  part_id: 19
+  type_id: 72
+  root_offset_x: 19
+  root_offset_y: 59
+  root_rot: -17.460266
+}
+part {
+  window_size_x: 71
+  window_size_y: 111
+  pos_offset_x: 35
+  pos_offset_y: 55
+  part_id: 19
+  type_id: 73
+  root_offset_x: 0
+  root_offset_y: -81
+  root_rot: -17.994083
+}
+part {
+  window_size_x: 57
+  window_size_y: 109
+  pos_offset_x: 28
+  pos_offset_y: 54
+  part_id: 19
+  type_id: 74
+  root_offset_x: 5
+  root_offset_y: 85
+  root_rot: -3.57288
+}
+part {
+  window_size_x: 53
+  window_size_y: 102
+  pos_offset_x: 26
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 75
+  root_offset_x: 0
+  root_offset_y: 82
+  root_rot: -5.2378893
+}
+part {
+  window_size_x: 50
+  window_size_y: 93
+  pos_offset_x: 25
+  pos_offset_y: 46
+  part_id: 19
+  type_id: 76
+  root_offset_x: 0
+  root_offset_y: 78
+  root_rot: 1.7394404
+}
+part {
+  window_size_x: 121
+  window_size_y: 87
+  pos_offset_x: 60
+  pos_offset_y: 43
+  part_id: 19
+  type_id: 77
+  root_offset_x: -7
+  root_offset_y: 75
+  root_rot: 8.9249582
+}
+part {
+  window_size_x: 110
+  window_size_y: 110
+  pos_offset_x: 55
+  pos_offset_y: 55
+  part_id: 19
+  type_id: 78
+  root_offset_x: 7
+  root_offset_y: 85
+  root_rot: 0.90254116
+}
+part {
+  window_size_x: 69
+  window_size_y: 103
+  pos_offset_x: 34
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 79
+  root_offset_x: 13
+  root_offset_y: 83
+  root_rot: -5.9772711
+}
+part {
+  window_size_x: 161
+  window_size_y: 90
+  pos_offset_x: 80
+  pos_offset_y: 45
+  part_id: 19
+  type_id: 80
+  root_offset_x: -5
+  root_offset_y: 76
+  root_rot: 5.5072417
+}
+part {
+  window_size_x: 82
+  window_size_y: 100
+  pos_offset_x: 41
+  pos_offset_y: 50
+  part_id: 19
+  type_id: 81
+  root_offset_x: -8
+  root_offset_y: 81
+  root_rot: 9.0974169
+}
+part {
+  window_size_x: 64
+  window_size_y: 97
+  pos_offset_x: 32
+  pos_offset_y: 48
+  part_id: 19
+  type_id: 82
+  root_offset_x: 0
+  root_offset_y: 78
+  root_rot: -8.1578169
+}
+part {
+  window_size_x: 89
+  window_size_y: 102
+  pos_offset_x: 44
+  pos_offset_y: 51
+  part_id: 19
+  type_id: 83
+  root_offset_x: 13
+  root_offset_y: 80
+  root_rot: -11.539166
+}
+part {
+  window_size_x: 79
+  window_size_y: 104
+  pos_offset_x: 39
+  pos_offset_y: 52
+  part_id: 19
+  type_id: 84
+  root_offset_x: -9
+  root_offset_y: 82
+  root_rot: 3.8040385
+}
+part {
+  window_size_x: 87
+  window_size_y: 98
+  pos_offset_x: 43
+  pos_offset_y: 49
+  part_id: 19
+  type_id: 85
+  root_offset_x: 12
+  root_offset_y: 78
+  root_rot: 9.05837
+}
+part {
+  window_size_x: 73
+  window_size_y: 112
+  pos_offset_x: 36
+  pos_offset_y: 56
+  part_id: 19
+  type_id: 86
+  root_offset_x: -1
+  root_offset_y: 84
+  root_rot: -16.896301
+}
+part {
+  window_size_x: 65
+  window_size_y: 101
+  pos_offset_x: 32
+  pos_offset_y: 50
+  part_id: 19
+  type_id: 87
+  root_offset_x: 5
+  root_offset_y: 81
+  root_rot: 4.6580644
+}
+part {
+  window_size_x: 33
+  window_size_y: 85
+  pos_offset_x: 16
+  pos_offset_y: 42
+  part_id: 20
+  type_id: 0
+  root_offset_x: -10
+  root_offset_y: 74
+  root_rot: 3.1436944
+}
+part {
+  window_size_x: 35
+  window_size_y: 107
+  pos_offset_x: 17
+  pos_offset_y: 53
+  part_id: 20
+  type_id: 1
+  root_offset_x: -10
+  root_offset_y: 86
+  root_rot: -3.4634626
+}
+part {
+  window_size_x: 49
+  window_size_y: 79
+  pos_offset_x: 24
+  pos_offset_y: 39
+  part_id: 20
+  type_id: 2
+  root_offset_x: -23
+  root_offset_y: 73
+  root_rot: 2.1811476
+}
+part {
+  window_size_x: 41
+  window_size_y: 96
+  pos_offset_x: 20
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 3
+  root_offset_x: -12
+  root_offset_y: 80
+  root_rot: -7.1440315
+}
+part {
+  window_size_x: 85
+  window_size_y: 93
+  pos_offset_x: 42
+  pos_offset_y: 46
+  part_id: 20
+  type_id: 4
+  root_offset_x: -40
+  root_offset_y: 77
+  root_rot: 2.7587607
+}
+part {
+  window_size_x: 68
+  window_size_y: 96
+  pos_offset_x: 34
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 5
+  root_offset_x: -34
+  root_offset_y: 79
+  root_rot: 6.4802713
+}
+part {
+  window_size_x: 52
+  window_size_y: 90
+  pos_offset_x: 26
+  pos_offset_y: 45
+  part_id: 20
+  type_id: 6
+  root_offset_x: -20
+  root_offset_y: 78
+  root_rot: -0.35576475
+}
+part {
+  window_size_x: 66
+  window_size_y: 91
+  pos_offset_x: 33
+  pos_offset_y: 45
+  part_id: 20
+  type_id: 7
+  root_offset_x: -28
+  root_offset_y: 77
+  root_rot: -4.6769691
+}
+part {
+  window_size_x: 60
+  window_size_y: 95
+  pos_offset_x: 30
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 8
+  root_offset_x: -25
+  root_offset_y: 78
+  root_rot: 0.89583534
+}
+part {
+  window_size_x: 45
+  window_size_y: 69
+  pos_offset_x: 22
+  pos_offset_y: 34
+  part_id: 20
+  type_id: 9
+  root_offset_x: -16
+  root_offset_y: 65
+  root_rot: -1.7731045
+}
+part {
+  window_size_x: 38
+  window_size_y: 96
+  pos_offset_x: 19
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 10
+  root_offset_x: -12
+  root_offset_y: 82
+  root_rot: 2.1220343
+}
+part {
+  window_size_x: 53
+  window_size_y: 103
+  pos_offset_x: 26
+  pos_offset_y: 51
+  part_id: 20
+  type_id: 11
+  root_offset_x: -20
+  root_offset_y: 83
+  root_rot: -1.2125595
+}
+part {
+  window_size_x: 82
+  window_size_y: 80
+  pos_offset_x: 41
+  pos_offset_y: 40
+  part_id: 20
+  type_id: 12
+  root_offset_x: 43
+  root_offset_y: -60
+  root_rot: -40.723656
+}
+part {
+  window_size_x: 64
+  window_size_y: 77
+  pos_offset_x: 32
+  pos_offset_y: 38
+  part_id: 20
+  type_id: 13
+  root_offset_x: -4
+  root_offset_y: 71
+  root_rot: -4.4702778
+}
+part {
+  window_size_x: 57
+  window_size_y: 99
+  pos_offset_x: 28
+  pos_offset_y: 49
+  part_id: 20
+  type_id: 14
+  root_offset_x: -16
+  root_offset_y: 79
+  root_rot: -15.544323
+}
+part {
+  window_size_x: 33
+  window_size_y: 106
+  pos_offset_x: 16
+  pos_offset_y: 53
+  part_id: 20
+  type_id: 15
+  root_offset_x: -11
+  root_offset_y: 86
+  root_rot: 1.9317058
+}
+part {
+  window_size_x: 34
+  window_size_y: 96
+  pos_offset_x: 17
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 16
+  root_offset_x: -10
+  root_offset_y: 81
+  root_rot: -2.7296355
+}
+part {
+  window_size_x: 42
+  window_size_y: 87
+  pos_offset_x: 21
+  pos_offset_y: 43
+  part_id: 20
+  type_id: 17
+  root_offset_x: -16
+  root_offset_y: 77
+  root_rot: 1.0375111
+}
+part {
+  window_size_x: 89
+  window_size_y: 88
+  pos_offset_x: 44
+  pos_offset_y: 44
+  part_id: 20
+  type_id: 18
+  root_offset_x: 21
+  root_offset_y: 76
+  root_rot: 2.2444239
+}
+part {
+  window_size_x: 68
+  window_size_y: 64
+  pos_offset_x: 34
+  pos_offset_y: 32
+  part_id: 20
+  type_id: 19
+  root_offset_x: 11
+  root_offset_y: 67
+  root_rot: -7.9267211
+}
+part {
+  window_size_x: 74
+  window_size_y: 100
+  pos_offset_x: 37
+  pos_offset_y: 50
+  part_id: 20
+  type_id: 20
+  root_offset_x: -30
+  root_offset_y: 81
+  root_rot: -8.4717808
+}
+part {
+  window_size_x: 34
+  window_size_y: 107
+  pos_offset_x: 17
+  pos_offset_y: 53
+  part_id: 20
+  type_id: 21
+  root_offset_x: -10
+  root_offset_y: 88
+  root_rot: -0.75005728
+}
+part {
+  window_size_x: 48
+  window_size_y: 85
+  pos_offset_x: 24
+  pos_offset_y: 42
+  part_id: 20
+  type_id: 22
+  root_offset_x: -2
+  root_offset_y: 76
+  root_rot: 0.44680047
+}
+part {
+  window_size_x: 40
+  window_size_y: 97
+  pos_offset_x: 20
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 23
+  root_offset_x: -5
+  root_offset_y: 81
+  root_rot: 1.325247
+}
+part {
+  window_size_x: 35
+  window_size_y: 103
+  pos_offset_x: 17
+  pos_offset_y: 51
+  part_id: 20
+  type_id: 24
+  root_offset_x: -7
+  root_offset_y: 83
+  root_rot: 0.30494571
+}
+part {
+  window_size_x: 46
+  window_size_y: 102
+  pos_offset_x: 23
+  pos_offset_y: 51
+  part_id: 20
+  type_id: 25
+  root_offset_x: -9
+  root_offset_y: 79
+  root_rot: 20.720907
+}
+part {
+  window_size_x: 106
+  window_size_y: 23
+  pos_offset_x: 53
+  pos_offset_y: 11
+  part_id: 20
+  type_id: 26
+  root_offset_x: -52
+  root_offset_y: 0
+  root_rot: 52.529438
+}
+part {
+  window_size_x: 34
+  window_size_y: 101
+  pos_offset_x: 17
+  pos_offset_y: 50
+  part_id: 20
+  type_id: 27
+  root_offset_x: -10
+  root_offset_y: 82
+  root_rot: -2.9543073
+}
+part {
+  window_size_x: 63
+  window_size_y: 84
+  pos_offset_x: 31
+  pos_offset_y: 42
+  part_id: 20
+  type_id: 28
+  root_offset_x: 6
+  root_offset_y: 75
+  root_rot: -3.282819
+}
+part {
+  window_size_x: 113
+  window_size_y: 45
+  pos_offset_x: 56
+  pos_offset_y: 22
+  part_id: 20
+  type_id: 29
+  root_offset_x: -64
+  root_offset_y: 45
+  root_rot: 35.304657
+}
+part {
+  window_size_x: 35
+  window_size_y: 97
+  pos_offset_x: 17
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 30
+  root_offset_x: -7
+  root_offset_y: 81
+  root_rot: 1.1421894
+}
+part {
+  window_size_x: 36
+  window_size_y: 101
+  pos_offset_x: 18
+  pos_offset_y: 50
+  part_id: 20
+  type_id: 31
+  root_offset_x: -12
+  root_offset_y: 84
+  root_rot: 1.0414073
+}
+part {
+  window_size_x: 35
+  window_size_y: 90
+  pos_offset_x: 17
+  pos_offset_y: 45
+  part_id: 20
+  type_id: 32
+  root_offset_x: -11
+  root_offset_y: 77
+  root_rot: -1.0638326
+}
+part {
+  window_size_x: 71
+  window_size_y: 86
+  pos_offset_x: 35
+  pos_offset_y: 43
+  part_id: 20
+  type_id: 33
+  root_offset_x: -33
+  root_offset_y: 73
+  root_rot: 4.43442
+}
+part {
+  window_size_x: 42
+  window_size_y: 116
+  pos_offset_x: 21
+  pos_offset_y: 58
+  part_id: 20
+  type_id: 34
+  root_offset_x: -4
+  root_offset_y: 91
+  root_rot: 0.014100295
+}
+part {
+  window_size_x: 75
+  window_size_y: 55
+  pos_offset_x: 37
+  pos_offset_y: 27
+  part_id: 20
+  type_id: 35
+  root_offset_x: -27
+  root_offset_y: 24
+  root_rot: -5.82987
+}
+part {
+  window_size_x: 55
+  window_size_y: 95
+  pos_offset_x: 27
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 36
+  root_offset_x: -26
+  root_offset_y: 79
+  root_rot: 6.5687366
+}
+part {
+  window_size_x: 40
+  window_size_y: 112
+  pos_offset_x: 20
+  pos_offset_y: 56
+  part_id: 20
+  type_id: 37
+  root_offset_x: -5
+  root_offset_y: 88
+  root_rot: 3.4068911
+}
+part {
+  window_size_x: 89
+  window_size_y: 83
+  pos_offset_x: 44
+  pos_offset_y: 41
+  part_id: 20
+  type_id: 38
+  root_offset_x: -43
+  root_offset_y: 73
+  root_rot: 5.0308046
+}
+part {
+  window_size_x: 42
+  window_size_y: 81
+  pos_offset_x: 21
+  pos_offset_y: 40
+  part_id: 20
+  type_id: 39
+  root_offset_x: -2
+  root_offset_y: 73
+  root_rot: -3.8688252
+}
+part {
+  window_size_x: 41
+  window_size_y: 106
+  pos_offset_x: 20
+  pos_offset_y: 53
+  part_id: 20
+  type_id: 40
+  root_offset_x: -2
+  root_offset_y: 85
+  root_rot: -4.2931724
+}
+part {
+  window_size_x: 36
+  window_size_y: 73
+  pos_offset_x: 18
+  pos_offset_y: 36
+  part_id: 20
+  type_id: 41
+  root_offset_x: -6
+  root_offset_y: 68
+  root_rot: -6.440805
+}
+part {
+  window_size_x: 47
+  window_size_y: 108
+  pos_offset_x: 23
+  pos_offset_y: 54
+  part_id: 20
+  type_id: 42
+  root_offset_x: -16
+  root_offset_y: 85
+  root_rot: -3.4453018
+}
+part {
+  window_size_x: 47
+  window_size_y: 60
+  pos_offset_x: 23
+  pos_offset_y: 30
+  part_id: 20
+  type_id: 43
+  root_offset_x: -2
+  root_offset_y: 63
+  root_rot: 0.84161484
+}
+part {
+  window_size_x: 36
+  window_size_y: 82
+  pos_offset_x: 18
+  pos_offset_y: 41
+  part_id: 20
+  type_id: 44
+  root_offset_x: -14
+  root_offset_y: 73
+  root_rot: 2.5731168
+}
+part {
+  window_size_x: 41
+  window_size_y: 105
+  pos_offset_x: 20
+  pos_offset_y: 52
+  part_id: 20
+  type_id: 45
+  root_offset_x: -14
+  root_offset_y: 84
+  root_rot: -1.8821781
+}
+part {
+  window_size_x: 44
+  window_size_y: 87
+  pos_offset_x: 22
+  pos_offset_y: 43
+  part_id: 20
+  type_id: 46
+  root_offset_x: -5
+  root_offset_y: 76
+  root_rot: 5.9600224
+}
+part {
+  window_size_x: 68
+  window_size_y: 93
+  pos_offset_x: 34
+  pos_offset_y: 46
+  part_id: 20
+  type_id: 47
+  root_offset_x: 11
+  root_offset_y: 81
+  root_rot: 0.72516656
+}
+part {
+  window_size_x: 55
+  window_size_y: 78
+  pos_offset_x: 27
+  pos_offset_y: 39
+  part_id: 20
+  type_id: 48
+  root_offset_x: 5
+  root_offset_y: 74
+  root_rot: -5.9038935
+}
+part {
+  window_size_x: 71
+  window_size_y: 61
+  pos_offset_x: 35
+  pos_offset_y: 30
+  part_id: 20
+  type_id: 49
+  root_offset_x: -27
+  root_offset_y: 63
+  root_rot: -5.8393831
+}
+part {
+  window_size_x: 46
+  window_size_y: 95
+  pos_offset_x: 23
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 50
+  root_offset_x: -21
+  root_offset_y: 78
+  root_rot: 7.2727718
+}
+part {
+  window_size_x: 50
+  window_size_y: 71
+  pos_offset_x: 25
+  pos_offset_y: 35
+  part_id: 20
+  type_id: 51
+  root_offset_x: -15
+  root_offset_y: 69
+  root_rot: -9.33536
+}
+part {
+  window_size_x: 48
+  window_size_y: 99
+  pos_offset_x: 24
+  pos_offset_y: 49
+  part_id: 20
+  type_id: 52
+  root_offset_x: -10
+  root_offset_y: 81
+  root_rot: -11.134414
+}
+part {
+  window_size_x: 42
+  window_size_y: 86
+  pos_offset_x: 21
+  pos_offset_y: 43
+  part_id: 20
+  type_id: 53
+  root_offset_x: -13
+  root_offset_y: 74
+  root_rot: -4.2381082
+}
+part {
+  window_size_x: 47
+  window_size_y: 83
+  pos_offset_x: 23
+  pos_offset_y: 41
+  part_id: 20
+  type_id: 54
+  root_offset_x: -9
+  root_offset_y: 75
+  root_rot: 1.9832453
+}
+part {
+  window_size_x: 37
+  window_size_y: 94
+  pos_offset_x: 18
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 55
+  root_offset_x: -13
+  root_offset_y: 78
+  root_rot: -1.4383348
+}
+part {
+  window_size_x: 46
+  window_size_y: 110
+  pos_offset_x: 23
+  pos_offset_y: 55
+  part_id: 20
+  type_id: 56
+  root_offset_x: -13
+  root_offset_y: 86
+  root_rot: -5.6380157
+}
+part {
+  window_size_x: 55
+  window_size_y: 98
+  pos_offset_x: 27
+  pos_offset_y: 49
+  part_id: 20
+  type_id: 57
+  root_offset_x: 1
+  root_offset_y: 82
+  root_rot: 2.4658086
+}
+part {
+  window_size_x: 61
+  window_size_y: 82
+  pos_offset_x: 30
+  pos_offset_y: 41
+  part_id: 20
+  type_id: 58
+  root_offset_x: 2
+  root_offset_y: 71
+  root_rot: 6.4729772
+}
+part {
+  window_size_x: 43
+  window_size_y: 109
+  pos_offset_x: 21
+  pos_offset_y: 54
+  part_id: 20
+  type_id: 59
+  root_offset_x: 17
+  root_offset_y: -82
+  root_rot: -38.123524
+}
+part {
+  window_size_x: 57
+  window_size_y: 95
+  pos_offset_x: 28
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 60
+  root_offset_x: -12
+  root_offset_y: 79
+  root_rot: 12.544867
+}
+part {
+  window_size_x: 71
+  window_size_y: 73
+  pos_offset_x: 35
+  pos_offset_y: 36
+  part_id: 20
+  type_id: 61
+  root_offset_x: -29
+  root_offset_y: 70
+  root_rot: 2.3610857
+}
+part {
+  window_size_x: 35
+  window_size_y: 91
+  pos_offset_x: 17
+  pos_offset_y: 45
+  part_id: 20
+  type_id: 62
+  root_offset_x: -5
+  root_offset_y: 78
+  root_rot: -2.0971274
+}
+part {
+  window_size_x: 43
+  window_size_y: 97
+  pos_offset_x: 21
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 63
+  root_offset_x: -5
+  root_offset_y: 79
+  root_rot: 3.3023794
+}
+part {
+  window_size_x: 58
+  window_size_y: 96
+  pos_offset_x: 29
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 64
+  root_offset_x: 0
+  root_offset_y: -74
+  root_rot: -60.869617
+}
+part {
+  window_size_x: 61
+  window_size_y: 85
+  pos_offset_x: 30
+  pos_offset_y: 42
+  part_id: 20
+  type_id: 65
+  root_offset_x: -16
+  root_offset_y: 74
+  root_rot: -16.398268
+}
+part {
+  window_size_x: 49
+  window_size_y: 83
+  pos_offset_x: 24
+  pos_offset_y: 41
+  part_id: 20
+  type_id: 66
+  root_offset_x: -14
+  root_offset_y: 73
+  root_rot: -9.819356
+}
+part {
+  window_size_x: 60
+  window_size_y: 77
+  pos_offset_x: 30
+  pos_offset_y: 38
+  part_id: 20
+  type_id: 67
+  root_offset_x: -19
+  root_offset_y: 66
+  root_rot: -11.60929
+}
+part {
+  window_size_x: 49
+  window_size_y: 78
+  pos_offset_x: 24
+  pos_offset_y: 39
+  part_id: 20
+  type_id: 68
+  root_offset_x: -18
+  root_offset_y: 71
+  root_rot: 11.813532
+}
+part {
+  window_size_x: 91
+  window_size_y: 72
+  pos_offset_x: 45
+  pos_offset_y: 36
+  part_id: 20
+  type_id: 69
+  root_offset_x: -41
+  root_offset_y: 67
+  root_rot: 7.3032494
+}
+part {
+  window_size_x: 62
+  window_size_y: 86
+  pos_offset_x: 31
+  pos_offset_y: 43
+  part_id: 20
+  type_id: 70
+  root_offset_x: -27
+  root_offset_y: 74
+  root_rot: 4.1095943
+}
+part {
+  window_size_x: 41
+  window_size_y: 113
+  pos_offset_x: 20
+  pos_offset_y: 56
+  part_id: 20
+  type_id: 71
+  root_offset_x: -14
+  root_offset_y: 87
+  root_rot: -4.0339365
+}
+part {
+  window_size_x: 122
+  window_size_y: 32
+  pos_offset_x: 61
+  pos_offset_y: 16
+  part_id: 20
+  type_id: 72
+  root_offset_x: -64
+  root_offset_y: 37
+  root_rot: 28.873205
+}
+part {
+  window_size_x: 43
+  window_size_y: 102
+  pos_offset_x: 21
+  pos_offset_y: 51
+  part_id: 20
+  type_id: 73
+  root_offset_x: -16
+  root_offset_y: 82
+  root_rot: 0.88555336
+}
+part {
+  window_size_x: 46
+  window_size_y: 107
+  pos_offset_x: 23
+  pos_offset_y: 53
+  part_id: 20
+  type_id: 74
+  root_offset_x: -2
+  root_offset_y: 86
+  root_rot: 2.487056
+}
+part {
+  window_size_x: 56
+  window_size_y: 104
+  pos_offset_x: 28
+  pos_offset_y: 52
+  part_id: 20
+  type_id: 75
+  root_offset_x: 3
+  root_offset_y: 85
+  root_rot: -0.49055815
+}
+part {
+  window_size_x: 66
+  window_size_y: 65
+  pos_offset_x: 33
+  pos_offset_y: 32
+  part_id: 20
+  type_id: 76
+  root_offset_x: -16
+  root_offset_y: 60
+  root_rot: -23.320639
+}
+part {
+  window_size_x: 35
+  window_size_y: 112
+  pos_offset_x: 17
+  pos_offset_y: 56
+  part_id: 20
+  type_id: 77
+  root_offset_x: -10
+  root_offset_y: 88
+  root_rot: -1.5498371
+}
+part {
+  window_size_x: 50
+  window_size_y: 93
+  pos_offset_x: 25
+  pos_offset_y: 46
+  part_id: 20
+  type_id: 78
+  root_offset_x: -23
+  root_offset_y: 77
+  root_rot: 5.648654
+}
+part {
+  window_size_x: 76
+  window_size_y: 102
+  pos_offset_x: 38
+  pos_offset_y: 51
+  part_id: 20
+  type_id: 79
+  root_offset_x: 21
+  root_offset_y: 83
+  root_rot: -10.209005
+}
+part {
+  window_size_x: 54
+  window_size_y: 94
+  pos_offset_x: 27
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 80
+  root_offset_x: 0
+  root_offset_y: 77
+  root_rot: 7.9393711
+}
+part {
+  window_size_x: 44
+  window_size_y: 90
+  pos_offset_x: 22
+  pos_offset_y: 45
+  part_id: 20
+  type_id: 81
+  root_offset_x: -2
+  root_offset_y: 77
+  root_rot: 0.1537168
+}
+part {
+  window_size_x: 36
+  window_size_y: 95
+  pos_offset_x: 18
+  pos_offset_y: 47
+  part_id: 20
+  type_id: 82
+  root_offset_x: -9
+  root_offset_y: 80
+  root_rot: -2.8976934
+}
+part {
+  window_size_x: 64
+  window_size_y: 92
+  pos_offset_x: 32
+  pos_offset_y: 46
+  part_id: 20
+  type_id: 83
+  root_offset_x: -32
+  root_offset_y: 78
+  root_rot: 9.9691038
+}
+part {
+  window_size_x: 64
+  window_size_y: 74
+  pos_offset_x: 32
+  pos_offset_y: 37
+  part_id: 20
+  type_id: 84
+  root_offset_x: -30
+  root_offset_y: 66
+  root_rot: 6.0767355
+}
+part {
+  window_size_x: 39
+  window_size_y: 108
+  pos_offset_x: 19
+  pos_offset_y: 54
+  part_id: 20
+  type_id: 85
+  root_offset_x: -13
+  root_offset_y: 87
+  root_rot: -1.3092979
+}
+part {
+  window_size_x: 53
+  window_size_y: 97
+  pos_offset_x: 26
+  pos_offset_y: 48
+  part_id: 20
+  type_id: 86
+  root_offset_x: -9
+  root_offset_y: 80
+  root_rot: -3.9006197
+}
+part {
+  window_size_x: 58
+  window_size_y: 88
+  pos_offset_x: 29
+  pos_offset_y: 44
+  part_id: 21
+  type_id: 0
+  root_offset_x: 14
+  root_offset_y: 77
+  root_rot: 15.645621
+}
+part {
+  window_size_x: 81
+  window_size_y: 89
+  pos_offset_x: 40
+  pos_offset_y: 44
+  part_id: 21
+  type_id: 1
+  root_offset_x: -18
+  root_offset_y: 77
+  root_rot: 1.2022669
+}
+part {
+  window_size_x: 60
+  window_size_y: 99
+  pos_offset_x: 30
+  pos_offset_y: 49
+  part_id: 21
+  type_id: 2
+  root_offset_x: 21
+  root_offset_y: 79
+  root_rot: 11.714896
+}
+part {
+  window_size_x: 61
+  window_size_y: 58
+  pos_offset_x: 30
+  pos_offset_y: 29
+  part_id: 21
+  type_id: 3
+  root_offset_x: 5
+  root_offset_y: 57
+  root_rot: -16.97463
+}
+part {
+  window_size_x: 85
+  window_size_y: 66
+  pos_offset_x: 42
+  pos_offset_y: 33
+  part_id: 21
+  type_id: 4
+  root_offset_x: 33
+  root_offset_y: 65
+  root_rot: 6.6580005
+}
+part {
+  window_size_x: 49
+  window_size_y: 92
+  pos_offset_x: 24
+  pos_offset_y: 46
+  part_id: 21
+  type_id: 5
+  root_offset_x: -9
+  root_offset_y: -71
+  root_rot: 76.150047
+}
+part {
+  window_size_x: 64
+  window_size_y: 79
+  pos_offset_x: 32
+  pos_offset_y: 39
+  part_id: 21
+  type_id: 6
+  root_offset_x: 22
+  root_offset_y: 67
+  root_rot: 8.2922459
+}
+part {
+  window_size_x: 57
+  window_size_y: 82
+  pos_offset_x: 28
+  pos_offset_y: 41
+  part_id: 21
+  type_id: 7
+  root_offset_x: 0
+  root_offset_y: 73
+  root_rot: -5.6026263
+}
+part {
+  window_size_x: 37
+  window_size_y: 82
+  pos_offset_x: 18
+  pos_offset_y: 41
+  part_id: 21
+  type_id: 8
+  root_offset_x: 17
+  root_offset_y: 73
+  root_rot: -6.1992631
+}
+part {
+  window_size_x: 48
+  window_size_y: 85
+  pos_offset_x: 24
+  pos_offset_y: 42
+  part_id: 21
+  type_id: 9
+  root_offset_x: 17
+  root_offset_y: 75
+  root_rot: 4.89819
+}
+part {
+  window_size_x: 61
+  window_size_y: 90
+  pos_offset_x: 30
+  pos_offset_y: 45
+  part_id: 21
+  type_id: 10
+  root_offset_x: 30
+  root_offset_y: 75
+  root_rot: -9.1303854
+}
+part {
+  window_size_x: 41
+  window_size_y: 97
+  pos_offset_x: 20
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 11
+  root_offset_x: 4
+  root_offset_y: 81
+  root_rot: -1.071059
+}
+part {
+  window_size_x: 45
+  window_size_y: 96
+  pos_offset_x: 22
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 12
+  root_offset_x: 3
+  root_offset_y: 79
+  root_rot: -2.0116506
+}
+part {
+  window_size_x: 68
+  window_size_y: 103
+  pos_offset_x: 34
+  pos_offset_y: 51
+  part_id: 21
+  type_id: 13
+  root_offset_x: 1
+  root_offset_y: 78
+  root_rot: -25.623726
+}
+part {
+  window_size_x: 33
+  window_size_y: 100
+  pos_offset_x: 16
+  pos_offset_y: 50
+  part_id: 21
+  type_id: 14
+  root_offset_x: 9
+  root_offset_y: 82
+  root_rot: 1.3268658
+}
+part {
+  window_size_x: 52
+  window_size_y: 103
+  pos_offset_x: 26
+  pos_offset_y: 51
+  part_id: 21
+  type_id: 15
+  root_offset_x: 22
+  root_offset_y: 83
+  root_rot: -1.344395
+}
+part {
+  window_size_x: 38
+  window_size_y: 93
+  pos_offset_x: 19
+  pos_offset_y: 46
+  part_id: 21
+  type_id: 16
+  root_offset_x: 11
+  root_offset_y: 79
+  root_rot: 5.4571414
+}
+part {
+  window_size_x: 36
+  window_size_y: 109
+  pos_offset_x: 18
+  pos_offset_y: 54
+  part_id: 21
+  type_id: 17
+  root_offset_x: 12
+  root_offset_y: 88
+  root_rot: 0.33943236
+}
+part {
+  window_size_x: 41
+  window_size_y: 88
+  pos_offset_x: 20
+  pos_offset_y: 44
+  part_id: 21
+  type_id: 18
+  root_offset_x: 12
+  root_offset_y: 76
+  root_rot: 4.546567
+}
+part {
+  window_size_x: 39
+  window_size_y: 117
+  pos_offset_x: 19
+  pos_offset_y: 58
+  part_id: 21
+  type_id: 19
+  root_offset_x: 5
+  root_offset_y: 92
+  root_rot: 1.3129854
+}
+part {
+  window_size_x: 89
+  window_size_y: 70
+  pos_offset_x: 44
+  pos_offset_y: 35
+  part_id: 21
+  type_id: 20
+  root_offset_x: 38
+  root_offset_y: 66
+  root_rot: -4.8788209
+}
+part {
+  window_size_x: 54
+  window_size_y: 104
+  pos_offset_x: 27
+  pos_offset_y: 52
+  part_id: 21
+  type_id: 21
+  root_offset_x: 13
+  root_offset_y: 81
+  root_rot: 16.300171
+}
+part {
+  window_size_x: 48
+  window_size_y: 107
+  pos_offset_x: 24
+  pos_offset_y: 53
+  part_id: 21
+  type_id: 22
+  root_offset_x: 1
+  root_offset_y: 86
+  root_rot: -1.1065838
+}
+part {
+  window_size_x: 34
+  window_size_y: 74
+  pos_offset_x: 17
+  pos_offset_y: 37
+  part_id: 21
+  type_id: 23
+  root_offset_x: 7
+  root_offset_y: 68
+  root_rot: 4.7922578
+}
+part {
+  window_size_x: 61
+  window_size_y: 104
+  pos_offset_x: 30
+  pos_offset_y: 52
+  part_id: 21
+  type_id: 24
+  root_offset_x: -3
+  root_offset_y: 84
+  root_rot: -6.0822177
+}
+part {
+  window_size_x: 41
+  window_size_y: 89
+  pos_offset_x: 20
+  pos_offset_y: 44
+  part_id: 21
+  type_id: 25
+  root_offset_x: 3
+  root_offset_y: 77
+  root_rot: -0.83211988
+}
+part {
+  window_size_x: 59
+  window_size_y: 84
+  pos_offset_x: 29
+  pos_offset_y: 42
+  part_id: 21
+  type_id: 26
+  root_offset_x: 25
+  root_offset_y: 74
+  root_rot: -1.5344976
+}
+part {
+  window_size_x: 49
+  window_size_y: 99
+  pos_offset_x: 24
+  pos_offset_y: 49
+  part_id: 21
+  type_id: 27
+  root_offset_x: 10
+  root_offset_y: 80
+  root_rot: 11.451733
+}
+part {
+  window_size_x: 64
+  window_size_y: 74
+  pos_offset_x: 32
+  pos_offset_y: 37
+  part_id: 21
+  type_id: 28
+  root_offset_x: 32
+  root_offset_y: 65
+  root_rot: -10.0034
+}
+part {
+  window_size_x: 57
+  window_size_y: 75
+  pos_offset_x: 28
+  pos_offset_y: 37
+  part_id: 21
+  type_id: 29
+  root_offset_x: -8
+  root_offset_y: 72
+  root_rot: 7.796423
+}
+part {
+  window_size_x: 84
+  window_size_y: 91
+  pos_offset_x: 42
+  pos_offset_y: 45
+  part_id: 21
+  type_id: 30
+  root_offset_x: 40
+  root_offset_y: 76
+  root_rot: -0.88369757
+}
+part {
+  window_size_x: 34
+  window_size_y: 86
+  pos_offset_x: 17
+  pos_offset_y: 43
+  part_id: 21
+  type_id: 31
+  root_offset_x: 9
+  root_offset_y: 75
+  root_rot: -0.93784964
+}
+part {
+  window_size_x: 34
+  window_size_y: 108
+  pos_offset_x: 17
+  pos_offset_y: 54
+  part_id: 21
+  type_id: 32
+  root_offset_x: 10
+  root_offset_y: 86
+  root_rot: 3.2673545
+}
+part {
+  window_size_x: 60
+  window_size_y: 96
+  pos_offset_x: 30
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 33
+  root_offset_x: 27
+  root_offset_y: 80
+  root_rot: -6.7187667
+}
+part {
+  window_size_x: 51
+  window_size_y: 79
+  pos_offset_x: 25
+  pos_offset_y: 39
+  part_id: 21
+  type_id: 34
+  root_offset_x: 17
+  root_offset_y: 72
+  root_rot: -10.173836
+}
+part {
+  window_size_x: 51
+  window_size_y: 112
+  pos_offset_x: 25
+  pos_offset_y: 56
+  part_id: 21
+  type_id: 35
+  root_offset_x: 19
+  root_offset_y: 87
+  root_rot: 2.7768583
+}
+part {
+  window_size_x: 45
+  window_size_y: 74
+  pos_offset_x: 22
+  pos_offset_y: 37
+  part_id: 21
+  type_id: 36
+  root_offset_x: 16
+  root_offset_y: 69
+  root_rot: 5.554831
+}
+part {
+  window_size_x: 65
+  window_size_y: 81
+  pos_offset_x: 32
+  pos_offset_y: 40
+  part_id: 21
+  type_id: 37
+  root_offset_x: 0
+  root_offset_y: 73
+  root_rot: 3.1730185
+}
+part {
+  window_size_x: 40
+  window_size_y: 114
+  pos_offset_x: 20
+  pos_offset_y: 57
+  part_id: 21
+  type_id: 38
+  root_offset_x: 15
+  root_offset_y: 86
+  root_rot: 1.5385683
+}
+part {
+  window_size_x: 44
+  window_size_y: 97
+  pos_offset_x: 22
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 39
+  root_offset_x: 10
+  root_offset_y: 76
+  root_rot: -21.420012
+}
+part {
+  window_size_x: 39
+  window_size_y: 104
+  pos_offset_x: 19
+  pos_offset_y: 52
+  part_id: 21
+  type_id: 40
+  root_offset_x: 14
+  root_offset_y: 84
+  root_rot: 1.7660667
+}
+part {
+  window_size_x: 34
+  window_size_y: 116
+  pos_offset_x: 17
+  pos_offset_y: 58
+  part_id: 21
+  type_id: 41
+  root_offset_x: 9
+  root_offset_y: 89
+  root_rot: -0.066613056
+}
+part {
+  window_size_x: 46
+  window_size_y: 127
+  pos_offset_x: 23
+  pos_offset_y: 63
+  part_id: 21
+  type_id: 42
+  root_offset_x: 19
+  root_offset_y: 94
+  root_rot: 2.5876193
+}
+part {
+  window_size_x: 47
+  window_size_y: 110
+  pos_offset_x: 23
+  pos_offset_y: 55
+  part_id: 21
+  type_id: 43
+  root_offset_x: 11
+  root_offset_y: 86
+  root_rot: 9.7311363
+}
+part {
+  window_size_x: 64
+  window_size_y: 83
+  pos_offset_x: 32
+  pos_offset_y: 41
+  part_id: 21
+  type_id: 44
+  root_offset_x: 4
+  root_offset_y: 71
+  root_rot: 21.432339
+}
+part {
+  window_size_x: 59
+  window_size_y: 92
+  pos_offset_x: 29
+  pos_offset_y: 46
+  part_id: 21
+  type_id: 45
+  root_offset_x: 16
+  root_offset_y: 77
+  root_rot: -15.110337
+}
+part {
+  window_size_x: 42
+  window_size_y: 104
+  pos_offset_x: 21
+  pos_offset_y: 52
+  part_id: 21
+  type_id: 46
+  root_offset_x: 14
+  root_offset_y: 83
+  root_rot: 0.20848915
+}
+part {
+  window_size_x: 34
+  window_size_y: 104
+  pos_offset_x: 17
+  pos_offset_y: 52
+  part_id: 21
+  type_id: 47
+  root_offset_x: 10
+  root_offset_y: 84
+  root_rot: 0.85320759
+}
+part {
+  window_size_x: 40
+  window_size_y: 93
+  pos_offset_x: 20
+  pos_offset_y: 46
+  part_id: 21
+  type_id: 48
+  root_offset_x: 14
+  root_offset_y: 79
+  root_rot: 1.7292132
+}
+part {
+  window_size_x: 72
+  window_size_y: 60
+  pos_offset_x: 36
+  pos_offset_y: 30
+  part_id: 21
+  type_id: 49
+  root_offset_x: 25
+  root_offset_y: 62
+  root_rot: 11.618849
+}
+part {
+  window_size_x: 33
+  window_size_y: 107
+  pos_offset_x: 16
+  pos_offset_y: 53
+  part_id: 21
+  type_id: 50
+  root_offset_x: 11
+  root_offset_y: 86
+  root_rot: -1.6302778
+}
+part {
+  window_size_x: 35
+  window_size_y: 94
+  pos_offset_x: 17
+  pos_offset_y: 47
+  part_id: 21
+  type_id: 51
+  root_offset_x: 11
+  root_offset_y: 80
+  root_rot: 0.7224198
+}
+part {
+  window_size_x: 36
+  window_size_y: 96
+  pos_offset_x: 18
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 52
+  root_offset_x: 7
+  root_offset_y: 81
+  root_rot: 6.5020714
+}
+part {
+  window_size_x: 116
+  window_size_y: 41
+  pos_offset_x: 58
+  pos_offset_y: 20
+  part_id: 21
+  type_id: 53
+  root_offset_x: 58
+  root_offset_y: -4
+  root_rot: -42.14954
+}
+part {
+  window_size_x: 101
+  window_size_y: 51
+  pos_offset_x: 50
+  pos_offset_y: 25
+  part_id: 21
+  type_id: 54
+  root_offset_x: 53
+  root_offset_y: 48
+  root_rot: -27.051739
+}
+part {
+  window_size_x: 44
+  window_size_y: 106
+  pos_offset_x: 22
+  pos_offset_y: 53
+  part_id: 21
+  type_id: 55
+  root_offset_x: 17
+  root_offset_y: 84
+  root_rot: 2.1359916
+}
+part {
+  window_size_x: 42
+  window_size_y: 100
+  pos_offset_x: 21
+  pos_offset_y: 50
+  part_id: 21
+  type_id: 56
+  root_offset_x: 13
+  root_offset_y: 80
+  root_rot: 4.5147781
+}
+part {
+  window_size_x: 70
+  window_size_y: 72
+  pos_offset_x: 35
+  pos_offset_y: 36
+  part_id: 21
+  type_id: 57
+  root_offset_x: 16
+  root_offset_y: 64
+  root_rot: 26.083702
+}
+part {
+  window_size_x: 41
+  window_size_y: 81
+  pos_offset_x: 20
+  pos_offset_y: 40
+  part_id: 21
+  type_id: 58
+  root_offset_x: 2
+  root_offset_y: 73
+  root_rot: 3.9421546
+}
+part {
+  window_size_x: 50
+  window_size_y: 80
+  pos_offset_x: 25
+  pos_offset_y: 40
+  part_id: 21
+  type_id: 59
+  root_offset_x: 23
+  root_offset_y: 74
+  root_rot: -1.8325136
+}
+part {
+  window_size_x: 70
+  window_size_y: 90
+  pos_offset_x: 35
+  pos_offset_y: 45
+  part_id: 21
+  type_id: 60
+  root_offset_x: 25
+  root_offset_y: 76
+  root_rot: 8.8308754
+}
+part {
+  window_size_x: 34
+  window_size_y: 123
+  pos_offset_x: 17
+  pos_offset_y: 61
+  part_id: 21
+  type_id: 61
+  root_offset_x: 15
+  root_offset_y: 94
+  root_rot: -7.7930117
+}
+part {
+  window_size_x: 47
+  window_size_y: 83
+  pos_offset_x: 23
+  pos_offset_y: 41
+  part_id: 21
+  type_id: 62
+  root_offset_x: 8
+  root_offset_y: 75
+  root_rot: -1.1195637
+}
+part {
+  window_size_x: 57
+  window_size_y: 78
+  pos_offset_x: 28
+  pos_offset_y: 39
+  part_id: 21
+  type_id: 63
+  root_offset_x: 14
+  root_offset_y: 61
+  root_rot: -40.575642
+}
+part {
+  window_size_x: 41
+  window_size_y: 114
+  pos_offset_x: 20
+  pos_offset_y: 57
+  part_id: 21
+  type_id: 64
+  root_offset_x: -18
+  root_offset_y: -82
+  root_rot: -2.0356832
+}
+part {
+  window_size_x: 37
+  window_size_y: 99
+  pos_offset_x: 18
+  pos_offset_y: 49
+  part_id: 21
+  type_id: 65
+  root_offset_x: 5
+  root_offset_y: 82
+  root_rot: -0.24808833
+}
+part {
+  window_size_x: 105
+  window_size_y: 43
+  pos_offset_x: 52
+  pos_offset_y: 21
+  part_id: 21
+  type_id: 66
+  root_offset_x: -49
+  root_offset_y: 36
+  root_rot: 58.492313
+}
+part {
+  window_size_x: 45
+  window_size_y: 106
+  pos_offset_x: 22
+  pos_offset_y: 53
+  part_id: 21
+  type_id: 67
+  root_offset_x: 7
+  root_offset_y: 84
+  root_rot: -12.975999
+}
+part {
+  window_size_x: 53
+  window_size_y: 89
+  pos_offset_x: 26
+  pos_offset_y: 44
+  part_id: 21
+  type_id: 68
+  root_offset_x: 8
+  root_offset_y: 74
+  root_rot: -15.595779
+}
+part {
+  window_size_x: 55
+  window_size_y: 95
+  pos_offset_x: 27
+  pos_offset_y: 47
+  part_id: 21
+  type_id: 69
+  root_offset_x: 17
+  root_offset_y: 79
+  root_rot: 9.6313448
+}
+part {
+  window_size_x: 57
+  window_size_y: 104
+  pos_offset_x: 28
+  pos_offset_y: 52
+  part_id: 21
+  type_id: 70
+  root_offset_x: 22
+  root_offset_y: 84
+  root_rot: 3.7795217
+}
+part {
+  window_size_x: 59
+  window_size_y: 109
+  pos_offset_x: 29
+  pos_offset_y: 54
+  part_id: 21
+  type_id: 71
+  root_offset_x: 27
+  root_offset_y: 82
+  root_rot: -10.654738
+}
+part {
+  window_size_x: 73
+  window_size_y: 90
+  pos_offset_x: 36
+  pos_offset_y: 45
+  part_id: 21
+  type_id: 72
+  root_offset_x: -17
+  root_offset_y: 78
+  root_rot: 3.3613267
+}
+part {
+  window_size_x: 68
+  window_size_y: 66
+  pos_offset_x: 34
+  pos_offset_y: 33
+  part_id: 21
+  type_id: 73
+  root_offset_x: -11
+  root_offset_y: 68
+  root_rot: 7.8792086
+}
+part {
+  window_size_x: 54
+  window_size_y: 95
+  pos_offset_x: 27
+  pos_offset_y: 47
+  part_id: 21
+  type_id: 74
+  root_offset_x: 0
+  root_offset_y: 77
+  root_rot: -7.072825
+}
+part {
+  window_size_x: 88
+  window_size_y: 81
+  pos_offset_x: 44
+  pos_offset_y: 40
+  part_id: 21
+  type_id: 75
+  root_offset_x: 47
+  root_offset_y: 72
+  root_rot: -11.998129
+}
+part {
+  window_size_x: 74
+  window_size_y: 95
+  pos_offset_x: 37
+  pos_offset_y: 47
+  part_id: 21
+  type_id: 76
+  root_offset_x: 21
+  root_offset_y: 78
+  root_rot: 16.054474
+}
+part {
+  window_size_x: 41
+  window_size_y: 53
+  pos_offset_x: 20
+  pos_offset_y: 26
+  part_id: 21
+  type_id: 77
+  root_offset_x: 6
+  root_offset_y: 60
+  root_rot: 11.026715
+}
+part {
+  window_size_x: 55
+  window_size_y: 92
+  pos_offset_x: 27
+  pos_offset_y: 46
+  part_id: 21
+  type_id: 78
+  root_offset_x: 21
+  root_offset_y: 79
+  root_rot: -0.28332612
+}
+part {
+  window_size_x: 54
+  window_size_y: 85
+  pos_offset_x: 27
+  pos_offset_y: 42
+  part_id: 21
+  type_id: 79
+  root_offset_x: -2
+  root_offset_y: 77
+  root_rot: 0.89642
+}
+part {
+  window_size_x: 48
+  window_size_y: 90
+  pos_offset_x: 24
+  pos_offset_y: 45
+  part_id: 21
+  type_id: 80
+  root_offset_x: 22
+  root_offset_y: 78
+  root_rot: -5.9167194
+}
+part {
+  window_size_x: 34
+  window_size_y: 92
+  pos_offset_x: 17
+  pos_offset_y: 46
+  part_id: 21
+  type_id: 81
+  root_offset_x: 4
+  root_offset_y: 78
+  root_rot: 3.8803294
+}
+part {
+  window_size_x: 36
+  window_size_y: 97
+  pos_offset_x: 18
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 82
+  root_offset_x: 13
+  root_offset_y: 80
+  root_rot: -0.0910533
+}
+part {
+  window_size_x: 47
+  window_size_y: 96
+  pos_offset_x: 23
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 83
+  root_offset_x: 23
+  root_offset_y: 77
+  root_rot: -10.211172
+}
+part {
+  window_size_x: 47
+  window_size_y: 60
+  pos_offset_x: 23
+  pos_offset_y: 30
+  part_id: 21
+  type_id: 84
+  root_offset_x: 2
+  root_offset_y: 63
+  root_rot: -1.1655793
+}
+part {
+  window_size_x: 39
+  window_size_y: 106
+  pos_offset_x: 19
+  pos_offset_y: 53
+  part_id: 21
+  type_id: 85
+  root_offset_x: 6
+  root_offset_y: 85
+  root_rot: 0.12875089
+}
+part {
+  window_size_x: 36
+  window_size_y: 85
+  pos_offset_x: 18
+  pos_offset_y: 42
+  part_id: 21
+  type_id: 86
+  root_offset_x: 13
+  root_offset_y: 74
+  root_rot: -0.63887244
+}
+part {
+  window_size_x: 95
+  window_size_y: 75
+  pos_offset_x: 47
+  pos_offset_y: 37
+  part_id: 21
+  type_id: 87
+  root_offset_x: 47
+  root_offset_y: 67
+  root_rot: -13.79957
+}
+part {
+  window_size_x: 64
+  window_size_y: 114
+  pos_offset_x: 32
+  pos_offset_y: 57
+  part_id: 21
+  type_id: 88
+  root_offset_x: 26
+  root_offset_y: 85
+  root_rot: 10.517479
+}
+part {
+  window_size_x: 74
+  window_size_y: 101
+  pos_offset_x: 37
+  pos_offset_y: 50
+  part_id: 21
+  type_id: 89
+  root_offset_x: 31
+  root_offset_y: 82
+  root_rot: 7.0516238
+}
+part {
+  window_size_x: 118
+  window_size_y: 38
+  pos_offset_x: 59
+  pos_offset_y: 19
+  part_id: 21
+  type_id: 90
+  root_offset_x: 65
+  root_offset_y: 41
+  root_rot: -31.869436
+}
+part {
+  window_size_x: 104
+  window_size_y: 78
+  pos_offset_x: 52
+  pos_offset_y: 39
+  part_id: 21
+  type_id: 91
+  root_offset_x: -37
+  root_offset_y: 61
+  root_rot: 3.0304797
+}
+part {
+  window_size_x: 34
+  window_size_y: 94
+  pos_offset_x: 17
+  pos_offset_y: 47
+  part_id: 21
+  type_id: 92
+  root_offset_x: 8
+  root_offset_y: 79
+  root_rot: -4.3450084
+}
+part {
+  window_size_x: 47
+  window_size_y: 86
+  pos_offset_x: 23
+  pos_offset_y: 43
+  part_id: 21
+  type_id: 93
+  root_offset_x: 6
+  root_offset_y: 75
+  root_rot: -11.494719
+}
+part {
+  window_size_x: 51
+  window_size_y: 96
+  pos_offset_x: 25
+  pos_offset_y: 48
+  part_id: 21
+  type_id: 94
+  root_offset_x: 20
+  root_offset_y: 79
+  root_rot: 1.0657402
+}
+part {
+  window_size_x: 79
+  window_size_y: 45
+  pos_offset_x: 39
+  pos_offset_y: 22
+  part_id: 21
+  type_id: 95
+  root_offset_x: 26
+  root_offset_y: -35
+  root_rot: -30.658531
+}
+train_object_height: 192.708
+bbox_offset_x: 0.0065
+bbox_offset_y: 25.583

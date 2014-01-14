@@ -1,0 +1,21 @@
+train_dataset: "/BS/leonid-people-3d/work/data/lsp_dataset/images/png/h200/lsp-train-human-full-h200-OC.al"
+train_dataset: "/BS/leonid-people-3d/work/data/lsp_dataset/images/png/h200/lsp-train-human-full-h200-OC-flipped.al"
+validation_dataset: "/BS/leonid-people-3d/work/data/lsp_dataset/images/png/h200/lsp-train-human-full-h200-OC-add-flipped.al"
+test_dataset: "/BS/leonid-people-3d/work/data/lsp_dataset/images/png/h200/lsp_test_human_lr-rescaled_4viewpoints-OC.al"
+
+part_conf: "./part_conf_part_types_200.txt"
+abc_param: "./abcparams_rounds500_sparse_1000.txt"
+
+min_part_rotation: -11.25
+max_part_rotation: 11.25
+num_rotation_steps: 3
+
+neg_dataset: "/BS/leonid-people-3d/work/data/lsp_dataset_original/images/png/rescaled/lsp-train-subset-single-bb-only-rescaled.al"
+
+log_dir: "/BS/leonid-pose/work/experiments-iccv13/log_dir/"
+
+torso_det_test_dir: "/BS/leonid-pose/work/experiments-iccv13/log_dir/exp-lsp-local-app-model-dense05/part_marginals/"
+torso_det_train_dir: "/BS/leonid-pose/work/experiments-iccv13/log_dir/exp-lsp-train-torso-dense05/part_marginals/"
+
+poselet_strip: 40
+rootidx_det: 10
