@@ -668,14 +668,7 @@ namespace part_detect {
       
       int num_part_types = getNumPartTypes(part_app.m_window_param, pidx);
       vector<vector<float> > vtBestDetResp(num_part_types*nTopBestWithinPartTypeVis, vector<float>(7));
-      
-      vector<AnnotationList> annolistClusters;
-      if (num_part_types > 1){
-	part_detect::loadPartTypeData(part_app.m_exp_param.class_dir().c_str(), 
-				      part_app.m_window_param, 
-				      part_app.m_part_conf, pidx, annolistClusters);
-      }
-      
+
       if (part_app.m_part_conf.part(pidx).is_detect()) {
 	
 	for (int tidx = 0; tidx < num_part_types; ++tidx){
@@ -944,10 +937,8 @@ namespace part_detect {
     QString qsCommandLine = qsCMD + " " + QString::number(imgidx+1) + " " +
       part_app.m_test_annolist[imgidx].imageName().c_str() + " " + 
       qsModelDPMFilename + " " + qsUnaryDPMDir + " " + QString::number(NUM_THREADS)  + " 1 " + QString::number(RESCALE_FACTOR) + " 1 1";
-    double rt1 = object_detect::get_runtime();
+
     runMatlabCode(qsCommandLine);
-    double rt = MAX(object_detect::get_runtime()-rt1,0)/100;
-    printf("Elapsed time in cpu-seconds: %.2f\n", rt);fflush(stdout);
     
     return 1;
 
@@ -964,8 +955,7 @@ namespace part_detect {
     int nParts = part_app.m_part_conf.part_size();
     QString qsUnaryDPMDir = part_app.m_exp_param.test_dpm_unary_dir().c_str();
     QString qsModelDPMDir = part_app.m_exp_param.dpm_model_dir().c_str();
-    
-    
+        
     QString qsCommandLine = qsCMD + " " + QString::number(imgidx+1) + " " + 
       part_app.m_test_annolist[imgidx].imageName().c_str() + " " + 
       QString::number(nParts) + " " + 
