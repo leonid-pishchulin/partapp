@@ -7,9 +7,6 @@ This short documentation describes steps necessary to compile and run the human 
 Strong Appearance and Expressive Spatial Models for Human Pose Estimation  
 In _IEEE International Conference on Computer Vision (ICCV'13)_, Sydney, Australia, December 2013**
 
-If you have any questions, send us an email to leonid@mpi-inf.mpg.de with a topic "partapp code" and visit our project web page https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps  
-We may also run our model on your data.
-
 Required Libraries
 ---
 
@@ -45,9 +42,9 @@ Testing
 
 1. Issue the following commands in the `code_test` subdirectory:
 ```
-    unzip code_test.zip  
-    ../run_partapp.sh --expopt ./expopt/exp-code-test-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj  
-    ../run_partapp.sh --expopt ./expopt/exp-code-test-poselets.txt --save_resp_test  
+    unzip code_test.zip 
+    ../run_partapp.sh --expopt ./expopt/exp-code-test-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj 
+    ../run_partapp.sh --expopt ./expopt/exp-code-test-poselets.txt --save_resp_test 
     ../run_partapp.sh --expopt ./expopt/exp-code-test-full-model.txt --find_obj --eval_segments --vis_segments```
 
 This will run local appearance model, compute poselet responses and finally run full model to estimate body parts on a provided image and visualize the results. Compare the image in the `./log_dir/exp-code-test-full-model/part_marginals/seg_eval_images` with the image in `./images_result`
@@ -57,7 +54,7 @@ Running pose estimation experiments
 
    Our model requires that training and testing images contain single persons being roughy 200 px high.
    Download the experiments package from our project webpage: https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps
-   Unpack the package in the separate directory EXP_DIR. Here is a short description of the contents:
+   Unpack the package in the separate directory `EXP_DIR`. Here is a short description of the contents:
 
    - `./images/LSP` - upscaled images from the LSP dataset, so that every person is roughly 200 px high
    - `./expopt` - configuration files which control diverse parameters of the system
@@ -84,13 +81,13 @@ In order to evaluate the number of correctly detected parts and visualize the re
 
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-full-model.txt --eval_segments --vis_segments --first <IMGIDX> --numimgs 1
 
-WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up the computation. This results into overall performance of _68.7%_ PCP vs _69.2%_ PCP reported in the paper. To run slower dense classifiers, `window_desc_step_ratio: 0.0125` in `./expopt/abcparams_rounds500_dense05_2000.txt`
+WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up the computation. This results into overall performance of _68.7%_ vs _69.2% PCP_ reported in the paper. To run slower dense classifiers, set `window_desc_step_ratio: 0.0125` in `./expopt/abcparams_rounds500_dense05_2000.txt`
 
 ### Train + Test
 
  1. **local appearance model**
 
- 1) train AdaBoost model for part 'PARTIDX' 0 - 21 (22 parts total)
+ 1) train AdaBoost model for part `PARTIDX` 0 - 21 (22 parts total)
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-local-app-model.txt --train_class --pidx <PARTIDX>
 ```
@@ -107,7 +104,7 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
      cd <PARTAPP_DIR>/src/libs/libDPM
      trainDPM(<PARTIDX>, <EXP_DIR>)
 ```
-    where 'EXP_DIR' is the root of the experiments package
+    where `EXP_DIR` is the root of the experiments package
 
  5) train DPM head detector (in matlab)
 ```
@@ -129,7 +126,7 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt --train_class --pidx <PARTIDX> --tidx <TYPEIDX>
 ```
-    where 'PARTIDX' is poselet id, 0 - 20; 'TYPEIDX' is poselet mixture type, 0 - ~100
+    where `PARTIDX` is poselet id, [0, 20]; `TYPEIDX` is poselet mixture type, [0, 100)
 
   3) collect poselet responses on training and testing images
 ```
@@ -162,3 +159,7 @@ Loading/saving annotation files in matlab:
     cd <PARTAPP_DIR>/src/scripts/matlab
     annotations = loadannotations(<annotations.al>);
     saveannotations(annotations, <annotations.al>);
+
+For more information visit our project web page https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps  
+If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "partapp code".  
+We may also run our model on your data.
