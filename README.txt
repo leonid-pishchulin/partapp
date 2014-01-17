@@ -1,13 +1,12 @@
-This short documentation describes steps necessary to compile and run the human pose estimation model
-presented in the paper:
+This short documentation describes steps necessary to compile and run the human pose estimation model presented in the paper:
 
 L. Pishchulin, M. Andriluka, P. Gehler and B. Schiele
 Strong Appearance and Expressive Spatial Models for Human Pose Estimation
 IEEE Conference on Computer Vision and Pattern Recognition (ICCV'13), Sydney, Australia, December 2013
 
 This code was developed under Linux (Debian wheezy, 64 bit) and was tested only in this environment.
-If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "partapp-v2 code".
-This may also be possible that we run our model on your data.
+If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "partapp code".
+It may also be possible that we run our model on your data.
 
 1. Required Libraries
 
