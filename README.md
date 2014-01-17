@@ -42,10 +42,11 @@ Testing
 
 1. Issue the following commands in the `code_test` subdirectory:
 ```
-    unzip code_test.zip 
-    ../run_partapp.sh --expopt ./expopt/exp-code-test-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj 
-    ../run_partapp.sh --expopt ./expopt/exp-code-test-poselets.txt --save_resp_test 
-    ../run_partapp.sh --expopt ./expopt/exp-code-test-full-model.txt --find_obj --eval_segments --vis_segments```
+   unzip code_test.zip 
+   ../run_partapp.sh --expopt ./expopt/exp-code-test-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj 
+   ../run_partapp.sh --expopt ./expopt/exp-code-test-poselets.txt --save_resp_test 
+   ../run_partapp.sh --expopt ./expopt/exp-code-test-full-model.txt --find_obj --eval_segments --vis_segments
+```
 
 This will run local appearance model, compute poselet responses and finally run full model to estimate body parts on a provided image and visualize the results. Compare the image in the `./log_dir/exp-code-test-full-model/part_marginals/seg_eval_images` with the image in `./images_result`
 
