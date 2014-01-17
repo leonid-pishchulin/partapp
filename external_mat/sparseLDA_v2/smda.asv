@@ -1,0 +1,148 @@
+function [b, theta, Z, rss] = smda(X,Z,Rj,lambda,stop,maxIte,trace,tol)
+% [b, theta, Z, rss] = smda(X,Y,lambda,stop,maxIte,trace) 
+% Performs Sparse Linear Disciminant Analysis
+% Solving: argmin{|(Y*theta-X*b)|_2^2 + t*|beta|_1 + lambda*|beta|_2^2}
+% with an underlying Mixture od Gaussians model.
+%
+% INPUT:
+% X      : matrix of n observations down the rows and p variable columns. The
+%          columns are assumed normalized
+% Z      : matrix initializing the probabilities representing the groups
+% Rj     : K length vector containing the number of subclasses in each of
+%          the K classes
+% lambda : the weight on the L2-norm for elastic net regression. Default =
+%          1e-6
+% stop   : nonzero STOP will perform
+%          elastic net regression with early stopping. If STOP is negative, its 
+%          absolute value corresponds to the desired number of variables. If STOP
+%          is positive, it corresponds to an upper bound on the L1-norm of the
+%          b coefficients. There is a one to one correspondance between stop
+%          and t. Defult = 0.
+% trace  : If trace is true the display level is on. It is off when trace
+%          is false. Default = 0. 
+% tol    : Tolerance for the stopping criterion (change in RSS). Default is
+%          1e-4.
+%
+% OUTPUT:
+% b      : The regression parameters
+% theta  : Optimal scores
+% Z      : Updated subclass probabilities
+% rss    : Residual Sum of Squares at each itearation
+%
+% Copyright (c) October, 2007: Line H. Clemmensen, IMM, DTU, lhc@imm.dtu.dk
+% Reference: Clemmensen, L., Hastie, T. and Ersbøll, K. (2007), Sparse
+% Discriminant Analysis, Technical Report, Informatics and Mathematical
+% Modelling, Technical University of Denmark.
+% Builds on the elastic net package by Karl Sjôstrand:
+% http://www2.imm.dtu.dk/~kas/software/spca/index.html
+%
+
+if nargin < 8
+    tol = 1e-4;
+end
+if nargin < 7
+    trace = 0;
+end
+if nargin < 6
+    maxIte = 50;
+end
+if nargin < 5
+    stop = 0;
+end
+if nargin < 4
+    lambda = 1e-6;
+end
+
+[N,p] = size(X);
+R = size(Z,2);
+K = length(Rj); % number of classes
+RSS_old = 1e8;
+RSS = 1e6;
+ite = 0;
+Dp = sum(Z);
+Dp_inv = diag(1./sqrt(Dp/N)); % R x R
+theta = eye(R);
+theta = 1/sum(Dp/N)*theta(:,1:R-1)/R;
+Ztheta = Z*theta; % N x R-1
+if length(stop)<R-1
+    stop = repmat(stop(1),1,R-1);
+end
+Zhat = zeros(n,R-1);
+Cov = zeros(p,p);
+rss = zeros(maxIte,1);
+mu = zeros(p,R,K);
+b = zeros(p,R-1);
+
+
+while abs(RSS_old-RSS)/RSS > tol & ite < maxIte 
+    RSS_old = RSS;
+    ite = ite + 1;
+    % 1. Estimate beta:    
+    for j=1:R-1
+        B = larsen(X,Ztheta(:,j),lambda,stop(j));
+        b(:,j) = B(end,:)';
+        Zhat(:,j) = X*b(:,j);
+    end
+
+    % 2. Optimal scores: (balanced Procrustes problem)
+    B = Z'*Zhat;
+    [U,S,V] = svd(B);
+    theta_old = theta;
+    theta = Dp_inv*U(:,1:R-1)*V';
+    Ztheta = Z*theta;
+    RSS = norm(Ztheta-Zhat,'fro')^2;
+    rss(ite)=RSS;
+    if trace
+    disp(sprintf('ite: %d,\t RSS: %1.4f',ite, RSS))
+    end
+    
+    % 3. update parameter estimates:
+    Cov = zeros(R-1,R-1);
+    mu = zeros(R-1,R,K);
+    for i=1:K
+        IK = sum(Rj(1:i-1))+1:sum(Rj(1:i-1))+Rj(i);
+        Ik = find(any(Z(:,IK)>0,2));
+        for j=1:Rj(i)
+            mu(:,IK(j),i) = sum(ones(length(Ik),1)*(Z(Ik,IK(j))')*Zhat(Ik,:))/Dp(IK(j));
+            Cov = Cov + (Zhat(Ik,:)-ones(length(Ik),1)*mu(:,IK(j),i)')'*(Z(Ik,IK(j))*...
+                ones(1,length(Ik)))*(Zhat(Ik,:)-ones(length(Ik),1)*mu(:,IK(j),i)')/(length(Ik)-Rj(i));
+        end
+    end
+    Cov_inv = inv(Cov + 1e-2*eye(R-1));
+    
+    for i=1:K
+        IK = sum(Rj(1:i-1))+1:sum(Rj(1:i-1))+Rj(i);
+        Ik = find(any(Z(:,IK)>0,2));
+        Dmahal_K=[];
+        for j=1:Rj(i)
+        Dmahal_K(:,j) = diag((Zhat(Ik,:)-ones(length(Ik),1)*mu(:,IK(j),i)')*Cov_inv*(Zhat(Ik,:)-...
+            ones(length(Ik),1)*mu(:,IK(j),i)')');
+        end
+        sum_K = sum(Z(Ik,IK).*exp(-Dmahal_K/2),2);
+        for j=1:Rj(i)
+            Z(Ik,IK(j)) = Z(Ik,IK(j)).*exp(-Dmahal_K(:,j)/2)./(sum_K+1e-6);
+        end
+        Z(Ik,IK) = Z(Ik,IK)./(sum(Z(Ik,IK),2)*ones(1,Rj(i)));
+    end
+    Ztheta = Z*theta;
+    Dp = sum(Z);
+    Dp_inv = diag(1./sqrt(Dp/N)); % R x R
+end
+
+% Remove trivial directions
+Ik = find(diag(S)>1e-6);
+M = min(length(Ik),rank(b));
+theta = theta(:,1:M);
+Ztheta = Z*theta;
+b = b(:,1:M);
+Zhat = Zhat(:,1:M);
+for j=1:M
+    B = larsen(X,Ztheta(:,j),lambda,stop(j));
+        b(:,j) = B(end,:)';
+        Zhat(:,j) = X*b(:,j);
+end   
+if trace
+    RSS = norm(Ztheta-Zhat,'fro')^2;
+    disp(sprintf('final update, RSS: %1.4f', RSS))
+end
+rss = rss(1:ite);

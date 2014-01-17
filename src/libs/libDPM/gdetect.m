@@ -266,7 +266,6 @@ end
 
 for level = levels
   % compute filter response for all filters at this level
-  % start Jan's hands' job :)
 %   chunksize = ceil(length(filters)/32);
   r = cell(1, length(filters));
   for j=1:chunksize:length(filters)

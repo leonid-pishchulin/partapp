@@ -35,7 +35,19 @@ if ~isempty(det)
     bboxpred = model.bboxpred;
     [det all] = clipboxes(image, det, all);
     [det all] = bboxpred_get(bboxpred, det, reduceboxes(model, all));
-   
+    
+%     [dets, boxes] = imgdetect(im, model, model.thresh);
+%     if ~isempty(boxes)
+%       boxes = reduceboxes(model, boxes);
+%       [dets boxes] = clipboxes(im, dets, boxes);
+%       I = nms(dets, thresh);
+%       boxes1{i} = dets(I,[1:4 end]);
+%       parts1{i} = boxes(I,:);
+%     else
+%       boxes1{i} = [];
+%       parts1{i} = [];
+%     end
+    
   catch
     warning('no bounding box predictor found');
   end
