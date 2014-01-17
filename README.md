@@ -41,6 +41,7 @@ Testing
 ---
 
 1. Issue the following commands in the `code_test` subdirectory:
+
 ```
    unzip code_test.zip 
    ../run_partapp.sh --expopt ./expopt/exp-code-test-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj 
