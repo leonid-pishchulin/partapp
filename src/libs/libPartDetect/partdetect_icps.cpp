@@ -985,7 +985,7 @@ namespace part_detect {
     myProcess->start(qsCommandLine);
 
     //myProcess->waitForFinished();
-    int nWaitSec = 2400;
+    int nWaitSec = 10000;
     myProcess->waitForFinished(1000*nWaitSec);
     //myProcess->waitForFinished(-1);
 

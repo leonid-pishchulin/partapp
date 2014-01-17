@@ -648,7 +648,7 @@ namespace object_detect {
       filesys::create_dir(qsVisDirName);
     }
     
-    QString qsPredDataDir = part_app.m_exp_param.pred_data_dir().c_str();
+    QString qsPredDataDir = part_app.m_exp_param.pred_data_test_dir().c_str();
     int nJointTypes = part_app.m_part_conf.joint(0).num_joint_types();      
     
     for (int imgidx = firstidx; imgidx <= lastidx; ++imgidx){ 
@@ -673,7 +673,7 @@ namespace object_detect {
 	QString qsFilename = QString("joint_") +
 	  QString::number(child_idx) + "_" + 
 	  QString::number(parent_idx) + "_tidx_" + QString::number(tidx) + ".mat";
-	QString qsFullFilenameFrom = (part_app.m_exp_param.class_dir() + "/" + qsFilename.toStdString()).c_str();
+	QString qsFullFilenameFrom = (part_app.m_exp_param.spatial_dir() + "/" + qsFilename.toStdString()).c_str();
 	QString qsFullFilenameTo = qsImgVisDir + "/" + qsFilename;
 	
 	cout << "copy " << qsFullFilenameFrom.toStdString().c_str() << endl;

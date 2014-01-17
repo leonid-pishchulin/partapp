@@ -1,4 +1,4 @@
-function trainDPM_part(pidx,pos,neg,logDir,sc)
+function trainDPM_part(pidx,pos,neg,logDir,sc,cls,clusterMode,nComp)
 
 fprintf('trainDPM_part()\n');
 
@@ -7,11 +7,11 @@ if (nargin < 5)
 end
 
 if (nargin < 6)
-    clusterMode = 1; % rotation clustering
+    cls = 2; 
 end
 
 if (nargin < 7)
-    alignRot = false; 
+    clusterMode = 1; % rotation clustering
 end
 
 if (nargin < 8)
@@ -19,10 +19,12 @@ if (nargin < 8)
 end
 
 if (nargin < 9)
-    nParts = 8; 
+    alignRot = false; 
 end
 
-cls = ['pidx_' padZeros(num2str(pidx),4)];
+if (nargin < 10)
+    nParts = 8; 
+end
 
 if (~exist([logDir '/' cls], 'dir'))
     mkdir([logDir '/' cls]);

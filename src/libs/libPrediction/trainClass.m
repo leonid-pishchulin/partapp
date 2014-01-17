@@ -17,6 +17,10 @@ function trainClass(idxMode, nClus, idxFactor, saveTo, poseletResponcesTrainDir,
 fprintf('****************************************************************************\n');
 fprintf('trainClass()\n');
 
+if (~isdeployed)
+    addpath ../../scripts/matlab
+end
+
 subsetDims = [];
 
 bPredictPairwise = false;
@@ -44,6 +48,17 @@ if (nargin < 9)
     torsoPartIdx = 10;
 elseif (ischar(torsoPartIdx))
     torsoPartIdx = str2num(torsoPartIdx);    
+end
+
+%% check whether matlab sees slda function
+s = which('slda');
+k = strfind(s, 'sparseLDA_v2');
+if isempty(k)
+    fprintf('slda not found! Aborting...\n');
+    assert(false);
+else
+    which('slda')
+    which('larsen')
 end
 
 %% prediction mode

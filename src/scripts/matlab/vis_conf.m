@@ -35,7 +35,7 @@ function vis_conf(log_dir, varargin)
   figure(figidx);
   clf;
   
-  class_dir = [log_dir, '/class'];
+  class_dir = [log_dir, '/spatial'];
   if exist(class_dir, 'dir') == 0
     class_dir = log_dir;
   end

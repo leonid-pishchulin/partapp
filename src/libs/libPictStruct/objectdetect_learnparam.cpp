@@ -250,8 +250,6 @@ namespace object_detect {
       cout << "joint idx: " << jidx << ", type: " << "Joint::ROT_GAUSSIAN" << endl;
       
       assert(part_conf.joint(jidx).joint_pos_size() > 0);
-      //int joint_pos_idx = part_conf.joint(jidx).joint_pos();
-      
       int child_idx = part_conf.joint(jidx).child_idx() - 1;
       int parent_idx = part_conf.joint(jidx).parent_idx() - 1;
       
@@ -359,20 +357,6 @@ namespace object_detect {
 	    }
 	    
 	  }// if has parts
-	  
-	  // DEBUG BEGIN
-	  //             if (child_idx == 5 || child_idx == 6) {
-	  //               cout << "imgidx: " << imgidx << 
-	  //                 ", child_id: " << child_idx + 1 << 
-	  //                 ", parent_id: " << parent_idx + 1 << 
-	  //                 ", child_rot: " << child_rot / M_PI * 180.0  << 
-	  //                 ", parent_rot: " << parent_rot / M_PI * 180.0 << 
-	  //                 ", child_rot - parent_rot: " << (child_rot - parent_rot)/M_PI * 180.0 << endl;
-	  
-	  //               if (imgidx == 99)
-	  //                 cout << endl;
-	  //             }
-	  // DEBUG END
 	  
 	}//rectangles
 	
@@ -595,20 +579,6 @@ namespace object_detect {
       if (nJointTypes > 1){
 	
 	std::vector<AnnotationList> annolistClusters(nJointTypes);
-	
-	// deprecated use of *al instead of *mat
-	/*
-	  AnnotationList annolist;
-	QString qsFilename = qsPredDataDir + "/trainlist_pred_jidx_" + QString::number(jidx) + "_jointtypes_" + QString::number(nJointTypes) + ".al";
-	annolist.load(qsFilename.toStdString());
-
-	for(uint imgidx = 0; imgidx < annolist.size(); imgidx++){
-	  assert(annolist[imgidx].size() == 1);
-	  int ridx = 0;
-	  int idClus = annolist[imgidx][ridx].silhouetteID();
-	  annolistClusters[idClus].addAnnotation(annolist[imgidx]);
-	}
-	*/
 	
 	QString qsFilename = qsPredDataDir + "/trainlist_pred_jidx_" + QString::number(jidx) + ".mat";
 	cout << qsFilename.toStdString().c_str() << endl;

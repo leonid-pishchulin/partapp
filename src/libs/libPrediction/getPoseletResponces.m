@@ -21,6 +21,7 @@ else
     fprintf('WARNING: torsoPosDir is empty!\n');
 end
 
+fprintf('Loading poselet responses...\n');
 if (~isempty(poseletResponcesDir))
     poseletResponces = getPoselets(poseletResponcesDir, subsetDims, nEx, torsoPos);
     fprintf('poseletResponces dim: %d\n', size(poseletResponces,2));

@@ -1,8 +1,13 @@
-function trainDPM(pidxs, pathToExp)
+function trainDPM(pidxs, pathToExp, bIsHeadDet)
 
 if (~isdeployed)
     addpath ../../../src/scripts/matlab/;
 end
+
+if (nargin < 3)
+    bIsHeadDet = false;
+end
+
 n = matlabpool('size');
 if (n == 0)
     matlabpool open 8;
@@ -29,7 +34,16 @@ for imgidx = 1:length(neg)
     neg(imgidx).image.name = [pathToExp '/' neg(imgidx).image.name];
 end
 
-for pidx = pidxs 
-    trainDPM_part(pidx,posUpscaled,neg,logDir,scale);
+if (bIsHeadDet)
+    assert(length(pidxs) == 1 && pidxs == 11)
+    clusterMode = 2; % cluster viewpoint
+    cls = 'head';
+    nComp = 8;
+    trainDPM_part(pidxs,posUpscaled,neg,logDir,scale,cls,clusterMode,nComp);
+else
+    for pidx = pidxs 
+        cls = ['pidx_' padZeros(num2str(pidx),4)];
+        trainDPM_part(pidx,posUpscaled,neg,logDir,scale,cls);
+    end
 end
 end
