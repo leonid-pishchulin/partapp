@@ -1,4 +1,4 @@
-PARTAPP - Human Pose Estimation Software
+PARTAPP - Human Pose Estimation
 =====
 
 This short documentation describes steps necessary to compile and run the human pose estimation model presented in the paper:
@@ -7,9 +7,8 @@ This short documentation describes steps necessary to compile and run the human 
 Strong Appearance and Expressive Spatial Models for Human Pose Estimation  
 In _IEEE International Conference on Computer Vision (ICCV'13)_, Sydney, Australia, December 2013**
 
-This code was developed under Linux (Debian _wheezy_, 64 bit) and was tested only in this environment.  
-If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "partapp code".  
-It may also be possible that we run our model on your data.
+If you have any questions, send us an email to leonid@mpi-inf.mpg.de with a topic "partapp code" and visit our project web page https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps
+We may also run our model on your data.
 
 Required Libraries
 ---
@@ -17,13 +16,15 @@ Required Libraries
 The following libraries are required to compile and run the code:
 
    - Qt (tested with version 4.8.2)
-   - Boost (tested with version 1.34) [http://www.boost.org/]
+   - [Boost] (http://www.boost.org/) (tested with version 1.34)
    - Matlab (tested with Matlab 2008b)
    - MATLAB Compiler Runtime (MCR) (tested with R2013a (8.1)
-   - Goolgle's Protocol Buffers (tested with version 2.0.1rc1) [http://code.google.com/p/protobuf/]
+   - Goolgle's [Protocol Buffers] (http://code.google.com/p/protobuf/) (tested with version 2.0.1rc1)
 
-Compiling the code
+Compiling
 ---
+
+This code was developed under Linux (Debian _wheezy_, 64 bit) and was tested only in this environment.  
 
 1. Switch to the top level directory of the source code (the one with the script `run_partapp.sh`), issue commands:
 
@@ -33,57 +34,57 @@ Compiling the code
     ln -s ./external_include include_pb  
     ln -s ./external_lib lib_pb```
 
-2. Add the full path of folder `include_mat` to the `LD_LIBRARY_PATH` environment variable  
+2. Add the full path of folder _include_mat_ to the `LD_LIBRARY_PATH` environment variable  
 3. Download and install Matlab Compiler Runtime (MCR)
 4. Point to your MCR by editing the file `src/libs/libPrediction/matlab_runtime.h`  
-5. Issue commands `qmake-qt4 -recursive; make; ./compileMatlab.sh` in the `src/libs` directory
-6. Issue commands `qmake-qt4 -recursive; make` in the `src/apps` directory
+5. Issue commands `qmake-qt4 -recursive; make; ./compileMatlab.sh` in the _src/libs directory
+6. Issue commands `qmake-qt4 -recursive; make` in the _src/apps_ directory
 
-Testing compiled code
+Testing
 ---
 
-1. Issue the following commands in the code_test subdirectory:
+1. Issue the following commands in the _code_test_ subdirectory:
 ```
     unzip code_test.zip
     ../run_partapp.sh --expopt ./expopt/exp-code-test-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj
     ../run_partapp.sh --expopt ./expopt/exp-code-test-poselets.txt --save_resp_test
     ../run_partapp.sh --expopt ./expopt/exp-code-test-full-model.txt --find_obj --eval_segments --vis_segments```
 
-   This will run local appearance model, compute poselet responses and finally run full model to estimate body parts on a provided image and visualize the results. Compare the image in the _./log_dir/exp-code-test-full-model/part_marginals/seg_eval_images_ with the image in _./images_result_
+This will run local appearance model, compute poselet responses and finally run full model to estimate body parts on a provided image and visualize the results. Compare the image in the _./log_dir/exp-code-test-full-model/part_marginals/seg_eval_images_ with the image in _./images_result_
 
 Running pose estimation experiments
 ---
 
-   Our model requires that training and testing images contain single persons being roughy 200px high.
-   Download the experiments package from our homepage: https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps
-   Unpack the package in the separate directory _EXP_DIR_. Here is a short description of the contents:
+   Our model requires that training and testing images contain single persons being roughy 200 px high.
+   Download the experiments package from our project webpage: https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps
+   Unpack the package in the separate directory EXP_DIR. Here is a short description of the contents:
 
-   - ./images/LSP - upscaled images from the LSP dataset, so that every person is roughly 200px high
-   - ./expopt - configuration files which control diverse parameters of the system
-   - ./log_dir/exp-lsp-local-app-model/class - pretrained AdaBoost models (classifiers)
-   - ./log_dir/exp-lsp-local-app-model/dpm_model - pretrained DPM models
-   - ./log_dir/exp-lsp-local-app-model/sparial - pretrained generic spatial model
-   - ./log_dir/exp-lsp-local-app-model/test_dpm_unary/torso - responses of the DPM torso detector
-   - ./log_dir/exp-lsp-train-torso/part_marginals - torso detections on the train set
-   - ./log_dir/exp-lsp-poselets/class - pretrained AdaBoost poselet models
-   - ./log_dir/exp-lsp-poselets/resp_train - poselet responses on train images
-   - ./log_dir/exp-lsp-poselets/pred_data - pretrained LDA classifiers to predict poselet conditioned parameters
-   - ./log_dir/exp-lsp-full-model/spatial - precomputed poselet conditioned spatial model
+   - _./images/LSP_ - upscaled images from the LSP dataset, so that every person is roughly 200 px high
+   - _./expopt_ - configuration files which control diverse parameters of the system
+   - _./log_dir/exp-lsp-local-app-model/class_ - pretrained AdaBoost models (classifiers)
+   - _./log_dir/exp-lsp-local-app-model/dpm_model_ - pretrained DPM models
+   - _./log_dir/exp-lsp-local-app-model/sparial_ - pretrained generic spatial model
+   - _./log_dir/exp-lsp-local-app-model/test_dpm_unary/torso_ - responses of the DPM torso detector
+   - _./log_dir/exp-lsp-train-torso/part_marginals_ - torso detections on the train set
+   - _./log_dir/exp-lsp-poselets/class_ - pretrained AdaBoost poselet models
+   - _./log_dir/exp-lsp-poselets/resp_train_ - poselet responses on train images
+   - _./log_dir/exp-lsp-poselets/pred_data_ - pretrained LDA classifiers to predict poselet conditioned parameters
+   - _./log_dir/exp-lsp-full-model/spatial_ - precomputed poselet conditioned spatial model
 
 ### Test
-Assuming that _PARTAPP_DIR_ is the directory where you have unpacked and compiled the source code, you can run the system on a single image by issuing the commands:
+Assuming that PARTAPP_DIR is the directory where you have unpacked and compiled the source code, you can run the system on a single image by issuing the commands:
 
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj --first <IMGIDX> --numimgs 1
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt --save_resp_test --first <IMGIDX> --numimgs 1
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-full-model.txt --find_obj --first <IMGIDX> --numimgs 1
 
-where _IMGIDX_ is index of the image (if `--first` and `--numimgs` parameters are omitted the whole dataset will be processed).
+where IMGIDX is index of the image (if `--first` and `--numimgs` parameters are omitted the whole dataset will be processed).
 
 In order to evaluate the number of correctly detected parts and visualize the results run:
 
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-full-model.txt --eval_segments --vis_segments --first <IMGIDX> --numimgs 1
 
-WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up the computation. This results into overall performance of _68.7%_ PCP vs _69.2%_ PCP reported in the paper. To run slower dense classifiers, set the value of `window_desc_step_ratio` to _0.125_ in _abcparams_rounds500_dense05_2000.txt_
+WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up the computation. This results into overall performance of _68.7%_ PCP vs _69.2%_ PCP reported in the paper. To run slower dense classifiers, set the value of `window_desc_step_ratio` to _0.125_ in abcparams_rounds500_dense05_2000.txt
 
 ### Train + Test
 
