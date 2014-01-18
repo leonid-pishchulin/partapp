@@ -31,7 +31,7 @@ This code was developed under Linux (Debian _wheezy_, 64 bit) and was tested onl
     ln -s ./external_include include_pb  
     ln -s ./external_lib lib_pb```
 
-2. Add the full path of folder `include_mat` to the `LD_LIBRARY_PATH` environment variable  
+2. Add the full path of folder `lib_mat` to the `LD_LIBRARY_PATH` environment variable  
 3. Download and install Matlab Compiler Runtime (MCR)
 4. Point to your MCR by editing the file `src/libs/libPrediction/matlab_runtime.h`  
 5. Issue commands `qmake-qt4 -recursive; make; ./compileMatlab.sh` in the `src/libs` directory
