@@ -14,7 +14,8 @@ The following libraries are required to compile and run the code:
 
    - [Qt] (http://qt-project.org/) (tested with version 4.8.2)
    - [Boost] (http://www.boost.org/) (tested with version 1.34)
-   - Matlab (tested with Matlab 2008b)
+   - Matlab (tested with Matlab 2013a)
+   - Matlab compiler mcc
    - MATLAB Compiler Runtime (MCR) (tested with R2013a (8.1))
    - Goolgle's [Protocol Buffers] (http://code.google.com/p/protobuf/) (tested with version 2.0.1rc1)
 
