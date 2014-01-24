@@ -764,7 +764,9 @@ int main(int argc, char *argv[])
 	if (!filesys::check_dir(qsUnaryDPMDir))
 	  filesys::create_dir(qsUnaryDPMDir);
 	QString qsModelDPMDir = (part_app.m_exp_param.dpm_model_dir() + "/head").c_str();
-	part_detect::partdetect_dpm(part_app, firstidx, qsModelDPMDir, qsUnaryDPMDir);
+	
+	for (int imgidx = firstidx; imgidx <= lastidx; ++imgidx)
+	  part_detect::partdetect_dpm(part_app, imgidx, qsModelDPMDir, qsUnaryDPMDir);
 	
 	bShowHelpMessage = false;
       }

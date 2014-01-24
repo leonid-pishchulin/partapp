@@ -795,9 +795,9 @@ namespace object_detect {
       int nFactors = 0;
       for (int jidx = 0; jidx < nJoints; jidx++){
 	
-	if (not(jidx == 13 || jidx == 15 || jidx == 16 || jidx == 18 || jidx == 4 || jidx == 5)) 
-	  // if (not(jidx == 2 || jidx == 4 || jidx == 5 || jidx == 7)) 
-	  //|| jidx == 10 || jidx == 13 || jidx == 15 || jidx == 16 || jidx == 18))
+	//if (not(jidx == 13 || jidx == 15 || jidx == 16 || jidx == 18 || jidx == 4 || jidx == 5)) 
+	if (not(jidx == 2 || jidx == 4  || jidx == 5  || jidx == 7 
+		|| jidx == 10 || jidx == 13 || jidx == 15 || jidx == 16 || jidx == 18))
 	  continue;
 	
 	int parent_idx = joints[jidx].parent_idx;
@@ -834,7 +834,10 @@ namespace object_detect {
       //L_all[0] = L;
       cout << "imgidx: " << imgidx << "; L: " << L << endl;
     }//imgidx
-    QString qsFname = "/BS/leonid-people-3d/work/data/new_dataset/annolist_merge_1304_all_test/test/h200/singlePerson/pose22LL_ubody.mat";
+    //QString qsFname = "/BS/leonid-people-3d/work/data/new_dataset/annolist_merge_1304_all_test/test/h200/singlePerson/pose22LL_ubody.mat";
+    //QString qsFname = "/BS/leonid-people-3d/work/data/lsp_dataset/images/png/h200/pose22LL.mat";
+    QString qsFname = "/home/leonid/data/ramanan/ramanan_test_h200_color/pose22LL.mat";
+
     cout << "saving " << qsFname.toStdString() << endl;
     getchar();
     MATFile *f = matlab_io::mat_open(qsFname, "wz");
