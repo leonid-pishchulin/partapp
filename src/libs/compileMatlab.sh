@@ -11,7 +11,7 @@ echo $MATLABPATH
 
 cd libPrediction
 echo "mcc -m trainClass.m -v -a ./ -a $EXT_MAT_DIR/sparseLDA_v2/ -a $EXT_MAT_DIR/larsen/ -a ../../scripts/matlab/ -N -p images/ -p stats/ ; quit" | matlab -nojvm -nosplash -nodisplay
-echo "mcc -m predictFactorsImg.m -v -a ./ -N -p images/  -p stats/; quit" | matlab -nojvm -nosplash -nodisplay
+echo "mcc -m predictFactorsImg.m -v -a ./ -a ../../scripts/matlab/ -N -p images/  -p stats/; quit" | matlab -nojvm -nosplash -nodisplay
 cd ..
 
 cd libDPM
