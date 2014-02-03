@@ -15,7 +15,8 @@ echo "mcc -m predictFactorsImg.m -v -a ./ -a ../../scripts/matlab/ -N -p images/
 cd ..
 
 cd libDPM
-echo "compile;  quit" | /usr/bin/matlab -nojvm -nosplash -nodisplay
+echo "compile;  quit" | matlab -nojvm -nosplash -nodisplay
+make;
 echo "mcc -m partdetect_dpm.m -v -a ./ -a ../../scripts/matlab/  -N -p images/  -p stats/;  quit" | matlab -nojvm -nosplash -nodisplay
 echo "mcc -m partdetect_dpm_all.m -v -a ./ -a ../../scripts/matlab/ -N -p images/  -p stats/; quit" | matlab -nojvm -nosplash -nodisplay
 cd ..
