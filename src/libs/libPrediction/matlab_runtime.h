@@ -1,1 +1,1 @@
-#define MATLAB_RUNTIME "/BS/opt/local/MATLAB_Compiler_Runtime/v81"
+#define MATLAB_RUNTIME "/usr/local/matlab/R2012b"
