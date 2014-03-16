@@ -7,6 +7,8 @@ TARGET = partapp
 CONFIG = uic resources qt incremental stl qt_no_framework warn_on
 CONFIG += release
 
+QMAKE_LFLAGS = -Wl,--no-as-needed
+
 CONFIG(release) {
   OBJECTS_DIR = ./Release/
   DESTDIR = ../../../bin/Release/	
@@ -79,3 +81,4 @@ LIBS += -lblas -lm
 
 # needed to correctly handle dependencies on protocol buffers generated files
 include ( ../../protobuf.pri)
+
