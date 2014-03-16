@@ -949,6 +949,7 @@ namespace object_detect {
     /**************************** add torso position prior score ************************/
 
     /****************** integrate rough position information (cvpr'14) *****************/
+    /*
     int posX = part_app.m_test_annolist[imgidx][0].getObjPosX();
     int posY = part_app.m_test_annolist[imgidx][0].getObjPosY();
     if (posX > 0 && posY > 0){
@@ -969,6 +970,7 @@ namespace object_detect {
 		ix < firstix || ix > lastix)
 	      log_part_detections[part_app.m_rootpart_idx][scaleidx][ridx][iy][ix] = LOG_ZERO;                  
     }
+    */
     /**************************** integrate rough position information ************************/
 
     vector<vector<PartHyp> >  best_part_hyp;

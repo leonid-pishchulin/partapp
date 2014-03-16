@@ -21,6 +21,11 @@ for i = 1:length(files)
         annotations(nexti).image.name = [pngDir '/' n '.png'];
         num = num + 1;
         annotations(nexti).imgnum = num;
+        % add fake bounding box
+        annotations(nexti).annorect.x1 = 1;
+        annotations(nexti).annorect.y1 = 1;
+        annotations(nexti).annorect.x2 = 2;
+        annotations(nexti).annorect.y2 = 2;
     end
 end
 
