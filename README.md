@@ -89,7 +89,7 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
 
 ### Train + Test
 
- 1. **local appearance model**
+1. **local appearance model**
 
  1) train AdaBoost model for part `PARTIDX` 0 - 21 (22 parts total)
 ```
@@ -120,7 +120,7 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-local-app-model.txt --head_detect_dpm --part_detect_dpm --find_obj
 ```
 
- 2. **poselets**
+2. **poselets**
 
   1) run torso detector on training images
 ```
@@ -141,7 +141,7 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
 ```
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt  --train_lda_urot --train_lda_upos --train_lda_pwise
 ```
- 3. **full model**
+3. **full model**
 
   1) compute poselet conditioned mixtures
 ```
@@ -164,6 +164,23 @@ Loading/saving annotation files in matlab:
     annotations = loadannotations(<annotations.al>);
     saveannotations(annotations, <annotations.al>);
 
+
+### Running on your data
+
+1. **rescale images**
+
+As our model runs on a single scale, you need to rescaled the images first. After rescaling each shown person should be roughly 200 px high, if the person were staying upright. This can be done by using head size as a reference.
+
+2. **save images as png**
+
+The best way is to use matlab to convert the images.
+
+3. **create annotation list in .al format**
+
+    cd <PARTAPP_DIR>/src/scripts/matlab
+    prepare_data_file(<path/to/images/>);
+
+** We may also run our model on your data **
+
 For more information visit our project web page https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps  
 If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "partapp code".  
-We may also run our model on your data.
