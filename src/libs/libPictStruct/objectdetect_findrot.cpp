@@ -1011,14 +1011,14 @@ namespace object_detect {
     QString qsOutFilename = qsPartMarginalsDir + "/pose_est_imgidx" + padZeros(QString::number(imgidx), 4) + ".mat";
     matlab_io::mat_save_multi_array(qsOutFilename, "best_conf", best_conf);
     /**************************** Save part configuration ************************/    
-            
+    
     int max_hypothesis_number = 1000;
     findLocalMax(part_app.m_exp_param, root_part_posterior, hypothesis_list, max_hypothesis_number);
 
     for (int hypidx = 0; hypidx < hypothesis_list.hyp_size(); ++hypidx) {
       hypothesis_list.mutable_hyp(hypidx)->set_flip(flip);
 
-      /** these are hypothesis for root part, convert them to hypothesis for object bounding box */
+      // these are hypothesis for root part, convert them to hypothesis for object bounding box 
       int bbox_x = (int)(hypothesis_list.hyp(hypidx).x() + part_app.m_window_param.bbox_offset_x());
       int bbox_y = (int)(hypothesis_list.hyp(hypidx).y() + part_app.m_window_param.bbox_offset_y());
       hypothesis_list.mutable_hyp(hypidx)->set_x(bbox_x);
@@ -1032,6 +1032,7 @@ namespace object_detect {
         ", scaleidx: " << index_from_scale(part_app.m_exp_param, hypothesis_list.hyp(i).scale()) << 
         ", score: " << hypothesis_list.hyp(i).score() << endl;
     }
+    
   }
 
 
