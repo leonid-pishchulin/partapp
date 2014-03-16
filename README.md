@@ -91,26 +91,26 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
 
 1. **local appearance model**
 
- 1) train AdaBoost model for part `PARTIDX` 0 - 21 (22 parts total)
+   	1) train AdaBoost model for part `PARTIDX` 0 - 21 (22 parts total)
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-local-app-model.txt --train_class --pidx <PARTIDX>
 ```
- 2) train generic spatial model
+	2) train generic spatial model
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-local-app-model.txt --pc_learn
 ```
- 3) compute torso position prior
+	3) compute torso position prior
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-local-app-model.txt --compute_pos_prior
 ```
- 4) train DPM part detectors (_in matlab_)
+	4) train DPM part detectors (_in matlab_)
 ```
      cd <PARTAPP_DIR>/src/libs/libDPM
      trainDPM(<PARTIDX>, <EXP_DIR>)
 ```
     where `EXP_DIR` is the root of the experiments package
 
- 5) train DPM head detector (in matlab)
+    	5) train DPM head detector (in matlab)
 ```
      cd <PARTAPP_DIR>/src/libs/libDPM
      trainDPM(11, <EXP_DIR>, true)
@@ -122,36 +122,36 @@ WARNING: this model evaluates AdaBoost detectors at every 4th pixel to speed up 
 
 2. **poselets**
 
-  1) run torso detector on training images
+	1) run torso detector on training images
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-train-torso.txt --find_obj --first <IMGIDX> --numimgs 1
 ```
-  2) train poselet AdaBoost detectors
+	2) train poselet AdaBoost detectors
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt --train_class --pidx <PARTIDX> --tidx <TYPEIDX>
 ```
     where `PARTIDX` is poselet id, [0, 20]; `TYPEIDX` is poselet mixture type, [0, 100)
 
-  3) collect poselet responses on training and testing images
+    	3) collect poselet responses on training and testing images
 ```
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt --save_resp_train --first <IMGIDX> --numimgs 1
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt --save_resp_test --first <IMGIDX> --numimgs 1
 ```
-  4) train LDA classifiers
+	4) train LDA classifiers
 ```
      <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-poselets.txt  --train_lda_urot --train_lda_upos --train_lda_pwise
 ```
 3. **full model**
 
-  1) compute poselet conditioned mixtures
+   	1) compute poselet conditioned mixtures
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-full-model.txt --pc_learn_types
 ```
-  2) run full model
+	2) run full model
 ```
     PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-full-model.txt --find_obj --first <IMGIDX> --numimgs 1
 ```
-  3) evaluate and visualize the results
+	3) evaluate and visualize the results
 ```
     <PARTAPP_DIR>/run_partapp.sh --expopt ./expopt/exp-lsp-full-model.txt --find_obj --first <IMGIDX> --numimgs 1
 ```
