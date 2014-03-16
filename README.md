@@ -167,20 +167,20 @@ Loading/saving annotation files in matlab:
 
 ### Running on your data
 
-1. **rescale images**
+1. rescale images
 
 As our model runs on a single scale, you need to rescaled the images first. After rescaling each shown person should be roughly 200 px high, if the person were staying upright. This can be done by using head size as a reference.
 
-2. **save images as png**
+2. save images as png
 
 The best way is to use matlab to convert the images.
 
-3. **create annotation list in .al format**
+3. create annotation list in .al format
 
     cd <PARTAPP_DIR>/src/scripts/matlab
     prepare_data_file(<path/to/images/>);
 
-** We may also run our model on your data **
+**We may also run our model on your data**
 
 For more information visit our project web page https://www.d2.mpi-inf.mpg.de/poselet-conditioned-ps  
 If you have any questions, send an email to leonid@mpi-inf.mpg.de with a topic "partapp code".  
