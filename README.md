@@ -177,8 +177,10 @@ Loading/saving annotation files in matlab:
 
 3. **create annotation list in .al format**
 
+```
     cd <PARTAPP_DIR>/src/scripts/matlab
     prepare_data_file(<path/to/images/>);
+```
 
 **We may also run our model on your data.**
 
