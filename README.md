@@ -51,7 +51,7 @@ Testing
    ../run_partapp.sh --expopt ./expopt/exp-code-test-full-model.txt --find_obj --eval_segments --vis_segments
    ```
 
-This will run local appearance model, compute poselet responses and finally run full model to estimate body parts on a provided image and visualize the results. Compare the image in the `./log_dir/exp-code-test-full-model/part_marginals/seg_eval_images` with the image in `./images_result`
+This will run local appearance model, compute poselet responses and finally run full model to estimate body parts on a provided image and visualize the results. Compare the image in the `./log_dir/exp-code-test-full-model/part_marginals/seg_vis_images` with the image in `./images_result`
 
 Running pose estimation experiments
 ---

@@ -26,7 +26,7 @@ void protobuf_AssignDesc_ExpParam_2eproto() {
       "ExpParam.proto");
   GOOGLE_CHECK(file != NULL);
   ExpParam_descriptor_ = file->message_type(0);
-  static const int ExpParam_offsets_[90] = {
+  static const int ExpParam_offsets_[92] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, train_dataset_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, validation_dataset_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, test_dataset_),
@@ -75,6 +75,8 @@ void protobuf_AssignDesc_ExpParam_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, do_dpm_rot_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, use_pairwise_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, save_part_marginals_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, save_part_marginals_local_max_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, save_part_detections_local_max_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, dpm_model_dir_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, unary_weight_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExpParam, interpolate_),
@@ -159,7 +161,7 @@ void protobuf_AddDesc_ExpParam_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\016ExpParam.proto\"\266\024\n\010ExpParam\022\025\n\rtrain_d"
+    "\n\016ExpParam.proto\"\225\025\n\010ExpParam\022\025\n\rtrain_d"
     "ataset\030\001 \003(\t\022\032\n\022validation_dataset\030\010 \003(\t"
     "\022\024\n\014test_dataset\030\002 \003(\t\022\023\n\013neg_dataset\0303 "
     "\003(\t\022\031\n\021bootstrap_dataset\030V \003(\t\022\036\n\026train_"
@@ -193,38 +195,41 @@ void protobuf_AddDesc_ExpParam_2eproto() {
     "ry_weight\030\177 \001(\002:\0011\022\035\n\ruse_dpm_unary\030\200\001 \001"
     "(\010:\005false\022\032\n\ndo_dpm_rot\030\203\001 \001(\010:\005false\022\033\n"
     "\014use_pairwise\030\204\001 \001(\010:\004true\022#\n\023save_part_"
-    "marginals\030\205\001 \001(\010:\005false\022\026\n\rdpm_model_dir"
-    "\030\206\001 \001(\t\022\027\n\014unary_weight\0308 \001(\002:\0011\022\032\n\013inte"
-    "rpolate\030M \001(\010:\005false\022\031\n\021pos_dpm_torso_di"
-    "r\030E \001(\t\022\032\n\022test_dpm_torso_dir\030G \001(\t\022\025\n\rt"
-    "orso_hyp_idx\030H \001(\r\022\032\n\022part_marginals_dir"
-    "\030I \001(\t\022\021\n\tpart_conf\030\005 \001(\t\022\026\n\016part_conf_e"
-    "val\030  \001(\t\022\"\n\016part_conf_type\030! \001(\t:\nhuman"
-    "_full\022\021\n\tabc_param\030\006 \001(\t\022\033\n\020min_object_s"
-    "cale\030\t \001(\002:\0011\022\033\n\020max_object_scale\030\n \001(\002:"
-    "\0011\022\032\n\017num_scale_steps\030\013 \001(\r:\0011\022\037\n\021min_pa"
-    "rt_rotation\030\014 \001(\002:\004-180\022\036\n\021max_part_rota"
-    "tion\030\r \001(\002:\003180\022\036\n\022num_rotation_steps\030\016 "
-    "\001(\r:\00248\022\037\n\020flip_orientation\030\017 \001(\010:\005false"
-    "\022&\n\031object_height_width_ratio\030\025 \001(\002:\0032.5"
-    "\022$\n\026compute_part_marginals\030\026 \001(\010:\004true\022\033"
-    "\n\020num_pose_samples\030\027 \001(\005:\0010\022 \n\021is_multic"
-    "omponent\030( \001(\010:\005false\022\031\n\016num_components\030"
-    ") \001(\005:\0011\022\017\n\007mix_dir\030- \001(\t\022\"\n\027strip_borde"
-    "r_detections\030\030 \001(\002:\0010\022#\n\024save_image_scor"
-    "egrid\030\031 \001(\010:\005false\022\035\n\017dai_num_samples\030\034 "
-    "\001(\005:\0041000\022\025\n\013dai_factors\030\035 \001(\t:\000\022\031\n\017dai_"
-    "samples_dir\030\036 \001(\t:\000\022\034\n\013dai_bp_type\030\037 \001(\t"
-    ":\007sumprod\022#\n\020dai_samples_type\030\" \001(\t:\tpar"
-    "t_post\022\035\n\016dai_bbox_prior\030# \001(\010:\005false\022(\n"
-    "\031dai_bbox_prior_annopoints\030% \001(\010:\005false\022"
-    "\036\n\017dai_multiperson\030$ \001(\010:\005false\022\035\n\023detec"
-    "tion_masks_dir\030& \001(\t:\000\022\026\n\014roi_annolist\030*"
-    " \001(\t:\000\022\030\n\014roi_extend_x\030. \001(\005:\002-1\022\030\n\014roi_"
-    "extend_y\030/ \001(\005:\002-1\022\"\n\024roi_save_num_sampl"
-    "es\0300 \001(\002:\0041000\022\032\n\013compute_max\030+ \001(\010:\005fal"
-    "se\022!\n\022reweight_inference\0305 \001(\010:\005false\022\"\n"
-    "\022save_root_marginal\030\210\001 \001(\010:\005false", 2633);
+    "marginals\030\205\001 \001(\010:\005false\022-\n\035save_part_mar"
+    "ginals_local_max\030\214\001 \001(\010:\005false\022.\n\036save_p"
+    "art_detections_local_max\030\215\001 \001(\010:\005false\022\026"
+    "\n\rdpm_model_dir\030\206\001 \001(\t\022\027\n\014unary_weight\0308"
+    " \001(\002:\0011\022\032\n\013interpolate\030M \001(\010:\005false\022\031\n\021p"
+    "os_dpm_torso_dir\030E \001(\t\022\032\n\022test_dpm_torso"
+    "_dir\030G \001(\t\022\025\n\rtorso_hyp_idx\030H \001(\r\022\032\n\022par"
+    "t_marginals_dir\030I \001(\t\022\021\n\tpart_conf\030\005 \001(\t"
+    "\022\026\n\016part_conf_eval\030  \001(\t\022\"\n\016part_conf_ty"
+    "pe\030! \001(\t:\nhuman_full\022\021\n\tabc_param\030\006 \001(\t\022"
+    "\033\n\020min_object_scale\030\t \001(\002:\0011\022\033\n\020max_obje"
+    "ct_scale\030\n \001(\002:\0011\022\032\n\017num_scale_steps\030\013 \001"
+    "(\r:\0011\022\037\n\021min_part_rotation\030\014 \001(\002:\004-180\022\036"
+    "\n\021max_part_rotation\030\r \001(\002:\003180\022\036\n\022num_ro"
+    "tation_steps\030\016 \001(\r:\00248\022\037\n\020flip_orientati"
+    "on\030\017 \001(\010:\005false\022&\n\031object_height_width_r"
+    "atio\030\025 \001(\002:\0032.5\022$\n\026compute_part_marginal"
+    "s\030\026 \001(\010:\004true\022\033\n\020num_pose_samples\030\027 \001(\005:"
+    "\0010\022 \n\021is_multicomponent\030( \001(\010:\005false\022\031\n\016"
+    "num_components\030) \001(\005:\0011\022\017\n\007mix_dir\030- \001(\t"
+    "\022\"\n\027strip_border_detections\030\030 \001(\002:\0010\022#\n\024"
+    "save_image_scoregrid\030\031 \001(\010:\005false\022\035\n\017dai"
+    "_num_samples\030\034 \001(\005:\0041000\022\025\n\013dai_factors\030"
+    "\035 \001(\t:\000\022\031\n\017dai_samples_dir\030\036 \001(\t:\000\022\034\n\013da"
+    "i_bp_type\030\037 \001(\t:\007sumprod\022#\n\020dai_samples_"
+    "type\030\" \001(\t:\tpart_post\022\035\n\016dai_bbox_prior\030"
+    "# \001(\010:\005false\022(\n\031dai_bbox_prior_annopoint"
+    "s\030% \001(\010:\005false\022\036\n\017dai_multiperson\030$ \001(\010:"
+    "\005false\022\035\n\023detection_masks_dir\030& \001(\t:\000\022\026\n"
+    "\014roi_annolist\030* \001(\t:\000\022\030\n\014roi_extend_x\030. "
+    "\001(\005:\002-1\022\030\n\014roi_extend_y\030/ \001(\005:\002-1\022\"\n\024roi"
+    "_save_num_samples\0300 \001(\002:\0041000\022\032\n\013compute"
+    "_max\030+ \001(\010:\005false\022!\n\022reweight_inference\030"
+    "5 \001(\010:\005false\022\"\n\022save_root_marginal\030\210\001 \001("
+    "\010:\005false", 2728);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "ExpParam.proto", &protobuf_RegisterTypes);
   ExpParam::default_instance_ = new ExpParam();
@@ -319,6 +324,8 @@ const int ExpParam::kUseDpmUnaryFieldNumber;
 const int ExpParam::kDoDpmRotFieldNumber;
 const int ExpParam::kUsePairwiseFieldNumber;
 const int ExpParam::kSavePartMarginalsFieldNumber;
+const int ExpParam::kSavePartMarginalsLocalMaxFieldNumber;
+const int ExpParam::kSavePartDetectionsLocalMaxFieldNumber;
 const int ExpParam::kDpmModelDirFieldNumber;
 const int ExpParam::kUnaryWeightFieldNumber;
 const int ExpParam::kInterpolateFieldNumber;
@@ -420,6 +427,8 @@ void ExpParam::SharedCtor() {
   do_dpm_rot_ = false;
   use_pairwise_ = true;
   save_part_marginals_ = false;
+  save_part_marginals_local_max_ = false;
+  save_part_detections_local_max_ = false;
   dpm_model_dir_ = const_cast< ::std::string*>(&_default_dpm_model_dir_);
   unary_weight_ = 1;
   interpolate_ = false;
@@ -685,47 +694,49 @@ void ExpParam::Clear() {
     save_part_marginals_ = false;
   }
   if (_has_bits_[48 / 32] & (0xffu << (48 % 32))) {
-    if (_has_bit(48)) {
+    save_part_marginals_local_max_ = false;
+    save_part_detections_local_max_ = false;
+    if (_has_bit(50)) {
       if (dpm_model_dir_ != &_default_dpm_model_dir_) {
         dpm_model_dir_->clear();
       }
     }
     unary_weight_ = 1;
     interpolate_ = false;
-    if (_has_bit(51)) {
+    if (_has_bit(53)) {
       if (pos_dpm_torso_dir_ != &_default_pos_dpm_torso_dir_) {
         pos_dpm_torso_dir_->clear();
       }
     }
-    if (_has_bit(52)) {
+    if (_has_bit(54)) {
       if (test_dpm_torso_dir_ != &_default_test_dpm_torso_dir_) {
         test_dpm_torso_dir_->clear();
       }
     }
     torso_hyp_idx_ = 0u;
-    if (_has_bit(54)) {
+  }
+  if (_has_bits_[56 / 32] & (0xffu << (56 % 32))) {
+    if (_has_bit(56)) {
       if (part_marginals_dir_ != &_default_part_marginals_dir_) {
         part_marginals_dir_->clear();
       }
     }
-    if (_has_bit(55)) {
+    if (_has_bit(57)) {
       if (part_conf_ != &_default_part_conf_) {
         part_conf_->clear();
       }
     }
-  }
-  if (_has_bits_[56 / 32] & (0xffu << (56 % 32))) {
-    if (_has_bit(56)) {
+    if (_has_bit(58)) {
       if (part_conf_eval_ != &_default_part_conf_eval_) {
         part_conf_eval_->clear();
       }
     }
-    if (_has_bit(57)) {
+    if (_has_bit(59)) {
       if (part_conf_type_ != &_default_part_conf_type_) {
         part_conf_type_->assign(_default_part_conf_type_);
       }
     }
-    if (_has_bit(58)) {
+    if (_has_bit(60)) {
       if (abc_param_ != &_default_abc_param_) {
         abc_param_->clear();
       }
@@ -733,68 +744,68 @@ void ExpParam::Clear() {
     min_object_scale_ = 1;
     max_object_scale_ = 1;
     num_scale_steps_ = 1u;
-    min_part_rotation_ = -180;
-    max_part_rotation_ = 180;
   }
   if (_has_bits_[64 / 32] & (0xffu << (64 % 32))) {
+    min_part_rotation_ = -180;
+    max_part_rotation_ = 180;
     num_rotation_steps_ = 48u;
     flip_orientation_ = false;
     object_height_width_ratio_ = 2.5f;
     compute_part_marginals_ = true;
     num_pose_samples_ = 0;
     is_multicomponent_ = false;
+  }
+  if (_has_bits_[72 / 32] & (0xffu << (72 % 32))) {
     num_components_ = 1;
-    if (_has_bit(71)) {
+    if (_has_bit(73)) {
       if (mix_dir_ != &_default_mix_dir_) {
         mix_dir_->clear();
       }
     }
-  }
-  if (_has_bits_[72 / 32] & (0xffu << (72 % 32))) {
     strip_border_detections_ = 0;
     save_image_scoregrid_ = false;
     dai_num_samples_ = 1000;
-    if (_has_bit(75)) {
+    if (_has_bit(77)) {
       if (dai_factors_ != &_default_dai_factors_) {
         dai_factors_->clear();
       }
     }
-    if (_has_bit(76)) {
+    if (_has_bit(78)) {
       if (dai_samples_dir_ != &_default_dai_samples_dir_) {
         dai_samples_dir_->clear();
       }
     }
-    if (_has_bit(77)) {
+    if (_has_bit(79)) {
       if (dai_bp_type_ != &_default_dai_bp_type_) {
         dai_bp_type_->assign(_default_dai_bp_type_);
       }
     }
-    if (_has_bit(78)) {
+  }
+  if (_has_bits_[80 / 32] & (0xffu << (80 % 32))) {
+    if (_has_bit(80)) {
       if (dai_samples_type_ != &_default_dai_samples_type_) {
         dai_samples_type_->assign(_default_dai_samples_type_);
       }
     }
     dai_bbox_prior_ = false;
-  }
-  if (_has_bits_[80 / 32] & (0xffu << (80 % 32))) {
     dai_bbox_prior_annopoints_ = false;
     dai_multiperson_ = false;
-    if (_has_bit(82)) {
+    if (_has_bit(84)) {
       if (detection_masks_dir_ != &_default_detection_masks_dir_) {
         detection_masks_dir_->clear();
       }
     }
-    if (_has_bit(83)) {
+    if (_has_bit(85)) {
       if (roi_annolist_ != &_default_roi_annolist_) {
         roi_annolist_->clear();
       }
     }
     roi_extend_x_ = -1;
     roi_extend_y_ = -1;
-    roi_save_num_samples_ = 1000;
-    compute_max_ = false;
   }
   if (_has_bits_[88 / 32] & (0xffu << (88 % 32))) {
+    roi_save_num_samples_ = 1000;
+    compute_max_ = false;
     reweight_inference_ = false;
     save_root_marginal_ = false;
   }
@@ -962,7 +973,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &min_object_scale_)));
-          _set_bit(59);
+          _set_bit(61);
         } else {
           goto handle_uninterpreted;
         }
@@ -978,7 +989,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &max_object_scale_)));
-          _set_bit(60);
+          _set_bit(62);
         } else {
           goto handle_uninterpreted;
         }
@@ -994,7 +1005,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &num_scale_steps_)));
-          _set_bit(61);
+          _set_bit(63);
         } else {
           goto handle_uninterpreted;
         }
@@ -1010,7 +1021,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &min_part_rotation_)));
-          _set_bit(62);
+          _set_bit(64);
         } else {
           goto handle_uninterpreted;
         }
@@ -1026,7 +1037,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &max_part_rotation_)));
-          _set_bit(63);
+          _set_bit(65);
         } else {
           goto handle_uninterpreted;
         }
@@ -1042,7 +1053,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &num_rotation_steps_)));
-          _set_bit(64);
+          _set_bit(66);
         } else {
           goto handle_uninterpreted;
         }
@@ -1058,7 +1069,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &flip_orientation_)));
-          _set_bit(65);
+          _set_bit(67);
         } else {
           goto handle_uninterpreted;
         }
@@ -1091,7 +1102,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &object_height_width_ratio_)));
-          _set_bit(66);
+          _set_bit(68);
         } else {
           goto handle_uninterpreted;
         }
@@ -1107,7 +1118,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &compute_part_marginals_)));
-          _set_bit(67);
+          _set_bit(69);
         } else {
           goto handle_uninterpreted;
         }
@@ -1123,7 +1134,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_pose_samples_)));
-          _set_bit(68);
+          _set_bit(70);
         } else {
           goto handle_uninterpreted;
         }
@@ -1139,7 +1150,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &strip_border_detections_)));
-          _set_bit(72);
+          _set_bit(74);
         } else {
           goto handle_uninterpreted;
         }
@@ -1155,7 +1166,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &save_image_scoregrid_)));
-          _set_bit(73);
+          _set_bit(75);
         } else {
           goto handle_uninterpreted;
         }
@@ -1171,7 +1182,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &dai_num_samples_)));
-          _set_bit(74);
+          _set_bit(76);
         } else {
           goto handle_uninterpreted;
         }
@@ -1289,7 +1300,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &dai_bbox_prior_)));
-          _set_bit(79);
+          _set_bit(81);
         } else {
           goto handle_uninterpreted;
         }
@@ -1305,7 +1316,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &dai_multiperson_)));
-          _set_bit(81);
+          _set_bit(83);
         } else {
           goto handle_uninterpreted;
         }
@@ -1321,7 +1332,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &dai_bbox_prior_annopoints_)));
-          _set_bit(80);
+          _set_bit(82);
         } else {
           goto handle_uninterpreted;
         }
@@ -1372,7 +1383,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_multicomponent_)));
-          _set_bit(69);
+          _set_bit(71);
         } else {
           goto handle_uninterpreted;
         }
@@ -1388,7 +1399,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_components_)));
-          _set_bit(70);
+          _set_bit(72);
         } else {
           goto handle_uninterpreted;
         }
@@ -1421,7 +1432,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &compute_max_)));
-          _set_bit(87);
+          _set_bit(89);
         } else {
           goto handle_uninterpreted;
         }
@@ -1471,7 +1482,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &roi_extend_x_)));
-          _set_bit(84);
+          _set_bit(86);
         } else {
           goto handle_uninterpreted;
         }
@@ -1487,7 +1498,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &roi_extend_y_)));
-          _set_bit(85);
+          _set_bit(87);
         } else {
           goto handle_uninterpreted;
         }
@@ -1503,7 +1514,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &roi_save_num_samples_)));
-          _set_bit(86);
+          _set_bit(88);
         } else {
           goto handle_uninterpreted;
         }
@@ -1555,7 +1566,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &reweight_inference_)));
-          _set_bit(88);
+          _set_bit(90);
         } else {
           goto handle_uninterpreted;
         }
@@ -1571,7 +1582,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &unary_weight_)));
-          _set_bit(49);
+          _set_bit(51);
         } else {
           goto handle_uninterpreted;
         }
@@ -1621,7 +1632,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &torso_hyp_idx_)));
-          _set_bit(53);
+          _set_bit(55);
         } else {
           goto handle_uninterpreted;
         }
@@ -1654,7 +1665,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &interpolate_)));
-          _set_bit(50);
+          _set_bit(52);
         } else {
           goto handle_uninterpreted;
         }
@@ -2238,7 +2249,7 @@ bool ExpParam::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &save_root_marginal_)));
-          _set_bit(89);
+          _set_bit(91);
         } else {
           goto handle_uninterpreted;
         }
@@ -2290,6 +2301,38 @@ bool ExpParam::MergePartialFromCodedStream(
           ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->spatial_dir().data(), this->spatial_dir().length(),
             ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(1120)) goto parse_save_part_marginals_local_max;
+        break;
+      }
+      
+      // optional bool save_part_marginals_local_max = 140 [default = false];
+      case 140: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_save_part_marginals_local_max:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &save_part_marginals_local_max_)));
+          _set_bit(48);
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(1128)) goto parse_save_part_detections_local_max;
+        break;
+      }
+      
+      // optional bool save_part_detections_local_max = 141 [default = false];
+      case 141: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_save_part_detections_local_max:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &save_part_detections_local_max_)));
+          _set_bit(49);
         } else {
           goto handle_uninterpreted;
         }
@@ -2352,7 +2395,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string part_conf = 5;
-  if (_has_bit(55)) {
+  if (_has_bit(57)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_conf().data(), this->part_conf().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2361,7 +2404,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string abc_param = 6;
-  if (_has_bit(58)) {
+  if (_has_bit(60)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->abc_param().data(), this->abc_param().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2388,37 +2431,37 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional float min_object_scale = 9 [default = 1];
-  if (_has_bit(59)) {
+  if (_has_bit(61)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(9, this->min_object_scale(), output);
   }
   
   // optional float max_object_scale = 10 [default = 1];
-  if (_has_bit(60)) {
+  if (_has_bit(62)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(10, this->max_object_scale(), output);
   }
   
   // optional uint32 num_scale_steps = 11 [default = 1];
-  if (_has_bit(61)) {
+  if (_has_bit(63)) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(11, this->num_scale_steps(), output);
   }
   
   // optional float min_part_rotation = 12 [default = -180];
-  if (_has_bit(62)) {
+  if (_has_bit(64)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(12, this->min_part_rotation(), output);
   }
   
   // optional float max_part_rotation = 13 [default = 180];
-  if (_has_bit(63)) {
+  if (_has_bit(65)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(13, this->max_part_rotation(), output);
   }
   
   // optional uint32 num_rotation_steps = 14 [default = 48];
-  if (_has_bit(64)) {
+  if (_has_bit(66)) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(14, this->num_rotation_steps(), output);
   }
   
   // optional bool flip_orientation = 15 [default = false];
-  if (_has_bit(65)) {
+  if (_has_bit(67)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(15, this->flip_orientation(), output);
   }
   
@@ -2432,37 +2475,37 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional float object_height_width_ratio = 21 [default = 2.5];
-  if (_has_bit(66)) {
+  if (_has_bit(68)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(21, this->object_height_width_ratio(), output);
   }
   
   // optional bool compute_part_marginals = 22 [default = true];
-  if (_has_bit(67)) {
+  if (_has_bit(69)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(22, this->compute_part_marginals(), output);
   }
   
   // optional int32 num_pose_samples = 23 [default = 0];
-  if (_has_bit(68)) {
+  if (_has_bit(70)) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(23, this->num_pose_samples(), output);
   }
   
   // optional float strip_border_detections = 24 [default = 0];
-  if (_has_bit(72)) {
+  if (_has_bit(74)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(24, this->strip_border_detections(), output);
   }
   
   // optional bool save_image_scoregrid = 25 [default = false];
-  if (_has_bit(73)) {
+  if (_has_bit(75)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(25, this->save_image_scoregrid(), output);
   }
   
   // optional int32 dai_num_samples = 28 [default = 1000];
-  if (_has_bit(74)) {
+  if (_has_bit(76)) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(28, this->dai_num_samples(), output);
   }
   
   // optional string dai_factors = 29 [default = ""];
-  if (_has_bit(75)) {
+  if (_has_bit(77)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_factors().data(), this->dai_factors().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2471,7 +2514,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dai_samples_dir = 30 [default = ""];
-  if (_has_bit(76)) {
+  if (_has_bit(78)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_samples_dir().data(), this->dai_samples_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2480,7 +2523,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dai_bp_type = 31 [default = "sumprod"];
-  if (_has_bit(77)) {
+  if (_has_bit(79)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_bp_type().data(), this->dai_bp_type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2489,7 +2532,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string part_conf_eval = 32;
-  if (_has_bit(56)) {
+  if (_has_bit(58)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_conf_eval().data(), this->part_conf_eval().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2498,7 +2541,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string part_conf_type = 33 [default = "human_full"];
-  if (_has_bit(57)) {
+  if (_has_bit(59)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_conf_type().data(), this->part_conf_type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2507,7 +2550,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dai_samples_type = 34 [default = "part_post"];
-  if (_has_bit(78)) {
+  if (_has_bit(80)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_samples_type().data(), this->dai_samples_type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2516,22 +2559,22 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool dai_bbox_prior = 35 [default = false];
-  if (_has_bit(79)) {
+  if (_has_bit(81)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(35, this->dai_bbox_prior(), output);
   }
   
   // optional bool dai_multiperson = 36 [default = false];
-  if (_has_bit(81)) {
+  if (_has_bit(83)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(36, this->dai_multiperson(), output);
   }
   
   // optional bool dai_bbox_prior_annopoints = 37 [default = false];
-  if (_has_bit(80)) {
+  if (_has_bit(82)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(37, this->dai_bbox_prior_annopoints(), output);
   }
   
   // optional string detection_masks_dir = 38 [default = ""];
-  if (_has_bit(82)) {
+  if (_has_bit(84)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->detection_masks_dir().data(), this->detection_masks_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2549,17 +2592,17 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool is_multicomponent = 40 [default = false];
-  if (_has_bit(69)) {
+  if (_has_bit(71)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(40, this->is_multicomponent(), output);
   }
   
   // optional int32 num_components = 41 [default = 1];
-  if (_has_bit(70)) {
+  if (_has_bit(72)) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(41, this->num_components(), output);
   }
   
   // optional string roi_annolist = 42 [default = ""];
-  if (_has_bit(83)) {
+  if (_has_bit(85)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->roi_annolist().data(), this->roi_annolist().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2568,7 +2611,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool compute_max = 43 [default = false];
-  if (_has_bit(87)) {
+  if (_has_bit(89)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(43, this->compute_max(), output);
   }
   
@@ -2582,7 +2625,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string mix_dir = 45;
-  if (_has_bit(71)) {
+  if (_has_bit(73)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->mix_dir().data(), this->mix_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2591,17 +2634,17 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional int32 roi_extend_x = 46 [default = -1];
-  if (_has_bit(84)) {
+  if (_has_bit(86)) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(46, this->roi_extend_x(), output);
   }
   
   // optional int32 roi_extend_y = 47 [default = -1];
-  if (_has_bit(85)) {
+  if (_has_bit(87)) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(47, this->roi_extend_y(), output);
   }
   
   // optional float roi_save_num_samples = 48 [default = 1000];
-  if (_has_bit(86)) {
+  if (_has_bit(88)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(48, this->roi_save_num_samples(), output);
   }
   
@@ -2624,17 +2667,17 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool reweight_inference = 53 [default = false];
-  if (_has_bit(88)) {
+  if (_has_bit(90)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(53, this->reweight_inference(), output);
   }
   
   // optional float unary_weight = 56 [default = 1];
-  if (_has_bit(49)) {
+  if (_has_bit(51)) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(56, this->unary_weight(), output);
   }
   
   // optional string pos_dpm_torso_dir = 69;
-  if (_has_bit(51)) {
+  if (_has_bit(53)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->pos_dpm_torso_dir().data(), this->pos_dpm_torso_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2643,7 +2686,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string test_dpm_torso_dir = 71;
-  if (_has_bit(52)) {
+  if (_has_bit(54)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->test_dpm_torso_dir().data(), this->test_dpm_torso_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2652,12 +2695,12 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional uint32 torso_hyp_idx = 72;
-  if (_has_bit(53)) {
+  if (_has_bit(55)) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(72, this->torso_hyp_idx(), output);
   }
   
   // optional string part_marginals_dir = 73;
-  if (_has_bit(54)) {
+  if (_has_bit(56)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_marginals_dir().data(), this->part_marginals_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2666,7 +2709,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool interpolate = 77 [default = false];
-  if (_has_bit(50)) {
+  if (_has_bit(52)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(77, this->interpolate(), output);
   }
   
@@ -2856,7 +2899,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dpm_model_dir = 134;
-  if (_has_bit(48)) {
+  if (_has_bit(50)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dpm_model_dir().data(), this->dpm_model_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2874,7 +2917,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool save_root_marginal = 136 [default = false];
-  if (_has_bit(89)) {
+  if (_has_bit(91)) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(136, this->save_root_marginal(), output);
   }
   
@@ -2903,6 +2946,16 @@ void ExpParam::SerializeWithCachedSizes(
       ::google::protobuf::internal::WireFormat::SERIALIZE);
     ::google::protobuf::internal::WireFormatLite::WriteString(
       139, this->spatial_dir(), output);
+  }
+  
+  // optional bool save_part_marginals_local_max = 140 [default = false];
+  if (_has_bit(48)) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(140, this->save_part_marginals_local_max(), output);
+  }
+  
+  // optional bool save_part_detections_local_max = 141 [default = false];
+  if (_has_bit(49)) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(141, this->save_part_detections_local_max(), output);
   }
   
   if (!unknown_fields().empty()) {
@@ -2952,7 +3005,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string part_conf = 5;
-  if (_has_bit(55)) {
+  if (_has_bit(57)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_conf().data(), this->part_conf().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2962,7 +3015,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string abc_param = 6;
-  if (_has_bit(58)) {
+  if (_has_bit(60)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->abc_param().data(), this->abc_param().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -2991,37 +3044,37 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional float min_object_scale = 9 [default = 1];
-  if (_has_bit(59)) {
+  if (_has_bit(61)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(9, this->min_object_scale(), target);
   }
   
   // optional float max_object_scale = 10 [default = 1];
-  if (_has_bit(60)) {
+  if (_has_bit(62)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(10, this->max_object_scale(), target);
   }
   
   // optional uint32 num_scale_steps = 11 [default = 1];
-  if (_has_bit(61)) {
+  if (_has_bit(63)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(11, this->num_scale_steps(), target);
   }
   
   // optional float min_part_rotation = 12 [default = -180];
-  if (_has_bit(62)) {
+  if (_has_bit(64)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(12, this->min_part_rotation(), target);
   }
   
   // optional float max_part_rotation = 13 [default = 180];
-  if (_has_bit(63)) {
+  if (_has_bit(65)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(13, this->max_part_rotation(), target);
   }
   
   // optional uint32 num_rotation_steps = 14 [default = 48];
-  if (_has_bit(64)) {
+  if (_has_bit(66)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(14, this->num_rotation_steps(), target);
   }
   
   // optional bool flip_orientation = 15 [default = false];
-  if (_has_bit(65)) {
+  if (_has_bit(67)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(15, this->flip_orientation(), target);
   }
   
@@ -3036,37 +3089,37 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional float object_height_width_ratio = 21 [default = 2.5];
-  if (_has_bit(66)) {
+  if (_has_bit(68)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(21, this->object_height_width_ratio(), target);
   }
   
   // optional bool compute_part_marginals = 22 [default = true];
-  if (_has_bit(67)) {
+  if (_has_bit(69)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(22, this->compute_part_marginals(), target);
   }
   
   // optional int32 num_pose_samples = 23 [default = 0];
-  if (_has_bit(68)) {
+  if (_has_bit(70)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(23, this->num_pose_samples(), target);
   }
   
   // optional float strip_border_detections = 24 [default = 0];
-  if (_has_bit(72)) {
+  if (_has_bit(74)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(24, this->strip_border_detections(), target);
   }
   
   // optional bool save_image_scoregrid = 25 [default = false];
-  if (_has_bit(73)) {
+  if (_has_bit(75)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(25, this->save_image_scoregrid(), target);
   }
   
   // optional int32 dai_num_samples = 28 [default = 1000];
-  if (_has_bit(74)) {
+  if (_has_bit(76)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(28, this->dai_num_samples(), target);
   }
   
   // optional string dai_factors = 29 [default = ""];
-  if (_has_bit(75)) {
+  if (_has_bit(77)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_factors().data(), this->dai_factors().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3076,7 +3129,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dai_samples_dir = 30 [default = ""];
-  if (_has_bit(76)) {
+  if (_has_bit(78)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_samples_dir().data(), this->dai_samples_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3086,7 +3139,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dai_bp_type = 31 [default = "sumprod"];
-  if (_has_bit(77)) {
+  if (_has_bit(79)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_bp_type().data(), this->dai_bp_type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3096,7 +3149,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string part_conf_eval = 32;
-  if (_has_bit(56)) {
+  if (_has_bit(58)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_conf_eval().data(), this->part_conf_eval().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3106,7 +3159,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string part_conf_type = 33 [default = "human_full"];
-  if (_has_bit(57)) {
+  if (_has_bit(59)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_conf_type().data(), this->part_conf_type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3116,7 +3169,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dai_samples_type = 34 [default = "part_post"];
-  if (_has_bit(78)) {
+  if (_has_bit(80)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dai_samples_type().data(), this->dai_samples_type().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3126,22 +3179,22 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool dai_bbox_prior = 35 [default = false];
-  if (_has_bit(79)) {
+  if (_has_bit(81)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(35, this->dai_bbox_prior(), target);
   }
   
   // optional bool dai_multiperson = 36 [default = false];
-  if (_has_bit(81)) {
+  if (_has_bit(83)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(36, this->dai_multiperson(), target);
   }
   
   // optional bool dai_bbox_prior_annopoints = 37 [default = false];
-  if (_has_bit(80)) {
+  if (_has_bit(82)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(37, this->dai_bbox_prior_annopoints(), target);
   }
   
   // optional string detection_masks_dir = 38 [default = ""];
-  if (_has_bit(82)) {
+  if (_has_bit(84)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->detection_masks_dir().data(), this->detection_masks_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3160,17 +3213,17 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool is_multicomponent = 40 [default = false];
-  if (_has_bit(69)) {
+  if (_has_bit(71)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(40, this->is_multicomponent(), target);
   }
   
   // optional int32 num_components = 41 [default = 1];
-  if (_has_bit(70)) {
+  if (_has_bit(72)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(41, this->num_components(), target);
   }
   
   // optional string roi_annolist = 42 [default = ""];
-  if (_has_bit(83)) {
+  if (_has_bit(85)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->roi_annolist().data(), this->roi_annolist().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3180,7 +3233,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool compute_max = 43 [default = false];
-  if (_has_bit(87)) {
+  if (_has_bit(89)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(43, this->compute_max(), target);
   }
   
@@ -3195,7 +3248,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string mix_dir = 45;
-  if (_has_bit(71)) {
+  if (_has_bit(73)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->mix_dir().data(), this->mix_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3205,17 +3258,17 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional int32 roi_extend_x = 46 [default = -1];
-  if (_has_bit(84)) {
+  if (_has_bit(86)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(46, this->roi_extend_x(), target);
   }
   
   // optional int32 roi_extend_y = 47 [default = -1];
-  if (_has_bit(85)) {
+  if (_has_bit(87)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(47, this->roi_extend_y(), target);
   }
   
   // optional float roi_save_num_samples = 48 [default = 1000];
-  if (_has_bit(86)) {
+  if (_has_bit(88)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(48, this->roi_save_num_samples(), target);
   }
   
@@ -3238,17 +3291,17 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool reweight_inference = 53 [default = false];
-  if (_has_bit(88)) {
+  if (_has_bit(90)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(53, this->reweight_inference(), target);
   }
   
   // optional float unary_weight = 56 [default = 1];
-  if (_has_bit(49)) {
+  if (_has_bit(51)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(56, this->unary_weight(), target);
   }
   
   // optional string pos_dpm_torso_dir = 69;
-  if (_has_bit(51)) {
+  if (_has_bit(53)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->pos_dpm_torso_dir().data(), this->pos_dpm_torso_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3258,7 +3311,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string test_dpm_torso_dir = 71;
-  if (_has_bit(52)) {
+  if (_has_bit(54)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->test_dpm_torso_dir().data(), this->test_dpm_torso_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3268,12 +3321,12 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional uint32 torso_hyp_idx = 72;
-  if (_has_bit(53)) {
+  if (_has_bit(55)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(72, this->torso_hyp_idx(), target);
   }
   
   // optional string part_marginals_dir = 73;
-  if (_has_bit(54)) {
+  if (_has_bit(56)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->part_marginals_dir().data(), this->part_marginals_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3283,7 +3336,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool interpolate = 77 [default = false];
-  if (_has_bit(50)) {
+  if (_has_bit(52)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(77, this->interpolate(), target);
   }
   
@@ -3477,7 +3530,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional string dpm_model_dir = 134;
-  if (_has_bit(48)) {
+  if (_has_bit(50)) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dpm_model_dir().data(), this->dpm_model_dir().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
@@ -3497,7 +3550,7 @@ void ExpParam::SerializeWithCachedSizes(
   }
   
   // optional bool save_root_marginal = 136 [default = false];
-  if (_has_bit(89)) {
+  if (_has_bit(91)) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(136, this->save_root_marginal(), target);
   }
   
@@ -3529,6 +3582,16 @@ void ExpParam::SerializeWithCachedSizes(
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         139, this->spatial_dir(), target);
+  }
+  
+  // optional bool save_part_marginals_local_max = 140 [default = false];
+  if (_has_bit(48)) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(140, this->save_part_marginals_local_max(), target);
+  }
+  
+  // optional bool save_part_detections_local_max = 141 [default = false];
+  if (_has_bit(49)) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(141, this->save_part_detections_local_max(), target);
   }
   
   if (!unknown_fields().empty()) {
@@ -3797,6 +3860,16 @@ int ExpParam::ByteSize() const {
     
   }
   if (_has_bits_[48 / 32] & (0xffu << (48 % 32))) {
+    // optional bool save_part_marginals_local_max = 140 [default = false];
+    if (has_save_part_marginals_local_max()) {
+      total_size += 2 + 1;
+    }
+    
+    // optional bool save_part_detections_local_max = 141 [default = false];
+    if (has_save_part_detections_local_max()) {
+      total_size += 2 + 1;
+    }
+    
     // optional string dpm_model_dir = 134;
     if (has_dpm_model_dir()) {
       total_size += 2 +
@@ -3835,6 +3908,8 @@ int ExpParam::ByteSize() const {
           this->torso_hyp_idx());
     }
     
+  }
+  if (_has_bits_[56 / 32] & (0xffu << (56 % 32))) {
     // optional string part_marginals_dir = 73;
     if (has_part_marginals_dir()) {
       total_size += 2 +
@@ -3849,8 +3924,6 @@ int ExpParam::ByteSize() const {
           this->part_conf());
     }
     
-  }
-  if (_has_bits_[56 / 32] & (0xffu << (56 % 32))) {
     // optional string part_conf_eval = 32;
     if (has_part_conf_eval()) {
       total_size += 2 +
@@ -3889,6 +3962,8 @@ int ExpParam::ByteSize() const {
           this->num_scale_steps());
     }
     
+  }
+  if (_has_bits_[64 / 32] & (0xffu << (64 % 32))) {
     // optional float min_part_rotation = 12 [default = -180];
     if (has_min_part_rotation()) {
       total_size += 1 + 4;
@@ -3899,8 +3974,6 @@ int ExpParam::ByteSize() const {
       total_size += 1 + 4;
     }
     
-  }
-  if (_has_bits_[64 / 32] & (0xffu << (64 % 32))) {
     // optional uint32 num_rotation_steps = 14 [default = 48];
     if (has_num_rotation_steps()) {
       total_size += 1 +
@@ -3935,6 +4008,8 @@ int ExpParam::ByteSize() const {
       total_size += 2 + 1;
     }
     
+  }
+  if (_has_bits_[72 / 32] & (0xffu << (72 % 32))) {
     // optional int32 num_components = 41 [default = 1];
     if (has_num_components()) {
       total_size += 2 +
@@ -3949,8 +4024,6 @@ int ExpParam::ByteSize() const {
           this->mix_dir());
     }
     
-  }
-  if (_has_bits_[72 / 32] & (0xffu << (72 % 32))) {
     // optional float strip_border_detections = 24 [default = 0];
     if (has_strip_border_detections()) {
       total_size += 2 + 4;
@@ -3989,6 +4062,8 @@ int ExpParam::ByteSize() const {
           this->dai_bp_type());
     }
     
+  }
+  if (_has_bits_[80 / 32] & (0xffu << (80 % 32))) {
     // optional string dai_samples_type = 34 [default = "part_post"];
     if (has_dai_samples_type()) {
       total_size += 2 +
@@ -4001,8 +4076,6 @@ int ExpParam::ByteSize() const {
       total_size += 2 + 1;
     }
     
-  }
-  if (_has_bits_[80 / 32] & (0xffu << (80 % 32))) {
     // optional bool dai_bbox_prior_annopoints = 37 [default = false];
     if (has_dai_bbox_prior_annopoints()) {
       total_size += 2 + 1;
@@ -4041,6 +4114,8 @@ int ExpParam::ByteSize() const {
           this->roi_extend_y());
     }
     
+  }
+  if (_has_bits_[88 / 32] & (0xffu << (88 % 32))) {
     // optional float roi_save_num_samples = 48 [default = 1000];
     if (has_roi_save_num_samples()) {
       total_size += 2 + 4;
@@ -4051,8 +4126,6 @@ int ExpParam::ByteSize() const {
       total_size += 2 + 1;
     }
     
-  }
-  if (_has_bits_[88 / 32] & (0xffu << (88 % 32))) {
     // optional bool reweight_inference = 53 [default = false];
     if (has_reweight_inference()) {
       total_size += 2 + 1;
@@ -4282,139 +4355,145 @@ void ExpParam::MergeFrom(const ExpParam& from) {
   }
   if (from._has_bits_[48 / 32] & (0xffu << (48 % 32))) {
     if (from._has_bit(48)) {
-      set_dpm_model_dir(from.dpm_model_dir());
+      set_save_part_marginals_local_max(from.save_part_marginals_local_max());
     }
     if (from._has_bit(49)) {
-      set_unary_weight(from.unary_weight());
+      set_save_part_detections_local_max(from.save_part_detections_local_max());
     }
     if (from._has_bit(50)) {
-      set_interpolate(from.interpolate());
+      set_dpm_model_dir(from.dpm_model_dir());
     }
     if (from._has_bit(51)) {
-      set_pos_dpm_torso_dir(from.pos_dpm_torso_dir());
+      set_unary_weight(from.unary_weight());
     }
     if (from._has_bit(52)) {
-      set_test_dpm_torso_dir(from.test_dpm_torso_dir());
+      set_interpolate(from.interpolate());
     }
     if (from._has_bit(53)) {
-      set_torso_hyp_idx(from.torso_hyp_idx());
+      set_pos_dpm_torso_dir(from.pos_dpm_torso_dir());
     }
     if (from._has_bit(54)) {
-      set_part_marginals_dir(from.part_marginals_dir());
+      set_test_dpm_torso_dir(from.test_dpm_torso_dir());
     }
     if (from._has_bit(55)) {
-      set_part_conf(from.part_conf());
+      set_torso_hyp_idx(from.torso_hyp_idx());
     }
   }
   if (from._has_bits_[56 / 32] & (0xffu << (56 % 32))) {
     if (from._has_bit(56)) {
-      set_part_conf_eval(from.part_conf_eval());
+      set_part_marginals_dir(from.part_marginals_dir());
     }
     if (from._has_bit(57)) {
-      set_part_conf_type(from.part_conf_type());
+      set_part_conf(from.part_conf());
     }
     if (from._has_bit(58)) {
-      set_abc_param(from.abc_param());
+      set_part_conf_eval(from.part_conf_eval());
     }
     if (from._has_bit(59)) {
-      set_min_object_scale(from.min_object_scale());
+      set_part_conf_type(from.part_conf_type());
     }
     if (from._has_bit(60)) {
-      set_max_object_scale(from.max_object_scale());
+      set_abc_param(from.abc_param());
     }
     if (from._has_bit(61)) {
-      set_num_scale_steps(from.num_scale_steps());
+      set_min_object_scale(from.min_object_scale());
     }
     if (from._has_bit(62)) {
-      set_min_part_rotation(from.min_part_rotation());
+      set_max_object_scale(from.max_object_scale());
     }
     if (from._has_bit(63)) {
-      set_max_part_rotation(from.max_part_rotation());
+      set_num_scale_steps(from.num_scale_steps());
     }
   }
   if (from._has_bits_[64 / 32] & (0xffu << (64 % 32))) {
     if (from._has_bit(64)) {
-      set_num_rotation_steps(from.num_rotation_steps());
+      set_min_part_rotation(from.min_part_rotation());
     }
     if (from._has_bit(65)) {
-      set_flip_orientation(from.flip_orientation());
+      set_max_part_rotation(from.max_part_rotation());
     }
     if (from._has_bit(66)) {
-      set_object_height_width_ratio(from.object_height_width_ratio());
+      set_num_rotation_steps(from.num_rotation_steps());
     }
     if (from._has_bit(67)) {
-      set_compute_part_marginals(from.compute_part_marginals());
+      set_flip_orientation(from.flip_orientation());
     }
     if (from._has_bit(68)) {
-      set_num_pose_samples(from.num_pose_samples());
+      set_object_height_width_ratio(from.object_height_width_ratio());
     }
     if (from._has_bit(69)) {
-      set_is_multicomponent(from.is_multicomponent());
+      set_compute_part_marginals(from.compute_part_marginals());
     }
     if (from._has_bit(70)) {
-      set_num_components(from.num_components());
+      set_num_pose_samples(from.num_pose_samples());
     }
     if (from._has_bit(71)) {
-      set_mix_dir(from.mix_dir());
+      set_is_multicomponent(from.is_multicomponent());
     }
   }
   if (from._has_bits_[72 / 32] & (0xffu << (72 % 32))) {
     if (from._has_bit(72)) {
-      set_strip_border_detections(from.strip_border_detections());
+      set_num_components(from.num_components());
     }
     if (from._has_bit(73)) {
-      set_save_image_scoregrid(from.save_image_scoregrid());
+      set_mix_dir(from.mix_dir());
     }
     if (from._has_bit(74)) {
-      set_dai_num_samples(from.dai_num_samples());
+      set_strip_border_detections(from.strip_border_detections());
     }
     if (from._has_bit(75)) {
-      set_dai_factors(from.dai_factors());
+      set_save_image_scoregrid(from.save_image_scoregrid());
     }
     if (from._has_bit(76)) {
-      set_dai_samples_dir(from.dai_samples_dir());
+      set_dai_num_samples(from.dai_num_samples());
     }
     if (from._has_bit(77)) {
-      set_dai_bp_type(from.dai_bp_type());
+      set_dai_factors(from.dai_factors());
     }
     if (from._has_bit(78)) {
-      set_dai_samples_type(from.dai_samples_type());
+      set_dai_samples_dir(from.dai_samples_dir());
     }
     if (from._has_bit(79)) {
-      set_dai_bbox_prior(from.dai_bbox_prior());
+      set_dai_bp_type(from.dai_bp_type());
     }
   }
   if (from._has_bits_[80 / 32] & (0xffu << (80 % 32))) {
     if (from._has_bit(80)) {
-      set_dai_bbox_prior_annopoints(from.dai_bbox_prior_annopoints());
+      set_dai_samples_type(from.dai_samples_type());
     }
     if (from._has_bit(81)) {
-      set_dai_multiperson(from.dai_multiperson());
+      set_dai_bbox_prior(from.dai_bbox_prior());
     }
     if (from._has_bit(82)) {
-      set_detection_masks_dir(from.detection_masks_dir());
+      set_dai_bbox_prior_annopoints(from.dai_bbox_prior_annopoints());
     }
     if (from._has_bit(83)) {
-      set_roi_annolist(from.roi_annolist());
+      set_dai_multiperson(from.dai_multiperson());
     }
     if (from._has_bit(84)) {
-      set_roi_extend_x(from.roi_extend_x());
+      set_detection_masks_dir(from.detection_masks_dir());
     }
     if (from._has_bit(85)) {
-      set_roi_extend_y(from.roi_extend_y());
+      set_roi_annolist(from.roi_annolist());
     }
     if (from._has_bit(86)) {
-      set_roi_save_num_samples(from.roi_save_num_samples());
+      set_roi_extend_x(from.roi_extend_x());
     }
     if (from._has_bit(87)) {
-      set_compute_max(from.compute_max());
+      set_roi_extend_y(from.roi_extend_y());
     }
   }
   if (from._has_bits_[88 / 32] & (0xffu << (88 % 32))) {
     if (from._has_bit(88)) {
-      set_reweight_inference(from.reweight_inference());
+      set_roi_save_num_samples(from.roi_save_num_samples());
     }
     if (from._has_bit(89)) {
+      set_compute_max(from.compute_max());
+    }
+    if (from._has_bit(90)) {
+      set_reweight_inference(from.reweight_inference());
+    }
+    if (from._has_bit(91)) {
       set_save_root_marginal(from.save_root_marginal());
     }
   }
@@ -4488,6 +4567,8 @@ void ExpParam::Swap(ExpParam* other) {
     std::swap(do_dpm_rot_, other->do_dpm_rot_);
     std::swap(use_pairwise_, other->use_pairwise_);
     std::swap(save_part_marginals_, other->save_part_marginals_);
+    std::swap(save_part_marginals_local_max_, other->save_part_marginals_local_max_);
+    std::swap(save_part_detections_local_max_, other->save_part_detections_local_max_);
     std::swap(dpm_model_dir_, other->dpm_model_dir_);
     std::swap(unary_weight_, other->unary_weight_);
     std::swap(interpolate_, other->interpolate_);

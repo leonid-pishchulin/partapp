@@ -526,6 +526,20 @@ class ExpParam : public ::google::protobuf::Message {
   inline bool save_part_marginals() const;
   inline void set_save_part_marginals(bool value);
   
+  // optional bool save_part_marginals_local_max = 140 [default = false];
+  inline bool has_save_part_marginals_local_max() const;
+  inline void clear_save_part_marginals_local_max();
+  static const int kSavePartMarginalsLocalMaxFieldNumber = 140;
+  inline bool save_part_marginals_local_max() const;
+  inline void set_save_part_marginals_local_max(bool value);
+  
+  // optional bool save_part_detections_local_max = 141 [default = false];
+  inline bool has_save_part_detections_local_max() const;
+  inline void clear_save_part_detections_local_max();
+  static const int kSavePartDetectionsLocalMaxFieldNumber = 141;
+  inline bool save_part_detections_local_max() const;
+  inline void set_save_part_detections_local_max(bool value);
+  
   // optional string dpm_model_dir = 134;
   inline bool has_dpm_model_dir() const;
   inline void clear_dpm_model_dir();
@@ -931,6 +945,8 @@ class ExpParam : public ::google::protobuf::Message {
   bool do_dpm_rot_;
   bool use_pairwise_;
   bool save_part_marginals_;
+  bool save_part_marginals_local_max_;
+  bool save_part_detections_local_max_;
   ::std::string* dpm_model_dir_;
   static const ::std::string _default_dpm_model_dir_;
   float unary_weight_;
@@ -992,7 +1008,7 @@ class ExpParam : public ::google::protobuf::Message {
   friend void protobuf_AssignDesc_ExpParam_2eproto();
   friend void protobuf_ShutdownFile_ExpParam_2eproto();
   
-  ::google::protobuf::uint32 _has_bits_[(90 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(92 + 31) / 32];
   
   // WHY DOES & HAVE LOWER PRECEDENCE THAN != !?
   inline bool _has_bit(int index) const {
@@ -2317,42 +2333,74 @@ inline void ExpParam::set_save_part_marginals(bool value) {
   save_part_marginals_ = value;
 }
 
+// optional bool save_part_marginals_local_max = 140 [default = false];
+inline bool ExpParam::has_save_part_marginals_local_max() const {
+  return _has_bit(48);
+}
+inline void ExpParam::clear_save_part_marginals_local_max() {
+  save_part_marginals_local_max_ = false;
+  _clear_bit(48);
+}
+inline bool ExpParam::save_part_marginals_local_max() const {
+  return save_part_marginals_local_max_;
+}
+inline void ExpParam::set_save_part_marginals_local_max(bool value) {
+  _set_bit(48);
+  save_part_marginals_local_max_ = value;
+}
+
+// optional bool save_part_detections_local_max = 141 [default = false];
+inline bool ExpParam::has_save_part_detections_local_max() const {
+  return _has_bit(49);
+}
+inline void ExpParam::clear_save_part_detections_local_max() {
+  save_part_detections_local_max_ = false;
+  _clear_bit(49);
+}
+inline bool ExpParam::save_part_detections_local_max() const {
+  return save_part_detections_local_max_;
+}
+inline void ExpParam::set_save_part_detections_local_max(bool value) {
+  _set_bit(49);
+  save_part_detections_local_max_ = value;
+}
+
 // optional string dpm_model_dir = 134;
 inline bool ExpParam::has_dpm_model_dir() const {
-  return _has_bit(48);
+  return _has_bit(50);
 }
 inline void ExpParam::clear_dpm_model_dir() {
   if (dpm_model_dir_ != &_default_dpm_model_dir_) {
     dpm_model_dir_->clear();
   }
-  _clear_bit(48);
+  _clear_bit(50);
 }
 inline const ::std::string& ExpParam::dpm_model_dir() const {
   return *dpm_model_dir_;
 }
 inline void ExpParam::set_dpm_model_dir(const ::std::string& value) {
-  _set_bit(48);
+  _set_bit(50);
   if (dpm_model_dir_ == &_default_dpm_model_dir_) {
     dpm_model_dir_ = new ::std::string;
   }
   dpm_model_dir_->assign(value);
 }
 inline void ExpParam::set_dpm_model_dir(const char* value) {
-  _set_bit(48);
+  _set_bit(50);
   if (dpm_model_dir_ == &_default_dpm_model_dir_) {
     dpm_model_dir_ = new ::std::string;
   }
   dpm_model_dir_->assign(value);
 }
 inline void ExpParam::set_dpm_model_dir(const char* value, size_t size) {
-  _set_bit(48);
+  _set_bit(50);
   if (dpm_model_dir_ == &_default_dpm_model_dir_) {
     dpm_model_dir_ = new ::std::string;
   }
   dpm_model_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_dpm_model_dir() {
-  _set_bit(48);
+  _set_bit(50);
   if (dpm_model_dir_ == &_default_dpm_model_dir_) {
     dpm_model_dir_ = new ::std::string;
   }
@@ -2361,72 +2409,72 @@ inline ::std::string* ExpParam::mutable_dpm_model_dir() {
 
 // optional float unary_weight = 56 [default = 1];
 inline bool ExpParam::has_unary_weight() const {
-  return _has_bit(49);
+  return _has_bit(51);
 }
 inline void ExpParam::clear_unary_weight() {
   unary_weight_ = 1;
-  _clear_bit(49);
+  _clear_bit(51);
 }
 inline float ExpParam::unary_weight() const {
   return unary_weight_;
 }
 inline void ExpParam::set_unary_weight(float value) {
-  _set_bit(49);
+  _set_bit(51);
   unary_weight_ = value;
 }
 
 // optional bool interpolate = 77 [default = false];
 inline bool ExpParam::has_interpolate() const {
-  return _has_bit(50);
+  return _has_bit(52);
 }
 inline void ExpParam::clear_interpolate() {
   interpolate_ = false;
-  _clear_bit(50);
+  _clear_bit(52);
 }
 inline bool ExpParam::interpolate() const {
   return interpolate_;
 }
 inline void ExpParam::set_interpolate(bool value) {
-  _set_bit(50);
+  _set_bit(52);
   interpolate_ = value;
 }
 
 // optional string pos_dpm_torso_dir = 69;
 inline bool ExpParam::has_pos_dpm_torso_dir() const {
-  return _has_bit(51);
+  return _has_bit(53);
 }
 inline void ExpParam::clear_pos_dpm_torso_dir() {
   if (pos_dpm_torso_dir_ != &_default_pos_dpm_torso_dir_) {
     pos_dpm_torso_dir_->clear();
   }
-  _clear_bit(51);
+  _clear_bit(53);
 }
 inline const ::std::string& ExpParam::pos_dpm_torso_dir() const {
   return *pos_dpm_torso_dir_;
 }
 inline void ExpParam::set_pos_dpm_torso_dir(const ::std::string& value) {
-  _set_bit(51);
+  _set_bit(53);
   if (pos_dpm_torso_dir_ == &_default_pos_dpm_torso_dir_) {
     pos_dpm_torso_dir_ = new ::std::string;
   }
   pos_dpm_torso_dir_->assign(value);
 }
 inline void ExpParam::set_pos_dpm_torso_dir(const char* value) {
-  _set_bit(51);
+  _set_bit(53);
   if (pos_dpm_torso_dir_ == &_default_pos_dpm_torso_dir_) {
     pos_dpm_torso_dir_ = new ::std::string;
   }
   pos_dpm_torso_dir_->assign(value);
 }
 inline void ExpParam::set_pos_dpm_torso_dir(const char* value, size_t size) {
-  _set_bit(51);
+  _set_bit(53);
   if (pos_dpm_torso_dir_ == &_default_pos_dpm_torso_dir_) {
     pos_dpm_torso_dir_ = new ::std::string;
   }
   pos_dpm_torso_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_pos_dpm_torso_dir() {
-  _set_bit(51);
+  _set_bit(53);
   if (pos_dpm_torso_dir_ == &_default_pos_dpm_torso_dir_) {
     pos_dpm_torso_dir_ = new ::std::string;
   }
@@ -2435,40 +2483,40 @@ inline ::std::string* ExpParam::mutable_pos_dpm_torso_dir() {
 
 // optional string test_dpm_torso_dir = 71;
 inline bool ExpParam::has_test_dpm_torso_dir() const {
-  return _has_bit(52);
+  return _has_bit(54);
 }
 inline void ExpParam::clear_test_dpm_torso_dir() {
   if (test_dpm_torso_dir_ != &_default_test_dpm_torso_dir_) {
     test_dpm_torso_dir_->clear();
   }
-  _clear_bit(52);
+  _clear_bit(54);
 }
 inline const ::std::string& ExpParam::test_dpm_torso_dir() const {
   return *test_dpm_torso_dir_;
 }
 inline void ExpParam::set_test_dpm_torso_dir(const ::std::string& value) {
-  _set_bit(52);
+  _set_bit(54);
   if (test_dpm_torso_dir_ == &_default_test_dpm_torso_dir_) {
     test_dpm_torso_dir_ = new ::std::string;
   }
   test_dpm_torso_dir_->assign(value);
 }
 inline void ExpParam::set_test_dpm_torso_dir(const char* value) {
-  _set_bit(52);
+  _set_bit(54);
   if (test_dpm_torso_dir_ == &_default_test_dpm_torso_dir_) {
     test_dpm_torso_dir_ = new ::std::string;
   }
   test_dpm_torso_dir_->assign(value);
 }
 inline void ExpParam::set_test_dpm_torso_dir(const char* value, size_t size) {
-  _set_bit(52);
+  _set_bit(54);
   if (test_dpm_torso_dir_ == &_default_test_dpm_torso_dir_) {
     test_dpm_torso_dir_ = new ::std::string;
   }
   test_dpm_torso_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_test_dpm_torso_dir() {
-  _set_bit(52);
+  _set_bit(54);
   if (test_dpm_torso_dir_ == &_default_test_dpm_torso_dir_) {
     test_dpm_torso_dir_ = new ::std::string;
   }
@@ -2477,56 +2525,56 @@ inline ::std::string* ExpParam::mutable_test_dpm_torso_dir() {
 
 // optional uint32 torso_hyp_idx = 72;
 inline bool ExpParam::has_torso_hyp_idx() const {
-  return _has_bit(53);
+  return _has_bit(55);
 }
 inline void ExpParam::clear_torso_hyp_idx() {
   torso_hyp_idx_ = 0u;
-  _clear_bit(53);
+  _clear_bit(55);
 }
 inline ::google::protobuf::uint32 ExpParam::torso_hyp_idx() const {
   return torso_hyp_idx_;
 }
 inline void ExpParam::set_torso_hyp_idx(::google::protobuf::uint32 value) {
-  _set_bit(53);
+  _set_bit(55);
   torso_hyp_idx_ = value;
 }
 
 // optional string part_marginals_dir = 73;
 inline bool ExpParam::has_part_marginals_dir() const {
-  return _has_bit(54);
+  return _has_bit(56);
 }
 inline void ExpParam::clear_part_marginals_dir() {
   if (part_marginals_dir_ != &_default_part_marginals_dir_) {
     part_marginals_dir_->clear();
   }
-  _clear_bit(54);
+  _clear_bit(56);
 }
 inline const ::std::string& ExpParam::part_marginals_dir() const {
   return *part_marginals_dir_;
 }
 inline void ExpParam::set_part_marginals_dir(const ::std::string& value) {
-  _set_bit(54);
+  _set_bit(56);
   if (part_marginals_dir_ == &_default_part_marginals_dir_) {
     part_marginals_dir_ = new ::std::string;
   }
   part_marginals_dir_->assign(value);
 }
 inline void ExpParam::set_part_marginals_dir(const char* value) {
-  _set_bit(54);
+  _set_bit(56);
   if (part_marginals_dir_ == &_default_part_marginals_dir_) {
     part_marginals_dir_ = new ::std::string;
   }
   part_marginals_dir_->assign(value);
 }
 inline void ExpParam::set_part_marginals_dir(const char* value, size_t size) {
-  _set_bit(54);
+  _set_bit(56);
   if (part_marginals_dir_ == &_default_part_marginals_dir_) {
     part_marginals_dir_ = new ::std::string;
   }
   part_marginals_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_part_marginals_dir() {
-  _set_bit(54);
+  _set_bit(56);
   if (part_marginals_dir_ == &_default_part_marginals_dir_) {
     part_marginals_dir_ = new ::std::string;
   }
@@ -2535,40 +2583,40 @@ inline ::std::string* ExpParam::mutable_part_marginals_dir() {
 
 // optional string part_conf = 5;
 inline bool ExpParam::has_part_conf() const {
-  return _has_bit(55);
+  return _has_bit(57);
 }
 inline void ExpParam::clear_part_conf() {
   if (part_conf_ != &_default_part_conf_) {
     part_conf_->clear();
   }
-  _clear_bit(55);
+  _clear_bit(57);
 }
 inline const ::std::string& ExpParam::part_conf() const {
   return *part_conf_;
 }
 inline void ExpParam::set_part_conf(const ::std::string& value) {
-  _set_bit(55);
+  _set_bit(57);
   if (part_conf_ == &_default_part_conf_) {
     part_conf_ = new ::std::string;
   }
   part_conf_->assign(value);
 }
 inline void ExpParam::set_part_conf(const char* value) {
-  _set_bit(55);
+  _set_bit(57);
   if (part_conf_ == &_default_part_conf_) {
     part_conf_ = new ::std::string;
   }
   part_conf_->assign(value);
 }
 inline void ExpParam::set_part_conf(const char* value, size_t size) {
-  _set_bit(55);
+  _set_bit(57);
   if (part_conf_ == &_default_part_conf_) {
     part_conf_ = new ::std::string;
   }
   part_conf_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_part_conf() {
-  _set_bit(55);
+  _set_bit(57);
   if (part_conf_ == &_default_part_conf_) {
     part_conf_ = new ::std::string;
   }
@@ -2577,40 +2625,40 @@ inline ::std::string* ExpParam::mutable_part_conf() {
 
 // optional string part_conf_eval = 32;
 inline bool ExpParam::has_part_conf_eval() const {
-  return _has_bit(56);
+  return _has_bit(58);
 }
 inline void ExpParam::clear_part_conf_eval() {
   if (part_conf_eval_ != &_default_part_conf_eval_) {
     part_conf_eval_->clear();
   }
-  _clear_bit(56);
+  _clear_bit(58);
 }
 inline const ::std::string& ExpParam::part_conf_eval() const {
   return *part_conf_eval_;
 }
 inline void ExpParam::set_part_conf_eval(const ::std::string& value) {
-  _set_bit(56);
+  _set_bit(58);
   if (part_conf_eval_ == &_default_part_conf_eval_) {
     part_conf_eval_ = new ::std::string;
   }
   part_conf_eval_->assign(value);
 }
 inline void ExpParam::set_part_conf_eval(const char* value) {
-  _set_bit(56);
+  _set_bit(58);
   if (part_conf_eval_ == &_default_part_conf_eval_) {
     part_conf_eval_ = new ::std::string;
   }
   part_conf_eval_->assign(value);
 }
 inline void ExpParam::set_part_conf_eval(const char* value, size_t size) {
-  _set_bit(56);
+  _set_bit(58);
   if (part_conf_eval_ == &_default_part_conf_eval_) {
     part_conf_eval_ = new ::std::string;
   }
   part_conf_eval_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_part_conf_eval() {
-  _set_bit(56);
+  _set_bit(58);
   if (part_conf_eval_ == &_default_part_conf_eval_) {
     part_conf_eval_ = new ::std::string;
   }
@@ -2619,40 +2667,40 @@ inline ::std::string* ExpParam::mutable_part_conf_eval() {
 
 // optional string part_conf_type = 33 [default = "human_full"];
 inline bool ExpParam::has_part_conf_type() const {
-  return _has_bit(57);
+  return _has_bit(59);
 }
 inline void ExpParam::clear_part_conf_type() {
   if (part_conf_type_ != &_default_part_conf_type_) {
     part_conf_type_->assign(_default_part_conf_type_);
   }
-  _clear_bit(57);
+  _clear_bit(59);
 }
 inline const ::std::string& ExpParam::part_conf_type() const {
   return *part_conf_type_;
 }
 inline void ExpParam::set_part_conf_type(const ::std::string& value) {
-  _set_bit(57);
+  _set_bit(59);
   if (part_conf_type_ == &_default_part_conf_type_) {
     part_conf_type_ = new ::std::string;
   }
   part_conf_type_->assign(value);
 }
 inline void ExpParam::set_part_conf_type(const char* value) {
-  _set_bit(57);
+  _set_bit(59);
   if (part_conf_type_ == &_default_part_conf_type_) {
     part_conf_type_ = new ::std::string;
   }
   part_conf_type_->assign(value);
 }
 inline void ExpParam::set_part_conf_type(const char* value, size_t size) {
-  _set_bit(57);
+  _set_bit(59);
   if (part_conf_type_ == &_default_part_conf_type_) {
     part_conf_type_ = new ::std::string;
   }
   part_conf_type_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_part_conf_type() {
-  _set_bit(57);
+  _set_bit(59);
   if (part_conf_type_ == &_default_part_conf_type_) {
     part_conf_type_ = new ::std::string(_default_part_conf_type_);
   }
@@ -2661,40 +2709,40 @@ inline ::std::string* ExpParam::mutable_part_conf_type() {
 
 // optional string abc_param = 6;
 inline bool ExpParam::has_abc_param() const {
-  return _has_bit(58);
+  return _has_bit(60);
 }
 inline void ExpParam::clear_abc_param() {
   if (abc_param_ != &_default_abc_param_) {
     abc_param_->clear();
   }
-  _clear_bit(58);
+  _clear_bit(60);
 }
 inline const ::std::string& ExpParam::abc_param() const {
   return *abc_param_;
 }
 inline void ExpParam::set_abc_param(const ::std::string& value) {
-  _set_bit(58);
+  _set_bit(60);
   if (abc_param_ == &_default_abc_param_) {
     abc_param_ = new ::std::string;
   }
   abc_param_->assign(value);
 }
 inline void ExpParam::set_abc_param(const char* value) {
-  _set_bit(58);
+  _set_bit(60);
   if (abc_param_ == &_default_abc_param_) {
     abc_param_ = new ::std::string;
   }
   abc_param_->assign(value);
 }
 inline void ExpParam::set_abc_param(const char* value, size_t size) {
-  _set_bit(58);
+  _set_bit(60);
   if (abc_param_ == &_default_abc_param_) {
     abc_param_ = new ::std::string;
   }
   abc_param_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_abc_param() {
-  _set_bit(58);
+  _set_bit(60);
   if (abc_param_ == &_default_abc_param_) {
     abc_param_ = new ::std::string;
   }
@@ -2703,232 +2751,232 @@ inline ::std::string* ExpParam::mutable_abc_param() {
 
 // optional float min_object_scale = 9 [default = 1];
 inline bool ExpParam::has_min_object_scale() const {
-  return _has_bit(59);
+  return _has_bit(61);
 }
 inline void ExpParam::clear_min_object_scale() {
   min_object_scale_ = 1;
-  _clear_bit(59);
+  _clear_bit(61);
 }
 inline float ExpParam::min_object_scale() const {
   return min_object_scale_;
 }
 inline void ExpParam::set_min_object_scale(float value) {
-  _set_bit(59);
+  _set_bit(61);
   min_object_scale_ = value;
 }
 
 // optional float max_object_scale = 10 [default = 1];
 inline bool ExpParam::has_max_object_scale() const {
-  return _has_bit(60);
+  return _has_bit(62);
 }
 inline void ExpParam::clear_max_object_scale() {
   max_object_scale_ = 1;
-  _clear_bit(60);
+  _clear_bit(62);
 }
 inline float ExpParam::max_object_scale() const {
   return max_object_scale_;
 }
 inline void ExpParam::set_max_object_scale(float value) {
-  _set_bit(60);
+  _set_bit(62);
   max_object_scale_ = value;
 }
 
 // optional uint32 num_scale_steps = 11 [default = 1];
 inline bool ExpParam::has_num_scale_steps() const {
-  return _has_bit(61);
+  return _has_bit(63);
 }
 inline void ExpParam::clear_num_scale_steps() {
   num_scale_steps_ = 1u;
-  _clear_bit(61);
+  _clear_bit(63);
 }
 inline ::google::protobuf::uint32 ExpParam::num_scale_steps() const {
   return num_scale_steps_;
 }
 inline void ExpParam::set_num_scale_steps(::google::protobuf::uint32 value) {
-  _set_bit(61);
+  _set_bit(63);
   num_scale_steps_ = value;
 }
 
 // optional float min_part_rotation = 12 [default = -180];
 inline bool ExpParam::has_min_part_rotation() const {
-  return _has_bit(62);
+  return _has_bit(64);
 }
 inline void ExpParam::clear_min_part_rotation() {
   min_part_rotation_ = -180;
-  _clear_bit(62);
+  _clear_bit(64);
 }
 inline float ExpParam::min_part_rotation() const {
   return min_part_rotation_;
 }
 inline void ExpParam::set_min_part_rotation(float value) {
-  _set_bit(62);
+  _set_bit(64);
   min_part_rotation_ = value;
 }
 
 // optional float max_part_rotation = 13 [default = 180];
 inline bool ExpParam::has_max_part_rotation() const {
-  return _has_bit(63);
+  return _has_bit(65);
 }
 inline void ExpParam::clear_max_part_rotation() {
   max_part_rotation_ = 180;
-  _clear_bit(63);
+  _clear_bit(65);
 }
 inline float ExpParam::max_part_rotation() const {
   return max_part_rotation_;
 }
 inline void ExpParam::set_max_part_rotation(float value) {
-  _set_bit(63);
+  _set_bit(65);
   max_part_rotation_ = value;
 }
 
 // optional uint32 num_rotation_steps = 14 [default = 48];
 inline bool ExpParam::has_num_rotation_steps() const {
-  return _has_bit(64);
+  return _has_bit(66);
 }
 inline void ExpParam::clear_num_rotation_steps() {
   num_rotation_steps_ = 48u;
-  _clear_bit(64);
+  _clear_bit(66);
 }
 inline ::google::protobuf::uint32 ExpParam::num_rotation_steps() const {
   return num_rotation_steps_;
 }
 inline void ExpParam::set_num_rotation_steps(::google::protobuf::uint32 value) {
-  _set_bit(64);
+  _set_bit(66);
   num_rotation_steps_ = value;
 }
 
 // optional bool flip_orientation = 15 [default = false];
 inline bool ExpParam::has_flip_orientation() const {
-  return _has_bit(65);
+  return _has_bit(67);
 }
 inline void ExpParam::clear_flip_orientation() {
   flip_orientation_ = false;
-  _clear_bit(65);
+  _clear_bit(67);
 }
 inline bool ExpParam::flip_orientation() const {
   return flip_orientation_;
 }
 inline void ExpParam::set_flip_orientation(bool value) {
-  _set_bit(65);
+  _set_bit(67);
   flip_orientation_ = value;
 }
 
 // optional float object_height_width_ratio = 21 [default = 2.5];
 inline bool ExpParam::has_object_height_width_ratio() const {
-  return _has_bit(66);
+  return _has_bit(68);
 }
 inline void ExpParam::clear_object_height_width_ratio() {
   object_height_width_ratio_ = 2.5f;
-  _clear_bit(66);
+  _clear_bit(68);
 }
 inline float ExpParam::object_height_width_ratio() const {
   return object_height_width_ratio_;
 }
 inline void ExpParam::set_object_height_width_ratio(float value) {
-  _set_bit(66);
+  _set_bit(68);
   object_height_width_ratio_ = value;
 }
 
 // optional bool compute_part_marginals = 22 [default = true];
 inline bool ExpParam::has_compute_part_marginals() const {
-  return _has_bit(67);
+  return _has_bit(69);
 }
 inline void ExpParam::clear_compute_part_marginals() {
   compute_part_marginals_ = true;
-  _clear_bit(67);
+  _clear_bit(69);
 }
 inline bool ExpParam::compute_part_marginals() const {
   return compute_part_marginals_;
 }
 inline void ExpParam::set_compute_part_marginals(bool value) {
-  _set_bit(67);
+  _set_bit(69);
   compute_part_marginals_ = value;
 }
 
 // optional int32 num_pose_samples = 23 [default = 0];
 inline bool ExpParam::has_num_pose_samples() const {
-  return _has_bit(68);
+  return _has_bit(70);
 }
 inline void ExpParam::clear_num_pose_samples() {
   num_pose_samples_ = 0;
-  _clear_bit(68);
+  _clear_bit(70);
 }
 inline ::google::protobuf::int32 ExpParam::num_pose_samples() const {
   return num_pose_samples_;
 }
 inline void ExpParam::set_num_pose_samples(::google::protobuf::int32 value) {
-  _set_bit(68);
+  _set_bit(70);
   num_pose_samples_ = value;
 }
 
 // optional bool is_multicomponent = 40 [default = false];
 inline bool ExpParam::has_is_multicomponent() const {
-  return _has_bit(69);
+  return _has_bit(71);
 }
 inline void ExpParam::clear_is_multicomponent() {
   is_multicomponent_ = false;
-  _clear_bit(69);
+  _clear_bit(71);
 }
 inline bool ExpParam::is_multicomponent() const {
   return is_multicomponent_;
 }
 inline void ExpParam::set_is_multicomponent(bool value) {
-  _set_bit(69);
+  _set_bit(71);
   is_multicomponent_ = value;
 }
 
 // optional int32 num_components = 41 [default = 1];
 inline bool ExpParam::has_num_components() const {
-  return _has_bit(70);
+  return _has_bit(72);
 }
 inline void ExpParam::clear_num_components() {
   num_components_ = 1;
-  _clear_bit(70);
+  _clear_bit(72);
 }
 inline ::google::protobuf::int32 ExpParam::num_components() const {
   return num_components_;
 }
 inline void ExpParam::set_num_components(::google::protobuf::int32 value) {
-  _set_bit(70);
+  _set_bit(72);
   num_components_ = value;
 }
 
 // optional string mix_dir = 45;
 inline bool ExpParam::has_mix_dir() const {
-  return _has_bit(71);
+  return _has_bit(73);
 }
 inline void ExpParam::clear_mix_dir() {
   if (mix_dir_ != &_default_mix_dir_) {
     mix_dir_->clear();
   }
-  _clear_bit(71);
+  _clear_bit(73);
 }
 inline const ::std::string& ExpParam::mix_dir() const {
   return *mix_dir_;
 }
 inline void ExpParam::set_mix_dir(const ::std::string& value) {
-  _set_bit(71);
+  _set_bit(73);
   if (mix_dir_ == &_default_mix_dir_) {
     mix_dir_ = new ::std::string;
   }
   mix_dir_->assign(value);
 }
 inline void ExpParam::set_mix_dir(const char* value) {
-  _set_bit(71);
+  _set_bit(73);
   if (mix_dir_ == &_default_mix_dir_) {
     mix_dir_ = new ::std::string;
   }
   mix_dir_->assign(value);
 }
 inline void ExpParam::set_mix_dir(const char* value, size_t size) {
-  _set_bit(71);
+  _set_bit(73);
   if (mix_dir_ == &_default_mix_dir_) {
     mix_dir_ = new ::std::string;
   }
   mix_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_mix_dir() {
-  _set_bit(71);
+  _set_bit(73);
   if (mix_dir_ == &_default_mix_dir_) {
     mix_dir_ = new ::std::string;
   }
@@ -2937,88 +2985,88 @@ inline ::std::string* ExpParam::mutable_mix_dir() {
 
 // optional float strip_border_detections = 24 [default = 0];
 inline bool ExpParam::has_strip_border_detections() const {
-  return _has_bit(72);
+  return _has_bit(74);
 }
 inline void ExpParam::clear_strip_border_detections() {
   strip_border_detections_ = 0;
-  _clear_bit(72);
+  _clear_bit(74);
 }
 inline float ExpParam::strip_border_detections() const {
   return strip_border_detections_;
 }
 inline void ExpParam::set_strip_border_detections(float value) {
-  _set_bit(72);
+  _set_bit(74);
   strip_border_detections_ = value;
 }
 
 // optional bool save_image_scoregrid = 25 [default = false];
 inline bool ExpParam::has_save_image_scoregrid() const {
-  return _has_bit(73);
+  return _has_bit(75);
 }
 inline void ExpParam::clear_save_image_scoregrid() {
   save_image_scoregrid_ = false;
-  _clear_bit(73);
+  _clear_bit(75);
 }
 inline bool ExpParam::save_image_scoregrid() const {
   return save_image_scoregrid_;
 }
 inline void ExpParam::set_save_image_scoregrid(bool value) {
-  _set_bit(73);
+  _set_bit(75);
   save_image_scoregrid_ = value;
 }
 
 // optional int32 dai_num_samples = 28 [default = 1000];
 inline bool ExpParam::has_dai_num_samples() const {
-  return _has_bit(74);
+  return _has_bit(76);
 }
 inline void ExpParam::clear_dai_num_samples() {
   dai_num_samples_ = 1000;
-  _clear_bit(74);
+  _clear_bit(76);
 }
 inline ::google::protobuf::int32 ExpParam::dai_num_samples() const {
   return dai_num_samples_;
 }
 inline void ExpParam::set_dai_num_samples(::google::protobuf::int32 value) {
-  _set_bit(74);
+  _set_bit(76);
   dai_num_samples_ = value;
 }
 
 // optional string dai_factors = 29 [default = ""];
 inline bool ExpParam::has_dai_factors() const {
-  return _has_bit(75);
+  return _has_bit(77);
 }
 inline void ExpParam::clear_dai_factors() {
   if (dai_factors_ != &_default_dai_factors_) {
     dai_factors_->clear();
   }
-  _clear_bit(75);
+  _clear_bit(77);
 }
 inline const ::std::string& ExpParam::dai_factors() const {
   return *dai_factors_;
 }
 inline void ExpParam::set_dai_factors(const ::std::string& value) {
-  _set_bit(75);
+  _set_bit(77);
   if (dai_factors_ == &_default_dai_factors_) {
     dai_factors_ = new ::std::string;
   }
   dai_factors_->assign(value);
 }
 inline void ExpParam::set_dai_factors(const char* value) {
-  _set_bit(75);
+  _set_bit(77);
   if (dai_factors_ == &_default_dai_factors_) {
     dai_factors_ = new ::std::string;
   }
   dai_factors_->assign(value);
 }
 inline void ExpParam::set_dai_factors(const char* value, size_t size) {
-  _set_bit(75);
+  _set_bit(77);
   if (dai_factors_ == &_default_dai_factors_) {
     dai_factors_ = new ::std::string;
   }
   dai_factors_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_dai_factors() {
-  _set_bit(75);
+  _set_bit(77);
   if (dai_factors_ == &_default_dai_factors_) {
     dai_factors_ = new ::std::string;
   }
@@ -3027,40 +3075,40 @@ inline ::std::string* ExpParam::mutable_dai_factors() {
 
 // optional string dai_samples_dir = 30 [default = ""];
 inline bool ExpParam::has_dai_samples_dir() const {
-  return _has_bit(76);
+  return _has_bit(78);
 }
 inline void ExpParam::clear_dai_samples_dir() {
   if (dai_samples_dir_ != &_default_dai_samples_dir_) {
     dai_samples_dir_->clear();
   }
-  _clear_bit(76);
+  _clear_bit(78);
 }
 inline const ::std::string& ExpParam::dai_samples_dir() const {
   return *dai_samples_dir_;
 }
 inline void ExpParam::set_dai_samples_dir(const ::std::string& value) {
-  _set_bit(76);
+  _set_bit(78);
   if (dai_samples_dir_ == &_default_dai_samples_dir_) {
     dai_samples_dir_ = new ::std::string;
   }
   dai_samples_dir_->assign(value);
 }
 inline void ExpParam::set_dai_samples_dir(const char* value) {
-  _set_bit(76);
+  _set_bit(78);
   if (dai_samples_dir_ == &_default_dai_samples_dir_) {
     dai_samples_dir_ = new ::std::string;
   }
   dai_samples_dir_->assign(value);
 }
 inline void ExpParam::set_dai_samples_dir(const char* value, size_t size) {
-  _set_bit(76);
+  _set_bit(78);
   if (dai_samples_dir_ == &_default_dai_samples_dir_) {
     dai_samples_dir_ = new ::std::string;
   }
   dai_samples_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_dai_samples_dir() {
-  _set_bit(76);
+  _set_bit(78);
   if (dai_samples_dir_ == &_default_dai_samples_dir_) {
     dai_samples_dir_ = new ::std::string;
   }
@@ -3069,40 +3117,40 @@ inline ::std::string* ExpParam::mutable_dai_samples_dir() {
 
 // optional string dai_bp_type = 31 [default = "sumprod"];
 inline bool ExpParam::has_dai_bp_type() const {
-  return _has_bit(77);
+  return _has_bit(79);
 }
 inline void ExpParam::clear_dai_bp_type() {
   if (dai_bp_type_ != &_default_dai_bp_type_) {
     dai_bp_type_->assign(_default_dai_bp_type_);
   }
-  _clear_bit(77);
+  _clear_bit(79);
 }
 inline const ::std::string& ExpParam::dai_bp_type() const {
   return *dai_bp_type_;
 }
 inline void ExpParam::set_dai_bp_type(const ::std::string& value) {
-  _set_bit(77);
+  _set_bit(79);
   if (dai_bp_type_ == &_default_dai_bp_type_) {
     dai_bp_type_ = new ::std::string;
   }
   dai_bp_type_->assign(value);
 }
 inline void ExpParam::set_dai_bp_type(const char* value) {
-  _set_bit(77);
+  _set_bit(79);
   if (dai_bp_type_ == &_default_dai_bp_type_) {
     dai_bp_type_ = new ::std::string;
   }
   dai_bp_type_->assign(value);
 }
 inline void ExpParam::set_dai_bp_type(const char* value, size_t size) {
-  _set_bit(77);
+  _set_bit(79);
   if (dai_bp_type_ == &_default_dai_bp_type_) {
     dai_bp_type_ = new ::std::string;
   }
   dai_bp_type_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_dai_bp_type() {
-  _set_bit(77);
+  _set_bit(79);
   if (dai_bp_type_ == &_default_dai_bp_type_) {
     dai_bp_type_ = new ::std::string(_default_dai_bp_type_);
   }
@@ -3111,40 +3159,40 @@ inline ::std::string* ExpParam::mutable_dai_bp_type() {
 
 // optional string dai_samples_type = 34 [default = "part_post"];
 inline bool ExpParam::has_dai_samples_type() const {
-  return _has_bit(78);
+  return _has_bit(80);
 }
 inline void ExpParam::clear_dai_samples_type() {
   if (dai_samples_type_ != &_default_dai_samples_type_) {
     dai_samples_type_->assign(_default_dai_samples_type_);
   }
-  _clear_bit(78);
+  _clear_bit(80);
 }
 inline const ::std::string& ExpParam::dai_samples_type() const {
   return *dai_samples_type_;
 }
 inline void ExpParam::set_dai_samples_type(const ::std::string& value) {
-  _set_bit(78);
+  _set_bit(80);
   if (dai_samples_type_ == &_default_dai_samples_type_) {
     dai_samples_type_ = new ::std::string;
   }
   dai_samples_type_->assign(value);
 }
 inline void ExpParam::set_dai_samples_type(const char* value) {
-  _set_bit(78);
+  _set_bit(80);
   if (dai_samples_type_ == &_default_dai_samples_type_) {
     dai_samples_type_ = new ::std::string;
   }
   dai_samples_type_->assign(value);
 }
 inline void ExpParam::set_dai_samples_type(const char* value, size_t size) {
-  _set_bit(78);
+  _set_bit(80);
   if (dai_samples_type_ == &_default_dai_samples_type_) {
     dai_samples_type_ = new ::std::string;
   }
   dai_samples_type_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_dai_samples_type() {
-  _set_bit(78);
+  _set_bit(80);
   if (dai_samples_type_ == &_default_dai_samples_type_) {
     dai_samples_type_ = new ::std::string(_default_dai_samples_type_);
   }
@@ -3153,88 +3201,88 @@ inline ::std::string* ExpParam::mutable_dai_samples_type() {
 
 // optional bool dai_bbox_prior = 35 [default = false];
 inline bool ExpParam::has_dai_bbox_prior() const {
-  return _has_bit(79);
+  return _has_bit(81);
 }
 inline void ExpParam::clear_dai_bbox_prior() {
   dai_bbox_prior_ = false;
-  _clear_bit(79);
+  _clear_bit(81);
 }
 inline bool ExpParam::dai_bbox_prior() const {
   return dai_bbox_prior_;
 }
 inline void ExpParam::set_dai_bbox_prior(bool value) {
-  _set_bit(79);
+  _set_bit(81);
   dai_bbox_prior_ = value;
 }
 
 // optional bool dai_bbox_prior_annopoints = 37 [default = false];
 inline bool ExpParam::has_dai_bbox_prior_annopoints() const {
-  return _has_bit(80);
+  return _has_bit(82);
 }
 inline void ExpParam::clear_dai_bbox_prior_annopoints() {
   dai_bbox_prior_annopoints_ = false;
-  _clear_bit(80);
+  _clear_bit(82);
 }
 inline bool ExpParam::dai_bbox_prior_annopoints() const {
   return dai_bbox_prior_annopoints_;
 }
 inline void ExpParam::set_dai_bbox_prior_annopoints(bool value) {
-  _set_bit(80);
+  _set_bit(82);
   dai_bbox_prior_annopoints_ = value;
 }
 
 // optional bool dai_multiperson = 36 [default = false];
 inline bool ExpParam::has_dai_multiperson() const {
-  return _has_bit(81);
+  return _has_bit(83);
 }
 inline void ExpParam::clear_dai_multiperson() {
   dai_multiperson_ = false;
-  _clear_bit(81);
+  _clear_bit(83);
 }
 inline bool ExpParam::dai_multiperson() const {
   return dai_multiperson_;
 }
 inline void ExpParam::set_dai_multiperson(bool value) {
-  _set_bit(81);
+  _set_bit(83);
   dai_multiperson_ = value;
 }
 
 // optional string detection_masks_dir = 38 [default = ""];
 inline bool ExpParam::has_detection_masks_dir() const {
-  return _has_bit(82);
+  return _has_bit(84);
 }
 inline void ExpParam::clear_detection_masks_dir() {
   if (detection_masks_dir_ != &_default_detection_masks_dir_) {
     detection_masks_dir_->clear();
   }
-  _clear_bit(82);
+  _clear_bit(84);
 }
 inline const ::std::string& ExpParam::detection_masks_dir() const {
   return *detection_masks_dir_;
 }
 inline void ExpParam::set_detection_masks_dir(const ::std::string& value) {
-  _set_bit(82);
+  _set_bit(84);
   if (detection_masks_dir_ == &_default_detection_masks_dir_) {
     detection_masks_dir_ = new ::std::string;
   }
   detection_masks_dir_->assign(value);
 }
 inline void ExpParam::set_detection_masks_dir(const char* value) {
-  _set_bit(82);
+  _set_bit(84);
   if (detection_masks_dir_ == &_default_detection_masks_dir_) {
     detection_masks_dir_ = new ::std::string;
   }
   detection_masks_dir_->assign(value);
 }
 inline void ExpParam::set_detection_masks_dir(const char* value, size_t size) {
-  _set_bit(82);
+  _set_bit(84);
   if (detection_masks_dir_ == &_default_detection_masks_dir_) {
     detection_masks_dir_ = new ::std::string;
   }
   detection_masks_dir_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_detection_masks_dir() {
-  _set_bit(82);
+  _set_bit(84);
   if (detection_masks_dir_ == &_default_detection_masks_dir_) {
     detection_masks_dir_ = new ::std::string;
   }
@@ -3243,40 +3291,40 @@ inline ::std::string* ExpParam::mutable_detection_masks_dir() {
 
 // optional string roi_annolist = 42 [default = ""];
 inline bool ExpParam::has_roi_annolist() const {
-  return _has_bit(83);
+  return _has_bit(85);
 }
 inline void ExpParam::clear_roi_annolist() {
   if (roi_annolist_ != &_default_roi_annolist_) {
     roi_annolist_->clear();
   }
-  _clear_bit(83);
+  _clear_bit(85);
 }
 inline const ::std::string& ExpParam::roi_annolist() const {
   return *roi_annolist_;
 }
 inline void ExpParam::set_roi_annolist(const ::std::string& value) {
-  _set_bit(83);
+  _set_bit(85);
   if (roi_annolist_ == &_default_roi_annolist_) {
     roi_annolist_ = new ::std::string;
   }
   roi_annolist_->assign(value);
 }
 inline void ExpParam::set_roi_annolist(const char* value) {
-  _set_bit(83);
+  _set_bit(85);
   if (roi_annolist_ == &_default_roi_annolist_) {
     roi_annolist_ = new ::std::string;
   }
   roi_annolist_->assign(value);
 }
 inline void ExpParam::set_roi_annolist(const char* value, size_t size) {
-  _set_bit(83);
+  _set_bit(85);
   if (roi_annolist_ == &_default_roi_annolist_) {
     roi_annolist_ = new ::std::string;
   }
   roi_annolist_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* ExpParam::mutable_roi_annolist() {
-  _set_bit(83);
+  _set_bit(85);
   if (roi_annolist_ == &_default_roi_annolist_) {
     roi_annolist_ = new ::std::string;
   }
@@ -3285,97 +3333,97 @@ inline ::std::string* ExpParam::mutable_roi_annolist() {
 
 // optional int32 roi_extend_x = 46 [default = -1];
 inline bool ExpParam::has_roi_extend_x() const {
-  return _has_bit(84);
+  return _has_bit(86);
 }
 inline void ExpParam::clear_roi_extend_x() {
   roi_extend_x_ = -1;
-  _clear_bit(84);
+  _clear_bit(86);
 }
 inline ::google::protobuf::int32 ExpParam::roi_extend_x() const {
   return roi_extend_x_;
 }
 inline void ExpParam::set_roi_extend_x(::google::protobuf::int32 value) {
-  _set_bit(84);
+  _set_bit(86);
   roi_extend_x_ = value;
 }
 
 // optional int32 roi_extend_y = 47 [default = -1];
 inline bool ExpParam::has_roi_extend_y() const {
-  return _has_bit(85);
+  return _has_bit(87);
 }
 inline void ExpParam::clear_roi_extend_y() {
   roi_extend_y_ = -1;
-  _clear_bit(85);
+  _clear_bit(87);
 }
 inline ::google::protobuf::int32 ExpParam::roi_extend_y() const {
   return roi_extend_y_;
 }
 inline void ExpParam::set_roi_extend_y(::google::protobuf::int32 value) {
-  _set_bit(85);
+  _set_bit(87);
   roi_extend_y_ = value;
 }
 
 // optional float roi_save_num_samples = 48 [default = 1000];
 inline bool ExpParam::has_roi_save_num_samples() const {
-  return _has_bit(86);
+  return _has_bit(88);
 }
 inline void ExpParam::clear_roi_save_num_samples() {
   roi_save_num_samples_ = 1000;
-  _clear_bit(86);
+  _clear_bit(88);
 }
 inline float ExpParam::roi_save_num_samples() const {
   return roi_save_num_samples_;
 }
 inline void ExpParam::set_roi_save_num_samples(float value) {
-  _set_bit(86);
+  _set_bit(88);
   roi_save_num_samples_ = value;
 }
 
 // optional bool compute_max = 43 [default = false];
 inline bool ExpParam::has_compute_max() const {
-  return _has_bit(87);
+  return _has_bit(89);
 }
 inline void ExpParam::clear_compute_max() {
   compute_max_ = false;
-  _clear_bit(87);
+  _clear_bit(89);
 }
 inline bool ExpParam::compute_max() const {
   return compute_max_;
 }
 inline void ExpParam::set_compute_max(bool value) {
-  _set_bit(87);
+  _set_bit(89);
   compute_max_ = value;
 }
 
 // optional bool reweight_inference = 53 [default = false];
 inline bool ExpParam::has_reweight_inference() const {
-  return _has_bit(88);
+  return _has_bit(90);
 }
 inline void ExpParam::clear_reweight_inference() {
   reweight_inference_ = false;
-  _clear_bit(88);
+  _clear_bit(90);
 }
 inline bool ExpParam::reweight_inference() const {
   return reweight_inference_;
 }
 inline void ExpParam::set_reweight_inference(bool value) {
-  _set_bit(88);
+  _set_bit(90);
   reweight_inference_ = value;
 }
 
 // optional bool save_root_marginal = 136 [default = false];
 inline bool ExpParam::has_save_root_marginal() const {
-  return _has_bit(89);
+  return _has_bit(91);
 }
 inline void ExpParam::clear_save_root_marginal() {
   save_root_marginal_ = false;
-  _clear_bit(89);
+  _clear_bit(91);
 }
 inline bool ExpParam::save_root_marginal() const {
   return save_root_marginal_;
 }
 inline void ExpParam::set_save_root_marginal(bool value) {
-  _set_bit(89);
+  _set_bit(91);
   save_root_marginal_ = value;
 }
 

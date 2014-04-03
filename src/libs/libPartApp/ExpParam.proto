@@ -143,6 +143,12 @@ message ExpParam
 
 	// save part marginals
 	optional bool save_part_marginals = 133 [default = false];
+
+	// save local maxima of part marginals
+	optional bool save_part_marginals_local_max = 140 [default = false];
+
+	// save local maxima of part marginals
+	optional bool save_part_detections_local_max = 141 [default = false];
 		
 	// directory for DPM models
 	optional string dpm_model_dir = 134;

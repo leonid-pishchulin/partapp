@@ -972,7 +972,37 @@ namespace object_detect {
     }
     */
     /**************************** integrate rough position information ************************/
-
+    
+    /**************************** save local maxima of part detections *************************/
+    if (part_app.m_exp_param.save_part_detections_local_max()){
+      
+      QString qsPartDetOutFilename = qsPartMarginalsDir + "/part_det_imgidx" + padZeros(QString::number(imgidx), 4) + ".mat";
+      MATFile *f = matlab_io::mat_open(qsPartDetOutFilename, "wz");
+      
+      if (f == 0) {
+	cout << "error opening " << qsPartDetOutFilename.toStdString() << endl;
+      }
+      assert(f != 0);
+      
+      for (int pidx = 0; pidx < nParts; ++pidx) {
+	assert(nScales == 1);
+	int scaleidx = 0;
+	
+	std::vector<PartHyp> part_hyp;
+	findLocalMax(part_app.m_exp_param, log_part_detections[pidx][scaleidx], part_hyp, part_app.m_exp_param.roi_save_num_samples());      
+	
+	FloatGrid2 part_hyp_mat(boost::extents[part_hyp.size()][PartHyp::vectSize()]); 
+	for (int idx = 0; idx < (int)part_hyp.size(); ++idx) {
+	  part_hyp_mat[boost::indices[idx][index_range()]] = part_hyp[idx].toVect();		  
+	}
+	matlab_io::mat_save_multi_array(f, "part" + QString::number(pidx), part_hyp_mat);
+      }
+      
+      cout << "saving " << qsPartDetOutFilename.toStdString() << endl;
+      matlab_io::mat_close(f);
+    }
+    /**************************** save local maxima of part detections *************************/    
+    
     vector<vector<PartHyp> >  best_part_hyp;
     
     FloatGrid3 root_part_posterior;
@@ -996,23 +1026,38 @@ namespace object_detect {
     log_part_detections = log_part_detections_orig;
     assert((int)best_part_hyp.size() == nParts);
     
-    /**************************** Save part configuration ************************/    
-    /* MA: vector of best configurations, needed  to call getStructSample */
-    vector<PartHyp> _best_part_hyp(nParts);
-    for (int pidx = 0; pidx < nParts; ++pidx) {
-      assert(best_part_hyp[pidx].size() > 0);
-      _best_part_hyp[pidx] = best_part_hyp[pidx][0];
-    }
-          
-    FloatGrid1 v = best_part_hyp[0][0].toVect();
-    FloatGrid2 best_conf(boost::extents[nParts][v.shape()[0]]);
+    /**************************** save part configuration ************************/    
+    FloatGrid2 best_conf(boost::extents[nParts][PartHyp::vectSize()]);
     
     for (int pidx = 0; pidx < nParts; ++pidx)
       best_conf[boost::indices[pidx][index_range()]] = best_part_hyp[pidx][0].toVect();
     
     QString qsOutFilename = qsPartMarginalsDir + "/pose_est_imgidx" + padZeros(QString::number(imgidx), 4) + ".mat";
     matlab_io::mat_save_multi_array(qsOutFilename, "best_conf", best_conf);
-    /**************************** Save part configuration ************************/    
+    /**************************** save part configuration ************************/    
+    
+    /**************************** save local maxima of part posteriors ************************/    
+    if (part_app.m_exp_param.save_part_marginals_local_max()){
+      
+      QString qsPartPostOutFilename = qsPartMarginalsDir + "/part_post_imgidx" + padZeros(QString::number(imgidx), 4) + ".mat";
+    
+      MATFile *f = matlab_io::mat_open(qsPartPostOutFilename, "wz");
+      assert(f != 0);
+      
+      assert(best_part_hyp.size() == nParts);
+      for (int pidx = 0; pidx < nParts; ++pidx) {
+	vector<PartHyp> &part_hyp = best_part_hyp[pidx];
+	FloatGrid2 part_hyp_mat(boost::extents[part_hyp.size()][PartHyp::vectSize()]);
+	
+	for (int idx = 0; idx < (int)part_hyp.size(); ++idx) {
+	  part_hyp_mat[boost::indices[idx][index_range()]] = part_hyp[idx].toVect();		  
+	}
+	matlab_io::mat_save_multi_array(f, "part" + QString::number(pidx), part_hyp_mat);
+      }
+      cout << "saving " << qsPartPostOutFilename.toStdString() << endl;
+      matlab_io::mat_close(f);
+    }
+    /**************************** save local maxima of part posteriors ************************/    
     
     int max_hypothesis_number = 1000;
     findLocalMax(part_app.m_exp_param, root_part_posterior, hypothesis_list, max_hypothesis_number);
