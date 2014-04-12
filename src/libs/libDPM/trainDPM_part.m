@@ -12,7 +12,7 @@
 % must contact the authors for permission. This code may not be
 % redistributed without permission from the authors.  
 
-function trainDPM_part(pidx,pos,neg,logDir,sc,cls,clusterMode,nComp)
+function trainDPM_part(pidx,pos,neg,logDir,sc,cls,clusterMode,nComp,minPartSize)
 
 fprintf('trainDPM_part()\n');
 
@@ -33,10 +33,14 @@ if (nargin < 8)
 end
 
 if (nargin < 9)
-    alignRot = false; 
+    minPartSize = 30*sc; 
 end
 
 if (nargin < 10)
+    alignRot = false; 
+end
+
+if (nargin < 11)
     nParts = 8; 
 end
 
@@ -70,7 +74,7 @@ fprintf('nComp: %d\n', nComp);
 fprintf('nParts: %d\n', nParts);
 diary off;
 
-pos = createCompTrainData(pidx,pos,[logDir '/' cls],clusterMode,alignRot,sc,nComp);
+pos = createCompTrainData(pidx,pos,[logDir '/' cls],clusterMode,alignRot,sc,nComp,minPartSize);
 
 pascal(cls, pos, neg, [logDir '/' cls], nParts);
 

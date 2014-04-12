@@ -948,31 +948,6 @@ namespace object_detect {
     }
     /**************************** add torso position prior score ************************/
 
-    /****************** integrate rough position information (cvpr'14) *****************/
-    /*
-    int posX = part_app.m_test_annolist[imgidx][0].getObjPosX();
-    int posY = part_app.m_test_annolist[imgidx][0].getObjPosY();
-    if (posX > 0 && posY > 0){
-      cout << "\nsetTorsoPosition()" << endl;
-      cout << "posX: " << posX << "; posY: " << posY << endl;
-      int delta = 40;
-      cout << "delta: " << delta << endl;
-      cout << endl;
-      int scaleidx = 0;
-      int firstix = max(0, posX - delta);
-      int firstiy = max(0, posY - delta);
-      int lastix = min(posX + delta, img_width);
-      int lastiy = min(posY + delta, img_height);
-      for (int ridx = 0; ridx < nRotations; ++ridx) 
-	for (int iy = 0; iy < img_height; ++iy) 
-	  for (int ix = 0; ix < img_width; ++ix)
-	    if (iy < firstiy || iy > lastiy || 
-		ix < firstix || ix > lastix)
-	      log_part_detections[part_app.m_rootpart_idx][scaleidx][ridx][iy][ix] = LOG_ZERO;                  
-    }
-    */
-    /**************************** integrate rough position information ************************/
-    
     /**************************** save local maxima of part detections *************************/
     if (part_app.m_exp_param.save_part_detections_local_max()){
       

@@ -1,4 +1,4 @@
-function annolist = createCompTrainData(pidx,annolist,saveTo,clusterMode,alignRot,sc,nComp,minPartWidth)
+function annolist = createCompTrainData(pidx,annolist,saveTo,clusterMode,alignRot,sc,nComp,minPartSize)
 
 fprintf('\ncreateCompTrainData()\n');
 
@@ -19,7 +19,7 @@ if (nargin < 7)
 end
 
 if (nargin < 8)
-    minPartWidth = 30*sc;
+    minPartSize = 30*sc;
 end
 
 %%
@@ -54,9 +54,18 @@ if (clusterMode == 0)
 elseif (clusterMode == 1)
     features = getRotationFeatures(annolist,parts,pidx);
 elseif (clusterMode == 2)
+    noassign = zeros(0);
     for imgidx = 1:length(annolist)
-        clusidx(imgidx) = annolist(imgidx).annorect(1).silhouette.id;
+        if (~isfield(annolist(imgidx).annorect(1), 'silhouette') || ...
+                isempty(annolist(imgidx).annorect(1).silhouette))
+            noassign(end+1) = imgidx;
+        else
+            clusidx(imgidx) = annolist(imgidx).annorect(1).silhouette.id;
+        end
     end
+    annolist(noassign) = [];
+    clusidx(noassign) = [];
+    assert(~isempty(annolist));
     assert(max(clusidx) <= nComp);
 else
     assert(false);
@@ -99,15 +108,15 @@ for imgidx = 1:length(annolist)
     x2 = x2 + 0.25*(x2 - x1);
     y1 = y1 - 0.25*(y2 - y1);
     y2 = y2 + 0.25*(y2 - y1);
-    if (y2 - y1) < minPartWidth
+    if (y2 - y1) < minPartSize
         mid = (y2 + y1)/2;
-        y2 = mid + minPartWidth/2;
-        y1 = mid - minPartWidth/2;
+        y2 = mid + minPartSize/2;
+        y1 = mid - minPartSize/2;
     end
-    if (x2 - x1) < minPartWidth
+    if (x2 - x1) < minPartSize
         mid = (x2 + x1)/2;
-        x2 = mid + minPartWidth/2;
-        x1 = mid - minPartWidth/2;
+        x2 = mid + minPartSize/2;
+        x1 = mid - minPartSize/2;
     end
     img = imread(annolist(imgidx).image.name);
     [Y, X, ~] = size(img);
@@ -117,7 +126,7 @@ for imgidx = 1:length(annolist)
     y2 = min(y2,Y);
     
     %% exclude examples on the image border
-    if ((y2 - y1) < minPartWidth || (x2 - x1) < minPartWidth)
+    if ((y2 - y1) < minPartSize || (x2 - x1) < minPartSize)
         smallPos(end+1) = imgidx;
     else
         annolist(imgidx).annorect(1).x1 = x1;
