@@ -962,7 +962,7 @@ namespace part_detect {
       qsModelDPMDir + " " + qsUnaryDPMDir + " " + QString::number(NUM_THREADS) + " 1 " + QString::number(RESCALE_FACTOR) + " 1 1";
     
     runMatlabCode(qsCommandLine);
-        
+    
     return 1;
 
   }
@@ -979,7 +979,7 @@ namespace part_detect {
 
     const int maxsize = 10000;
     char buff[maxsize];
-    
+
     myProcess->setProcessChannelMode(QProcess::MergedChannels);
     
     myProcess->start(qsCommandLine);
@@ -987,16 +987,20 @@ namespace part_detect {
     //myProcess->waitForFinished();
     int nWaitSec = 10000;
     myProcess->waitForFinished(1000*nWaitSec);
-    //myProcess->waitForFinished(-1);
-
+   
     while (myProcess->canReadLine()) {
       myProcess->readLine(buff, maxsize);
       cout << "\t" << buff;
 
       output.push_back(QString(buff));
     }
-
-    cout << "state: " << myProcess->state() << endl;
+    if (myProcess->exitCode() != 0){
+      std:cerr << "\nError! Matlab terminated with exit code " << myProcess->exitCode() << std::endl;
+      delete myProcess;
+      assert(0);
+    }
+    else
+      cout << "state: " << myProcess->state() << endl;
 
     delete myProcess;
     cout << "done" << endl;

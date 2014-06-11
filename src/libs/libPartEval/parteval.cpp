@@ -975,7 +975,7 @@ void vis_segments(const PartApp &part_app, const AnnotationList &annolist,
 	matlab_io::mat_load_double_matrix(qsSegEndPoints, "endpoints", part_endpoints);
 
 	for (int pidx = 0; pidx < part_conf_eval.part_size(); ++pidx){  
-	  coloridx = 0 ;//1 - part_endpoints(pidx,4);
+	  coloridx = 0; //1 - part_endpoints(pidx,4);
 	  //if (part_endpoints.size2() == 6 && part_endpoints(pidx,5) == 1)
 	  //  coloridx = 2;
 	  draw_bbox(painter, eval_bbox[pidx], coloridx, pen_width);
